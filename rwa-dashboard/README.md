@@ -21,12 +21,14 @@ python3 build.py      # lee leads.json -> escribe dashboard.html
 
 Una rutina programada corre cada mañana y hace:
 
-1. Consulta Supabase (proyecto `hnkpjrmccsehmixcsdhr`) con el SELECT de abajo
-   y guarda el resultado como `leads.json` (array JSON).
-2. `python3 build.py` regenera `dashboard.html`.
-3. Republica el artifact a la **misma URL** (primero lo lee, luego publica con
-   `url=` esa URL) — así el enlace nunca cambia.
-4. Commit del `leads.json` y `dashboard.html` del día en la branch
+1. Consulta Supabase (proyecto `hnkpjrmccsehmixcsdhr`) con el SELECT de abajo.
+   Como el resultado (~430 filas en una sola celda `json_agg`) excede el límite
+   de tokens, `execute_sql` guarda la salida en un archivo y devuelve su ruta.
+2. `python3 parse_result.py <ruta-del-archivo>` → escribe `leads.json`.
+3. `python3 build.py` → regenera `dashboard.html`.
+4. Republica el artifact a la **misma URL** (primero lo lee con `action:read`,
+   luego publica `dashboard.html` con `url=` esa URL) — así el enlace no cambia.
+5. Commit de `leads.json` y `dashboard.html` del día en la branch
    `claude/supabase-table-query-o75meu`.
 
 ### SELECT de la actualización
