@@ -198,6 +198,16 @@ td .amt{font-family:"IBM Plex Mono";color:var(--gold);font-weight:600}
   .col{flex-basis:82vw}
   th{top:53px}
 }
+.chip.outbox-chip.on{background:var(--accent-bg);color:var(--accent-ink);border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+#btn-outbox .obx{font-family:"IBM Plex Mono";font-size:11px;font-weight:700;background:var(--explore-bg);color:var(--explore);
+  border-radius:20px;padding:0 6px;margin-left:6px}
+.kpi.outbox-kpi{background:linear-gradient(150deg,var(--explore-bg),var(--surface))}
+.outbox-note{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--explore);border-radius:10px;
+  padding:12px 14px;margin-bottom:14px;font-size:12.5px;line-height:1.55;color:var(--ink-2)}
+.outbox-note strong{color:var(--ink)}
+#outbox-table td.senal{white-space:normal;max-width:340px;color:var(--ink-2)}
+#outbox-table a{color:var(--accent);text-decoration:none;font-weight:600}
+#outbox-table a:hover{text-decoration:underline}
 </style>
 
 <header>
@@ -216,6 +226,7 @@ td .amt{font-family:"IBM Plex Mono";color:var(--gold);font-weight:600}
   <div class="seg" id="view-seg">
     <button data-view="board" class="on">Tablero</button>
     <button data-view="table">Tabla</button>
+    <button data-view="outbox" id="btn-outbox">Outbox</button>
   </div>
   <button class="ghost" id="export-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>Sincronizar<span class="badge hidden" id="dirty-count">0</span></button>
   <button class="icon-btn" id="theme-btn" title="Cambiar tema" aria-label="Cambiar tema">
@@ -233,12 +244,21 @@ td .amt{font-family:"IBM Plex Mono";color:var(--gold);font-weight:600}
     <button class="chip" data-q="GO">GO</button>
     <button class="chip" data-q="EXPLORE">EXPLORE</button>
     <button class="chip money" id="f-money">Con monto</button>
+    <button class="chip outbox-chip" id="f-outbox">Incluir Outbox en el tablero</button>
     <button class="clear" id="f-clear">Limpiar</button>
   </div>
   <div class="count-line" id="count-line"></div>
 
   <div id="board-view"><div class="board" id="board"></div></div>
   <div id="table-view" class="hidden"><div class="tablewrap"><table id="table"><thead></thead><tbody></tbody></table></div></div>
+  <div id="outbox-view" class="hidden">
+    <div class="outbox-note">
+      <strong>Outbox — prospectos sin contacto.</strong> Estos leads entraron por el scout pero todavía no tienen correo ni decisor,
+      así que están fuera del tablero activo. El objetivo aquí es <em>conseguirles un contacto</em> (correo/decisor) para activarlos;
+      priorizá los <span class="q GO" style="padding:1px 5px;border-radius:4px">GO</span>. Al cargar el contacto en Supabase, el prospecto sale del Outbox y entra al tablero.
+    </div>
+    <div class="tablewrap"><table id="outbox-table"><thead></thead><tbody></tbody></table></div>
+  </div>
 </div>
 
 <div class="scrim" id="scrim"></div>
@@ -318,7 +338,9 @@ function money(n){ if(n==null||n==="") return null; n=+n; if(!isFinite(n)||n===0
 function fdate(d){ if(!d) return "—"; try{return new Date(d).toLocaleDateString("es",{day:"2-digit",month:"short",year:"numeric"});}catch(e){return d;} }
 
 /* ---------- filters ---------- */
-const state={ q:"", pais:"", sector:"", activo:"", quals:new Set(), money:false, view:"board", sort:{key:"empresa",dir:1} };
+const state={ q:"", pais:"", sector:"", activo:"", quals:new Set(), money:false, includeOutbox:false, view:"board", sort:{key:"empresa",dir:1}, osort:{key:"empresa",dir:1} };
+function hasContact(l){ return !!(l.contacto_email && String(l.contacto_email).trim()); }
+const OUTBOX_TOTAL = leads.filter(l=>!hasContact(l)).length;
 function uniq(key){ return [...new Set(leads.map(l=>l[key]).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es")); }
 function fillSelect(el,label,vals){
   el.innerHTML = `<option value="">${label} · todos</option>` + vals.map(v=>`<option value="${esc(v)}">${esc(v)}</option>`).join("");
@@ -339,30 +361,33 @@ function matches(l){
   }
   return true;
 }
-function visible(){ return leads.filter(matches); }
+function allMatch(){ return leads.filter(matches); }
+function visible(){ return leads.filter(l=> matches(l) && (state.includeOutbox || hasContact(l))); }
+function outboxList(){ return leads.filter(l=> matches(l) && !hasContact(l)); }
 
 /* ---------- KPIs ---------- */
 function renderKpis(){
-  const v=visible();
+  const v=allMatch();
   const total=v.length;
+  const con=v.filter(hasContact).length;
+  const box=v.filter(l=>!hasContact(l)).length;
   const go=v.filter(l=>l.calificacion==="GO").length;
-  const active=v.filter(l=>!["nuevo","descartado","nurture"].includes(l.etapa)).length;
-  const pipe=v.reduce((s,l)=>s+(+l.monto_estimado_usd||0),0);
-  const withAmt=v.filter(l=>l.monto_estimado_usd>0).length;
+  const goBox=v.filter(l=>l.calificacion==="GO" && !hasContact(l)).length;
+  const active=v.filter(l=>hasContact(l) && !["nuevo","descartado","nurture"].includes(l.etapa)).length;
   const paises=new Set(v.map(l=>l.pais).filter(Boolean)).size;
-  // stage spark
+  // stage spark (whole book)
   const counts=STAGES.map(s=>({s,n:v.filter(l=>l.etapa===s.k).length})).filter(x=>x.n);
   const spark=counts.map(x=>`<span style="flex:${x.n};background:${x.s.c}" title="${x.s.label}: ${x.n}"></span>`).join("");
   $("#kpis").innerHTML=`
-    <div class="kpi hero"><div class="eyebrow">Contactos en vista</div><div class="big mono">${total}</div>
-      <div class="sub">${paises} paí${paises===1?'s':'ses'} · ${uniq("sector").length? '':''}de ${LEADS.length} totales</div>
+    <div class="kpi hero"><div class="eyebrow">Prospectos en el libro</div><div class="big mono">${total}</div>
+      <div class="sub">${paises} paí${paises===1?'s':'ses'} · <b>${con}</b> con contacto activable</div>
       <div class="spark">${spark}</div></div>
     <div class="kpi"><div class="eyebrow">Prioritarios · GO</div><div class="big mono" style="color:var(--go)">${go}</div>
-      <div class="sub">${total? Math.round(go/total*100):0}% de la vista</div></div>
+      <div class="sub">${total? Math.round(go/total*100):0}% del libro</div></div>
     <div class="kpi"><div class="eyebrow">En gestión activa</div><div class="big mono">${active}</div>
-      <div class="sub">fuera de «nuevo / descartado»</div></div>
-    <div class="kpi"><div class="eyebrow">Valor de pipeline</div><div class="big mono" style="color:var(--gold)">${money(pipe)||"—"}</div>
-      <div class="sub">${withAmt} contacto${withAmt===1?'':'s'} con monto estimado</div></div>`;
+      <div class="sub">con contacto y fuera de «nuevo»</div></div>
+    <div class="kpi outbox-kpi"><div class="eyebrow">Outbox · sin contacto</div><div class="big mono" style="color:var(--explore)">${box}</div>
+      <div class="sub"><b>${goBox}</b> de ellos GO · falta correo/decisor</div></div>`;
 }
 
 /* ---------- board ---------- */
@@ -568,12 +593,52 @@ $("#modal-copy").onclick=async()=>{
 };
 modal.onclick=e=>{ if(e.target===modal) modal.classList.remove("open"); };
 
+/* ---------- outbox ---------- */
+const OCOLS=[
+  {k:"empresa",t:"Empresa"},{k:"pais",t:"País"},{k:"sector",t:"Sector"},
+  {k:"tipo_activo",t:"Activo"},{k:"calificacion",t:"Calif."},{k:"senal",t:"Señal de origen"},
+];
+function renderOutbox(){
+  let v=outboxList();
+  const {key,dir}=state.osort;
+  v=[...v].sort((a,b)=>{
+    let x=(a[key]==null?"":String(a[key])).toLowerCase(), y=(b[key]==null?"":String(b[key])).toLowerCase();
+    return x<y?-dir:x>y?dir:0;
+  });
+  $("#outbox-table thead").innerHTML="<tr>"+OCOLS.map(c=>`<th data-k="${c.k}">${c.t}${key===c.k?(dir>0?" ▲":" ▼"):""}</th>`).join("")+"</tr>";
+  $("#outbox-table tbody").innerHTML=v.map(l=>`<tr data-id="${l.id}">
+    <td class="empresa">${esc(l.empresa)}</td>
+    <td>${esc(l.pais||"—")}</td>
+    <td>${esc(l.sector||"—")}</td>
+    <td>${esc(l.tipo_activo||"—")}</td>
+    <td><span class="q ${l.calificacion}" style="padding:2px 6px;border-radius:5px;font-size:10px;font-weight:800">${l.calificacion}</span></td>
+    <td class="senal">${esc((l.senal||"—").slice(0,150))}${l.senal&&l.senal.length>150?"…":""}${l.senal_url?` <a href="${esc(l.senal_url)}" target="_blank" rel="noopener">↗</a>`:""}</td>
+  </tr>`).join("") || `<tr><td colspan="6" class="empty">Sin prospectos en el Outbox con estos filtros.</td></tr>`;
+  $$("#outbox-table thead th").forEach(th=>th.onclick=()=>{
+    const k=th.dataset.k;
+    if(state.osort.key===k) state.osort.dir*=-1; else state.osort={key:k,dir:1};
+    renderOutbox();
+  });
+  $$("#outbox-table tbody tr[data-id]").forEach(tr=>tr.onclick=()=>openDrawer(tr.dataset.id));
+}
+
 /* ---------- wiring ---------- */
 function refresh(rerenderDrawerCounts=true){
   renderKpis(); updateDirty();
-  const v=visible();
-  $("#count-line").innerHTML=`Mostrando <b>${v.length}</b> de ${LEADS.length} contactos`+(Object.keys(overrides).length?` · <b style="color:var(--accent)">${Object.keys(overrides).length}</b> con cambios sin sincronizar`:"");
-  if(state.view==="board") renderBoard(); else renderTable();
+  // outbox badge on the segment button
+  const bo=$("#btn-outbox");
+  bo.innerHTML=`Outbox${OUTBOX_TOTAL?`<span class="obx">${OUTBOX_TOTAL}</span>`:""}`;
+  const dirtyNote=Object.keys(overrides).length?` · <b style="color:var(--accent)">${Object.keys(overrides).length}</b> con cambios sin sincronizar`:"";
+  if(state.view==="outbox"){
+    const o=outboxList();
+    $("#count-line").innerHTML=`<b>${o.length}</b> prospecto${o.length===1?'':'s'} en el Outbox (sin contacto) de ${OUTBOX_TOTAL} totales`+dirtyNote;
+    renderOutbox();
+  }else{
+    const v=visible();
+    const scope=state.includeOutbox?`de ${allMatch().length} en el libro`:`con contacto · <b>${OUTBOX_TOTAL}</b> en Outbox`;
+    $("#count-line").innerHTML=`Mostrando <b>${v.length}</b> contacto${v.length===1?'':'s'} ${scope}`+dirtyNote;
+    if(state.view==="board") renderBoard(); else renderTable();
+  }
 }
 $("#q").addEventListener("input",e=>{state.q=e.target.value.trim().toLowerCase();refresh();});
 $("#f-pais").onchange=e=>{state.pais=e.target.value;refresh();};
@@ -584,8 +649,9 @@ $$("#filters .chip[data-q]").forEach(c=>c.onclick=()=>{
   c.classList.toggle("on"); refresh();
 });
 $("#f-money").onclick=()=>{state.money=!state.money;$("#f-money").classList.toggle("on");refresh();};
+$("#f-outbox").onclick=()=>{state.includeOutbox=!state.includeOutbox;$("#f-outbox").classList.toggle("on");refresh();};
 $("#f-clear").onclick=()=>{
-  state.q="";state.pais="";state.sector="";state.activo="";state.quals.clear();state.money=false;
+  state.q="";state.pais="";state.sector="";state.activo="";state.quals.clear();state.money=false;state.includeOutbox=false;
   $("#q").value="";$("#f-pais").value="";$("#f-sector").value="";$("#f-activo").value="";
   $$("#filters .chip").forEach(c=>c.classList.remove("on"));refresh();
 };
@@ -594,6 +660,7 @@ $$("#view-seg button").forEach(b=>b.onclick=()=>{
   $$("#view-seg button").forEach(x=>x.classList.toggle("on",x===b));
   $("#board-view").classList.toggle("hidden",state.view!=="board");
   $("#table-view").classList.toggle("hidden",state.view!=="table");
+  $("#outbox-view").classList.toggle("hidden",state.view!=="outbox");
   refresh();
 });
 

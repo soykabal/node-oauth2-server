@@ -7,6 +7,16 @@ contactos RWA de `public.bridge_leads` (Kabal Bridge, Centroamérica).
 - **Proyecto Supabase:** `hnkpjrmccsehmixcsdhr`
 - **Tabla fuente:** `public.bridge_leads`
 
+## Vistas
+
+- **Tablero / Tabla** — pipeline activo: solo los prospectos **con contacto** (correo),
+  gestionables por etapa (`nuevo → … → mandato`). El chip "Incluir Outbox en el tablero"
+  los trae de vuelta si se necesita.
+- **Outbox** — prospectos **sin contacto** (sin correo/decisor). Entraron por el scout pero
+  aún no son contactables; el objetivo es conseguirles un contacto para activarlos. Al cargar
+  el `contacto_email` en Supabase, el prospecto sale del Outbox y entra al tablero
+  automáticamente (la vista se deriva de si el lead tiene correo, no de un estado en la base).
+
 ## Cómo se arma
 
 `dashboard.html` = `template.html` con los datos de `bridge_leads` embebidos.
