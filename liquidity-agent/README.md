@@ -10,6 +10,7 @@ liquidity-agent/
 ├── db/
 │   ├── migrations/20260904120000_liquidity_crm.sql   esquema completo (tablas, triggers, vistas, RLS)
 │   ├── migrations/20260904190000_liquidity_directorio.sql  tipos ampliados + columnas de origen del directorio
+│   ├── migrations/20260904230000_liquidity_monto_potencial.sql  monto potencial por institución + vista liq_v_potencial_directorio
 │   ├── directorio/                                   directorio maestro RWA (172 instituciones): .py, .json e insert idempotente
 │   └── seed_demo.sql                                 datos ficticios para probar en local
 ├── src/
@@ -52,6 +53,7 @@ Etapas: `identificado → contactado → primera_reunion → segunda_reunion →
 | `liq_v_resumen_vehiculo` | Pipeline / ponderado / comprometido / firmado / wired por vehículo. |
 | `liq_v_proveedor_resumen` | Cuenta 360 por proveedor. |
 | `liq_v_motivos_perdida` | Motivos de pérdida agregados. |
+| `liq_v_potencial_directorio` | Monto potencial del directorio por tipo de institución (estimación inicial por tipo × calificación en `monto_potencial_usd`, origen en `monto_potencial_origen`). |
 
 RPC: `liq_mover_etapa(oportunidad_id, etapa, motivo, proximo_paso, fecha_proximo_paso, monto_comprometido_usd)`.
 
