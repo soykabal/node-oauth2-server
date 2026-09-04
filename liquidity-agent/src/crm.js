@@ -30,8 +30,9 @@ const ETAPAS_ACTIVAS = ETAPAS.slice(0, 8);
 const VEHICULOS = ['ktft', 'emision_b2b', 'linea_credito', 'warehouse', 'deuda_privada'];
 
 const TIPOS_PROVEEDOR = [
-  'family_office', 'fondo', 'hnwi', 'banco', 'fintech_lender',
-  'tesoreria_corporativa', 'dao_defi', 'multilateral', 'otro'
+  'family_office', 'fondo', 'gestor_activos', 'hnwi', 'banco', 'banca_inversion', 'fintech_lender',
+  'tesoreria_corporativa', 'dao_defi', 'market_maker', 'custodio', 'exchange', 'plataforma_tokenizacion',
+  'infraestructura', 'aseguradora', 'soberano', 'multilateral', 'corporativo', 'otro'
 ];
 
 const SLA = {

@@ -28,6 +28,15 @@ Copiloto de captación de liquidez. Fuente de reglas: **Relación con Inversioni
 | Fondos/bancos para warehouse o línea de Kabal Lending | Verificación KYC/AML del proveedor → **kabal-aml-kyc-officer** |
 | Deuda privada / notas | Materiales a lista amplia → **kabal-brand-guardian** |
 
+## Directorio de instituciones
+
+`liq_proveedores` arranca cargado con el **directorio maestro RWA** (Google Doc `RWA_Master_Liquidity_Institution_List_20260823`
++ brief del 9-ago): 172 instituciones en 16 categorías (bancos, gestores de activos, market makers, custodios, exchanges,
+plataformas de tokenización, DeFi, trade finance, seguros, soberanos). Columnas `categoria`, `tipo_detalle`, `region`, `tesis`
+y `origen_lista` conservan la fuente. Calificación inicial: GO = capital desplegable en crédito privado / trade finance /
+LatAm; el resto EXPLORE. Toda institución del directorio se verifica de forma independiente antes del outreach.
+Un proveedor sin oportunidad NO está en el funnel: se crea la oportunidad (vehículo + monto) cuando hay un ángulo real.
+
 ## Funnel (etapas de `liq_oportunidades.etapa`)
 
 `identificado → contactado → primera_reunion → segunda_reunion → due_diligence → compromiso_verbal → firmado → wired`

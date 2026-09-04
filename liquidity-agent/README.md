@@ -9,6 +9,8 @@ suscriptores del KTFT, inversionistas de emisiones B2B de Kabal Bridge y fondead
 liquidity-agent/
 ├── db/
 │   ├── migrations/20260904120000_liquidity_crm.sql   esquema completo (tablas, triggers, vistas, RLS)
+│   ├── migrations/20260904190000_liquidity_directorio.sql  tipos ampliados + columnas de origen del directorio
+│   ├── directorio/                                   directorio maestro RWA (172 instituciones): .py, .json e insert idempotente
 │   └── seed_demo.sql                                 datos ficticios para probar en local
 ├── src/
 │   ├── crm.js        cliente PostgREST sin dependencias + lógica de priorización/resumen
