@@ -366,6 +366,14 @@ const TIPO = {family_office:"Family office",fondo:"Fondo",gestor_activos:"Gestor
 const KYC = ["pendiente","en_proceso","verde","rojo"];
 const POT = {banco:[5e6,3e6],multilateral:[5e6,3e6],soberano:[5e6,2.5e6],gestor_activos:[3e6,1.5e6],fondo:[2e6,1e6],banca_inversion:[2e6,1e6],dao_defi:[1.5e6,5e5],aseguradora:[1e6,5e5],corporativo:[1e6,5e5],family_office:[1e6,5e5],fintech_lender:[1e6,5e5],tesoreria_corporativa:[1e6,5e5],market_maker:[5e5,2.5e5],exchange:[5e5,2.5e5],hnwi:[2.5e5,1e5]};
 const potDefault=(tipo,cal)=>{const d=POT[tipo]; return d?(cal==="GO"?d[0]:d[1]):null;};
+function pipelineTotal(list){
+  const act=(list||opps).filter(o=>!["perdido","nurture"].includes(o.etapa));
+  const objetivo=act.reduce((a,o)=>a+(+o.monto_objetivo_usd||0),0);
+  const conOpp=new Set(act.map(o=>o.proveedor_id));
+  const sinOpp=provs.filter(p=>!conOpp.has(p.id)&&potencial(p)>0);
+  const potSin=sinOpp.reduce((a,p)=>a+(potencial(p)||0),0);
+  return {objetivo,nOpps:act.length,potSin,nSin:sinOpp.length,total:objetivo+potSin,pond:act.filter(o=>o.etapa!=="wired").reduce((a,o)=>a+o._pond,0)};
+}
 const potencial=p=>p.monto_potencial_usd!=null?+p.monto_potencial_usd:(p.monto_potencial_usd===undefined?potDefault(p.tipo,p.calificacion):null);
 const QUALS = ["GO","EXPLORE","DROP"];
 const META_USD = 5000000; // 1ª emisión KTFT: $5M / 500K tokens
@@ -523,14 +531,17 @@ function renderKpis(){
   const pct=Math.min(100,Math.round(t.wired/META_USD*100));
   const pctF=Math.min(100-pct,Math.round((t.firmado-t.wired)/META_USD*100));
   const pctC=Math.min(100-pct-pctF,Math.round((t.comprometido-t.firmado)/META_USD*100));
+  const pt=pipelineTotal(v);
   $("#kpis").innerHTML=`
+    <div class="kpi hero"><div class="eyebrow">Pipeline total en dinero</div><div class="big mono">${money0(pt.total)}</div>
+      <div class="sub"><b>${money0(pt.objetivo)}</b> en ${pt.nOpps} oportunidad${pt.nOpps===1?"":"es"} + <b>${money0(pt.potSin)}</b> potencial de ${pt.nSin} instituciones sin oportunidad</div>
+      <div class="meter" title="oportunidades · potencial del directorio">${pt.total?`<span style="flex:${Math.max(0.5,pt.objetivo/pt.total*100)};background:var(--st6)"></span><span style="flex:${Math.max(0.5,pt.potSin/pt.total*100)};background:var(--st2)"></span>`:""}</div></div>
     <div class="kpi hero"><div class="eyebrow">Wired · meta ${money0(META_USD)}</div><div class="big mono">${money0(t.wired)}</div>
       <div class="sub"><b>${pct}%</b> de la 1ª emisión · gap ${money0(Math.max(0,META_USD-t.wired))}</div>
       <div class="meter" title="wired · firmado · comprometido">${pct?`<span style="flex:${pct};background:var(--st8)"></span>`:""}${pctF>0?`<span style="flex:${pctF};background:var(--st7)"></span>`:""}${pctC>0?`<span style="flex:${pctC};background:var(--st6)"></span>`:""}<span style="flex:${Math.max(1,100-pct-Math.max(0,pctF)-Math.max(0,pctC))};background:transparent"></span></div></div>
     <div class="kpi"><div class="eyebrow">Firmado</div><div class="big mono">${money0(t.firmado)}</div><div class="sub">subscription agreements firmados</div></div>
     <div class="kpi"><div class="eyebrow">Comprometido</div><div class="big mono">${money0(t.comprometido)}</div><div class="sub">verbal + firmado + wired</div></div>
-    <div class="kpi"><div class="eyebrow">Pipeline ponderado</div><div class="big mono">${money0(t.pond)}</div><div class="sub"><b>${t.activas}</b> oportunidad${t.activas===1?"":"es"} activa${t.activas===1?"":"s"} × probabilidad</div></div>
-    <div class="kpi"><div class="eyebrow">Potencial del directorio</div><div class="big mono">${money0(provs.reduce((a,p)=>a+(potencial(p)||0),0))}</div><div class="sub"><b>${provs.filter(p=>potencial(p)>0).length}</b> instituciones con capital · GO ${money0(provs.filter(p=>p.calificacion==="GO").reduce((a,p)=>a+(potencial(p)||0),0))}</div></div>
+    <div class="kpi"><div class="eyebrow">Pipeline ponderado</div><div class="big mono">${money0(t.pond)}</div><div class="sub"><b>${t.activas}</b> oportunidad${t.activas===1?"":"es"} activa${t.activas===1?"":"s"} × probabilidad · directorio GO ${money0(provs.filter(p=>p.calificacion==="GO").reduce((a,p)=>a+(potencial(p)||0),0))}</div></div>
     <div class="kpi ${t.alertas?'alert':''}"><div class="eyebrow">Alertas SLA</div><div class="big mono">${t.alertas}</div><div class="sub">${t.alertas?"requieren acción hoy":"sin nombres fuera de regla"}</div></div>`;
 }
 function renderFunnel(){
@@ -539,7 +550,8 @@ function renderFunnel(){
   const max=Math.max(1,...rows.map(r=>r.usd));
   const reach=rows.map((r,i)=>rows.slice(i).reduce((a,x)=>a+x.n,0));
   const conv=[];for(let i=1;i<rows.length;i++){ if(reach[i-1]) conv.push(`${rows[i-1].s.label} → ${rows[i].s.label} <b>${Math.round(reach[i]/reach[i-1]*100)}%</b>`); }
-  $("#funnel").innerHTML=`<div class="fh"><h2>Embudo por etapa</h2><span class="hint">monto objetivo · oportunidades</span><span class="eyebrow">${v.length} en vista</span></div>`+
+  const ft=pipelineTotal(v);
+  $("#funnel").innerHTML=`<div class="fh"><h2>Embudo por etapa</h2><span class="hint">monto objetivo · oportunidades</span><span class="eyebrow">${v.length} en vista · objetivo ${money0(ft.objetivo)} · ponderado ${money0(ft.pond)}</span></div>`+
     rows.map(r=>`<div class="frow ${r.n?'':'zero'}" title="${esc(r.s.label)}: ${r.n} oportunidad(es) · ${money0(r.usd)}">
       <div class="lbl"><span class="col-dot" style="background:${stColor(r.s.k)}"></span>${esc(r.s.label)}</div>
       <div class="bar"><span style="width:${Math.max(r.usd?1.5:0,r.usd/max*100)}%;background:${stColor(r.s.k)}"></span></div>
@@ -657,6 +669,8 @@ function renderLunes(){
   $("#lunes-view").innerHTML=`
     <div class="panel wide"><h2>Lunes de liquidez <span class="eyebrow">${esc(hoy)}</span></h2>
       <div class="summary">
+        <div><span class="eyebrow">Pipeline total</span><span class="v acc">${money0(pipelineTotal(v).total)}</span></div>
+        <div><span class="eyebrow">Objetivo en oportunidades</span><span class="v">${money0(pipelineTotal(v).objetivo)}</span></div>
         <div><span class="eyebrow">Wired</span><span class="v acc">${money0(t.wired)}</span></div>
         <div><span class="eyebrow">Firmado</span><span class="v">${money0(t.firmado)}</span></div>
         <div><span class="eyebrow">Comprometido</span><span class="v">${money0(t.comprometido)}</span></div>
@@ -903,7 +917,7 @@ function setSource(kind,msg){
   const n=$("#note");
   if(kind==="demo") n.innerHTML=`<div class="note"><strong>Datos de ejemplo.</strong> El CRM de liquidez todavía no tiene proveedores cargados. Lo que ves son nombres ficticios para mostrar cómo funciona el tablero. Agregá la primera oportunidad con <b>+ Nueva</b>${mcpNs?"":" o pedile a Claude que cargue tus proveedores"}; al sincronizar, los ejemplos desaparecen.</div>`;
   else if(kind==="live") n.innerHTML=`<div class="note live"><strong>Conectado a Supabase.</strong> Leyendo las tablas liq_* con tu conector${liveAt?` · actualizado ${liveAt.toLocaleTimeString("es")}`:""}. <button class="link" id="reload-btn">Actualizar</button></div>`;
-  else if(kind==="snapshot"&&!opps.length&&provs.length) n.innerHTML=`<div class="note live"><strong>Directorio cargado.</strong> ${provs.length} instituciones en <b>Proveedores</b> (${provs.filter(p=>p.calificacion==="GO").length} GO), todavía ninguna con oportunidad en el funnel. Abrí la ficha de una institución y usá <b>+ Oportunidad</b> para ponerla en «Identificado» con vehículo y monto.</div>`;
+  else if(kind==="snapshot"&&!opps.length&&provs.length) n.innerHTML=`<div class="note live"><strong>Directorio cargado.</strong> ${provs.length} instituciones en <b>Proveedores</b> (${provs.filter(p=>p.calificacion==="GO").length} GO) con un potencial estimado de <b>${money0(provs.reduce((a,p)=>a+(potencial(p)||0),0))}</b>; todavía ninguna con oportunidad en el funnel, por eso el embudo marca $0. Abrí la ficha de una institución y usá <b>+ Oportunidad</b> para ponerla en «Identificado» con vehículo y monto.</div>`;
   else if(kind==="error") n.innerHTML=`<div class="note err"><strong>Sin conexión en vivo.</strong> ${esc(msg||"")} Mostrando ${raw.demo?"ejemplos":"el snapshot"}.</div>`;
   else n.innerHTML="";
   const rb=$("#reload-btn"); if(rb) rb.onclick=()=>liveLoad(true);
@@ -946,7 +960,7 @@ function refresh(){
   const v=visible(); const dirty=n?` · <b style="color:var(--accent)">${n}</b> cambio${n===1?"":"s"} sin sincronizar`:"";
   if(state.view==="prov"){ renderProv(); $("#count-line").innerHTML=`Mostrando <b>${lastProvCount}</b> de ${provs.length} instituciones · potencial en vista <b>${money0(lastProvPot)}</b> · <b>${provs.filter(p=>p.calificacion==="GO").length}</b> GO · <b>${provs.filter(p=>opps.some(o=>o.proveedor_id===p.id)).length}</b> con oportunidad`+dirty; }
   else if(state.view==="lunes"){ $("#count-line").innerHTML=`Reporte ejecutivo del pipeline completo (sin filtros)`+dirty; renderLunes(); }
-  else { $("#count-line").innerHTML=`Mostrando <b>${v.length}</b> oportunidad${v.length===1?"":"es"} de ${opps.length}${state.lost?"":` · ${opps.filter(o=>o.etapa==="perdido").length} perdidas ocultas`}`+dirty; if(state.view==="board") renderBoard(); else renderTable(); }
+  else { const ct=pipelineTotal(v); $("#count-line").innerHTML=`Mostrando <b>${v.length}</b> oportunidad${v.length===1?"":"es"} de ${opps.length} · objetivo <b>${money0(ct.objetivo)}</b> · ponderado <b>${money0(ct.pond)}</b>${state.lost?"":` · ${opps.filter(o=>o.etapa==="perdido").length} perdidas ocultas`}`+dirty; if(state.view==="board") renderBoard(); else renderTable(); }
 }
 $("#q").addEventListener("input",e=>{state.q=e.target.value.trim().toLowerCase();refresh();});
 $("#f-veh").onchange=e=>{state.veh=e.target.value;refresh();};
