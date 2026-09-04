@@ -1,0 +1,933 @@
+<title>Pipeline de Liquidez · Kabal</title>
+<meta name="description" content="Funnel de proveedores de liquidez para el KTFT, emisiones B2B y líneas de Kabal Lending">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Paleta oficial Kabal — teal #075259 · lime #6FD904 · oscuro #141E26 (misma base que Pipeline RWA) */
+:root{
+  --bg:#EDF1F0; --surface:#FFFFFF; --surface-2:#FFFFFF; --panel:#E3EAE9;
+  --ink:#141E26; --ink-2:#3C4A50; --muted:#6E7C7E; --line:#DBE3E2; --line-2:#C6D1CF;
+  --accent:#075259; --accent-ink:#053C41; --accent-bg:#DDEBEA; --on-accent:#FFFFFF;
+  --lime:#6FD904; --lime-ink:#3E7A00;
+  --gold:#3E7A00; --gold-bg:#E8F2D6;
+  --go:#3E7A00; --go-bg:#E7F2D6; --explore:#8A6314; --explore-bg:#F3EAD5; --drop:#A5493C; --drop-bg:#F2E3DE;
+  --warn:#8A6314; --warn-bg:#F3EAD5; --crit:#A5493C; --crit-bg:#F2E3DE; --ok:#3E7A00; --ok-bg:#E7F2D6;
+  /* rampa ordinal teal validada (claro): identificado → wired */
+  --st1:#7ebcb3; --st2:#6aa79f; --st3:#55938b; --st4:#417f77; --st5:#2d6b64; --st6:#175852; --st7:#00453e; --st8:#00302b;
+  --st-nurture:#7E8CA0; --st-lost:#A85B5B;
+  --shadow:0 1px 2px rgba(20,30,38,.06),0 8px 24px -12px rgba(20,30,38,.16);
+  --shadow-lg:0 24px 60px -20px rgba(20,30,38,.30);
+  --radius:10px;
+  font-family:"Source Sans 3",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#141E26; --surface:#1B2833; --surface-2:#223140; --panel:#182430;
+    --ink:#E5EAE8; --ink-2:#AAB6B6; --muted:#7E8C8C; --line:#26333D; --line-2:#33454F;
+    --accent:#4FB3A8; --accent-ink:#7FD8CD; --accent-bg:#123029; --on-accent:#06231F;
+    --lime:#6FD904; --lime-ink:#9CE24B;
+    --gold:#9CC461; --gold-bg:#20301A;
+    --go:#9CC461; --go-bg:#1F3315; --explore:#D6A64E; --explore-bg:#2C2614; --drop:#D5786A; --drop-bg:#2E1C19;
+    --warn:#D6A64E; --warn-bg:#2C2614; --crit:#D5786A; --crit-bg:#2E1C19; --ok:#9CC461; --ok-bg:#1F3315;
+    --st1:#23625b; --st2:#38766e; --st3:#4c8981; --st4:#609d95; --st5:#74b2a9; --st6:#89c7be; --st7:#9edcd3; --st8:#b3f2e9;
+    --st-nurture:#8C9BB0; --st-lost:#C97A7A;
+    --shadow:0 1px 2px rgba(0,0,0,.45),0 10px 28px -14px rgba(0,0,0,.62);
+    --shadow-lg:0 30px 70px -22px rgba(0,0,0,.78);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141E26; --surface:#1B2833; --surface-2:#223140; --panel:#182430;
+  --ink:#E5EAE8; --ink-2:#AAB6B6; --muted:#7E8C8C; --line:#26333D; --line-2:#33454F;
+  --accent:#4FB3A8; --accent-ink:#7FD8CD; --accent-bg:#123029; --on-accent:#06231F;
+  --lime:#6FD904; --lime-ink:#9CE24B;
+  --gold:#9CC461; --gold-bg:#20301A;
+  --go:#9CC461; --go-bg:#1F3315; --explore:#D6A64E; --explore-bg:#2C2614; --drop:#D5786A; --drop-bg:#2E1C19;
+  --warn:#D6A64E; --warn-bg:#2C2614; --crit:#D5786A; --crit-bg:#2E1C19; --ok:#9CC461; --ok-bg:#1F3315;
+  --st1:#23625b; --st2:#38766e; --st3:#4c8981; --st4:#609d95; --st5:#74b2a9; --st6:#89c7be; --st7:#9edcd3; --st8:#b3f2e9;
+  --st-nurture:#8C9BB0; --st-lost:#C97A7A;
+  --shadow:0 1px 2px rgba(0,0,0,.45),0 10px 28px -14px rgba(0,0,0,.62);
+  --shadow-lg:0 30px 70px -22px rgba(0,0,0,.78);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;font-family:"Montserrat",system-ui,sans-serif;text-wrap:balance}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--lime);outline-offset:2px;border-radius:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.mono{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.hidden{display:none!important}
+
+/* ---- header ---- */
+header{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--surface) 88%,transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:11px;min-width:0}
+.brand .mark{width:34px;height:34px;border-radius:9px;flex:0 0 auto;position:relative;overflow:hidden;background:#075259;box-shadow:var(--shadow)}
+.brand .mark::before,.brand .mark::after{content:"";position:absolute;bottom:8px;width:0;height:0}
+.brand .mark::before{left:5px;border-left:9px solid transparent;border-right:9px solid transparent;border-bottom:13px solid #6FD904}
+.brand .mark::after{right:5px;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:10px solid #A7E86B}
+.brand h1{font-size:15px;font-weight:800;letter-spacing:-.01em;line-height:1.1}
+.brand p{margin:1px 0 0;font-size:11px;color:var(--muted)}
+.hspring{flex:1 1 auto}
+.search{position:relative;flex:0 1 280px;min-width:160px}
+.search input{width:100%;padding:8px 12px 8px 32px;border-radius:8px;border:1px solid var(--line-2);background:var(--surface-2);color:var(--ink);font-size:13px}
+.search svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.seg{display:inline-flex;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:2px;flex-wrap:wrap}
+.seg button{border:none;background:none;color:var(--ink-2);padding:6px 11px;border-radius:6px;font-size:12.5px;font-weight:600}
+.seg button.on{background:var(--surface-2);color:var(--ink);box-shadow:var(--shadow)}
+.ghost{border:1px solid var(--line-2);background:var(--surface-2);color:var(--ink);padding:8px 12px;border-radius:8px;font-size:12.5px;font-weight:600;display:inline-flex;align-items:center;gap:7px}
+.ghost:hover{border-color:var(--accent);color:var(--accent)}
+.ghost .badge{background:var(--accent);color:var(--on-accent);border-radius:20px;font-size:11px;padding:1px 7px;font-weight:700}
+.ghost.primary{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.ghost.primary:hover{color:var(--on-accent);filter:brightness(1.08)}
+.icon-btn{width:36px;height:36px;border-radius:8px;border:1px solid var(--line-2);background:var(--surface-2);color:var(--ink-2);display:grid;place-items:center}
+.icon-btn:hover{color:var(--accent);border-color:var(--accent)}
+.src{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);font-family:"IBM Plex Mono",monospace}
+.src .dot{width:7px;height:7px;border-radius:50%;background:var(--muted)}
+.src.live .dot{background:var(--lime);box-shadow:0 0 0 3px color-mix(in srgb,var(--lime) 25%,transparent)}
+
+/* ---- notes ---- */
+.wrap{padding:18px 20px 40px;max-width:1500px;margin:0 auto}
+.note{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--explore);border-radius:10px;padding:11px 14px;margin-bottom:14px;font-size:12.5px;line-height:1.55;color:var(--ink-2)}
+.note strong{color:var(--ink)}
+.note.live{border-left-color:var(--lime-ink)}
+.note.err{border-left-color:var(--crit)}
+.note a,.note button.link{color:var(--accent);font-weight:600;text-decoration:none;background:none;border:none;padding:0;font-size:inherit}
+.note a:hover,.note button.link:hover{text-decoration:underline}
+
+/* ---- kpi ---- */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:14px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 15px;position:relative;overflow:hidden}
+.kpi .eyebrow{margin-bottom:8px}
+.kpi .big{font-family:"Montserrat",system-ui,sans-serif;font-weight:800;font-size:26px;letter-spacing:-.02em;line-height:1}
+.kpi .sub{font-size:11.5px;color:var(--muted);margin-top:5px}
+.kpi.hero{background:linear-gradient(150deg,var(--accent-bg),var(--surface))}
+.kpi.hero .big{color:var(--accent-ink)}
+.kpi.alert .big{color:var(--crit)}
+.meter{display:flex;height:7px;border-radius:20px;overflow:hidden;margin-top:11px;background:var(--panel);gap:2px}
+.meter span{height:100%}
+
+/* ---- funnel strip ---- */
+.funnel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 15px 10px;margin-bottom:14px}
+.funnel .fh{display:flex;align-items:baseline;gap:10px;margin-bottom:8px}
+.funnel .fh h2{font-size:13px;font-weight:700}
+.funnel .fh .eyebrow{margin-left:auto}
+.frow{display:grid;grid-template-columns:150px 1fr 66px 90px;gap:10px;align-items:center;padding:3px 0;font-size:12px}
+.frow .lbl{display:flex;align-items:center;gap:7px;color:var(--ink-2);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.frow .bar{height:12px;background:var(--panel);border-radius:4px;position:relative;overflow:hidden}
+.frow .bar span{position:absolute;inset:0 auto 0 0;border-radius:0 4px 4px 0;min-width:2px}
+.frow .n{color:var(--ink-2);text-align:right}
+.frow .v{color:var(--gold);font-weight:600;text-align:right}
+.frow.zero .lbl,.frow.zero .n,.frow.zero .v{color:var(--muted);font-weight:400}
+.conv{font-size:11px;color:var(--muted);margin-top:6px;display:flex;flex-wrap:wrap;gap:4px 14px}
+.conv b{color:var(--ink-2);font-family:"IBM Plex Mono",monospace;font-weight:600}
+
+/* ---- filters ---- */
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.filters select{padding:7px 10px;border-radius:8px;border:1px solid var(--line-2);background:var(--surface-2);color:var(--ink);font-size:12.5px;font-family:inherit;max-width:200px}
+.chip{border:1px solid var(--line-2);background:var(--surface-2);color:var(--ink-2);padding:6px 11px;border-radius:20px;font-size:12px;font-weight:600;display:inline-flex;gap:6px;align-items:center}
+.chip.on{background:var(--accent-bg);color:var(--accent-ink);border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+.chip.alerta.on{background:var(--crit-bg);color:var(--crit);border-color:color-mix(in srgb,var(--crit) 40%,transparent)}
+.chip.kycok.on{background:var(--ok-bg);color:var(--ok);border-color:color-mix(in srgb,var(--ok) 40%,transparent)}
+.filters .clear{margin-left:auto;color:var(--muted);background:none;border:none;font-size:12px;font-weight:600;text-decoration:underline}
+.count-line{font-size:12.5px;color:var(--muted);margin-bottom:12px}
+.count-line b{color:var(--ink);font-weight:700}
+
+/* ---- board ---- */
+.board{display:flex;gap:13px;overflow-x:auto;padding-bottom:14px;scroll-snap-type:x proximity}
+.col{flex:0 0 284px;background:var(--panel);border:1px solid var(--line);border-radius:12px;display:flex;flex-direction:column;max-height:74vh;scroll-snap-align:start}
+.col.dragover{outline:2px dashed var(--accent);outline-offset:-3px;background:var(--accent-bg)}
+.col-head{padding:11px 13px 9px;border-bottom:1px solid var(--line);position:sticky;top:0}
+.col-head .top{display:flex;align-items:center;gap:8px}
+.col-dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+.col-head h3{font-size:12.5px;font-weight:700;letter-spacing:.01em;flex:1}
+.col-head .n{font-family:"IBM Plex Mono";font-size:12px;font-weight:600;color:var(--ink-2);background:var(--surface-2);border-radius:20px;padding:1px 8px;border:1px solid var(--line)}
+.col-head .val{font-family:"IBM Plex Mono";font-size:11px;color:var(--gold);margin-top:5px;font-weight:600;display:flex;gap:10px}
+.col-head .val .p{color:var(--muted);font-weight:500}
+.col-body{overflow-y:auto;padding:9px;display:flex;flex-direction:column;gap:8px;flex:1}
+.col-body:empty::after{content:"Sin oportunidades";color:var(--muted);font-size:12px;text-align:center;padding:18px 0;font-style:italic}
+
+.card{background:var(--surface-2);border:1px solid var(--line);border-left:3px solid var(--stage,var(--muted));border-radius:9px;padding:10px 11px;cursor:grab;box-shadow:var(--shadow);transition:transform .08s,box-shadow .12s;position:relative}
+.card:hover{box-shadow:var(--shadow-lg);transform:translateY(-1px)}
+.card:active{cursor:grabbing}
+.card.dragging{opacity:.4}
+.card .r1{display:flex;align-items:flex-start;gap:8px}
+.card h4{margin:0;font-size:13px;font-weight:700;line-height:1.25;flex:1;letter-spacing:-.01em}
+.card .prov{font-size:11.5px;color:var(--ink-2);margin-top:2px}
+.card .meta{display:flex;flex-wrap:wrap;gap:5px 9px;margin-top:7px;font-size:11px;color:var(--ink-2);align-items:center}
+.card .amt{font-family:"IBM Plex Mono";font-weight:600;color:var(--gold)}
+.card .prob{font-family:"IBM Plex Mono";color:var(--muted)}
+.pill{font-size:9.5px;font-weight:800;letter-spacing:.05em;padding:2px 6px;border-radius:5px;flex:0 0 auto;text-transform:uppercase}
+.pill.veh{background:var(--accent-bg);color:var(--accent-ink)}
+.pill.demo{background:var(--explore-bg);color:var(--explore)}
+.pill.kyc-verde{background:var(--ok-bg);color:var(--ok)} .pill.kyc-en_proceso{background:var(--warn-bg);color:var(--warn)}
+.pill.kyc-pendiente{background:var(--panel);color:var(--muted)} .pill.kyc-rojo{background:var(--crit-bg);color:var(--crit)}
+.pill.GO{background:var(--go-bg);color:var(--go)} .pill.EXPLORE{background:var(--explore-bg);color:var(--explore)} .pill.DROP{background:var(--drop-bg);color:var(--drop)}
+.card .next{margin-top:7px;font-size:11px;color:var(--muted);display:flex;gap:6px;align-items:baseline}
+.card .next b{color:var(--ink-2);font-weight:600}
+.card .next.late b{color:var(--crit)}
+.alerts{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
+.al{font-size:10px;font-weight:700;padding:2px 6px;border-radius:5px;display:inline-flex;gap:4px;align-items:center;letter-spacing:.02em}
+.al.crit{background:var(--crit-bg);color:var(--crit)} .al.warn{background:var(--warn-bg);color:var(--warn)}
+.card.changed{box-shadow:inset 0 0 0 1.5px var(--accent),var(--shadow)}
+.card .dirty{position:absolute;top:7px;right:8px;width:6px;height:6px;border-radius:50%;background:var(--accent);display:none}
+.card.changed .dirty{display:block}
+
+/* ---- table ---- */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:12.5px;min-width:980px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{position:sticky;top:0;background:var(--panel);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);cursor:pointer;font-weight:700;z-index:5}
+th:hover{color:var(--ink)}
+tbody tr:hover{background:var(--accent-bg)}
+tbody tr{cursor:pointer}
+td.name{font-weight:600;white-space:normal;max-width:300px}
+td .amt{font-family:"IBM Plex Mono";color:var(--gold);font-weight:600}
+td.num,th.num{text-align:right}
+.stage-pill{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600}
+.stage-pill .col-dot{width:8px;height:8px}
+.empty{padding:40px 20px;text-align:center;color:var(--muted);white-space:normal}
+
+/* ---- lunes ---- */
+.lunes{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.lunes .panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.lunes .panel h2{font-size:13px;font-weight:700;margin-bottom:10px;display:flex;align-items:baseline;gap:8px}
+.lunes .panel h2 .eyebrow{margin-left:auto}
+.lunes .wide{grid-column:1/-1}
+.top3{display:flex;flex-direction:column;gap:8px}
+.top3 .it{display:grid;grid-template-columns:26px 1fr auto;gap:10px;align-items:start;padding:9px 10px;border:1px solid var(--line);border-radius:9px;background:var(--surface-2);cursor:pointer}
+.top3 .it:hover{border-color:var(--accent)}
+.top3 .rank{font-family:"Montserrat";font-weight:800;font-size:16px;color:var(--accent)}
+.top3 .t{font-weight:700;font-size:13px}
+.top3 .s{font-size:12px;color:var(--ink-2)}
+.top3 .s b{color:var(--ink)}
+.top3 .m{font-family:"IBM Plex Mono";font-size:12px;color:var(--gold);font-weight:600;text-align:right;white-space:nowrap}
+.allist{display:flex;flex-direction:column;gap:6px}
+.allist .it{display:flex;gap:10px;align-items:baseline;font-size:12.5px;padding:7px 10px;border-radius:8px;background:var(--panel);cursor:pointer}
+.allist .it:hover{outline:1px solid var(--accent)}
+.allist .who{font-weight:700;flex:0 0 auto}
+.allist .why{color:var(--ink-2)}
+.summary{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13px}
+.summary div{display:flex;flex-direction:column}
+.summary .eyebrow{margin-bottom:2px}
+.summary .v{font-family:"IBM Plex Mono";font-weight:600;font-size:16px}
+.summary .v.acc{color:var(--accent-ink)}
+.vtab{width:100%;min-width:0;font-size:12.5px}
+.vtab th{position:static}
+@media (max-width:900px){.lunes{grid-template-columns:1fr}}
+
+/* ---- drawer ---- */
+.scrim{position:fixed;inset:0;background:rgba(10,12,11,.42);opacity:0;pointer-events:none;transition:opacity .2s;z-index:60}
+.scrim.open{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(480px,94vw);background:var(--surface);border-left:1px solid var(--line);box-shadow:var(--shadow-lg);transform:translateX(100%);transition:transform .24s cubic-bezier(.4,0,.2,1);z-index:61;display:flex;flex-direction:column}
+.drawer.open{transform:none}
+.dh{padding:16px 18px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:flex-start}
+.dh h2{font-size:17px;font-weight:800;letter-spacing:-.01em;line-height:1.2;flex:1}
+.db{overflow-y:auto;padding:16px 18px;display:flex;flex-direction:column;gap:14px}
+.field{display:flex;flex-direction:column;gap:5px}
+.field>label{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700;font-family:"IBM Plex Mono"}
+.field select,.field textarea,.field input{width:100%;padding:8px 10px;border-radius:8px;border:1px solid var(--line-2);background:var(--surface-2);color:var(--ink);font-family:inherit;font-size:13px}
+.field textarea{resize:vertical;min-height:64px;line-height:1.5}
+.field input.mono{font-family:"IBM Plex Mono"}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.kv{display:grid;grid-template-columns:110px 1fr;gap:4px 10px;font-size:12.5px;margin:0}
+.kv dt{color:var(--muted);font-weight:600}
+.kv dd{margin:0;color:var(--ink)}
+.kv dd a{color:var(--accent);text-decoration:none;font-weight:600}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:11px 12px;font-size:12.5px;line-height:1.55}
+.box .eyebrow{margin-bottom:6px}
+.hist{display:flex;flex-direction:column;gap:6px;font-size:12px}
+.hist .h{display:grid;grid-template-columns:78px 1fr;gap:8px}
+.hist .d{color:var(--muted);font-family:"IBM Plex Mono";font-size:11px}
+.df{padding:13px 18px;border-top:1px solid var(--line);display:flex;gap:9px;align-items:center;background:var(--surface)}
+.btn{padding:9px 15px;border-radius:8px;border:none;font-weight:700;font-size:13px}
+.btn.primary{background:var(--accent);color:var(--on-accent)}
+.btn.primary:disabled{opacity:.45;cursor:default}
+.btn.subtle{background:var(--panel);color:var(--ink-2);border:1px solid var(--line)}
+.saved-flash{color:var(--go);font-size:12px;font-weight:600;opacity:0;transition:opacity .2s;margin-left:auto}
+.saved-flash.on{opacity:1}
+.warnline{font-size:12px;color:var(--crit);font-weight:600}
+
+/* ---- modal ---- */
+.modal-scrim{position:fixed;inset:0;background:rgba(10,12,11,.5);display:none;place-items:center;z-index:80;padding:20px}
+.modal-scrim.open{display:grid}
+.modal{background:var(--surface);border:1px solid var(--line-2);border-radius:14px;box-shadow:var(--shadow-lg);width:min(760px,96vw);max-height:88vh;display:flex;flex-direction:column;overflow:hidden}
+.modal .mh{padding:15px 18px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px}
+.modal .mh h2{font-size:16px;font-weight:700;flex:1}
+.modal .mb{padding:16px 18px;overflow:auto;display:flex;flex-direction:column;gap:12px}
+.modal textarea.code{width:100%;min-height:240px;font-family:"IBM Plex Mono";font-size:12px;line-height:1.55;border:1px solid var(--line-2);border-radius:9px;background:var(--panel);color:var(--ink);padding:12px;resize:vertical}
+.modal .mf{padding:13px 18px;border-top:1px solid var(--line);display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+.hint{font-size:12px;color:var(--muted);line-height:1.5}
+.hint code{background:var(--panel);padding:1px 5px;border-radius:4px;font-family:"IBM Plex Mono";font-size:11px}
+@media (max-width:640px){.wrap{padding:14px 12px 40px} header{padding:10px 12px} .col{flex-basis:82vw} .frow{grid-template-columns:110px 1fr 50px 74px}}
+</style>
+
+<header>
+  <div class="brand">
+    <div class="mark" aria-hidden="true"></div>
+    <div>
+      <h1>Kabal · Pipeline de Liquidez</h1>
+      <p>Proveedores de capital para KTFT, emisiones B2B y líneas de Kabal Lending</p>
+    </div>
+  </div>
+  <div class="hspring"></div>
+  <span class="src" id="src"><span class="dot"></span><span id="src-txt">snapshot</span></span>
+  <div class="search">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="Buscar proveedor, decisor, país…" autocomplete="off">
+  </div>
+  <div class="seg" id="view-seg">
+    <button data-view="board" class="on">Tablero</button>
+    <button data-view="table">Tabla</button>
+    <button data-view="prov">Proveedores</button>
+    <button data-view="lunes">Lunes</button>
+  </div>
+  <button class="ghost primary" id="new-btn">+ Nueva</button>
+  <button class="ghost" id="export-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>Sincronizar<span class="badge hidden" id="dirty-count">0</span></button>
+  <button class="icon-btn" id="theme-btn" title="Cambiar tema" aria-label="Cambiar tema">
+    <svg id="theme-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+  </button>
+</header>
+
+<div class="wrap">
+  <div id="note"></div>
+  <section class="kpis" id="kpis"></section>
+  <section class="funnel" id="funnel"></section>
+
+  <div class="filters" id="filters">
+    <select id="f-veh"></select>
+    <select id="f-tipo"></select>
+    <select id="f-pais"></select>
+    <button class="chip alerta" id="f-alerta">Con alertas</button>
+    <button class="chip kycok" id="f-kyc">KYC en verde</button>
+    <button class="chip" id="f-lost">Incluir perdidas</button>
+    <button class="clear" id="f-clear">Limpiar</button>
+  </div>
+  <div class="count-line" id="count-line"></div>
+
+  <div id="board-view"><div class="board" id="board"></div></div>
+  <div id="table-view" class="hidden"><div class="tablewrap"><table id="table"><thead></thead><tbody></tbody></table></div></div>
+  <div id="prov-view" class="hidden"><div class="tablewrap"><table id="ptable"><thead></thead><tbody></tbody></table></div></div>
+  <div id="lunes-view" class="hidden lunes"></div>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true"></aside>
+
+<div class="modal-scrim" id="modal-scrim">
+  <div class="modal">
+    <div class="mh"><h2 id="modal-title">Sincronizar cambios</h2><button class="icon-btn" id="modal-close" aria-label="Cerrar">✕</button></div>
+    <div class="mb" id="modal-body"></div>
+    <div class="mf" id="modal-foot"></div>
+  </div>
+</div>
+
+<script>
+/* =====================================================================
+   DATOS
+   SNAPSHOT: copia de las tablas liq_* al momento de publicar.
+   Si hay conector Supabase disponible, se reemplaza por datos en vivo.
+   Si ambos vienen vacíos, se muestran EJEMPLOS marcados como tal.
+   ===================================================================== */
+const SNAPSHOT = /*__SNAPSHOT__*/{"tomado":"2026-09-04T19:30:00Z","proveedores":[],"oportunidades":[],"interacciones":[],"desembolsos":[]};
+const SB = { server:"Supabase", tool:"execute_sql", project:"hnkpjrmccsehmixcsdhr" };
+
+const STAGES = [
+  {k:"identificado",      label:"Identificado",      v:"--st1", prob:5},
+  {k:"contactado",        label:"Contactado",        v:"--st2", prob:10},
+  {k:"primera_reunion",   label:"1ª reunión",        v:"--st3", prob:20},
+  {k:"segunda_reunion",   label:"2ª reunión / socios",v:"--st4", prob:35},
+  {k:"due_diligence",     label:"Due diligence",     v:"--st5", prob:50},
+  {k:"compromiso_verbal", label:"Compromiso verbal", v:"--st6", prob:70},
+  {k:"firmado",           label:"Firmado",           v:"--st7", prob:90},
+  {k:"wired",             label:"Wired",             v:"--st8", prob:100},
+  {k:"nurture",           label:"Nurture",           v:"--st-nurture", prob:5},
+  {k:"perdido",           label:"Perdido",           v:"--st-lost", prob:0},
+];
+const STAGE = Object.fromEntries(STAGES.map(s=>[s.k,s]));
+const ACTIVE = STAGES.slice(0,8).map(s=>s.k);
+const VEH = {ktft:"KTFT",emision_b2b:"Emisión B2B",linea_credito:"Línea de crédito",warehouse:"Warehouse",deuda_privada:"Deuda privada"};
+const TIPO = {family_office:"Family office",fondo:"Fondo",hnwi:"HNWI",banco:"Banco",fintech_lender:"Fintech lender",tesoreria_corporativa:"Tesorería corporativa",dao_defi:"DAO / DeFi",multilateral:"Multilateral",otro:"Otro"};
+const KYC = ["pendiente","en_proceso","verde","rojo"];
+const QUALS = ["GO","EXPLORE","DROP"];
+const META_USD = 5000000; // 1ª emisión KTFT: $5M / 500K tokens
+const SLA = {DEGRADAR:14, FRIO:10, MAX:{identificado:7,contactado:10,primera_reunion:14,segunda_reunion:14,due_diligence:30,compromiso_verbal:14,firmado:21}};
+
+/* Datos de ejemplo (solo cuando el CRM está vacío) — nombres ficticios */
+function demoData(){
+  const d=n=>{const x=new Date();x.setDate(x.getDate()+n);return x.toISOString();};
+  const day=n=>d(n).slice(0,10);
+  const P=[
+    {id:"demo-p1",nombre:"Family Office Delta [EJEMPLO]",tipo:"family_office",pais:"Panamá",ticket_min_usd:250000,ticket_max_usd:2000000,vehiculos:["ktft","emision_b2b"],yield_objetivo_pct:14,decisor:"Ana Delta",contacto_email:"ana@delta.example",kyc_estado:"verde",inversionista_calificado:true,calificacion:"GO",fuente:"referido"},
+    {id:"demo-p2",nombre:"Fondo Ceiba Credit [EJEMPLO]",tipo:"fondo",pais:"México",ticket_min_usd:1000000,ticket_max_usd:10000000,vehiculos:["warehouse","linea_credito"],yield_objetivo_pct:13,decisor:"Luis Ceiba",contacto_email:"luis@ceiba.example",kyc_estado:"en_proceso",inversionista_calificado:true,calificacion:"GO",fuente:"evento"},
+    {id:"demo-p3",nombre:"Inversionista Privado R. [EJEMPLO]",tipo:"hnwi",pais:"Honduras",ticket_min_usd:50000,ticket_max_usd:500000,vehiculos:["ktft"],yield_objetivo_pct:15,decisor:"R. Privado",kyc_estado:"pendiente",inversionista_calificado:false,calificacion:"EXPLORE",fuente:"inbound"},
+    {id:"demo-p4",nombre:"Banco Istmo [EJEMPLO]",tipo:"banco",pais:"El Salvador",ticket_min_usd:2000000,ticket_max_usd:15000000,vehiculos:["linea_credito","warehouse"],yield_objetivo_pct:11,decisor:"Comité Istmo",kyc_estado:"pendiente",inversionista_calificado:true,calificacion:"EXPLORE",fuente:"outbound"},
+    {id:"demo-p5",nombre:"Tesorería Corp. Andina [EJEMPLO]",tipo:"tesoreria_corporativa",pais:"Colombia",ticket_min_usd:500000,ticket_max_usd:3000000,vehiculos:["ktft","deuda_privada"],yield_objetivo_pct:12,decisor:"CFO Andina",kyc_estado:"rojo",inversionista_calificado:true,calificacion:"DROP",fuente:"referido"},
+    {id:"demo-p6",nombre:"DAO Liquidez LatAm [EJEMPLO]",tipo:"dao_defi",pais:"Global",ticket_min_usd:100000,ticket_max_usd:1000000,vehiculos:["ktft"],yield_objetivo_pct:16,decisor:"Multisig",kyc_estado:"pendiente",inversionista_calificado:false,calificacion:"EXPLORE",fuente:"inbound"},
+  ];
+  const O=[
+    {id:"demo-o1",proveedor_id:"demo-p1",nombre:"FO Delta · KTFT 1ª emisión",vehiculo:"ktft",monto_objetivo_usd:1000000,monto_comprometido_usd:800000,monto_firmado_usd:0,etapa:"compromiso_verbal",etapa_desde:d(-20),probabilidad_pct:70,owner:"CEO",proximo_paso:"Enviar subscription agreement",fecha_proximo_paso:day(2),fecha_compromiso_verbal:day(-20),fecha_cierre_esperada:day(20),created_at:d(-45)},
+    {id:"demo-o2",proveedor_id:"demo-p2",nombre:"Ceiba · Warehouse Kabal Lending",vehiculo:"warehouse",monto_objetivo_usd:5000000,monto_comprometido_usd:0,monto_firmado_usd:0,etapa:"due_diligence",etapa_desde:d(-12),probabilidad_pct:50,owner:"CEO",proximo_paso:"Sesión de DD con riesgo",fecha_proximo_paso:day(-3),fecha_cierre_esperada:day(60),created_at:d(-40)},
+    {id:"demo-o3",proveedor_id:"demo-p3",nombre:"R. Privado · KTFT",vehiculo:"ktft",monto_objetivo_usd:150000,monto_comprometido_usd:0,monto_firmado_usd:0,etapa:"nurture",etapa_desde:d(-8),probabilidad_pct:5,owner:"IR",proximo_paso:null,fecha_proximo_paso:null,created_at:d(-30)},
+    {id:"demo-o4",proveedor_id:"demo-p4",nombre:"Istmo · Línea de crédito revolvente",vehiculo:"linea_credito",monto_objetivo_usd:3000000,monto_comprometido_usd:0,monto_firmado_usd:0,etapa:"contactado",etapa_desde:d(-4),probabilidad_pct:10,owner:"CEO",proximo_paso:"Primera reunión con tesorería",fecha_proximo_paso:day(7),created_at:d(-9)},
+    {id:"demo-o5",proveedor_id:"demo-p5",nombre:"Andina · KTFT",vehiculo:"ktft",monto_objetivo_usd:500000,monto_comprometido_usd:0,monto_firmado_usd:0,etapa:"perdido",etapa_desde:d(-2),probabilidad_pct:0,owner:"CEO",motivo_perdida:"KYC en rojo: fuente de fondos no verificable",created_at:d(-25)},
+    {id:"demo-o6",proveedor_id:"demo-p6",nombre:"DAO LatAm · KTFT",vehiculo:"ktft",monto_objetivo_usd:300000,monto_comprometido_usd:0,monto_firmado_usd:0,etapa:"identificado",etapa_desde:d(-1),probabilidad_pct:5,owner:"IR",proximo_paso:"Responder preguntas de gobernanza",fecha_proximo_paso:day(1),created_at:d(-1)},
+    {id:"demo-o7",proveedor_id:"demo-p1",nombre:"FO Delta · Emisión B2B Torre Norte",vehiculo:"emision_b2b",monto_objetivo_usd:400000,monto_comprometido_usd:400000,monto_firmado_usd:400000,etapa:"wired",etapa_desde:d(-3),probabilidad_pct:100,owner:"CEO",proximo_paso:"Confirmar emisión de tokens",fecha_proximo_paso:day(0),fecha_compromiso_verbal:day(-15),fecha_firma:day(-6),created_at:d(-50)},
+  ];
+  const I=[
+    {id:"demo-i1",proveedor_id:"demo-p1",oportunidad_id:"demo-o1",tipo:"reunion",fecha:d(-2),resumen:"Revisión del whitepaper y waterfall",resultado:"Interés confirmado, piden SA",siguiente_accion:"Enviar subscription agreement",creado_por:"agente-liquidez"},
+    {id:"demo-i2",proveedor_id:"demo-p2",oportunidad_id:"demo-o2",tipo:"email",fecha:d(-12),resumen:"Enviado data room de cartera",resultado:"Sin respuesta",creado_por:"agente-liquidez"},
+  ];
+  const D=[{id:"demo-d1",oportunidad_id:"demo-o7",fecha:day(-3),monto_usd:400000,moneda:"USDC",referencia:"0xdemo…",cuenta_destino:"Kabal Bridge S.A. de C.V.",verificado:true}];
+  return {demo:true,proveedores:P,oportunidades:O,interacciones:I,desembolsos:D};
+}
+
+/* =====================================================================
+   ESTADO
+   ===================================================================== */
+const LS_KEY="kabal_liq_pipeline_v1";
+let raw = (SNAPSHOT.oportunidades.length||SNAPSHOT.proveedores.length) ? SNAPSHOT : demoData();
+let source = raw.demo ? "demo" : "snapshot";
+let overrides={opp:{},prov:{},nuevos:[]};
+try{ const o=JSON.parse(localStorage.getItem(LS_KEY)); if(o&&o.opp) overrides=Object.assign({opp:{},prov:{},nuevos:[]},o); }catch(e){}
+function persist(){ try{ localStorage.setItem(LS_KEY, JSON.stringify(overrides)); }catch(e){} }
+
+let provs=[], opps=[], byOpp={}, byProv={};
+function build(){
+  const P = raw.proveedores.concat(overrides.nuevos.filter(n=>n.kind==="prov").map(n=>n.rec));
+  const O = raw.oportunidades.concat(overrides.nuevos.filter(n=>n.kind==="opp").map(n=>n.rec));
+  byProv={}; provs=P.map(p=>{const o=overrides.prov[p.id]||{}; const m=Object.assign({},p,o); m._changed=!!Object.keys(o).length||String(p.id).startsWith("new-"); m._demo=!!raw.demo; byProv[m.id]=m; return m;});
+  byOpp={}; opps=O.map(x=>{const o=overrides.opp[x.id]||{}; const m=Object.assign({},x,o); m._changed=!!Object.keys(o).length||String(x.id).startsWith("new-"); m._demo=!!raw.demo; byOpp[m.id]=m; return m;});
+  enrich();
+}
+const now=()=>new Date();
+const days=(a,b)=>Math.round(((b||now())-new Date(a))/864e5*10)/10;
+function enrich(){
+  const today=now().toISOString().slice(0,10);
+  opps.forEach(o=>{
+    const p=byProv[o.proveedor_id]||{};
+    o._prov=p;
+    const st=(o.etapa!==(overrides.opp[o.id]||{}).etapa)?o.etapa_desde:(overrides.opp[o.id]._etapa_desde||now().toISOString());
+    o._dias=Math.max(0,days(st||o.created_at||now().toISOString()));
+    const inter=raw.interacciones.filter(i=>i.oportunidad_id===o.id||(!i.oportunidad_id&&i.proveedor_id===o.proveedor_id));
+    o._ultima=inter.length?inter.map(i=>i.fecha).sort().slice(-1)[0]:null;
+    o._sinContacto=Math.max(0,days(o._ultima||o.created_at||now().toISOString()));
+    o._wired=raw.desembolsos.filter(d=>d.oportunidad_id===o.id&&d.verificado).reduce((s,d)=>s+(+d.monto_usd||0),0);
+    o._pond=Math.round((+o.monto_objetivo_usd||0)*(+o.probabilidad_pct||0)/100);
+    const a=[];
+    const live=ACTIVE.includes(o.etapa)&&o.etapa!=="wired";
+    if(live&&(!o.proximo_paso||!o.fecha_proximo_paso)) a.push({k:"paso",t:"Sin próximo paso",c:"warn",w:25});
+    if(live&&o.fecha_proximo_paso&&o.fecha_proximo_paso<today) a.push({k:"vencido",t:"Paso vencido",c:"crit",w:30});
+    if(o.etapa==="compromiso_verbal"&&o.fecha_compromiso_verbal&&days(o.fecha_compromiso_verbal)>SLA.DEGRADAR) a.push({k:"degradar",t:"Verbal >14d · degradar",c:"crit",w:40});
+    if(["due_diligence","compromiso_verbal","firmado"].includes(o.etapa)&&p.kyc_estado!=="verde") a.push({k:"kyc",t:"KYC no verde",c:"crit",w:35});
+    if(live&&SLA.MAX[o.etapa]&&o._dias>SLA.MAX[o.etapa]) a.push({k:"estancado",t:"Estancada "+Math.round(o._dias)+"d",c:"warn",w:15});
+    if(live&&o._sinContacto>SLA.FRIO) a.push({k:"frio",t:"Fría "+Math.round(o._sinContacto)+"d",c:"warn",w:10});
+    o._alertas=a;
+    let score=a.reduce((s,x)=>s+x.w,0)+Math.log10(o._pond+1)*10;
+    if(o.fecha_cierre_esperada){const dd=days(now().toISOString().slice(0,10),new Date(o.fecha_cierre_esperada)); if(dd<=14)score+=15; else if(dd<=30)score+=8;}
+    o._score=Math.round(score);
+  });
+}
+function setOpp(id,patch){
+  const base=raw.oportunidades.find(x=>x.id===id)||(overrides.nuevos.find(n=>n.rec.id===id)||{}).rec||{};
+  const cur=overrides.opp[id]||{}; const next=Object.assign({},cur,patch);
+  if("etapa" in patch && patch.etapa!==cur.etapa){ next._etapa_desde=now().toISOString(); if(patch.etapa!==base.etapa){ if(!("probabilidad_pct" in patch)) next.probabilidad_pct=STAGE[patch.etapa].prob; } }
+  for(const k of Object.keys(next)){ if(k[0]==="_") continue; if(next[k]===base[k]||(next[k]===""&&(base[k]==null||base[k]===""))||(next[k]==null&&base[k]==null)) delete next[k]; }
+  if(Object.keys(next).filter(k=>k[0]!=="_").length) overrides.opp[id]=next; else delete overrides.opp[id];
+  persist(); build();
+}
+function setProv(id,patch){
+  const base=raw.proveedores.find(x=>x.id===id)||(overrides.nuevos.find(n=>n.rec.id===id)||{}).rec||{};
+  const cur=overrides.prov[id]||{}; const next=Object.assign({},cur,patch);
+  for(const k of Object.keys(next)){ if(next[k]===base[k]||(next[k]===""&&(base[k]==null||base[k]===""))) delete next[k]; }
+  if(Object.keys(next).length) overrides.prov[id]=next; else delete overrides.prov[id];
+  persist(); build();
+}
+function dirtyCount(){ return Object.keys(overrides.opp).length+Object.keys(overrides.prov).length+overrides.nuevos.length; }
+
+/* =====================================================================
+   HELPERS
+   ===================================================================== */
+const $=(s,r=document)=>r.querySelector(s);
+const $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>(s==null?"":String(s)).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function money(n){ if(n==null||n==="") return null; n=+n; if(!isFinite(n)||n===0) return null;
+  if(n>=1e9) return "$"+(n/1e9).toFixed(1)+"B"; if(n>=1e6) return "$"+(n/1e6).toFixed(n>=1e7?0:1)+"M";
+  if(n>=1e3) return "$"+Math.round(n/1e3)+"K"; return "$"+Math.round(n); }
+const money0=n=>money(n)||"$0";
+function fdate(d){ if(!d) return "—"; try{return new Date(d.length===10?d+"T12:00:00":d).toLocaleDateString("es",{day:"2-digit",month:"short",year:"numeric"});}catch(e){return d;} }
+const stColor=k=>`var(${(STAGE[k]||{}).v||"--muted"})`;
+const kycPill=k=>`<span class="pill kyc-${esc(k||"pendiente")}">KYC ${esc((k||"pendiente").replace("_"," "))}</span>`;
+
+/* =====================================================================
+   FILTROS
+   ===================================================================== */
+const state={q:"",veh:"",tipo:"",pais:"",alerta:false,kyc:false,lost:false,view:"board",sort:{key:"_score",dir:-1},psort:{key:"nombre",dir:1}};
+function uniq(list,fn){ return [...new Set(list.map(fn).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),"es")); }
+function fillSelect(el,label,vals,map){ const cur=el.value; el.innerHTML=`<option value="">${label} · todos</option>`+vals.map(v=>`<option value="${esc(v)}">${esc(map?map[v]||v:v)}</option>`).join(""); el.value=cur; }
+function fillFilters(){
+  fillSelect($("#f-veh"),"Vehículo",uniq(opps,o=>o.vehiculo),VEH);
+  fillSelect($("#f-tipo"),"Tipo de proveedor",uniq(provs,p=>p.tipo),TIPO);
+  fillSelect($("#f-pais"),"País",uniq(provs,p=>p.pais));
+}
+function matches(o){
+  const p=o._prov||{};
+  if(state.veh&&o.vehiculo!==state.veh) return false;
+  if(state.tipo&&p.tipo!==state.tipo) return false;
+  if(state.pais&&p.pais!==state.pais) return false;
+  if(state.alerta&&!o._alertas.length) return false;
+  if(state.kyc&&p.kyc_estado!=="verde") return false;
+  if(!state.lost&&o.etapa==="perdido") return false;
+  if(state.q){ const h=(o.nombre+" "+(p.nombre||"")+" "+(p.decisor||"")+" "+(p.pais||"")+" "+(TIPO[p.tipo]||"")+" "+(VEH[o.vehiculo]||"")+" "+(o.proximo_paso||"")+" "+(o.notas||"")).toLowerCase(); if(!h.includes(state.q)) return false; }
+  return true;
+}
+const visible=()=>opps.filter(matches);
+
+/* =====================================================================
+   KPIs + FUNNEL
+   ===================================================================== */
+function totals(list){
+  const t={wired:0,firmado:0,comprometido:0,pond:0,activas:0,alertas:0};
+  list.forEach(o=>{
+    t.wired+=o._wired;
+    if(["firmado","wired"].includes(o.etapa)) t.firmado+=(+o.monto_firmado_usd||0);
+    if(["compromiso_verbal","firmado","wired"].includes(o.etapa)) t.comprometido+=(+o.monto_comprometido_usd||0);
+    if(ACTIVE.includes(o.etapa)&&o.etapa!=="wired"){ t.pond+=o._pond; t.activas++; }
+    if(o._alertas.length) t.alertas++;
+  });
+  return t;
+}
+function renderKpis(){
+  const v=visible(); const t=totals(v);
+  const pct=Math.min(100,Math.round(t.wired/META_USD*100));
+  const pctF=Math.min(100-pct,Math.round((t.firmado-t.wired)/META_USD*100));
+  const pctC=Math.min(100-pct-pctF,Math.round((t.comprometido-t.firmado)/META_USD*100));
+  $("#kpis").innerHTML=`
+    <div class="kpi hero"><div class="eyebrow">Wired · meta ${money0(META_USD)}</div><div class="big mono">${money0(t.wired)}</div>
+      <div class="sub"><b>${pct}%</b> de la 1ª emisión · gap ${money0(Math.max(0,META_USD-t.wired))}</div>
+      <div class="meter" title="wired · firmado · comprometido">${pct?`<span style="flex:${pct};background:var(--st8)"></span>`:""}${pctF>0?`<span style="flex:${pctF};background:var(--st7)"></span>`:""}${pctC>0?`<span style="flex:${pctC};background:var(--st6)"></span>`:""}<span style="flex:${Math.max(1,100-pct-Math.max(0,pctF)-Math.max(0,pctC))};background:transparent"></span></div></div>
+    <div class="kpi"><div class="eyebrow">Firmado</div><div class="big mono">${money0(t.firmado)}</div><div class="sub">subscription agreements firmados</div></div>
+    <div class="kpi"><div class="eyebrow">Comprometido</div><div class="big mono">${money0(t.comprometido)}</div><div class="sub">verbal + firmado + wired</div></div>
+    <div class="kpi"><div class="eyebrow">Pipeline ponderado</div><div class="big mono">${money0(t.pond)}</div><div class="sub"><b>${t.activas}</b> oportunidad${t.activas===1?"":"es"} activa${t.activas===1?"":"s"} × probabilidad</div></div>
+    <div class="kpi ${t.alertas?'alert':''}"><div class="eyebrow">Alertas SLA</div><div class="big mono">${t.alertas}</div><div class="sub">${t.alertas?"requieren acción hoy":"sin nombres fuera de regla"}</div></div>`;
+}
+function renderFunnel(){
+  const v=visible();
+  const rows=STAGES.slice(0,8).map(s=>{const it=v.filter(o=>o.etapa===s.k); return {s,n:it.length,usd:it.reduce((a,o)=>a+(+o.monto_objetivo_usd||0),0)};});
+  const max=Math.max(1,...rows.map(r=>r.usd));
+  const reach=rows.map((r,i)=>rows.slice(i).reduce((a,x)=>a+x.n,0));
+  const conv=[];for(let i=1;i<rows.length;i++){ if(reach[i-1]) conv.push(`${rows[i-1].s.label} → ${rows[i].s.label} <b>${Math.round(reach[i]/reach[i-1]*100)}%</b>`); }
+  $("#funnel").innerHTML=`<div class="fh"><h2>Embudo por etapa</h2><span class="hint">monto objetivo · oportunidades</span><span class="eyebrow">${v.length} en vista</span></div>`+
+    rows.map(r=>`<div class="frow ${r.n?'':'zero'}" title="${esc(r.s.label)}: ${r.n} oportunidad(es) · ${money0(r.usd)}">
+      <div class="lbl"><span class="col-dot" style="background:${stColor(r.s.k)}"></span>${esc(r.s.label)}</div>
+      <div class="bar"><span style="width:${Math.max(r.usd?1.5:0,r.usd/max*100)}%;background:${stColor(r.s.k)}"></span></div>
+      <div class="n mono">${r.n}</div><div class="v mono">${r.usd?money0(r.usd):"—"}</div></div>`).join("")+
+    (conv.length?`<div class="conv">${conv.join("")}</div>`:"");
+}
+
+/* =====================================================================
+   TABLERO
+   ===================================================================== */
+function cardHTML(o){
+  const p=o._prov||{};
+  const late=o.fecha_proximo_paso&&o.fecha_proximo_paso<now().toISOString().slice(0,10)&&ACTIVE.includes(o.etapa)&&o.etapa!=="wired";
+  return `<div class="card ${o._changed?'changed':''}" draggable="true" data-id="${esc(o.id)}" style="--stage:${stColor(o.etapa)}">
+    <span class="dirty" title="Cambio sin sincronizar"></span>
+    <div class="r1"><h4>${esc(o.nombre)}</h4>${o._demo?'<span class="pill demo">ejemplo</span>':''}</div>
+    <div class="prov">${esc(p.nombre||"—")}${p.tipo?` · ${esc(TIPO[p.tipo]||p.tipo)}`:""}${p.pais?` · ${esc(p.pais)}`:""}</div>
+    <div class="meta"><span class="pill veh">${esc(VEH[o.vehiculo]||o.vehiculo)}</span><span class="amt">${money0(o.monto_objetivo_usd)}</span><span class="prob">${o.probabilidad_pct}%</span>${kycPill(p.kyc_estado)}</div>
+    ${o.etapa!=="perdido"?`<div class="next ${late?'late':''}">→ <b>${esc(o.proximo_paso||"definir próximo paso")}</b>${o.fecha_proximo_paso?`<span>${fdate(o.fecha_proximo_paso)}</span>`:""}</div>`:`<div class="next">✕ <b>${esc(o.motivo_perdida||"sin motivo")}</b></div>`}
+    ${o._alertas.length?`<div class="alerts">${o._alertas.map(a=>`<span class="al ${a.c}">${esc(a.t)}</span>`).join("")}</div>`:""}
+  </div>`;
+}
+function renderBoard(){
+  const v=visible();
+  const cols=STAGES.filter(s=>state.lost||s.k!=="perdido");
+  $("#board").innerHTML=cols.map(s=>{
+    const items=v.filter(o=>o.etapa===s.k).sort((a,b)=>b._score-a._score);
+    const val=items.reduce((a,o)=>a+(+o.monto_objetivo_usd||0),0);
+    const pond=items.reduce((a,o)=>a+o._pond,0);
+    return `<div class="col" data-stage="${s.k}">
+      <div class="col-head"><div class="top"><span class="col-dot" style="background:${stColor(s.k)}"></span><h3>${esc(s.label)}</h3><span class="n mono">${items.length}</span></div>
+        ${val>0?`<div class="val"><span>${money0(val)}</span>${s.k!=="wired"&&s.k!=="perdido"?`<span class="p">pond. ${money0(pond)}</span>`:""}</div>`:""}</div>
+      <div class="col-body" data-stage="${s.k}">${items.map(cardHTML).join("")}</div></div>`;
+  }).join("");
+  wireDnD();
+}
+let dragId=null;
+function wireDnD(){
+  $$(".card",$("#board")).forEach(c=>{
+    c.addEventListener("dragstart",e=>{dragId=c.dataset.id;c.classList.add("dragging");e.dataTransfer.effectAllowed="move";});
+    c.addEventListener("dragend",()=>{dragId=null;c.classList.remove("dragging");$$(".col").forEach(x=>x.classList.remove("dragover"));});
+    c.addEventListener("click",()=>openOpp(c.dataset.id));
+  });
+  $$(".col",$("#board")).forEach(col=>{
+    col.addEventListener("dragover",e=>{e.preventDefault();col.classList.add("dragover");e.dataTransfer.dropEffect="move";});
+    col.addEventListener("dragleave",e=>{ if(!col.contains(e.relatedTarget)) col.classList.remove("dragover"); });
+    col.addEventListener("drop",e=>{
+      e.preventDefault();col.classList.remove("dragover");
+      const stage=col.dataset.stage; const o=byOpp[dragId];
+      if(!o||o.etapa===stage) return;
+      if(stage==="wired"&&(o._prov||{}).kyc_estado!=="verde"){ toast("KYC antes del wire: "+(o._prov||{}).nombre+" no tiene KYC en verde. La base rechazará el movimiento."); return; }
+      if(stage==="perdido"){ openOpp(dragId,"perdido"); return; }
+      setOpp(dragId,{etapa:stage}); refresh();
+    });
+  });
+}
+function toast(msg){ const n=$("#note"); n.innerHTML=`<div class="note err"><strong>Regla dura.</strong> ${esc(msg)}</div>`+n.innerHTML; setTimeout(()=>{const x=$("#note .note.err"); if(x) x.remove();},6000); }
+
+/* =====================================================================
+   TABLA
+   ===================================================================== */
+const COLS=[{k:"nombre",t:"Oportunidad",cls:"name"},{k:"_provName",t:"Proveedor"},{k:"vehiculo",t:"Vehículo"},{k:"etapa",t:"Etapa"},{k:"monto_objetivo_usd",t:"Objetivo",num:true},{k:"probabilidad_pct",t:"Prob.",num:true},{k:"_pond",t:"Ponderado",num:true},{k:"_dias",t:"Días",num:true},{k:"fecha_proximo_paso",t:"Próximo paso"},{k:"_score",t:"Prioridad",num:true}];
+function renderTable(){
+  let v=visible().map(o=>Object.assign(o,{_provName:(o._prov||{}).nombre||""}));
+  const {key,dir}=state.sort;
+  v=[...v].sort((a,b)=>{let x=a[key],y=b[key]; if(COLS.find(c=>c.k===key).num){x=+x||0;y=+y||0;return (x-y)*dir;} x=(x==null?"":String(x)).toLowerCase();y=(y==null?"":String(y)).toLowerCase(); return x<y?-dir:x>y?dir:0;});
+  $("#table thead").innerHTML="<tr>"+COLS.map(c=>`<th data-k="${c.k}" class="${c.num?'num':''}">${c.t}${key===c.k?(dir>0?" ▲":" ▼"):""}</th>`).join("")+"</tr>";
+  $("#table tbody").innerHTML=v.map(o=>`<tr data-id="${esc(o.id)}">
+    <td class="name">${esc(o.nombre)}${o._changed?' <span style="color:var(--accent)">●</span>':''}${o._alertas.length?` <span class="al ${o._alertas[0].c}" style="margin-left:4px">${o._alertas.length}</span>`:""}</td>
+    <td>${esc(o._provName||"—")} ${kycPill((o._prov||{}).kyc_estado)}</td>
+    <td>${esc(VEH[o.vehiculo]||o.vehiculo)}</td>
+    <td><span class="stage-pill"><span class="col-dot" style="background:${stColor(o.etapa)}"></span>${esc(STAGE[o.etapa].label)}</span></td>
+    <td class="num mono"><span class="amt">${money0(o.monto_objetivo_usd)}</span></td>
+    <td class="num mono">${o.probabilidad_pct}%</td>
+    <td class="num mono">${money0(o._pond)}</td>
+    <td class="num mono">${Math.round(o._dias)}</td>
+    <td>${o.proximo_paso?`${esc(o.proximo_paso)} <span class="mono" style="color:var(--muted)">${fdate(o.fecha_proximo_paso)}</span>`:"—"}</td>
+    <td class="num mono">${o._score}</td></tr>`).join("")||`<tr><td colspan="10" class="empty">Sin oportunidades con estos filtros.</td></tr>`;
+  $$("#table thead th").forEach(th=>th.onclick=()=>{const k=th.dataset.k; if(state.sort.key===k) state.sort.dir*=-1; else state.sort={key:k,dir:COLS.find(c=>c.k===k).num?-1:1}; renderTable();});
+  $$("#table tbody tr[data-id]").forEach(tr=>tr.onclick=()=>openOpp(tr.dataset.id));
+}
+
+/* =====================================================================
+   PROVEEDORES
+   ===================================================================== */
+const PCOLS=[{k:"nombre",t:"Proveedor"},{k:"tipo",t:"Tipo"},{k:"pais",t:"País"},{k:"kyc_estado",t:"KYC"},{k:"calificacion",t:"Calif."},{k:"_ticket",t:"Ticket"},{k:"_activas",t:"Activas",num:true},{k:"_pipeline",t:"Pipeline",num:true},{k:"_wired",t:"Wired",num:true},{k:"decisor",t:"Decisor"}];
+function renderProv(){
+  let v=provs.map(p=>{ const os=opps.filter(o=>o.proveedor_id===p.id);
+    return Object.assign(p,{_activas:os.filter(o=>ACTIVE.includes(o.etapa)&&o.etapa!=="wired").length,_pipeline:os.filter(o=>!["perdido","nurture"].includes(o.etapa)).reduce((a,o)=>a+(+o.monto_objetivo_usd||0),0),_wired:os.reduce((a,o)=>a+o._wired,0),_ticket:(p.ticket_min_usd||p.ticket_max_usd)?`${money(p.ticket_min_usd)||"?"}–${money(p.ticket_max_usd)||"?"}`:""}); });
+  if(state.q) v=v.filter(p=>(p.nombre+" "+(p.decisor||"")+" "+(p.pais||"")+" "+(TIPO[p.tipo]||"")).toLowerCase().includes(state.q));
+  if(state.tipo) v=v.filter(p=>p.tipo===state.tipo); if(state.pais) v=v.filter(p=>p.pais===state.pais); if(state.kyc) v=v.filter(p=>p.kyc_estado==="verde");
+  const {key,dir}=state.psort;
+  v=[...v].sort((a,b)=>{let x=a[key],y=b[key]; if(PCOLS.find(c=>c.k===key).num){x=+x||0;y=+y||0;return (x-y)*dir;} x=(x==null?"":String(x)).toLowerCase();y=(y==null?"":String(y)).toLowerCase(); return x<y?-dir:x>y?dir:0;});
+  $("#ptable thead").innerHTML="<tr>"+PCOLS.map(c=>`<th data-k="${c.k}" class="${c.num?'num':''}">${c.t}${key===c.k?(dir>0?" ▲":" ▼"):""}</th>`).join("")+"</tr>";
+  $("#ptable tbody").innerHTML=v.map(p=>`<tr data-id="${esc(p.id)}">
+    <td class="name">${esc(p.nombre)}${p._changed?' <span style="color:var(--accent)">●</span>':''}</td><td>${esc(TIPO[p.tipo]||p.tipo||"—")}</td><td>${esc(p.pais||"—")}</td>
+    <td>${kycPill(p.kyc_estado)}</td><td><span class="pill ${esc(p.calificacion||"EXPLORE")}">${esc(p.calificacion||"EXPLORE")}</span></td>
+    <td class="mono">${esc(p._ticket||"—")}</td><td class="num mono">${p._activas}</td><td class="num mono"><span class="amt">${money0(p._pipeline)}</span></td><td class="num mono">${money0(p._wired)}</td><td>${esc(p.decisor||"—")}</td></tr>`).join("")||`<tr><td colspan="10" class="empty">Sin proveedores.</td></tr>`;
+  $$("#ptable thead th").forEach(th=>th.onclick=()=>{const k=th.dataset.k; if(state.psort.key===k) state.psort.dir*=-1; else state.psort={key:k,dir:PCOLS.find(c=>c.k===k).num?-1:1}; renderProv();});
+  $$("#ptable tbody tr[data-id]").forEach(tr=>tr.onclick=()=>openProv(tr.dataset.id));
+}
+
+/* =====================================================================
+   LUNES DE LIQUIDEZ
+   ===================================================================== */
+function renderLunes(){
+  const v=opps; const t=totals(v);
+  const act=v.filter(o=>ACTIVE.includes(o.etapa)&&o.etapa!=="wired").sort((a,b)=>b._score-a._score||b._pond-a._pond);
+  const top3=act.slice(0,3); const alerts=act.filter(o=>o._alertas.length);
+  const vehs=uniq(v,o=>o.vehiculo).map(k=>{const os=v.filter(o=>o.vehiculo===k); const tt=totals(os); return {k,activas:tt.activas,pipeline:os.filter(o=>!["perdido","nurture"].includes(o.etapa)).reduce((a,o)=>a+(+o.monto_objetivo_usd||0),0),pond:tt.pond,comp:tt.comprometido,firm:tt.firmado,wired:tt.wired};}).sort((a,b)=>b.pipeline-a.pipeline);
+  const lost={}; v.filter(o=>o.etapa==="perdido").forEach(o=>{const m=(o.motivo_perdida||"(sin motivo)").trim(); lost[m]=lost[m]||{n:0,usd:0}; lost[m].n++; lost[m].usd+=(+o.monto_objetivo_usd||0);});
+  const hoy=now().toLocaleDateString("es",{weekday:"long",day:"2-digit",month:"long",year:"numeric"});
+  $("#lunes-view").innerHTML=`
+    <div class="panel wide"><h2>Lunes de liquidez <span class="eyebrow">${esc(hoy)}</span></h2>
+      <div class="summary">
+        <div><span class="eyebrow">Wired</span><span class="v acc">${money0(t.wired)}</span></div>
+        <div><span class="eyebrow">Firmado</span><span class="v">${money0(t.firmado)}</span></div>
+        <div><span class="eyebrow">Comprometido</span><span class="v">${money0(t.comprometido)}</span></div>
+        <div><span class="eyebrow">Ponderado</span><span class="v">${money0(t.pond)}</span></div>
+        <div><span class="eyebrow">Meta 1ª emisión</span><span class="v">${money0(META_USD)}</span></div>
+        <div><span class="eyebrow">Gap</span><span class="v" style="color:var(--crit)">${money0(Math.max(0,META_USD-t.wired))}</span></div>
+        <div><span class="eyebrow">Activas · nurture · perdidas</span><span class="v">${t.activas} · ${v.filter(o=>o.etapa==="nurture").length} · ${v.filter(o=>o.etapa==="perdido").length}</span></div>
+      </div></div>
+    <div class="panel"><h2>Los 3 más calientes <span class="eyebrow">acción del día</span></h2>
+      <div class="top3">${top3.map((o,i)=>`<div class="it" data-id="${esc(o.id)}"><span class="rank">${i+1}</span><div><div class="t">${esc(o.nombre)}</div><div class="s">${esc(STAGE[o.etapa].label)} · ${esc((o._prov||{}).nombre||"")}<br>→ <b>${esc(o.proximo_paso||"DEFINIR PRÓXIMO PASO")}</b>${o.fecha_proximo_paso?` (${fdate(o.fecha_proximo_paso)})`:""}</div></div><div class="m">${money0(o._pond)}<br><span style="color:var(--muted);font-weight:400">de ${money0(o.monto_objetivo_usd)}</span></div></div>`).join("")||`<div class="hint">Sin oportunidades activas.</div>`}</div></div>
+    <div class="panel"><h2>Alertas SLA <span class="eyebrow">${alerts.length} nombre${alerts.length===1?"":"s"}</span></h2>
+      <div class="allist">${alerts.map(o=>`<div class="it" data-id="${esc(o.id)}"><span class="who">${esc(o.nombre)}</span><span class="why">${o._alertas.map(a=>esc(a.t)).join(" · ")}</span></div>`).join("")||`<div class="hint">Ninguna. Todo nombre vivo tiene próximo paso con fecha.</div>`}</div></div>
+    <div class="panel"><h2>Por vehículo</h2><div class="tablewrap" style="border:none"><table class="vtab"><thead><tr><th>Vehículo</th><th class="num">Activas</th><th class="num">Pipeline</th><th class="num">Ponderado</th><th class="num">Comprometido</th><th class="num">Firmado</th><th class="num">Wired</th></tr></thead>
+      <tbody>${vehs.map(x=>`<tr style="cursor:default"><td>${esc(VEH[x.k]||x.k)}</td><td class="num mono">${x.activas}</td><td class="num mono">${money0(x.pipeline)}</td><td class="num mono">${money0(x.pond)}</td><td class="num mono">${money0(x.comp)}</td><td class="num mono">${money0(x.firm)}</td><td class="num mono">${money0(x.wired)}</td></tr>`).join("")}</tbody></table></div></div>
+    <div class="panel"><h2>Motivos de pérdida <span class="eyebrow">checklist de la próxima emisión</span></h2>
+      <div class="tablewrap" style="border:none"><table class="vtab"><thead><tr><th>Motivo</th><th class="num">Casos</th><th class="num">Monto</th></tr></thead>
+      <tbody>${Object.entries(lost).sort((a,b)=>b[1].n-a[1].n).map(([m,x])=>`<tr style="cursor:default"><td style="white-space:normal">${esc(m)}</td><td class="num mono">${x.n}</td><td class="num mono">${money0(x.usd)}</td></tr>`).join("")||`<tr><td colspan="3" class="hint" style="padding:10px 12px">Sin pérdidas registradas.</td></tr>`}</tbody></table></div></div>`;
+  $$("#lunes-view [data-id]").forEach(el=>el.onclick=()=>openOpp(el.dataset.id));
+}
+
+/* =====================================================================
+   DRAWERS
+   ===================================================================== */
+function openOpp(id,forceStage){
+  const o=byOpp[id]; if(!o) return; const p=o._prov||{};
+  const d=$("#drawer");
+  const hist=raw.interacciones.filter(i=>i.oportunidad_id===id||(!i.oportunidad_id&&i.proveedor_id===o.proveedor_id)).sort((a,b)=>b.fecha<a.fecha?-1:1).slice(0,8);
+  const wires=raw.desembolsos.filter(x=>x.oportunidad_id===id);
+  d.innerHTML=`
+    <div class="dh"><div style="flex:1"><div class="eyebrow" style="margin-bottom:6px">${esc(VEH[o.vehiculo]||o.vehiculo)} · ${esc((o._prov||{}).pais||"")}${o._demo?' · <span class="pill demo">ejemplo</span>':''}</div><h2>${esc(o.nombre)}</h2>
+      <div style="font-size:12.5px;color:var(--ink-2);margin-top:4px">${esc(p.nombre||"")} · ${esc(TIPO[p.tipo]||"")} ${kycPill(p.kyc_estado)} <button class="link" id="d-goprov" style="background:none;border:none;color:var(--accent);font-weight:600;padding:0;font-size:12px">ver proveedor →</button></div></div>
+      <button class="icon-btn" id="drawer-close" aria-label="Cerrar">✕</button></div>
+    <div class="db">
+      <div class="grid2">
+        <div class="field"><label for="d-etapa">Etapa</label><select id="d-etapa">${STAGES.map(s=>`<option value="${s.k}" ${s.k===(forceStage||o.etapa)?"selected":""}>${s.label}</option>`).join("")}</select></div>
+        <div class="field"><label for="d-prob">Probabilidad %</label><input id="d-prob" class="mono" type="number" min="0" max="100" value="${o.probabilidad_pct}"></div>
+        <div class="field"><label for="d-obj">Monto objetivo USD</label><input id="d-obj" class="mono" type="number" min="1" value="${o.monto_objetivo_usd}"></div>
+        <div class="field"><label for="d-comp">Comprometido USD</label><input id="d-comp" class="mono" type="number" min="0" value="${o.monto_comprometido_usd||0}"></div>
+        <div class="field"><label for="d-paso">Próximo paso</label><input id="d-paso" value="${esc(o.proximo_paso||"")}" placeholder="Qué sigue, con verbo"></div>
+        <div class="field"><label for="d-fecha">Fecha del paso</label><input id="d-fecha" class="mono" type="date" value="${esc(o.fecha_proximo_paso||"")}"></div>
+        <div class="field"><label for="d-cierre">Cierre esperado</label><input id="d-cierre" class="mono" type="date" value="${esc(o.fecha_cierre_esperada||"")}"></div>
+        <div class="field"><label for="d-owner">Owner</label><input id="d-owner" value="${esc(o.owner||"CEO")}"></div>
+      </div>
+      <div class="field" id="f-motivo" ${(forceStage||o.etapa)==="perdido"?"":"hidden"}><label for="d-motivo">Motivo de pérdida (obligatorio)</label><input id="d-motivo" value="${esc(o.motivo_perdida||"")}" placeholder="Ticket fuera de rango, KYC, yield, timing…"></div>
+      <div class="warnline" id="d-warn"></div>
+      ${o._alertas.length?`<div class="box"><div class="eyebrow">Alertas</div>${o._alertas.map(a=>`<span class="al ${a.c}" style="margin:0 4px 4px 0">${esc(a.t)}</span>`).join("")}</div>`:""}
+      <dl class="kv">
+        <dt>Ponderado</dt><dd class="mono" style="color:var(--gold);font-weight:600">${money0(o._pond)}</dd>
+        <dt>Firmado</dt><dd class="mono">${money0(o.monto_firmado_usd)}${o.fecha_firma?` · ${fdate(o.fecha_firma)}`:""}</dd>
+        <dt>Wired</dt><dd class="mono">${money0(o._wired)}${wires.length?` · ${wires.length} desembolso${wires.length===1?"":"s"}${wires.some(w=>!w.verificado)?" (hay sin verificar)":""}`:""}</dd>
+        <dt>Días en etapa</dt><dd class="mono">${Math.round(o._dias)}${o.fecha_compromiso_verbal?` · verbal desde ${fdate(o.fecha_compromiso_verbal)}`:""}</dd>
+        <dt>Último contacto</dt><dd>${o._ultima?fdate(o._ultima)+" ("+Math.round(o._sinContacto)+"d)":"sin interacciones"}</dd>
+        <dt>Decisor</dt><dd>${esc(p.decisor||"—")}${p.contacto_email?` · <a href="mailto:${esc(p.contacto_email)}">${esc(p.contacto_email)}</a>`:""}</dd>
+        <dt>Ticket</dt><dd class="mono">${money(p.ticket_min_usd)||"?"}–${money(p.ticket_max_usd)||"?"}${p.yield_objetivo_pct?` · yield obj. ${p.yield_objetivo_pct}%`:""}</dd>
+      </dl>
+      ${hist.length?`<div class="box"><div class="eyebrow">Bitácora</div><div class="hist">${hist.map(i=>`<div class="h"><span class="d">${fdate(i.fecha)}</span><span><b>${esc(i.tipo)}</b> · ${esc(i.resumen||"")}${i.resultado?` — <i>${esc(i.resultado)}</i>`:""}</span></div>`).join("")}</div></div>`:""}
+      <div class="field"><label for="d-inter">Registrar interacción de hoy</label><input id="d-inter" placeholder="Reunión / llamada / email: qué pasó y qué sigue"></div>
+      <div class="field"><label for="d-notas">Notas</label><textarea id="d-notas">${esc(o.notas||"")}</textarea></div>
+    </div>
+    <div class="df"><button class="btn primary" id="d-save" ${forceStage?"":"disabled"}>Guardar cambios</button><button class="btn subtle" id="d-cancel">Cerrar</button><span class="saved-flash" id="d-flash">✓ Guardado</span></div>`;
+  d.classList.add("open"); d.setAttribute("aria-hidden","false"); $("#scrim").classList.add("open");
+  const save=$("#d-save");
+  const read=()=>({etapa:$("#d-etapa").value,probabilidad_pct:+$("#d-prob").value,monto_objetivo_usd:+$("#d-obj").value,monto_comprometido_usd:+$("#d-comp").value,proximo_paso:$("#d-paso").value.trim()||null,fecha_proximo_paso:$("#d-fecha").value||null,fecha_cierre_esperada:$("#d-cierre").value||null,owner:$("#d-owner").value.trim()||null,motivo_perdida:$("#d-motivo").value.trim()||null,notas:$("#d-notas").value||null});
+  const check=()=>{
+    const r=read(); const w=$("#d-warn"); let msg="";
+    $("#f-motivo").hidden = r.etapa!=="perdido";
+    if(r.etapa==="wired"&&p.kyc_estado!=="verde") msg="KYC antes del wire: la base rechaza «wired» sin KYC en verde.";
+    if(r.etapa==="perdido"&&!r.motivo_perdida) msg="Perdido exige motivo (es el checklist de la próxima emisión).";
+    w.textContent=msg;
+    const same=Object.keys(r).every(k=>(r[k]==null?"":String(r[k]))===(o[k]==null?"":String(o[k])))&&!$("#d-inter").value.trim();
+    save.disabled=!!msg||same;
+  };
+  $$("#drawer select,#drawer input,#drawer textarea").forEach(el=>{el.addEventListener("input",check);el.addEventListener("change",check);});
+  $("#d-etapa").addEventListener("change",()=>{ const s=STAGE[$("#d-etapa").value]; if(s&&$("#d-etapa").value!==o.etapa) $("#d-prob").value=s.prob; check(); });
+  if(forceStage) check();
+  save.onclick=()=>{
+    const r=read(); const patch={}; Object.keys(r).forEach(k=>{ if((r[k]==null?"":String(r[k]))!==(o[k]==null?"":String(o[k]))) patch[k]=r[k]; });
+    const inter=$("#d-inter").value.trim();
+    if(inter){ overrides.nuevos.push({kind:"inter",rec:{id:"new-i-"+Date.now(),proveedor_id:o.proveedor_id,oportunidad_id:o.id,tipo:"nota",fecha:now().toISOString(),resumen:inter,creado_por:"tablero"}}); raw.interacciones.push(overrides.nuevos[overrides.nuevos.length-1].rec); persist(); }
+    if(Object.keys(patch).length) setOpp(id,patch); else build();
+    const f=$("#d-flash");f.classList.add("on");setTimeout(()=>f.classList.remove("on"),1400);
+    refresh(); openOpp(id);
+  };
+  $("#drawer-close").onclick=closeDrawer; $("#d-cancel").onclick=closeDrawer; $("#d-goprov").onclick=()=>openProv(o.proveedor_id);
+}
+function openProv(id){
+  const p=byProv[id]; if(!p) return; const d=$("#drawer");
+  const os=opps.filter(o=>o.proveedor_id===id);
+  d.innerHTML=`
+    <div class="dh"><div style="flex:1"><div class="eyebrow" style="margin-bottom:6px">${esc(TIPO[p.tipo]||p.tipo||"")} · ${esc(p.pais||"")}${p._demo?' · <span class="pill demo">ejemplo</span>':''}</div><h2>${esc(p.nombre)}</h2></div><button class="icon-btn" id="drawer-close" aria-label="Cerrar">✕</button></div>
+    <div class="db">
+      <div class="grid2">
+        <div class="field"><label for="p-kyc">Estado KYC</label><select id="p-kyc">${KYC.map(k=>`<option value="${k}" ${k===p.kyc_estado?"selected":""}>${k.replace("_"," ")}</option>`).join("")}</select></div>
+        <div class="field"><label for="p-cal">Calificación</label><select id="p-cal">${QUALS.map(q=>`<option value="${q}" ${q===(p.calificacion||"EXPLORE")?"selected":""}>${q}</option>`).join("")}</select></div>
+        <div class="field"><label for="p-dec">Decisor</label><input id="p-dec" value="${esc(p.decisor||"")}"></div>
+        <div class="field"><label for="p-mail">Email</label><input id="p-mail" value="${esc(p.contacto_email||"")}"></div>
+        <div class="field"><label for="p-min">Ticket mín. USD</label><input id="p-min" class="mono" type="number" value="${p.ticket_min_usd||""}"></div>
+        <div class="field"><label for="p-max">Ticket máx. USD</label><input id="p-max" class="mono" type="number" value="${p.ticket_max_usd||""}"></div>
+      </div>
+      <div class="box"><div class="eyebrow">KYC antes del wire</div>Ningún cierre avanza a «wired» sin KYC en verde. La verificación la hace kabal-aml-kyc-officer; acá solo se registra el resultado.</div>
+      <dl class="kv">
+        <dt>Vehículos</dt><dd>${(p.vehiculos||[]).map(v=>`<span class="pill veh" style="margin-right:4px">${esc(VEH[v]||v)}</span>`).join("")||"—"}</dd>
+        <dt>Yield objetivo</dt><dd class="mono">${p.yield_objetivo_pct?p.yield_objetivo_pct+"%":"—"}${p.horizonte_meses?` · ${p.horizonte_meses} meses`:""}</dd>
+        <dt>Calificado LEAD</dt><dd>${p.inversionista_calificado?"sí (≥ USD 500K)":"no / por confirmar"}</dd>
+        <dt>Fuente</dt><dd>${esc(p.fuente||"—")}</dd>
+      </dl>
+      <div class="box"><div class="eyebrow">Oportunidades (${os.length})</div><div class="hist">${os.map(o=>`<div class="h" style="grid-template-columns:1fr auto;cursor:pointer" data-id="${esc(o.id)}"><span><span class="col-dot" style="background:${stColor(o.etapa)};display:inline-block;margin-right:6px"></span>${esc(o.nombre)} · ${esc(STAGE[o.etapa].label)}</span><span class="mono" style="color:var(--gold);font-weight:600">${money0(o.monto_objetivo_usd)}</span></div>`).join("")||"Ninguna todavía."}</div></div>
+      <div class="field"><label for="p-notas">Notas</label><textarea id="p-notas">${esc(p.notas||"")}</textarea></div>
+    </div>
+    <div class="df"><button class="btn primary" id="p-save" disabled>Guardar cambios</button><button class="btn subtle" id="d-cancel">Cerrar</button><span class="saved-flash" id="d-flash">✓ Guardado</span></div>`;
+  d.classList.add("open"); d.setAttribute("aria-hidden","false"); $("#scrim").classList.add("open");
+  const read=()=>({kyc_estado:$("#p-kyc").value,calificacion:$("#p-cal").value,decisor:$("#p-dec").value.trim()||null,contacto_email:$("#p-mail").value.trim()||null,ticket_min_usd:$("#p-min").value?+$("#p-min").value:null,ticket_max_usd:$("#p-max").value?+$("#p-max").value:null,notas:$("#p-notas").value||null});
+  const check=()=>{ const r=read(); $("#p-save").disabled=Object.keys(r).every(k=>(r[k]==null?"":String(r[k]))===(p[k]==null?"":String(p[k]))); };
+  $$("#drawer select,#drawer input,#drawer textarea").forEach(el=>{el.addEventListener("input",check);el.addEventListener("change",check);});
+  $("#p-save").onclick=()=>{ const r=read(); const patch={}; Object.keys(r).forEach(k=>{ if((r[k]==null?"":String(r[k]))!==(p[k]==null?"":String(p[k]))) patch[k]=r[k]; }); if("kyc_estado" in patch) patch.kyc_fecha=now().toISOString().slice(0,10); setProv(id,patch); const f=$("#d-flash");f.classList.add("on");setTimeout(()=>f.classList.remove("on"),1400); refresh(); openProv(id); };
+  $("#drawer-close").onclick=closeDrawer; $("#d-cancel").onclick=closeDrawer;
+  $$("#drawer .hist [data-id]").forEach(el=>el.onclick=()=>openOpp(el.dataset.id));
+}
+function closeDrawer(){ $("#drawer").classList.remove("open"); $("#drawer").setAttribute("aria-hidden","true"); $("#scrim").classList.remove("open"); }
+$("#scrim").onclick=closeDrawer;
+
+/* =====================================================================
+   NUEVA OPORTUNIDAD / PROVEEDOR
+   ===================================================================== */
+const modal=$("#modal-scrim");
+function openNew(){
+  $("#modal-title").textContent="Nueva oportunidad";
+  $("#modal-body").innerHTML=`
+    <p class="hint">Elegí un proveedor existente o creá uno nuevo. La oportunidad entra en «Identificado» con probabilidad 5%.</p>
+    <div class="grid2">
+      <div class="field"><label for="n-prov">Proveedor</label><select id="n-prov"><option value="">— Nuevo proveedor —</option>${provs.filter(p=>!p._demo).map(p=>`<option value="${esc(p.id)}">${esc(p.nombre)}</option>`).join("")}</select></div>
+      <div class="field" id="n-newp"><label for="n-pname">Nombre del proveedor</label><input id="n-pname" placeholder="Family Office X"></div>
+      <div class="field" id="n-newp2"><label for="n-ptipo">Tipo</label><select id="n-ptipo">${Object.entries(TIPO).map(([k,v])=>`<option value="${k}">${v}</option>`).join("")}</select></div>
+      <div class="field" id="n-newp3"><label for="n-ppais">País</label><input id="n-ppais" placeholder="Panamá"></div>
+      <div class="field"><label for="n-nombre">Nombre de la oportunidad</label><input id="n-nombre" placeholder="FO X · KTFT 1ª emisión"></div>
+      <div class="field"><label for="n-veh">Vehículo</label><select id="n-veh">${Object.entries(VEH).map(([k,v])=>`<option value="${k}">${v}</option>`).join("")}</select></div>
+      <div class="field"><label for="n-monto">Monto objetivo USD</label><input id="n-monto" class="mono" type="number" min="1" placeholder="500000"></div>
+      <div class="field"><label for="n-paso">Próximo paso</label><input id="n-paso" placeholder="Enviar whitepaper"></div>
+      <div class="field"><label for="n-fecha">Fecha del paso</label><input id="n-fecha" class="mono" type="date"></div>
+      <div class="field"><label for="n-dec">Decisor</label><input id="n-dec" placeholder="Nombre y cargo"></div>
+    </div><div class="warnline" id="n-warn"></div>`;
+  $("#modal-foot").innerHTML=`<button class="btn primary" id="n-save">Agregar al tablero</button><button class="btn subtle" id="modal-cancel">Cancelar</button><span class="hint" style="margin-left:auto">Queda como cambio pendiente hasta sincronizar.</span>`;
+  const tog=()=>{ const isNew=!$("#n-prov").value; ["#n-newp","#n-newp2","#n-newp3"].forEach(s=>$(s).hidden=!isNew); };
+  $("#n-prov").onchange=tog; tog();
+  $("#n-save").onclick=()=>{
+    const w=$("#n-warn"); const nombre=$("#n-nombre").value.trim(); const monto=+$("#n-monto").value; let pid=$("#n-prov").value;
+    if(!nombre||!(monto>0)){ w.textContent="Falta el nombre de la oportunidad o el monto objetivo."; return; }
+    if(!pid){ const pn=$("#n-pname").value.trim(); if(!pn){ w.textContent="Falta el nombre del proveedor."; return; }
+      pid="new-p-"+Date.now(); if(raw.demo){ raw=Object.assign({},raw,{demo:false,proveedores:[],oportunidades:[],interacciones:[],desembolsos:[]}); source="snapshot"; }
+      overrides.nuevos.push({kind:"prov",rec:{id:pid,nombre:pn,tipo:$("#n-ptipo").value,pais:$("#n-ppais").value.trim()||null,decisor:$("#n-dec").value.trim()||null,kyc_estado:"pendiente",calificacion:"EXPLORE",vehiculos:[$("#n-veh").value],fuente:"tablero"}}); }
+    overrides.nuevos.push({kind:"opp",rec:{id:"new-o-"+Date.now(),proveedor_id:pid,nombre,vehiculo:$("#n-veh").value,monto_objetivo_usd:monto,monto_comprometido_usd:0,monto_firmado_usd:0,etapa:"identificado",etapa_desde:now().toISOString(),probabilidad_pct:5,owner:"CEO",proximo_paso:$("#n-paso").value.trim()||null,fecha_proximo_paso:$("#n-fecha").value||null,created_at:now().toISOString()}});
+    persist(); build(); modal.classList.remove("open"); refresh();
+  };
+  $("#modal-cancel").onclick=()=>modal.classList.remove("open");
+  modal.classList.add("open");
+}
+$("#new-btn").onclick=openNew;
+
+/* =====================================================================
+   SINCRONIZAR (SQL / CSV / aplicar en vivo)
+   ===================================================================== */
+const sq=s=>"'"+String(s).replace(/'/g,"''")+"'";
+const lit=v=>v==null||v===""?"null":(typeof v==="number"?String(v):sq(v));
+function buildSQL(){
+  const L=["-- Pipeline de Liquidez · aplicar en Supabase (tablas liq_*)","begin;"];
+  overrides.nuevos.filter(n=>n.kind==="prov").forEach(({rec:p})=>L.push(`insert into liq_proveedores (nombre,tipo,pais,decisor,vehiculos,fuente) values (${sq(p.nombre)},${sq(p.tipo)},${lit(p.pais)},${lit(p.decisor)},'{${(p.vehiculos||[]).join(",")}}','tablero') on conflict (nombre) do nothing;`));
+  overrides.nuevos.filter(n=>n.kind==="opp").forEach(({rec:o})=>{
+    const pn=(byProv[o.proveedor_id]||{}).nombre; const pref=String(o.proveedor_id).startsWith("new-")?`(select id from liq_proveedores where nombre=${sq(pn)})`:sq(o.proveedor_id);
+    const ov=overrides.opp[o.id]||{}; const m=Object.assign({},o,ov);
+    L.push(`insert into liq_oportunidades (proveedor_id,nombre,vehiculo,monto_objetivo_usd,monto_comprometido_usd,etapa,probabilidad_pct,owner,proximo_paso,fecha_proximo_paso,fecha_cierre_esperada,motivo_perdida,notas) values (${pref},${sq(m.nombre)},${sq(m.vehiculo)},${m.monto_objetivo_usd},${m.monto_comprometido_usd||0},${sq(m.etapa)},${m.probabilidad_pct},${lit(m.owner)},${lit(m.proximo_paso)},${lit(m.fecha_proximo_paso)},${lit(m.fecha_cierre_esperada)},${lit(m.motivo_perdida)},${lit(m.notas)});`);
+  });
+  Object.entries(overrides.prov).forEach(([id,o])=>{ if(String(id).startsWith("new-")) return; const sets=Object.entries(o).map(([k,v])=>`${k}=${lit(v)}`); if(sets.length) L.push(`update liq_proveedores set ${sets.join(", ")} where id=${sq(id)}; -- ${(byProv[id]||{}).nombre||""}`); });
+  Object.entries(overrides.opp).forEach(([id,o])=>{ if(String(id).startsWith("new-")) return; const name=(byOpp[id]||{}).nombre||"";
+    if("etapa" in o) L.push(`select liq_mover_etapa(${sq(id)}, ${sq(o.etapa)}, ${lit(o.motivo_perdida)}, ${lit(o.proximo_paso)}, ${lit(o.fecha_proximo_paso)}, ${"monto_comprometido_usd" in o?o.monto_comprometido_usd:"null"}); -- ${name}`);
+    const rest=Object.entries(o).filter(([k])=>k[0]!=="_"&&!(("etapa" in o)&&["etapa","motivo_perdida","proximo_paso","fecha_proximo_paso","monto_comprometido_usd"].includes(k)));
+    if(rest.length) L.push(`update liq_oportunidades set ${rest.map(([k,v])=>`${k}=${lit(v)}`).join(", ")} where id=${sq(id)}; -- ${name}`); });
+  overrides.nuevos.filter(n=>n.kind==="inter").forEach(({rec:i})=>{ if(String(i.oportunidad_id).startsWith("new-")) return; L.push(`insert into liq_interacciones (proveedor_id,oportunidad_id,tipo,resumen,creado_por) values (${sq(i.proveedor_id)},${sq(i.oportunidad_id)},'nota',${sq(i.resumen)},'tablero');`); });
+  L.push("commit;");
+  return L.length>3?L.join("\n"):"-- No hay cambios pendientes.";
+}
+function buildCSV(){
+  const head=["oportunidad","proveedor","vehiculo","etapa","monto_objetivo_usd","probabilidad_pct","proximo_paso","fecha_proximo_paso","alertas"];
+  const q=v=>`"${String(v==null?"":v).replace(/"/g,'""')}"`;
+  return head.join(",")+"\n"+opps.map(o=>[o.nombre,(o._prov||{}).nombre,o.vehiculo,o.etapa,o.monto_objetivo_usd,o.probabilidad_pct,o.proximo_paso,o.fecha_proximo_paso,o._alertas.map(a=>a.t).join(" | ")].map(q).join(",")).join("\n");
+}
+function openSync(kind){
+  const n=dirtyCount();
+  $("#modal-title").textContent=n?`Sincronizar ${n} cambio${n===1?"":"s"}`:"Sin cambios pendientes";
+  $("#modal-body").innerHTML=`<p class="hint" id="modal-hint"></p><textarea class="code" id="modal-text" readonly spellcheck="false"></textarea>`;
+  $("#modal-foot").innerHTML=`${mcpNs&&n?`<button class="btn primary" id="modal-apply">Aplicar en Supabase</button>`:""}<button class="btn ${mcpNs&&n?"subtle":"primary"}" id="modal-copy">Copiar</button><button class="btn subtle" id="modal-sql">SQL</button><button class="btn subtle" id="modal-csv">CSV</button><span class="hint" style="margin-left:auto" id="modal-note"></span>`;
+  $("#modal-hint").innerHTML= n
+    ? (mcpNs?`Editaste <b>${n}</b> registro${n===1?"":"s"} en este navegador. «Aplicar» ejecuta el SQL en Supabase con tu conector (te pedirá confirmación la primera vez). También podés copiarlo o pedirle a Claude que lo aplique.`
+            :`Editaste <b>${n}</b> registro${n===1?"":"s"} en este navegador. Copiá el SQL y pedile a Claude en el chat que lo aplique, o ejecutalo en el SQL Editor de Supabase.`)
+    : `Arrastrá tarjetas entre columnas, editá una oportunidad o agregá una nueva para generar sentencias. El CSV exporta el pipeline completo tal como se ve.`;
+  const show=k=>{ $("#modal-text").value=k==="csv"?buildCSV():buildSQL(); $("#modal-note").textContent=k==="csv"?"CSV del pipeline (Excel/Sheets)":"SQL (Supabase · liq_*)"; };
+  show(kind||"sql");
+  $("#modal-sql").onclick=()=>show("sql"); $("#modal-csv").onclick=()=>show("csv");
+  $("#modal-copy").onclick=async()=>{ const t=$("#modal-text"); try{await navigator.clipboard.writeText(t.value);}catch(e){t.select();document.execCommand&&document.execCommand("copy");} const b=$("#modal-copy");const o=b.textContent;b.textContent="✓ Copiado";setTimeout(()=>b.textContent=o,1400); };
+  const ap=$("#modal-apply"); if(ap) ap.onclick=async()=>{ ap.disabled=true; ap.textContent="Aplicando…";
+    try{ await sbQuery(buildSQL()); overrides={opp:{},prov:{},nuevos:[]}; persist(); await liveLoad(true); modal.classList.remove("open"); }
+    catch(e){ $("#modal-hint").innerHTML=`<span style="color:var(--crit);font-weight:600">No se aplicó: ${esc(e.message||e.code||e)}</span>. Nada se perdió: los cambios siguen acá. Copiá el SQL y aplicalo desde el chat.`; ap.disabled=false; ap.textContent="Reintentar"; } };
+  modal.classList.add("open");
+}
+$("#export-btn").onclick=()=>openSync("sql");
+$("#modal-close").onclick=()=>modal.classList.remove("open");
+modal.onclick=e=>{ if(e.target===modal) modal.classList.remove("open"); };
+
+/* =====================================================================
+   SUPABASE EN VIVO (conector del visitante, vía window.claude)
+   ===================================================================== */
+let mcpNs=null, liveAt=null;
+function parsePayload(payload){
+  let txt=payload;
+  if(payload&&typeof payload==="object"&&!Array.isArray(payload)){ if(Array.isArray(payload.result)) return payload.result; if(typeof payload.result==="string") txt=payload.result; else if(payload.content&&payload.content[0]&&payload.content[0].text) txt=payload.content[0].text; else return payload; }
+  if(Array.isArray(txt)) return txt;
+  if(typeof txt!=="string") return txt;
+  const m=txt.match(/<untrusted-data-[^>]*>\s*([\s\S]*?)\s*<\/untrusted-data-[^>]*>/);
+  const body=m?m[1]:txt.trim();
+  try{ return JSON.parse(body); }catch(e){ const i=body.indexOf("["); if(i>=0){ try{ return JSON.parse(body.slice(i)); }catch(e2){} } throw new Error("Respuesta de Supabase no reconocida"); }
+}
+async function sbQuery(sql){
+  if(!mcpNs) throw new Error("Sin conector");
+  const res=await mcpNs.callTool(SB.server,SB.tool,{project_id:SB.project,query:sql},{cache:false});
+  return parsePayload(res.payload!==undefined?res.payload:res);
+}
+const LOAD_SQL=`select json_build_object('proveedores',(select coalesce(json_agg(p),'[]'::json) from liq_proveedores p),'oportunidades',(select coalesce(json_agg(o),'[]'::json) from liq_oportunidades o),'interacciones',(select coalesce(json_agg(i),'[]'::json) from (select * from liq_interacciones order by fecha desc limit 500) i),'desembolsos',(select coalesce(json_agg(d),'[]'::json) from liq_desembolsos d)) as data`;
+function setSource(kind,msg){
+  const s=$("#src"); s.classList.toggle("live",kind==="live");
+  $("#src-txt").textContent= kind==="live"?"en vivo · Supabase":kind==="demo"?"ejemplos":"snapshot "+fdate(SNAPSHOT.tomado);
+  const n=$("#note");
+  if(kind==="demo") n.innerHTML=`<div class="note"><strong>Datos de ejemplo.</strong> El CRM de liquidez todavía no tiene proveedores cargados. Lo que ves son nombres ficticios para mostrar cómo funciona el tablero. Agregá la primera oportunidad con <b>+ Nueva</b>${mcpNs?"":" o pedile a Claude que cargue tus proveedores"}; al sincronizar, los ejemplos desaparecen.</div>`;
+  else if(kind==="live") n.innerHTML=`<div class="note live"><strong>Conectado a Supabase.</strong> Leyendo las tablas liq_* con tu conector${liveAt?` · actualizado ${liveAt.toLocaleTimeString("es")}`:""}. <button class="link" id="reload-btn">Actualizar</button></div>`;
+  else if(kind==="error") n.innerHTML=`<div class="note err"><strong>Sin conexión en vivo.</strong> ${esc(msg||"")} Mostrando ${raw.demo?"ejemplos":"el snapshot"}.</div>`;
+  else n.innerHTML="";
+  const rb=$("#reload-btn"); if(rb) rb.onclick=()=>liveLoad(true);
+}
+async function liveLoad(force){
+  if(!mcpNs) return;
+  try{
+    const rows=await sbQuery(LOAD_SQL);
+    const data=Array.isArray(rows)?(rows[0]||{}).data:(rows&&rows.data);
+    if(!data||!Array.isArray(data.proveedores)) throw new Error("Formato inesperado");
+    liveAt=new Date();
+    if(data.proveedores.length||data.oportunidades.length||force){ raw=Object.assign({demo:false},data); source="live"; setSource("live"); }
+    else { raw=demoData(); source="demo"; setSource("demo"); $("#src-txt").textContent="en vivo · sin datos aún"; $("#src").classList.add("live"); }
+    // descartar overrides que ya están aplicados
+    Object.keys(overrides.opp).forEach(id=>{ const b=raw.oportunidades.find(x=>x.id===id); if(!b) return; const o=overrides.opp[id]; Object.keys(o).forEach(k=>{ if(k[0]!=="_"&&String(b[k]==null?"":b[k])===String(o[k]==null?"":o[k])) delete o[k]; }); if(!Object.keys(o).filter(k=>k[0]!=="_").length) delete overrides.opp[id]; });
+    persist(); build(); fillFilters(); refresh();
+  }catch(e){
+    const code=e&&e.code; let msg="";
+    if(code==="needs_reauth") msg="Reconectá Supabase en claude.ai → Ajustes → Conectores.";
+    else if(code==="server_not_connected"||code==="selection_required") msg="Agregá o elegí el conector Supabase en claude.ai → Ajustes → Conectores.";
+    else if(code==="not_granted"||code==="blocked_by_policy"||code==="approval_required") msg="Este visor no permitió usar el conector.";
+    else msg=(e&&e.message)||String(e);
+    setSource("error",msg);
+  }
+}
+(async()=>{
+  try{
+    if(!window.claude||typeof window.claude.use!=="function") return;
+    mcpNs=await window.claude.use("mcp"); if(!mcpNs) return;
+    await liveLoad(false);
+  }catch(e){}
+})();
+
+/* =====================================================================
+   WIRING
+   ===================================================================== */
+function refresh(){
+  renderKpis(); renderFunnel();
+  const n=dirtyCount(); const b=$("#dirty-count"); b.textContent=n; b.classList.toggle("hidden",n===0);
+  const v=visible(); const dirty=n?` · <b style="color:var(--accent)">${n}</b> cambio${n===1?"":"s"} sin sincronizar`:"";
+  if(state.view==="prov"){ $("#count-line").innerHTML=`<b>${provs.length}</b> proveedor${provs.length===1?"":"es"} de liquidez`+dirty; renderProv(); }
+  else if(state.view==="lunes"){ $("#count-line").innerHTML=`Reporte ejecutivo del pipeline completo (sin filtros)`+dirty; renderLunes(); }
+  else { $("#count-line").innerHTML=`Mostrando <b>${v.length}</b> oportunidad${v.length===1?"":"es"} de ${opps.length}${state.lost?"":` · ${opps.filter(o=>o.etapa==="perdido").length} perdidas ocultas`}`+dirty; if(state.view==="board") renderBoard(); else renderTable(); }
+}
+$("#q").addEventListener("input",e=>{state.q=e.target.value.trim().toLowerCase();refresh();});
+$("#f-veh").onchange=e=>{state.veh=e.target.value;refresh();};
+$("#f-tipo").onchange=e=>{state.tipo=e.target.value;refresh();};
+$("#f-pais").onchange=e=>{state.pais=e.target.value;refresh();};
+$("#f-alerta").onclick=()=>{state.alerta=!state.alerta;$("#f-alerta").classList.toggle("on");refresh();};
+$("#f-kyc").onclick=()=>{state.kyc=!state.kyc;$("#f-kyc").classList.toggle("on");refresh();};
+$("#f-lost").onclick=()=>{state.lost=!state.lost;$("#f-lost").classList.toggle("on");refresh();};
+$("#f-clear").onclick=()=>{ state.q="";state.veh="";state.tipo="";state.pais="";state.alerta=false;state.kyc=false;state.lost=false; $("#q").value="";$("#f-veh").value="";$("#f-tipo").value="";$("#f-pais").value=""; $$("#filters .chip").forEach(c=>c.classList.remove("on")); refresh(); };
+$$("#view-seg button").forEach(b=>b.onclick=()=>{ state.view=b.dataset.view; $$("#view-seg button").forEach(x=>x.classList.toggle("on",x===b)); ["board","table","prov","lunes"].forEach(v=>$("#"+v+"-view").classList.toggle("hidden",state.view!==v)); $("#filters").classList.toggle("hidden",state.view==="lunes"); refresh(); });
+
+const sun='<circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M2 12h2.5M19.5 12H22M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/>';
+const moon='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>';
+function curTheme(){ const a=document.documentElement.getAttribute("data-theme"); if(a) return a; return matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"; }
+function applyTheme(t){ if(t) document.documentElement.setAttribute("data-theme",t); $("#theme-icon").innerHTML=curTheme()==="dark"?sun:moon; }
+let stored=null; try{stored=localStorage.getItem("kb_theme");}catch(e){}
+applyTheme(stored||null);
+$("#theme-btn").onclick=()=>{ const t=curTheme()==="dark"?"light":"dark"; applyTheme(t); try{localStorage.setItem("kb_theme",t);}catch(e){} };
+document.addEventListener("keydown",e=>{ if(e.key==="Escape"){ closeDrawer(); modal.classList.remove("open"); } });
+
+build(); fillFilters(); setSource(source); refresh();
+</script>

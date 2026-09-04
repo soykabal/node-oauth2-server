@@ -13,6 +13,7 @@ liquidity-agent/
 ├── src/
 │   ├── crm.js        cliente PostgREST sin dependencias + lógica de priorización/resumen
 │   └── cli.js        línea de comandos del agente
+├── dashboard/pipeline-liquidez.html                  tablero visual (Artifact): funnel, tablero kanban, tabla, proveedores, lunes
 ├── skill/kabal-liquidity-agent/SKILL.md              definición del agente (reglas, flujos, formato)
 └── test/
     ├── crm_test.js   unit tests (mocha)
@@ -51,6 +52,15 @@ Etapas: `identificado → contactado → primera_reunion → segunda_reunion →
 | `liq_v_motivos_perdida` | Motivos de pérdida agregados. |
 
 RPC: `liq_mover_etapa(oportunidad_id, etapa, motivo, proximo_paso, fecha_proximo_paso, monto_comprometido_usd)`.
+
+## Tablero visual
+
+`dashboard/pipeline-liquidez.html` es el mismo tablero del Pipeline RWA, adaptado al funnel de liquidez:
+KPIs (wired / firmado / comprometido / ponderado / alertas), embudo por etapa, tablero kanban con arrastrar y soltar,
+tabla priorizada, vista de proveedores con KYC y el reporte «Lunes de liquidez». Está publicado como Artifact de
+claude.ai; cuando el visor tiene el conector Supabase, lee y escribe las tablas `liq_*` en vivo mediante `execute_sql`.
+Sin conector, funciona con el snapshot embebido y exporta los cambios como SQL para aplicarlos desde el chat.
+Con el CRM vacío muestra datos de ejemplo marcados como tales.
 
 ## Uso
 
