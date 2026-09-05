@@ -27,9 +27,18 @@ el array de contactos y escribe `dashboard.html`.
 python3 build.py      # lee leads.json -> escribe dashboard.html
 ```
 
-## Actualización diaria (automática)
+## Barrido diario (automático)
 
-Una rutina programada corre cada mañana y hace:
+Rutina `Barrido diario · Valoración Pipeline RWA` (6:00 AM Honduras · `0 12 * * *` UTC).
+Dispara **dentro de la sesión de Claude que la creó** (así hereda el acceso a Supabase,
+Artifact y git; una sesión nueva no traía los conectores y por eso la rutina anterior
+quedó desactivada). Cada mañana:
+
+0. **Valora los leads nuevos** que el scout agregó y aún no tienen fila en
+   `bridge_lead_valoraciones` (mismo método: estimación → escéptico → tier/fees
+   canónicos) y los inserta.
+
+Y luego hace el refresco del tablero:
 
 1. Consulta Supabase (proyecto `hnkpjrmccsehmixcsdhr`) con el SELECT de abajo.
    Como el resultado (~430 filas en una sola celda `json_agg`) excede el límite
