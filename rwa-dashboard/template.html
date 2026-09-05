@@ -213,6 +213,20 @@ td .amt{font-family:"IBM Plex Mono";color:var(--gold);font-weight:600}
 #outbox-table td.senal{white-space:normal;max-width:340px;color:var(--ink-2)}
 #outbox-table a{color:var(--accent);text-decoration:none;font-weight:600}
 #outbox-table a:hover{text-decoration:underline}
+/* valor potencial */
+.pot{display:flex;align-items:center;gap:6px;margin-top:7px;font-size:11px}
+.pot .potv{font-weight:600;color:var(--gold)}
+.pot .potlbl{color:var(--muted);font-size:10px;letter-spacing:.04em;text-transform:uppercase}
+.tier{font-family:"IBM Plex Mono",monospace;font-size:9.5px;font-weight:700;padding:1px 5px;border-radius:4px;
+  border:1px solid var(--line-2);color:var(--ink-2);background:var(--panel)}
+.tier.t3{border-color:color-mix(in srgb,var(--go) 55%,transparent);color:var(--go);background:var(--go-bg)}
+.tier.t2{border-color:color-mix(in srgb,var(--accent) 55%,transparent);color:var(--accent-ink);background:var(--accent-bg)}
+.tier.t0{opacity:.65}
+.conf{width:7px;height:7px;border-radius:50%;display:inline-block;background:var(--muted)}
+.conf.alta{background:var(--go)} .conf.media{background:var(--explore)} .conf.baja{background:var(--muted);opacity:.6}
+td .potv{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--gold)}
+.kpi.pot-kpi{background:linear-gradient(150deg,var(--gold-bg),var(--surface))}
+.kpi.pot-kpi .big{color:var(--gold)}
 </style>
 
 <header>
@@ -341,9 +355,15 @@ function money(n){ if(n==null||n==="") return null; n=+n; if(!isFinite(n)||n===0
   if(n>=1e6) return "$"+(n/1e6).toFixed(n>=1e7?0:1)+"M";
   if(n>=1e3) return "$"+Math.round(n/1e3)+"K"; return "$"+n; }
 function fdate(d){ if(!d) return "—"; try{return new Date(d).toLocaleDateString("es",{day:"2-digit",month:"short",year:"numeric"});}catch(e){return d;} }
+/* valor potencial de emisión + fee Kabal */
+const TIERS={0:"Sub-escala (< $1M)",1:"Tier 1 · $1–5M",2:"Tier 2 · $5–25M",3:"Tier 3 · $25M+"};
+function tierChip(t){ if(t==null||t==="") return ""; return `<span class="tier t${t}" title="${TIERS[t]||''}">T${t}</span>`; }
+function confDot(c){ if(!c) return ""; return `<span class="conf ${c}" title="Confianza ${c}"></span>`; }
+function potHTML(l){ const p=money(l.valor_potencial_usd); if(!p) return "";
+  return `<div class="pot"><span class="mono potv">≈ ${p}</span>${tierChip(l.valor_tier)}${confDot(l.valor_confianza)}<span class="potlbl">potencial</span></div>`; }
 
 /* ---------- filters ---------- */
-const state={ q:"", pais:"", sector:"", activo:"", quals:new Set(), money:false, includeOutbox:false, view:"board", sort:{key:"empresa",dir:1}, osort:{key:"empresa",dir:1} };
+const state={ q:"", pais:"", sector:"", activo:"", quals:new Set(), money:false, includeOutbox:false, view:"board", sort:{key:"empresa",dir:1}, osort:{key:"valor_potencial_usd",dir:-1} };
 function hasContact(l){ return !!(l.contacto_email && String(l.contacto_email).trim()); }
 const OUTBOX_TOTAL = leads.filter(l=>!hasContact(l)).length;
 function uniq(key){ return [...new Set(leads.map(l=>l[key]).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es")); }
@@ -380,6 +400,11 @@ function renderKpis(){
   const goBox=v.filter(l=>l.calificacion==="GO" && !hasContact(l)).length;
   const active=v.filter(l=>hasContact(l) && !["nuevo","descartado","nurture"].includes(l.etapa)).length;
   const paises=new Set(v.map(l=>l.pais).filter(Boolean)).size;
+  const pot=v.reduce((s,l)=>s+(+l.valor_potencial_usd||0),0);
+  const potGo=v.filter(l=>l.calificacion==="GO").reduce((s,l)=>s+(+l.valor_potencial_usd||0),0);
+  const fees=v.reduce((s,l)=>s+(+l.fee_potencial_usd||0),0);
+  const feesRec=v.reduce((s,l)=>s+(+l.fee_recurrente_anual_usd||0),0);
+  const withPot=v.filter(l=>l.valor_potencial_usd>0).length;
   // stage spark (whole book)
   const counts=STAGES.map(s=>({s,n:v.filter(l=>l.etapa===s.k).length})).filter(x=>x.n);
   const spark=counts.map(x=>`<span style="flex:${x.n};background:${x.s.c}" title="${x.s.label}: ${x.n}"></span>`).join("");
@@ -392,7 +417,11 @@ function renderKpis(){
     <div class="kpi"><div class="eyebrow">En gestión activa</div><div class="big mono">${active}</div>
       <div class="sub">con contacto y fuera de «nuevo»</div></div>
     <div class="kpi outbox-kpi"><div class="eyebrow">Outbox · sin contacto</div><div class="big mono" style="color:var(--explore)">${box}</div>
-      <div class="sub"><b>${goBox}</b> de ellos GO · falta correo/decisor</div></div>`;
+      <div class="sub"><b>${goBox}</b> de ellos GO · falta correo/decisor</div></div>
+    <div class="kpi pot-kpi"><div class="eyebrow">Valor potencial de emisión</div><div class="big mono">${money(pot)||"—"}</div>
+      <div class="sub">${withPot} valorados · <b>${money(potGo)||"—"}</b> en GO</div></div>
+    <div class="kpi"><div class="eyebrow">Fee potencial Kabal</div><div class="big mono" style="color:var(--accent-ink)">${money(fees)||"—"}</div>
+      <div class="sub">US$15k + 2% colocado · +${money(feesRec)||"—"}/año admin</div></div>`;
 }
 
 /* ---------- board ---------- */
@@ -408,6 +437,7 @@ function cardHTML(l){
       ${amt?`<span class="amt">${amt}</span>`:""}
     </div>
     ${l.tipo_activo?`<div class="asset">${esc(l.tipo_activo)}</div>`:""}
+    ${potHTML(l)}
   </div>`;
 }
 function renderBoard(){
@@ -415,12 +445,12 @@ function renderBoard(){
   const board=$("#board");
   board.innerHTML=STAGES.map(s=>{
     const items=v.filter(l=>l.etapa===s.k);
-    const val=items.reduce((a,l)=>a+(+l.monto_estimado_usd||0),0);
+    const val=items.reduce((a,l)=>a+(+l.valor_potencial_usd||0),0);
     return `<div class="col" data-stage="${s.k}">
       <div class="col-head">
         <div class="top"><span class="col-dot" style="background:${s.c}"></span>
           <h3>${s.label}</h3><span class="n mono">${items.length}</span></div>
-        ${val>0?`<div class="val">${money(val)}</div>`:""}
+        ${val>0?`<div class="val">≈ ${money(val)} potencial</div>`:""}
       </div>
       <div class="col-body" data-stage="${s.k}">${items.map(cardHTML).join("")}</div>
     </div>`;
@@ -458,6 +488,8 @@ const COLS=[
   {k:"sector",t:"Sector"},
   {k:"tipo_activo",t:"Activo"},
   {k:"monto_estimado_usd",t:"Monto",num:true},
+  {k:"valor_potencial_usd",t:"Potencial",num:true},
+  {k:"valor_tier",t:"Tier",num:true},
   {k:"calificacion",t:"Calif."},
   {k:"etapa",t:"Etapa"},
   {k:"updated_at",t:"Actualizado",date:true},
@@ -478,10 +510,12 @@ function renderTable(){
     <td>${esc(l.sector||"—")}</td>
     <td>${esc(l.tipo_activo||"—")}</td>
     <td class="mono ${money(l.monto_estimado_usd)?'amt':''}">${money(l.monto_estimado_usd)||"—"}</td>
+    <td>${money(l.valor_potencial_usd)?`<span class="potv">≈ ${money(l.valor_potencial_usd)}</span> ${confDot(l.valor_confianza)}`:"—"}</td>
+    <td>${tierChip(l.valor_tier)||"—"}</td>
     <td><span class="q ${l.calificacion} stage-pill" style="padding:2px 6px;border-radius:5px;font-size:10px;font-weight:800">${l.calificacion}</span></td>
     <td><span class="stage-pill"><span class="col-dot" style="background:${STAGE[l.etapa]?.c}"></span>${STAGE[l.etapa]?.label||l.etapa}</span></td>
     <td class="mono" style="color:var(--muted)">${fdate(l.updated_at)}</td>
-  </tr>`).join("") || `<tr><td colspan="8" class="empty">Sin resultados con estos filtros.</td></tr>`;
+  </tr>`).join("") || `<tr><td colspan="10" class="empty">Sin resultados con estos filtros.</td></tr>`;
   $$("#table thead th").forEach(th=>th.onclick=()=>{
     const k=th.dataset.k;
     if(state.sort.key===k) state.sort.dir*=-1; else state.sort={key:k,dir:1};
@@ -513,6 +547,9 @@ function openDrawer(id){
       </div>
       <dl class="kv">
         <dt>Monto est.</dt><dd class="mono" style="color:var(--gold);font-weight:600">${amt||"—"}</dd>
+        <dt>Valor potencial</dt><dd>${money(l.valor_potencial_usd)?`<span class="potv">≈ ${money(l.valor_potencial_usd)}</span> ${tierChip(l.valor_tier)} ${confDot(l.valor_confianza)} <span style="color:var(--muted);font-size:11px">${TIERS[l.valor_tier]||""}${l.valor_confianza?" · confianza "+esc(l.valor_confianza):""}</span>`:"— <span style=\"color:var(--muted);font-size:11px\">sin valorar</span>"}</dd>
+        ${l.valor_racional?`<dt>Racional</dt><dd style="color:var(--ink-2);font-size:12px">${esc(l.valor_racional)}</dd>`:""}
+        ${l.fee_potencial_usd>0?`<dt>Fee Kabal</dt><dd class="mono" style="color:var(--accent-ink);font-weight:600">${money(l.fee_potencial_usd)} <span style="color:var(--muted);font-weight:400;font-size:11px">estructuración + 2% · +${money(l.fee_recurrente_anual_usd)||"—"}/año</span></dd>`:""}
         <dt>Tipo activo</dt><dd>${esc(l.tipo_activo||"—")}</dd>
         <dt>Ángulo</dt><dd>${esc(l.angulo_entrada||"—")}</dd>
         <dt>Decisor</dt><dd>${esc(l.decisor||"—")}</dd>
@@ -601,12 +638,14 @@ modal.onclick=e=>{ if(e.target===modal) modal.classList.remove("open"); };
 /* ---------- outbox ---------- */
 const OCOLS=[
   {k:"empresa",t:"Empresa"},{k:"pais",t:"País"},{k:"sector",t:"Sector"},
-  {k:"tipo_activo",t:"Activo"},{k:"calificacion",t:"Calif."},{k:"senal",t:"Señal de origen"},
+  {k:"tipo_activo",t:"Activo"},{k:"valor_potencial_usd",t:"Potencial",num:true},{k:"calificacion",t:"Calif."},{k:"senal",t:"Señal de origen"},
 ];
 function renderOutbox(){
   let v=outboxList();
   const {key,dir}=state.osort;
+  const numeric=OCOLS.find(c=>c.k===key)?.num;
   v=[...v].sort((a,b)=>{
+    if(numeric){ return ((+a[key]||0)-(+b[key]||0))*dir; }
     let x=(a[key]==null?"":String(a[key])).toLowerCase(), y=(b[key]==null?"":String(b[key])).toLowerCase();
     return x<y?-dir:x>y?dir:0;
   });
@@ -616,9 +655,10 @@ function renderOutbox(){
     <td>${esc(l.pais||"—")}</td>
     <td>${esc(l.sector||"—")}</td>
     <td>${esc(l.tipo_activo||"—")}</td>
+    <td>${money(l.valor_potencial_usd)?`<span class="potv">≈ ${money(l.valor_potencial_usd)}</span> ${tierChip(l.valor_tier)} ${confDot(l.valor_confianza)}`:"—"}</td>
     <td><span class="q ${l.calificacion}" style="padding:2px 6px;border-radius:5px;font-size:10px;font-weight:800">${l.calificacion}</span></td>
     <td class="senal">${esc((l.senal||"—").slice(0,150))}${l.senal&&l.senal.length>150?"…":""}${l.senal_url?` <a href="${esc(l.senal_url)}" target="_blank" rel="noopener">↗</a>`:""}</td>
-  </tr>`).join("") || `<tr><td colspan="6" class="empty">Sin prospectos en el Outbox con estos filtros.</td></tr>`;
+  </tr>`).join("") || `<tr><td colspan="7" class="empty">Sin prospectos en el Outbox con estos filtros.</td></tr>`;
   $$("#outbox-table thead th").forEach(th=>th.onclick=()=>{
     const k=th.dataset.k;
     if(state.osort.key===k) state.osort.dir*=-1; else state.osort={key:k,dir:1};

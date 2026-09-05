@@ -18,6 +18,9 @@ KEEP = [
     "senal", "senal_url", "senal_fecha", "decisor", "contacto_email",
     "telefono", "calificacion", "etapa", "angulo_entrada", "fuente",
     "notas", "updated_at",
+    # valoracion potencial (LEFT JOIN bridge_lead_valoraciones)
+    "valor_potencial_usd", "valor_tier", "valor_confianza", "valor_clase",
+    "valor_racional", "fee_potencial_usd", "fee_recurrente_anual_usd",
 ]
 MARKER = "/*__LEADS__*/[]"
 

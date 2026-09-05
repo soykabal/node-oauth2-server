@@ -45,15 +45,36 @@ Una rutina programada corre cada mañana y hace:
 
 ```sql
 select json_agg(l order by l.updated_at desc) from (
-  select id, empresa, pais, sector, tipo_activo, monto_estimado_usd,
-         senal, senal_url, senal_fecha, decisor, contacto_email, telefono,
-         calificacion, etapa, angulo_entrada, fuente, notas,
-         created_at, updated_at
-  from bridge_leads
+  select b.id, b.empresa, b.pais, b.sector, b.tipo_activo, b.monto_estimado_usd,
+         b.senal, b.senal_url, b.senal_fecha, b.decisor, b.contacto_email, b.telefono,
+         b.calificacion, b.etapa, b.angulo_entrada, b.fuente, b.notas,
+         b.created_at, b.updated_at,
+         v.valor_potencial_usd, v.tier as valor_tier, v.confianza as valor_confianza,
+         v.clase as valor_clase, v.racional as valor_racional,
+         v.fee_potencial_usd, v.fee_recurrente_anual_usd
+  from bridge_leads b
+  left join bridge_lead_valoraciones v on v.lead_id = b.id
 ) l;
 ```
 
 El resultado (columna `json_agg`) es el contenido de `leads.json`.
+
+## Valor potencial de emisión
+
+Tabla lateral `public.bridge_lead_valoraciones` (aditiva; se une por `lead_id`, no
+toca `bridge_leads`). Por prospecto guarda:
+
+- `valor_potencial_usd` — tamaño plausible de la **primera emisión tokenizada** del
+  activo (no el valor total del proyecto). Estimación IA por lotes, verificada por un
+  agente escéptico y calibrada entre lotes para consistencia.
+- `tier` — 0 sub-escala (< $1M) · 1 $1–5M · 2 $5–25M · 3 $25M+ (derivado del valor).
+- `confianza` — alta (cifra explícita) · media (inferible de la señal) · baja (norma de sector).
+- `clase`, `racional` — clase de activo y justificación corta.
+- `fee_potencial_usd` — pricing canónico Kabal: **US$15,000 + 2 % del colocado**.
+- `fee_recurrente_anual_usd` — administración post-emisión: **0.5 % anual** sobre AUM.
+
+Los leads nuevos que entren por el scout aparecen **sin valorar** hasta que se corra
+de nuevo la valoración (o se valoren a mano en la tabla).
 
 ## Nota sobre los cambios hechos en el tablero
 
