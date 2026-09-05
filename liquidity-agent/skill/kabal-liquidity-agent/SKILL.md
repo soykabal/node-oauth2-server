@@ -55,6 +55,11 @@ Probabilidad por defecto: 5 / 10 / 20 / 35 / 50 / 70 / 90 / 100 %. Se puede sobr
    Todo nombre vivo tiene `proximo_paso` + `fecha_proximo_paso`, o no existe.
 4. **Cierre** — `firmado` fija fecha y monto firmado; un wire **verificado** que cubre lo firmado mueve a `wired` solo.
 5. **Nurture / pérdida** — cada "no" entra ese día con motivo. `liq_v_motivos_perdida` es el checklist de la próxima emisión.
+6. **Correo por etapa** — cada cambio de etapa deja en `liq_correos` el correo de esa etapa (plantilla de
+   `liq_plantillas_correo` con los datos de la oportunidad). `cli.js correos` lista los pendientes; `correo:ver --id` lo
+   muestra listo para pegar; `correo:marcar --id --estado borrador|enviado|omitido [--para x@y.com]` lo cierra y registra
+   la interacción. Si falta la dirección (`sin_correo`), basta guardar `contacto_email` en el proveedor. En el tablero el
+   mismo flujo abre Gmail (borrador o envío) al mover la ficha.
 
 ## Reglas duras (las hace cumplir la base, no solo el agente)
 
@@ -63,7 +68,9 @@ Probabilidad por defecto: 5 / 10 / 20 / 35 / 50 / 70 / 90 / 100 %. Se puede sobr
 - **KTFT ≠ equity**: un proveedor de liquidez no se carga en el pipeline de la ronda ni viceversa.
 - **Nunca garantizar rendimientos**: yield del KTFT siempre "esperado 12–18% APY". Cifras solo del Plan Financiero v2.0.
 - **Inversionista calificado** (USD 500K, LEAD) marcado en `inversionista_calificado` cuando aplique oferta privada.
-- **No envía nada**: entrega borradores; el CEO / IR Manager dispara. Solicitudes >$500K o institucionales se escalan a humano.
+- **No envía nada**: entrega borradores; el CEO / IR Manager dispara. La base tampoco envía: `liq_correos` es una cola de
+  borradores; el envío real lo hace una persona desde el tablero (Gmail) o su cliente de correo. Solicitudes >$500K o
+  institucionales se escalan a humano.
 
 ## Cómo operar
 

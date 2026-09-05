@@ -139,6 +139,41 @@ function validarEtapa(etapa) {
 // Cliente PostgREST
 // ---------------------------------------------------------------------------
 
+// ---------------------------------------------------------------------------
+// Correos por etapa: la base deja en liq_correos el correo de cada cambio de
+// etapa (plantilla de liq_plantillas_correo). Esta función renderiza una
+// plantilla con los mismos placeholders que liq_render_correo, para borradores
+// locales o previsualización sin base.
+// ---------------------------------------------------------------------------
+
+const VEHICULO_LABEL = {
+  ktft: 'KTFT', emision_b2b: 'emisión B2B', linea_credito: 'línea de crédito', warehouse: 'warehouse', deuda_privada: 'deuda privada'
+};
+
+function renderPlantilla(plantilla, oportunidad, proveedor, extra) {
+  plantilla = plantilla || {};
+  oportunidad = oportunidad || {};
+  proveedor = proveedor || {};
+  extra = extra || {};
+  const monto = Number(oportunidad.monto_firmado_usd) || Number(oportunidad.monto_comprometido_usd) || Number(oportunidad.monto_objetivo_usd) || 0;
+  const ctx = {
+    decisor: (proveedor.decisor || '').trim() || ('equipo de ' + (proveedor.nombre || '')),
+    proveedor: proveedor.nombre || '',
+    oportunidad: oportunidad.nombre || '',
+    vehiculo: VEHICULO_LABEL[oportunidad.vehiculo] || oportunidad.vehiculo || '',
+    monto: (oportunidad.moneda || 'USD') + ' ' + Math.round(monto).toLocaleString('en-US'),
+    proximo_paso: (oportunidad.proximo_paso || '').trim() || 'definir siguiente paso',
+    fecha_proximo_paso: oportunidad.fecha_proximo_paso || 'por definir',
+    firma: extra.firma || 'Equipo Kabal'
+  };
+  const fill = s => String(s || '').replace(/\{\{(\w+)\}\}/g, (m, k) => (k in ctx ? ctx[k] : m));
+  return {
+    para: (proveedor.contacto_email || '').trim() || null,
+    asunto: fill(plantilla.asunto),
+    cuerpo: fill(plantilla.cuerpo)
+  };
+}
+
 function crearCliente(opts) {
   opts = opts || {};
   const url = (opts.url || process.env.SUPABASE_URL || '').replace(/\/$/, '');
@@ -217,6 +252,24 @@ function crearCliente(opts) {
     registrarDesembolso: d => rest('POST', 'liq_desembolsos', d).then(r => r[0]),
     verificarDesembolso: id => rest('PATCH', 'liq_desembolsos?' + q({ id: 'eq.' + id }), { verificado: true }).then(r => r[0]),
 
+    // --- Correos por etapa (cola liq_correos, la llena el trigger) -------
+    correosPendientes: () => rest('GET', 'liq_v_correos_pendientes?order=creado_en.desc'),
+    plantillasCorreo: () => rest('GET', 'liq_plantillas_correo?order=etapa.asc'),
+    marcarCorreo: (id, estado, datos) => {
+      datos = datos || {};
+      return rest('POST', 'rpc/liq_correo_marcar', {
+        p_id: id,
+        p_estado: estado,
+        p_para: datos.para || null,
+        p_gmail_draft_id: datos.gmailDraftId || null,
+        p_gmail_message_id: datos.gmailMessageId || null,
+        p_gmail_thread_id: datos.gmailThreadId || null,
+        p_asunto: datos.asunto || null,
+        p_cuerpo: datos.cuerpo || null,
+        p_error: datos.error || null
+      });
+    },
+
     // --- Reportes compuestos --------------------------------------------
     async lunesDeLiquidez(metaUsd) {
       const [funnel, pipe, vehiculos] = await Promise.all([this.funnel(), this.pipeline(), this.resumenVehiculo()]);
@@ -241,5 +294,6 @@ module.exports = {
   priorizar,
   resumenFunnel,
   validarEtapa,
+  renderPlantilla,
   crearCliente
 };

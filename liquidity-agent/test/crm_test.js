@@ -94,6 +94,29 @@ describe('liquidity-agent/crm', function() {
     });
   });
 
+  describe('renderPlantilla', function() {
+    const tpl = { asunto: 'Kabal · {{vehiculo}} — {{proveedor}}', cuerpo: 'Estimado/a {{decisor}}: {{oportunidad}} por {{monto}}. Próximo paso: {{proximo_paso}} ({{fecha_proximo_paso}}).\n{{firma}}' };
+
+    it('rellena los placeholders con oportunidad y proveedor', function() {
+      const r = crm.renderPlantilla(tpl,
+        { nombre: 'FO Delta · KTFT E1', vehiculo: 'ktft', monto_objetivo_usd: 750000, proximo_paso: 'Enviar whitepaper', fecha_proximo_paso: '2026-09-12' },
+        { nombre: 'FO Delta', decisor: 'Ana Pérez', contacto_email: ' ana@delta.test ' }, { firma: 'GK' });
+      assert.strictEqual(r.para, 'ana@delta.test');
+      assert.strictEqual(r.asunto, 'Kabal · KTFT — FO Delta');
+      assert.strictEqual(r.cuerpo, 'Estimado/a Ana Pérez: FO Delta · KTFT E1 por USD 750,000. Próximo paso: Enviar whitepaper (2026-09-12).\nGK');
+    });
+
+    it('usa valores por defecto cuando faltan datos y prefiere el monto firmado', function() {
+      const r = crm.renderPlantilla(tpl, { nombre: 'X', vehiculo: 'warehouse', monto_objetivo_usd: 100, monto_firmado_usd: 80, moneda: 'USDC' }, { nombre: 'Banco Y' });
+      assert.strictEqual(r.para, null);
+      assert.ok(r.cuerpo.indexOf('equipo de Banco Y') === 0 || r.cuerpo.indexOf('Estimado/a equipo de Banco Y') === 0);
+      assert.ok(r.cuerpo.indexOf('USDC 80') >= 0);
+      assert.ok(r.cuerpo.indexOf('definir siguiente paso (por definir)') >= 0);
+      assert.ok(r.cuerpo.indexOf('Equipo Kabal') >= 0);
+      assert.strictEqual(crm.renderPlantilla({ asunto: '{{desconocido}}' }, {}, {}).asunto, '{{desconocido}}');
+    });
+  });
+
   describe('crearCliente', function() {
     it('exige credenciales', function() {
       const url = process.env.SUPABASE_URL, key = process.env.SUPABASE_KEY;

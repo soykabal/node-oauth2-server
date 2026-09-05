@@ -11,6 +11,7 @@ liquidity-agent/
 │   ├── migrations/20260904120000_liquidity_crm.sql   esquema completo (tablas, triggers, vistas, RLS)
 │   ├── migrations/20260904190000_liquidity_directorio.sql  tipos ampliados + columnas de origen del directorio
 │   ├── migrations/20260904230000_liquidity_monto_potencial.sql  monto potencial por institución + vista liq_v_potencial_directorio
+│   ├── migrations/20260905150000_liquidity_correos.sql   correos por etapa: plantillas, cola liq_correos, triggers y RPC para Gmail
 │   ├── directorio/                                   directorio maestro RWA (172 instituciones): .py, .json e insert idempotente
 │   └── seed_demo.sql                                 datos ficticios para probar en local
 ├── src/
@@ -57,6 +58,26 @@ Etapas: `identificado → contactado → primera_reunion → segunda_reunion →
 
 RPC: `liq_mover_etapa(oportunidad_id, etapa, motivo, proximo_paso, fecha_proximo_paso, monto_comprometido_usd)`.
 
+### Correos por etapa (Gmail)
+
+Al cambiar `liq_oportunidades.etapa`, el trigger `liq_oport_correo_etapa` renderiza la plantilla de esa etapa
+(`liq_plantillas_correo`, una fila por etapa, placeholders `{{decisor}} {{proveedor}} {{oportunidad}} {{vehiculo}}
+{{monto}} {{proximo_paso}} {{fecha_proximo_paso}} {{firma}}`) y deja el correo en la cola `liq_correos`:
+
+| Estado | Significado |
+|---|---|
+| `pendiente` | El proveedor tiene `contacto_email`: listo para abrir en Gmail. |
+| `sin_correo` | Falta la dirección. En cuanto se guarda `liq_proveedores.contacto_email`, el trigger `liq_prov_correo_email` lo pasa a `pendiente`. |
+| `borrador` / `enviado` | Ya está en Gmail (guarda `gmail_draft_id` / `gmail_message_id` / `gmail_thread_id`) y quedó registrado en `liq_interacciones` como `email`. |
+| `omitido` | Se decidió no mandarlo. |
+
+Etapas con plantilla: contactado, primera_reunion, segunda_reunion, due_diligence, compromiso_verbal, firmado, wired, nurture
+(identificado y perdido no generan correo). Firma y CC por defecto en `liq_correo_config`.
+
+RPC: `liq_correo_marcar(id, estado, para, gmail_draft_id, gmail_message_id, gmail_thread_id, asunto, cuerpo, error)` y
+`liq_correo_marcar_etapa(oportunidad_id, etapa, estado, …)`; vista `liq_v_correos_pendientes`. La base solo prepara:
+el envío lo hace el tablero (conector Gmail del visitante) o una persona desde `cli.js correos`.
+
 ## Tablero visual
 
 `dashboard/pipeline-liquidez.html` es el mismo tablero del Pipeline RWA, adaptado al funnel de liquidez:
@@ -65,6 +86,12 @@ tabla priorizada, vista de proveedores con KYC y el reporte «Lunes de liquidez�
 claude.ai; cuando el visor tiene el conector Supabase, lee y escribe las tablas `liq_*` en vivo mediante `execute_sql`.
 Sin conector, funciona con el snapshot embebido y exporta los cambios como SQL para aplicarlos desde el chat.
 Con el CRM vacío muestra datos de ejemplo marcados como tales.
+
+**Correos al mover fichas.** Al arrastrar una ficha a una etapa con plantilla se abre el correo de esa etapa ya
+rellenado; solo hay que confirmar la dirección (se guarda en el proveedor para la próxima vez). «Borrador en Gmail»
+lo deja en Borradores y «Enviar ahora» lo manda, ambos con el conector Gmail del visitante (`create_draft` /
+`send_message`); sin conector quedan «Abrir en mi correo» (mailto) y «Copiar». El botón **Correos** lista los
+pendientes (incluidos los que la base generó desde el CLI) y al sincronizar se marcan en `liq_correos` y en la bitácora.
 
 ## Uso
 

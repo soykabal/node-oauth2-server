@@ -15,6 +15,9 @@
  *   node liquidity-agent/src/cli.js interaccion --proveedor <uuid> [--oportunidad <uuid>] --tipo reunion --resumen "..." [--resultado "..."] [--siguiente "..."]
  *   node liquidity-agent/src/cli.js wire --oportunidad <uuid> --monto 400000 [--moneda USDC] [--ref 0x...] [--verificado]
  *   node liquidity-agent/src/cli.js perdidas
+ *   node liquidity-agent/src/cli.js correos                       correos por etapa que esperan Gmail (o la dirección)
+ *   node liquidity-agent/src/cli.js correo:ver --id <uuid>        muestra el correo listo para copiar/pegar
+ *   node liquidity-agent/src/cli.js correo:marcar --id <uuid> --estado borrador|enviado|omitido [--para x@y.com] [--draft <gmailDraftId>]
  *
  * Requiere SUPABASE_URL y SUPABASE_KEY en el entorno.
  */
@@ -163,6 +166,30 @@ async function main() {
   }
   case 'perdidas': {
     tabla(await c.motivosPerdida(), [{ h: 'motivo', k: 'motivo', w: 50 }, { h: 'casos', k: 'casos', w: 5 }, { h: 'monto', w: 14, f: f => fmtUsd(f.monto_usd) }]);
+    break;
+  }
+  case 'correos': {
+    const filas = await c.correosPendientes();
+    if (!filas.length) { console.log('Sin correos pendientes. Mové una oportunidad de etapa y la base prepara el siguiente.'); break; }
+    tabla(filas, [
+      { h: 'estado', k: 'estado', w: 10 }, { h: 'etapa', k: 'etapa', w: 18 }, { h: 'oportunidad', k: 'oportunidad', w: 34 },
+      { h: 'para', w: 30, f: f => f.para || '(falta la dirección)' }, { h: 'días', k: 'dias_esperando', w: 5 }, { h: 'id', k: 'id', w: 36 }
+    ]);
+    console.log('\n  correo:ver --id <id> para leerlo · correo:marcar --id <id> --estado enviado|borrador|omitido [--para ...]');
+    break;
+  }
+  case 'correo:ver': {
+    const f = (await c.correosPendientes()).find(x => x.id === args.id);
+    if (!f) { console.error('No hay un correo pendiente con ese id.'); process.exitCode = 1; break; }
+    console.log('Para: ' + (f.para || '(falta la dirección: correo:marcar --id ' + f.id + ' --estado pendiente --para x@y.com)'));
+    console.log('Asunto: ' + f.asunto + '\n\n' + f.cuerpo);
+    break;
+  }
+  case 'correo:marcar': {
+    const r = await c.marcarCorreo(args.id, args.estado, {
+      para: args.para, gmailDraftId: args.draft, gmailMessageId: args.mensaje, gmailThreadId: args.hilo
+    });
+    console.log('Correo ' + r.etapa + ' → ' + r.estado + (r.para ? ' · ' + r.para : ''));
     break;
   }
   default:
