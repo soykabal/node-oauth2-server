@@ -980,6 +980,7 @@ async function liveLoad(force){
     if(!window.claude||typeof window.claude.use!=="function") return;
     mcpNs=await window.claude.use("mcp"); if(!mcpNs) return;
     await liveLoad(false);
+    await autoAdjuntar();
     reconciliarEnviados();
   }catch(e){}
 })();
@@ -1125,6 +1126,20 @@ async function subirMateriales(){
     rows.forEach(([k,v])=>{ const c=(raw.config||[]).find(x=>x.clave===k); if(c) c.valor=v; else (raw.config=raw.config||[]).push({clave:k,valor:v}); });
     prog.innerHTML=`<b>${rows.length}</b> archivo${rows.length===1?"":"s"} en Drive. El agente los copia a la carpeta de cada institución en el próximo lote.`; btn.textContent="Listo";
   }catch(e){ prog.textContent="Drive: "+gmError(e); btn.disabled=false; }
+}
+// Al abrir el tablero con Gmail: los borradores registrados que no tienen el one-pager oficial lo reciben solos.
+async function autoAdjuntar(){
+  const rows=(raw.borradores||[]).filter(c=>c.gmail_draft_id&&(c.adjuntos||[]).some(a=>a.oficial&&!a.adjunto_en_gmail));
+  if(!rows.length||!mcpNs) return;
+  $("#note").insertAdjacentHTML("afterbegin",`<div class="note" id="auto-adj"><strong>Adjuntando el one-pager oficial a ${rows.length} borrador${rows.length===1?"":"es"} de Gmail…</strong> <span id="auto-adj-prog"></span></div>`);
+  let ok=0; const fail=[];
+  for(let i=0;i<rows.length;i++){ const r=rows[i]; const pe=$("#auto-adj-prog"); if(pe) pe.textContent=`${i+1}/${rows.length}: ${r.proveedor||r.asunto}`;
+    try{ const res=await gmCall(GM.update,{draftId:r.gmail_draft_id, attachments:lotAttachments(false)});
+      await sbQuery(`update liq_correos set adjuntos=(select coalesce(jsonb_agg(case when a->>'oficial'='true' then a||'{"adjunto_en_gmail":true}'::jsonb else a end),'[]'::jsonb) from jsonb_array_elements(adjuntos) a), gmail_draft_id=coalesce(${lit(res.id||null)},gmail_draft_id), gmail_thread_id=coalesce(${lit(res.threadId||null)},gmail_thread_id) where id=${sq(r.id)}`);
+      r.adjuntos=(r.adjuntos||[]).map(a=>a.oficial?Object.assign({},a,{adjunto_en_gmail:true}):a); if(res.id) r.gmail_draft_id=res.id; ok++; }
+    catch(e){ fail.push((r.proveedor||r.asunto)+": "+gmError(e)); const c=e&&e.code; if(c==="server_not_connected"||c==="needs_reauth"||c==="not_granted"||c==="selection_required"||c==="cancelled") break; }
+  }
+  const n=$("#auto-adj"); if(n) n.innerHTML=`<strong>${ok} borrador${ok===1?"":"es"} de Gmail con el one-pager oficial adjunto.</strong> ${fail.length?`<span style="color:var(--crit)">${fail.length} sin adjuntar: ${esc(fail.join(" | "))}. Reintentá desde <b>Correos → Reponer one-pager oficial</b>.</span>`:"Ya podés poner la dirección y enviar; el deck completo se agrega desde <b>Correos</b> si hace falta."}`;
 }
 // Al abrir el tablero con Gmail: un borrador que ya no existe y aparece en Enviados ⇒ 'enviado'
 // (la base mueve la ficha sola a la etapa del correo con follow-up D+4).
