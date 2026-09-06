@@ -1,5 +1,5 @@
 -- =============================================================================
--- Kabal · Agente de Liquidez — outreach diario a instituciones GO (7/día)
+-- Kabal · Agente de Liquidez — outreach diario a instituciones GO (N/día; hoy 8, ver 20260906120000)
 -- =============================================================================
 -- · El trigger de correos por etapa no regenera el correo de una etapa que ya
 --   tiene borrador/enviado (el primer correo se prepara ANTES de mover la ficha

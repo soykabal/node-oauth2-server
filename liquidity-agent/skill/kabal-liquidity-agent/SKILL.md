@@ -60,21 +60,28 @@ Probabilidad por defecto: 5 / 10 / 20 / 35 / 50 / 70 / 90 / 100 %. Se puede sobr
    muestra listo para pegar; `correo:marcar --id --estado borrador|enviado|omitido [--para x@y.com]` lo cierra y registra
    la interacción. Si falta la dirección (`sin_correo`), basta guardar `contacto_email` en el proveedor. En el tablero el
    mismo flujo abre Gmail (borrador o envío) al mover la ficha.
-7. **Lote diario de 7 GO** — cada mañana (lun–vie): (a) reconciliar borradores de Gmail que ya no existen → `enviado`,
-   ficha a `contactado`, follow-up día 4; (b) elegir los siguientes 7 GO sin oportunidad por `monto_potencial_usd`
-   (excluyendo plataformas, infraestructura y custodios); (c) crear oportunidad en `identificado` + primer correo en
-   inglés en `liq_correos` (etapa `contactado`, ≤200 palabras, línea personalizada por la tesis, CTA de 20 min,
-   adjunto = one-pager); (d) crear los 7 borradores en Gmail por API **con el one-pager KTFT adjunto**
-   (`tools/onepager_ktft_en.py` genera un PDF vectorial de ~3 KB en marca Kabal, apto para enviarlo por API; el deck
-   completo de 27 páginas pesa demasiado para la API y va en la llamada o bajo NDA), sin destinatario, y marcarlos
-   `borrador` con `liq_correo_marcar`; (e) en Drive, dentro de `Kabal_Liquidez_Outreach/<AAAA-MM-DD>/`, una carpeta por
-   institución con el one-pager y la copia del deck renombrada con la institución, más un LEEME del lote; guardar
-   carpeta/archivos en `liq_correos.adjuntos`; (f) reportar. El CEO abre cada borrador, pone la dirección y envía; si
-   quiere mandar el deck completo en el primer correo lo adjunta desde la carpeta, o usa el tablero (**Correos → Crear
-   borradores en Gmail con deck**) que sí lo adjunta porque corre con el conector del navegador.
+7. **Lote diario de 8 GO** — cada mañana (lun–vie): (a) reconciliar: un borrador de Gmail que ya no existe y aparece
+   en Enviados → `enviado`; la base mueve la ficha sola a `contactado` con follow-up D+4 (trigger
+   `liq_correos_enviado_mueve`, migración `20260906120000`); (b) elegir los siguientes 8 GO sin oportunidad por
+   `monto_potencial_usd` (excluyendo plataformas, infraestructura y custodios; `outreach_diario_go` en config);
+   (c) crear oportunidad en `identificado` + primer correo en inglés en `liq_correos` (etapa `contactado`, ≤200 palabras,
+   línea personalizada por la tesis, CTA de 20 min, `adjuntos` = one-pager oficial + deck de la carpeta); (d) crear los
+   8 borradores en Gmail por API (`create_draft`, sin destinatario) y marcarlos `borrador` con `liq_correo_marcar`;
+   (e) en Drive, dentro de `Kabal_Liquidez_Outreach/<AAAA-MM-DD>/`, una carpeta por institución con la copia del
+   **one-pager oficial** (`03_KTFT_Investor_OnePager_v4.pdf`, Drive `onepager_ktft_en_drive_id`, con logos según el
+   manual de marca) y la copia del deck renombrada con la institución, más un LEEME; (f) reportar.
+   **Adjunto del primer contacto = el one-pager oficial (130 KB).** Por API desde el chat solo es viable adjuntar
+   archivos de pocos KB (el base64 hay que transcribirlo entero); el one-pager oficial y el deck se adjuntan desde el
+   tablero, que corre con el conector Gmail del navegador: **Correos → «Crear borradores en Gmail con one-pager»** (lote
+   nuevo) o **«Reponer one-pager oficial»** (borradores ya creados por API). Nunca reemplazar el one-pager oficial por
+   uno generado: la marca (logo, Nexa, teal #075259 / lime #6FD904) la fija el manual de marca; `tools/onepager_ktft_en.py`
+   queda solo como respaldo de emergencia sin logo y no se usa en el lote.
    Método del primer contacto (kabal-capital-pipeline + email_playbooks): ≤200 palabras, un solo CTA (20 min), una línea
    personalizada por la tesis, yields "objetivo, no garantizado", nada de "first/only", pricing solo bajo NDA;
    secuencia después del envío: D+4 bump corto · D+10 aporte de valor · D+18 breakup · D+30 nurture.
+8. **Envío ⇒ avance automático** — al marcar un correo `enviado` (tablero, CLI o reconciliación), la ficha pasa sola a
+   la etapa de ese correo si está más adelante (hasta `compromiso_verbal`; `firmado`/`wired` siguen siendo manuales y
+   con regla KYC). El tablero, al abrirse con Gmail, detecta los borradores que ya se enviaron y los marca.
 
 ## Reglas duras (las hace cumplir la base, no solo el agente)
 
