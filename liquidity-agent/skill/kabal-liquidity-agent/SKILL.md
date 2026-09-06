@@ -80,10 +80,11 @@ Probabilidad por defecto: 5 / 10 / 20 / 35 / 50 / 70 / 90 / 100 %. Se puede sobr
    (yields "objetivo, no garantizado", definidos por emisión en su DIR). Formas de participar: ancla de emisiones
    primarias · facilidad programática (línea/warehouse a Kabal Capital / Kabal Trade Finance) · nota de colocación
    privada · liquidez secundaria. Sin referencias a KTFT en correos ni materiales.
-   **Adjuntos.** Por API desde el chat solo es viable adjuntar archivos de pocos KB; el one-pager (≈190 KB) y el deck
-   (≈260 KB) se adjuntan desde el tablero, que corre con el conector Gmail del navegador: **Correos → «Crear
-   borradores en Gmail con one-pager»** o **«Reponer one-pager oficial»**. Los materiales se generan con
-   `tools/marketplace_materials/` (HTML en marca → PDF con Chromium; Nexa embebida, isologo oficial).
+   **Adjuntos.** El primer correo lleva SIEMPRE el one-pager adjunto por API: la versión ligera
+   `tools/marketplace_materials/onepager_lean.py` (≈20 KB: Helvetica, logo oficial en JPEG, paleta de marca), que sí
+   cabe en una llamada `create_draft`/`update_draft` (base64 ≈26 K caracteres; delegar cada adjunto a un subagente si
+   son muchos). La versión con Nexa (≈190 KB) y el deck (≈260 KB) no caben por API: viven embebidos en el tablero
+   (**Correos → «Reponer one-pager oficial»** los adjunta con el conector del navegador) y en Drive.
    Método del primer contacto (kabal-capital-pipeline + email_playbooks): ≤200 palabras, un solo CTA (20 min), una línea
    personalizada por la tesis, yields "objetivo, no garantizado", nada de "first/only", pricing solo bajo NDA;
    secuencia después del envío: D+4 bump corto · D+10 aporte de valor · D+18 breakup · D+30 nurture.

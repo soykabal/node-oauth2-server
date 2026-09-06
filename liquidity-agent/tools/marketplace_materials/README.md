@@ -15,3 +15,11 @@ node render_pdf.js
 El one-pager es el adjunto del primer contacto; el deck va en la llamada o bajo NDA. Contenido canónico: Operator
 Document Scope del marketplace (Listing/Trading Rules, DIR, AML/KYC, conflictos, fee schedule), sin referencias a un
 token específico, yields "objetivo, no garantizado", sin "first/only", pricing solo bajo NDA.
+
+## Versión ligera para adjuntar por API (`onepager_lean.py`)
+
+El PDF renderizado con Chromium embebe Nexa como fuente Type3 (≈190 KB) y no puede adjuntarse por API desde el chat.
+`onepager_lean.py` genera el mismo one-pager en ≈20 KB: texto en Helvetica (WinAnsi), logo oficial como JPEG con el
+fondo de marca horneado (`logo_dark_on_navy.jpg` 360 px, `logo_light_on_grey.jpg` 200 px) y la paleta oficial.
+Es el adjunto que el agente pone en los borradores del lote diario; la versión con Nexa queda embebida en el tablero
+(«Reponer one-pager oficial») y en Drive.
