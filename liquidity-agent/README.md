@@ -12,6 +12,7 @@ liquidity-agent/
 │   ├── migrations/20260904190000_liquidity_directorio.sql  tipos ampliados + columnas de origen del directorio
 │   ├── migrations/20260904230000_liquidity_monto_potencial.sql  monto potencial por institución + vista liq_v_potencial_directorio
 │   ├── migrations/20260905150000_liquidity_correos.sql   correos por etapa: plantillas, cola liq_correos, triggers y RPC para Gmail
+│   ├── migrations/20260906010000_liquidity_correos_outreach.sql  lote diario de 7 GO: adjuntos, firma del CEO, deck por defecto, vista del día
 │   ├── directorio/                                   directorio maestro RWA (172 instituciones): .py, .json e insert idempotente
 │   └── seed_demo.sql                                 datos ficticios para probar en local
 ├── src/
@@ -73,6 +74,14 @@ Al cambiar `liq_oportunidades.etapa`, el trigger `liq_oport_correo_etapa` render
 
 Etapas con plantilla: contactado, primera_reunion, segunda_reunion, due_diligence, compromiso_verbal, firmado, wired, nurture
 (identificado y perdido no generan correo). Firma y CC por defecto en `liq_correo_config`.
+
+**Lote diario de 7 GO (outreach).** Cada mañana el agente elige los siguientes 7 proveedores GO sin oportunidad
+(por `monto_potencial_usd`), crea la oportunidad en `identificado` y deja en `liq_correos` el primer correo en inglés
+(≤200 palabras, una línea personalizada por la tesis del proveedor, un solo CTA de 20 minutos, sin promesas) con
+`adjuntos = [deck institucional KTFT]`. En el tablero, **Correos → «Crear borradores en Gmail con deck»** crea los 7
+borradores con el PDF adjunto de un clic; en Gmail solo falta la dirección y enviar. Al día siguiente el agente
+reconcilia: el borrador que ya no existe se marca `enviado` y la ficha pasa a `contactado` con follow-up al día 4.
+El trigger no regenera el correo de una etapa que ya tiene borrador/enviado. Vista `liq_v_correos_del_dia`.
 
 RPC: `liq_correo_marcar(id, estado, para, gmail_draft_id, gmail_message_id, gmail_thread_id, asunto, cuerpo, error)` y
 `liq_correo_marcar_etapa(oportunidad_id, etapa, estado, …)`; vista `liq_v_correos_pendientes`. La base solo prepara:

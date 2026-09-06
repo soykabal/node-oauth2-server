@@ -60,6 +60,12 @@ Probabilidad por defecto: 5 / 10 / 20 / 35 / 50 / 70 / 90 / 100 %. Se puede sobr
    muestra listo para pegar; `correo:marcar --id --estado borrador|enviado|omitido [--para x@y.com]` lo cierra y registra
    la interacción. Si falta la dirección (`sin_correo`), basta guardar `contacto_email` en el proveedor. En el tablero el
    mismo flujo abre Gmail (borrador o envío) al mover la ficha.
+7. **Lote diario de 7 GO** — cada mañana (lun–vie): (a) reconciliar borradores de Gmail que ya no existen → `enviado`,
+   ficha a `contactado`, follow-up día 4; (b) elegir los siguientes 7 GO sin oportunidad por `monto_potencial_usd`
+   (excluyendo plataformas, infraestructura y custodios); (c) crear oportunidad en `identificado` + primer correo en
+   inglés en `liq_correos` (etapa `contactado`, ≤200 palabras, línea personalizada por la tesis, CTA de 20 min,
+   adjunto = deck institucional KTFT); (d) reportar. El agente no crea los borradores por API: los crea el tablero
+   (**Correos → Crear borradores en Gmail con deck**) para que el PDF quede adjunto; el CEO pone la dirección y envía.
 
 ## Reglas duras (las hace cumplir la base, no solo el agente)
 
