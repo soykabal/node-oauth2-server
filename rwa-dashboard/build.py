@@ -22,6 +22,9 @@ KEEP = [
     "valor_potencial_usd", "valor_tier", "valor_confianza", "valor_clase",
     "valor_racional", "fee_potencial_usd", "fee_recurrente_anual_usd",
     "valor_canal",
+    # paquete de outreach (LEFT JOIN bridge_lead_outreach)
+    "outreach_gancho", "outreach_propuesta", "outreach_asunto", "outreach_cuerpo",
+    "outreach_proximo_paso", "outreach_generado_en",
 ]
 MARKER = "/*__LEADS__*/[]"
 

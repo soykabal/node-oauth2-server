@@ -37,6 +37,8 @@ quedó desactivada). Cada mañana:
 0. **Valora los leads nuevos** que el scout agregó y aún no tienen fila en
    `bridge_lead_valoraciones` (mismo método: estimación → escéptico → tier/fees
    canónicos) y los inserta.
+0b. **Genera el paquete de outreach** de los GO del Outbox (sin correo) que aún no tienen
+   fila en `bridge_lead_outreach` (ver sección "Paquete de outreach") y lo inserta.
 
 Y luego hace el refresco del tablero:
 
@@ -60,9 +62,13 @@ select json_agg(l order by l.updated_at desc) from (
          b.created_at, b.updated_at,
          v.valor_potencial_usd, v.tier as valor_tier, v.confianza as valor_confianza,
          v.clase as valor_clase, v.racional as valor_racional,
-         v.fee_potencial_usd, v.fee_recurrente_anual_usd, v.canal as valor_canal
+         v.fee_potencial_usd, v.fee_recurrente_anual_usd, v.canal as valor_canal,
+         o.gancho as outreach_gancho, o.propuesta as outreach_propuesta,
+         o.email_asunto as outreach_asunto, o.email_cuerpo as outreach_cuerpo,
+         o.proximo_paso as outreach_proximo_paso, o.generado_en as outreach_generado_en
   from bridge_leads b
   left join bridge_lead_valoraciones v on v.lead_id = b.id
+  left join bridge_lead_outreach o on o.lead_id = b.id
 ) l;
 ```
 
@@ -84,6 +90,33 @@ toca `bridge_leads`). Por prospecto guarda:
 
 Los leads nuevos que entren por el scout aparecen **sin valorar** hasta que se corra
 de nuevo la valoración (o se valoren a mano en la tabla).
+
+## Paquete de outreach (Outbox)
+
+Tabla lateral `public.bridge_lead_outreach` (aditiva; `lead_id` → `bridge_leads.id`). Para cada
+prospecto del Outbox calificado **GO**, el agente de ventas deja listo un paquete para enviar
+apenas aparezca el contacto:
+
+- `gancho` — una frase que conecta la señal pública con levantar capital en el marketplace.
+- `propuesta` (jsonb, 3 bullets) — el one-pager: activo y tamaño de la primera emisión ·
+  qué gana el emisor · cómo funciona / siguiente paso.
+- `email_asunto`, `email_cuerpo` — correo frío (≤200 palabras, un solo CTA: llamada de 20–30 min).
+- `proximo_paso` — qué hacer al conseguir el contacto (a quién buscar, por qué canal, qué adjuntar).
+- `version` (`v1_marketplace`), `generado_en`.
+
+En el tablero: la vista **Outbox** marca con `📎 listo` los prospectos con paquete (columna
+ordenable), y el drawer muestra la sección **Paquete de outreach** con botones para copiar
+asunto/correo, abrir el borrador en el cliente de correo (`mailto:`) y **Ver one-pager**
+(panel con marca Kabal, imprimible a PDF desde el navegador).
+
+Reglas del paquete (brand guardian + playbook): sin promesas de rendimiento ni de aprobación
+CNAD, sin pricing (solo bajo NDA), sin "primero/único", bancos como aliados, Kabal Bridge como
+PSAD estructurador (el emisor es el prospecto), firma "Guillermo Kattan · Kabal Bridge ·
+contacto@soykabal.com". El agente solo redacta; nunca envía.
+
+El barrido diario genera el paquete de los **GO nuevos del Outbox** que aún no tengan fila en
+`bridge_lead_outreach` (paso 0b). Los generados: `scratchpad/outreach/` (lotes, resultados,
+`merge_outreach.py` → `outreach_upsert.sql`).
 
 ## Nota sobre los cambios hechos en el tablero
 

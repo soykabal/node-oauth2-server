@@ -137,7 +137,7 @@ header{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--surfa
 .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 table{border-collapse:collapse;width:100%;font-size:12.5px;min-width:900px}
 th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
-th{position:sticky;top:57px;background:var(--panel);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;
+th{position:sticky;top:0;background:var(--panel);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;
   color:var(--muted);cursor:pointer;font-weight:700;z-index:5}
 th:hover{color:var(--ink)}
 tbody tr:hover{background:var(--accent-bg)}
@@ -196,7 +196,7 @@ td .amt{font-family:"IBM Plex Mono";color:var(--gold);font-weight:600}
 @media (max-width:640px){
   .wrap{padding:14px 12px 40px} header{padding:10px 12px}
   .col{flex-basis:82vw}
-  th{top:53px}
+  th{top:0}
 }
 .chip.outbox-chip.on{background:var(--accent-bg);color:var(--accent-ink);border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
 #btn-outbox .obx{font-family:"IBM Plex Mono";font-size:11px;font-weight:700;background:var(--explore-bg);color:var(--explore);
@@ -230,6 +230,56 @@ td .potv{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--gold)
 :root[data-theme="dark"] .brand .logo-light{display:none}
 :root[data-theme="dark"] .brand .logo-dark{display:block}
 .brand .sep{width:1px;height:28px;background:var(--line-2);flex:0 0 auto}
+/* ---- paquete de outreach (Outbox) ---- */
+.clip{font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:700;letter-spacing:.04em;padding:2px 7px;border-radius:20px;
+  background:var(--accent-bg);color:var(--accent-ink);border:1px solid color-mix(in srgb,var(--accent) 40%,transparent);white-space:nowrap}
+.clip.off{background:var(--panel);color:var(--muted);border-color:var(--line)}
+.pkg{background:var(--surface-2);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:10px;padding:13px 14px;display:flex;flex-direction:column;gap:11px}
+.pkg .pkg-head{display:flex;align-items:center;gap:8px}
+.pkg .pkg-head .eyebrow{flex:1}
+.pkg .hook{font-family:"Montserrat",sans-serif;font-weight:700;font-size:13.5px;line-height:1.4;color:var(--accent-ink)}
+.pkg ul{margin:0;padding-left:18px;font-size:12.5px;line-height:1.5;color:var(--ink-2)}
+.pkg ul li{margin:3px 0}
+.pkg .lbl{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-family:"IBM Plex Mono",monospace;display:flex;align-items:center;gap:8px}
+.pkg .lbl button{margin-left:auto}
+.pkg .subj{font-weight:700;font-size:13px;color:var(--ink)}
+.pkg .body{white-space:pre-wrap;font-size:12.5px;line-height:1.55;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px;max-height:260px;overflow:auto}
+.pkg .next{font-size:12px;color:var(--ink-2);border-left:3px solid var(--explore);padding:4px 10px;background:var(--panel);border-radius:0 6px 6px 0}
+.mini{font-size:11px;font-weight:700;padding:4px 9px;border-radius:6px;border:1px solid var(--line-2);background:var(--surface-2);color:var(--accent-ink);cursor:pointer}
+.mini:hover{border-color:var(--accent)}
+.pkg .actions{display:flex;gap:8px;flex-wrap:wrap}
+.pkg .actions a{text-decoration:none}
+.pkg .gen{font-size:10.5px;color:var(--muted);font-family:"IBM Plex Mono",monospace}
+.pkg-empty{font-size:12px;color:var(--muted);background:var(--panel);border:1px dashed var(--line-2);border-radius:8px;padding:9px 12px}
+/* one-pager */
+.onepager{background:#FFFFFF;color:#141E26;width:min(760px,96vw);max-height:90vh;overflow:auto;border-radius:14px;box-shadow:var(--shadow-lg);font-family:"Source Sans 3",sans-serif}
+.onepager .op-bar{display:flex;align-items:center;gap:10px;padding:10px 16px;border-bottom:1px solid #DBE3E2;background:#F4F7F6}
+.onepager .op-bar .sp{flex:1}
+.onepager .op-page{padding:34px 40px 30px}
+.onepager .op-top{display:flex;align-items:center;gap:14px;border-bottom:3px solid #075259;padding-bottom:14px;margin-bottom:22px}
+.onepager .op-top img{height:34px;width:auto}
+.onepager .op-top .tag{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6E7C7E}
+.onepager h1{font-family:"Montserrat",sans-serif;font-size:22px;font-weight:800;color:#141E26;margin:0 0 4px;line-height:1.2}
+.onepager .op-sub{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#075259;margin-bottom:18px}
+.onepager .op-hook{font-family:"Montserrat",sans-serif;font-size:15px;font-weight:600;line-height:1.45;color:#053C41;background:#DDEBEA;border-left:4px solid #6FD904;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:22px}
+.onepager h3{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6E7C7E;margin:18px 0 8px}
+.onepager .op-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.onepager .op-card{border:1px solid #DBE3E2;border-radius:10px;padding:12px 13px;font-size:13px;line-height:1.45;color:#3C4A50}
+.onepager .op-card b{display:block;font-family:"Montserrat",sans-serif;font-size:11.5px;color:#075259;margin-bottom:5px}
+.onepager .op-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.onepager .op-step{font-size:12px;line-height:1.4;color:#3C4A50;border-top:2px solid #6FD904;padding-top:7px}
+.onepager .op-step b{display:block;font-family:"Montserrat",sans-serif;font-size:12px;color:#141E26;margin-bottom:3px}
+.onepager .op-foot{margin-top:26px;padding-top:12px;border-top:1px solid #DBE3E2;display:flex;gap:12px;flex-wrap:wrap;font-size:11.5px;color:#6E7C7E;line-height:1.5}
+.onepager .op-foot b{color:#141E26}
+@media (max-width:640px){ .onepager .op-grid,.onepager .op-steps{grid-template-columns:1fr} .onepager .op-page{padding:22px 18px} }
+@media print{
+  body *{visibility:hidden !important}
+  #op-scrim,#op-scrim *{visibility:visible !important}
+  #op-scrim{position:static !important;display:block !important;padding:0 !important;background:none !important}
+  .onepager{box-shadow:none !important;width:auto !important;max-height:none !important;border-radius:0 !important}
+  .onepager .op-bar{display:none !important}
+  .onepager .op-page{padding:0 !important}
+}
 </style>
 
 <header>
@@ -278,10 +328,13 @@ td .potv{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--gold)
       <strong>Outbox — prospectos sin contacto.</strong> Estos leads entraron por el scout pero todavía no tienen correo ni decisor,
       así que están fuera del tablero activo. El objetivo aquí es <em>conseguirles un contacto</em> (correo/decisor) para activarlos;
       priorizá los <span class="q GO" style="padding:1px 5px;border-radius:4px">GO</span>. Al cargar el contacto en Supabase, el prospecto sale del Outbox y entra al tablero.
+      Los que traen <span class="clip">📎 paquete</span> ya tienen su <strong>paquete de outreach</strong> listo (gancho, one-pager y correo frío del agente de ventas): abrí el prospecto para copiarlo o imprimir el one-pager y enviarlo apenas aparezca el contacto.
     </div>
     <div class="tablewrap"><table id="outbox-table"><thead></thead><tbody></tbody></table></div>
   </div>
 </div>
+
+<div class="modal-scrim" id="op-scrim"><div class="onepager" id="onepager"></div></div>
 
 <div class="scrim" id="scrim"></div>
 <aside class="drawer" id="drawer" aria-hidden="true"></aside>
@@ -364,6 +417,12 @@ function tierChip(t){ if(t==null||t==="") return ""; return `<span class="tier t
 function confDot(c){ if(!c) return ""; return `<span class="conf ${c}" title="Confianza ${c}"></span>`; }
 function potHTML(l){ const p=money(l.valor_potencial_usd); if(!p) return "";
   return `<div class="pot"><span class="mono potv">≈ ${p}</span>${tierChip(l.valor_tier)}${confDot(l.valor_confianza)}<span class="potlbl">marketplace</span></div>`; }
+/* paquete de outreach (bridge_lead_outreach) */
+function hasPkg(l){ return !!(l.outreach_asunto && l.outreach_cuerpo); }
+function pkgBullets(l){ const p=l.outreach_propuesta; if(Array.isArray(p)) return p; if(typeof p==="string"){ try{ const j=JSON.parse(p); if(Array.isArray(j)) return j; }catch(e){} return p?[p]:[]; } return []; }
+async function copyText(t,btn){ try{ await navigator.clipboard.writeText(t); }catch(e){ const ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand&&document.execCommand("copy");ta.remove(); }
+  if(btn){ const o=btn.textContent; btn.textContent="✓ Copiado"; setTimeout(()=>btn.textContent=o,1400); } }
+function mailtoHref(l){ const to=l.contacto_email?encodeURIComponent(l.contacto_email):""; return `mailto:${to}?subject=${encodeURIComponent(l.outreach_asunto||"")}&body=${encodeURIComponent(l.outreach_cuerpo||"")}`; }
 
 /* ---------- filters ---------- */
 const state={ q:"", pais:"", sector:"", activo:"", quals:new Set(), money:false, includeOutbox:false, view:"board", sort:{key:"empresa",dir:1}, osort:{key:"valor_potencial_usd",dir:-1} };
@@ -408,6 +467,7 @@ function renderKpis(){
   const fees=v.reduce((s,l)=>s+(+l.fee_potencial_usd||0),0);
   const feesRec=v.reduce((s,l)=>s+(+l.fee_recurrente_anual_usd||0),0);
   const withPot=v.filter(l=>l.valor_potencial_usd>0).length;
+  const pkgBox=v.filter(l=>!hasContact(l) && hasPkg(l)).length;
   // stage spark (whole book)
   const counts=STAGES.map(s=>({s,n:v.filter(l=>l.etapa===s.k).length})).filter(x=>x.n);
   const spark=counts.map(x=>`<span style="flex:${x.n};background:${x.s.c}" title="${x.s.label}: ${x.n}"></span>`).join("");
@@ -420,7 +480,7 @@ function renderKpis(){
     <div class="kpi"><div class="eyebrow">En gestión activa</div><div class="big mono">${active}</div>
       <div class="sub">con contacto y fuera de «nuevo»</div></div>
     <div class="kpi outbox-kpi"><div class="eyebrow">Outbox · sin contacto</div><div class="big mono" style="color:var(--explore)">${box}</div>
-      <div class="sub"><b>${goBox}</b> de ellos GO · falta correo/decisor</div></div>
+      <div class="sub"><b>${goBox}</b> de ellos GO · <b>${pkgBox}</b> con paquete de outreach listo</div></div>
     <div class="kpi pot-kpi"><div class="eyebrow">Capital a levantar · Marketplace Bridge</div><div class="big mono">${money(pot)||"—"}</div>
       <div class="sub">${withPot} emisiones propias valoradas · <b>${money(potGo)||"—"}</b> en GO</div></div>
     <div class="kpi"><div class="eyebrow">Fee potencial Kabal Bridge</div><div class="big mono" style="color:var(--accent-ink)">${money(fees)||"—"}</div>
@@ -563,6 +623,7 @@ function openDrawer(id){
       </dl>
       ${l.senal?`<div class="signal"><div class="eyebrow">Señal de origen${l.senal_fecha?" · "+fdate(l.senal_fecha):""}</div>${esc(l.senal)}
         ${l.senal_url?`<div style="margin-top:7px"><a href="${esc(l.senal_url)}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;font-size:12px">Ver fuente ↗</a></div>`:""}</div>`:""}
+      ${pkgHTML(l)}
       <div class="field"><label for="d-notas">Notas de gestión</label>
         <textarea id="d-notas" placeholder="Próximo paso, contexto, compromisos…">${esc(l.notas||"")}</textarea></div>
     </div>
@@ -582,7 +643,63 @@ function openDrawer(id){
     save.disabled=true; refresh(false);
   };
   $("#drawer-close").onclick=closeDrawer; $("#d-cancel").onclick=closeDrawer;
+  if(hasPkg(l)){
+    $("#pk-copy-subj").onclick=e=>copyText(l.outreach_asunto,e.currentTarget);
+    $("#pk-copy-body").onclick=e=>copyText(l.outreach_cuerpo,e.currentTarget);
+    $("#pk-copy-all").onclick=e=>copyText(`Asunto: ${l.outreach_asunto}\n\n${l.outreach_cuerpo}`,e.currentTarget);
+    $("#pk-onepager").onclick=()=>openOnePager(l.id);
+  }
 }
+function pkgHTML(l){
+  if(!hasPkg(l)){
+    if(hasContact(l)) return "";
+    return `<div class="pkg-empty">📎 Sin paquete de outreach todavía${l.calificacion==="GO"?" · se genera en el barrido diario":" · se generan primero los GO"}.</div>`;
+  }
+  const b=pkgBullets(l);
+  return `<div class="pkg">
+    <div class="pkg-head"><div class="eyebrow">📎 Paquete de outreach · listo para enviar</div><span class="gen">${l.outreach_generado_en?fdate(l.outreach_generado_en):""}</span></div>
+    ${l.outreach_gancho?`<div class="hook">${esc(l.outreach_gancho)}</div>`:""}
+    ${b.length?`<div><div class="lbl">One-pager · propuesta</div><ul>${b.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:""}
+    <div><div class="lbl">Asunto <button class="mini" id="pk-copy-subj">Copiar</button></div><div class="subj">${esc(l.outreach_asunto)}</div></div>
+    <div><div class="lbl">Correo frío <button class="mini" id="pk-copy-body">Copiar</button></div><div class="body">${esc(l.outreach_cuerpo)}</div></div>
+    ${l.outreach_proximo_paso?`<div class="next"><b>Próximo paso:</b> ${esc(l.outreach_proximo_paso)}</div>`:""}
+    <div class="actions">
+      <button class="mini" id="pk-onepager">Ver one-pager</button>
+      <button class="mini" id="pk-copy-all">Copiar asunto + correo</button>
+      <a class="mini" href="${mailtoHref(l)}" title="${hasContact(l)?"Abre tu cliente de correo con el borrador":"Abre el borrador sin destinatario (aún no hay contacto)"}">Abrir borrador ✉</a>
+    </div>
+  </div>`;
+}
+/* one-pager imprimible (marca Kabal) */
+function openOnePager(id){
+  const l=byId[id]; if(!l||!hasPkg(l)) return;
+  const logo=$(".brand .logo-light")?.src||"";
+  const b=pkgBullets(l);
+  const titles=["Activo y emisión","Qué gana el emisor","Cómo funciona"];
+  $("#onepager").innerHTML=`
+    <div class="op-bar"><span class="eyebrow">One-pager · ${esc(l.empresa)}</span><span class="sp"></span>
+      <button class="mini" id="op-print">Imprimir / PDF</button><button class="mini" id="op-close">Cerrar</button></div>
+    <div class="op-page">
+      <div class="op-top">${logo?`<img src="${logo}" alt="Kabal">`:`<b>Kabal</b>`}<span class="tag">Kabal Bridge · Marketplace RWA · Centroamérica</span></div>
+      <h1>${esc(l.empresa)}</h1>
+      <div class="op-sub">${esc(l.pais||"")}${l.pais&&l.sector?" · ":""}${esc(l.sector||"")}${l.valor_potencial_usd>0?` · primera emisión ≈ ${money(l.valor_potencial_usd)}`:""}</div>
+      ${l.outreach_gancho?`<div class="op-hook">${esc(l.outreach_gancho)}</div>`:""}
+      <h3>Propuesta</h3>
+      <div class="op-grid">${b.slice(0,3).map((x,i)=>`<div class="op-card"><b>${titles[i]||""}</b>${esc(x)}</div>`).join("")}</div>
+      <h3>Ruta de trabajo</h3>
+      <div class="op-steps">
+        <div class="op-step"><b>1 · Llamada</b>20–30 min para entender el activo y la necesidad de capital.</div>
+        <div class="op-step"><b>2 · Evaluación</b>Bajo NDA, 2–3 semanas: activo, flujos y estructura.</div>
+        <div class="op-step"><b>3 · Estructuración</b>Tokenización del activo (ERC-7943) con Kabal Bridge como PSAD estructurador.</div>
+        <div class="op-step"><b>4 · Marketplace</b>Listado en el marketplace Bridge ante inversionistas regionales y administración post-emisión.</div>
+      </div>
+      <div class="op-foot"><span><b>Guillermo Kattan</b> · Kabal Bridge · contacto@soykabal.com</span><span>Kabal Bridge estructura y lista; el emisor es ${esc(l.empresa)}. Este documento es informativo, no constituye oferta de valores ni promesa de rendimiento.</span></div>
+    </div>`;
+  $("#op-scrim").classList.add("open");
+  $("#op-close").onclick=()=>$("#op-scrim").classList.remove("open");
+  $("#op-print").onclick=()=>window.print();
+}
+$("#op-scrim").onclick=e=>{ if(e.target.id==="op-scrim") $("#op-scrim").classList.remove("open"); };
 function closeDrawer(){ openId=null; $("#drawer").classList.remove("open"); $("#drawer").setAttribute("aria-hidden","true"); $("#scrim").classList.remove("open"); }
 $("#scrim").onclick=closeDrawer;
 
@@ -642,13 +759,14 @@ modal.onclick=e=>{ if(e.target===modal) modal.classList.remove("open"); };
 /* ---------- outbox ---------- */
 const OCOLS=[
   {k:"empresa",t:"Empresa"},{k:"pais",t:"País"},{k:"sector",t:"Sector"},
-  {k:"tipo_activo",t:"Activo"},{k:"valor_potencial_usd",t:"Liq. marketplace",num:true},{k:"calificacion",t:"Calif."},{k:"senal",t:"Señal de origen"},
+  {k:"tipo_activo",t:"Activo"},{k:"valor_potencial_usd",t:"Liq. marketplace",num:true},{k:"calificacion",t:"Calif."},{k:"_pkg",t:"Paquete",num:true},{k:"senal",t:"Señal de origen"},
 ];
 function renderOutbox(){
   let v=outboxList();
   const {key,dir}=state.osort;
   const numeric=OCOLS.find(c=>c.k===key)?.num;
   v=[...v].sort((a,b)=>{
+    if(key==="_pkg"){ return ((hasPkg(a)?1:0)-(hasPkg(b)?1:0))*dir || ((+b.valor_potencial_usd||0)-(+a.valor_potencial_usd||0)); }
     if(numeric){ return ((+a[key]||0)-(+b[key]||0))*dir; }
     let x=(a[key]==null?"":String(a[key])).toLowerCase(), y=(b[key]==null?"":String(b[key])).toLowerCase();
     return x<y?-dir:x>y?dir:0;
@@ -661,8 +779,9 @@ function renderOutbox(){
     <td>${esc(l.tipo_activo||"—")}</td>
     <td>${money(l.valor_potencial_usd)?`<span class="potv">≈ ${money(l.valor_potencial_usd)}</span> ${tierChip(l.valor_tier)} ${confDot(l.valor_confianza)}`:"—"}</td>
     <td><span class="q ${l.calificacion}" style="padding:2px 6px;border-radius:5px;font-size:10px;font-weight:800">${l.calificacion}</span></td>
+    <td>${hasPkg(l)?`<span class="clip" title="Paquete de outreach listo: gancho, one-pager y correo frío">📎 listo</span>`:`<span class="clip off">—</span>`}</td>
     <td class="senal">${esc((l.senal||"—").slice(0,150))}${l.senal&&l.senal.length>150?"…":""}${l.senal_url?` <a href="${esc(l.senal_url)}" target="_blank" rel="noopener">↗</a>`:""}</td>
-  </tr>`).join("") || `<tr><td colspan="7" class="empty">Sin prospectos en el Outbox con estos filtros.</td></tr>`;
+  </tr>`).join("") || `<tr><td colspan="8" class="empty">Sin prospectos en el Outbox con estos filtros.</td></tr>`;
   $$("#outbox-table thead th").forEach(th=>th.onclick=()=>{
     const k=th.dataset.k;
     if(state.osort.key===k) state.osort.dir*=-1; else state.osort={key:k,dir:1};
@@ -680,7 +799,8 @@ function refresh(rerenderDrawerCounts=true){
   const dirtyNote=Object.keys(overrides).length?` · <b style="color:var(--accent)">${Object.keys(overrides).length}</b> con cambios sin sincronizar`:"";
   if(state.view==="outbox"){
     const o=outboxList();
-    $("#count-line").innerHTML=`<b>${o.length}</b> prospecto${o.length===1?'':'s'} en el Outbox (sin contacto) de ${OUTBOX_TOTAL} totales`+dirtyNote;
+    const np=o.filter(hasPkg).length;
+    $("#count-line").innerHTML=`<b>${o.length}</b> prospecto${o.length===1?'':'s'} en el Outbox (sin contacto) de ${OUTBOX_TOTAL} totales · <b>${np}</b> con 📎 paquete de outreach`+dirtyNote;
     renderOutbox();
   }else{
     const v=visible();
