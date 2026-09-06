@@ -64,8 +64,12 @@ Probabilidad por defecto: 5 / 10 / 20 / 35 / 50 / 70 / 90 / 100 %. Se puede sobr
    ficha a `contactado`, follow-up día 4; (b) elegir los siguientes 7 GO sin oportunidad por `monto_potencial_usd`
    (excluyendo plataformas, infraestructura y custodios); (c) crear oportunidad en `identificado` + primer correo en
    inglés en `liq_correos` (etapa `contactado`, ≤200 palabras, línea personalizada por la tesis, CTA de 20 min,
-   adjunto = deck institucional KTFT); (d) reportar. El agente no crea los borradores por API: los crea el tablero
-   (**Correos → Crear borradores en Gmail con deck**) para que el PDF quede adjunto; el CEO pone la dirección y envía.
+   adjunto = deck institucional KTFT); (d) crear los 7 borradores en Gmail por API (sin adjunto, sin destinatario) y
+   marcarlos `borrador` con `liq_correo_marcar`; (e) en Drive, dentro de `Kabal_Liquidez_Outreach/<AAAA-MM-DD>/`, una
+   carpeta por institución con los adjuntos (copia del deck renombrada con la institución) y un LEEME del lote, y guardar
+   carpeta/archivo en `liq_correos.adjuntos`; (f) reportar. El CEO abre cada borrador, pone la dirección, adjunta el PDF
+   de la carpeta y envía. (Alternativa: el tablero puede crear los borradores con el PDF ya adjunto desde
+   **Correos → Crear borradores en Gmail con deck**, cuando el correo sigue pendiente.)
 
 ## Reglas duras (las hace cumplir la base, no solo el agente)
 
