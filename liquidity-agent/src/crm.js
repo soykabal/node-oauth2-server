@@ -27,7 +27,7 @@ const ETAPAS = [
 
 const ETAPAS_ACTIVAS = ETAPAS.slice(0, 8);
 
-const VEHICULOS = ['ktft', 'emision_b2b', 'linea_credito', 'warehouse', 'deuda_privada'];
+const VEHICULOS = ['ktft', 'emision_b2b', 'linea_credito', 'warehouse', 'deuda_privada', 'marketplace'];
 
 const TIPOS_PROVEEDOR = [
   'family_office', 'fondo', 'gestor_activos', 'hnwi', 'banco', 'banca_inversion', 'fintech_lender',
@@ -147,7 +147,7 @@ function validarEtapa(etapa) {
 // ---------------------------------------------------------------------------
 
 const VEHICULO_LABEL = {
-  ktft: 'KTFT', emision_b2b: 'emisión B2B', linea_credito: 'línea de crédito', warehouse: 'warehouse', deuda_privada: 'deuda privada'
+  ktft: 'KTFT', emision_b2b: 'emisión B2B', linea_credito: 'línea de crédito', warehouse: 'warehouse', deuda_privada: 'deuda privada', marketplace: 'marketplace Kabal'
 };
 
 function renderPlantilla(plantilla, oportunidad, proveedor, extra) {

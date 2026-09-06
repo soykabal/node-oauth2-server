@@ -40,6 +40,7 @@ Un proveedor sin oportunidad NO está en el funnel: se crea la oportunidad (veh�
 ## Funnel (etapas de `liq_oportunidades.etapa`)
 
 `identificado → contactado → primera_reunion → segunda_reunion → due_diligence → compromiso_verbal → firmado → wired`
+Vehículos: `marketplace` (liquidez para el Kabal Digital Marketplace, el default del outreach) · `ktft` · `emision_b2b` · `linea_credito` · `warehouse` · `deuda_privada`.
 Salidas: `nurture` (no por ahora, entra al update mensual) · `perdido` (exige `motivo_perdida`).
 
 Probabilidad por defecto: 5 / 10 / 20 / 35 / 50 / 70 / 90 / 100 %. Se puede sobreescribir a mano.
@@ -64,18 +65,25 @@ Probabilidad por defecto: 5 / 10 / 20 / 35 / 50 / 70 / 90 / 100 %. Se puede sobr
    en Enviados → `enviado`; la base mueve la ficha sola a `contactado` con follow-up D+4 (trigger
    `liq_correos_enviado_mueve`, migración `20260906120000`); (b) elegir los siguientes 8 GO sin oportunidad por
    `monto_potencial_usd` (excluyendo plataformas, infraestructura y custodios; `outreach_diario_go` en config);
-   (c) crear oportunidad en `identificado` + primer correo en inglés en `liq_correos` (etapa `contactado`, ≤200 palabras,
-   línea personalizada por la tesis, CTA de 20 min, `adjuntos` = one-pager oficial + deck de la carpeta); (d) crear los
-   8 borradores en Gmail por API (`create_draft`, sin destinatario) y marcarlos `borrador` con `liq_correo_marcar`;
-   (e) en Drive, dentro de `Kabal_Liquidez_Outreach/<AAAA-MM-DD>/`, una carpeta por institución con la copia del
-   **one-pager oficial** (`03_KTFT_Investor_OnePager_v4.pdf`, Drive `onepager_ktft_en_drive_id`, con logos según el
-   manual de marca) y la copia del deck renombrada con la institución, más un LEEME; (f) reportar.
-   **Adjunto del primer contacto = el one-pager oficial (130 KB).** Por API desde el chat solo es viable adjuntar
-   archivos de pocos KB (el base64 hay que transcribirlo entero); el one-pager oficial y el deck se adjuntan desde el
-   tablero, que corre con el conector Gmail del navegador: **Correos → «Crear borradores en Gmail con one-pager»** (lote
-   nuevo) o **«Reponer one-pager oficial»** (borradores ya creados por API). Nunca reemplazar el one-pager oficial por
-   uno generado: la marca (logo, Nexa, teal #075259 / lime #6FD904) la fija el manual de marca; `tools/onepager_ktft_en.py`
-   queda solo como respaldo de emergencia sin logo y no se usa en el lote.
+   (c) crear oportunidad en `identificado` con vehículo `marketplace` + primer correo en inglés en `liq_correos` (etapa
+   `contactado`, ≤200 palabras, línea personalizada por la tesis, CTA de 20 min, `adjuntos` = one-pager + deck del
+   marketplace); (d) crear los 8 borradores en Gmail por API (`create_draft`, sin destinatario) y marcarlos `borrador`
+   con `liq_correo_marcar`; (e) en Drive, dentro de `Kabal_Liquidez_Outreach/<AAAA-MM-DD>/`, una carpeta por
+   institución con copias (`copy_file`) del one-pager y del deck del marketplace (ids `onepager_marketplace_drive_id` /
+   `deck_marketplace_drive_id` en config; si faltan, pedir al CEO el clic **Correos → «Subir materiales a Drive»** del
+   tablero), más un LEEME; (f) reportar.
+   **Posicionamiento (desde 6-sep-2026): liquidez para el Kabal Digital Marketplace, nunca para un token específico.**
+   El marketplace (Kabal Invest) lo opera Kabal Bridge S.A. de C.V. (PSAD-0056) bajo LEAD/CNAD: emisión primaria (DIR,
+   certificador independiente) y negociación secundaria (order book, DvP en Base, USDC, bulletin board y OTC desk),
+   con Listing Rules, Trading Rules, Investor Terms, AML/KYC de plataforma y política de conflictos. Activos: trade
+   finance con BL endosado, cuentas por cobrar, inmobiliario, energía renovable, commodities, crédito privado
+   (yields "objetivo, no garantizado", definidos por emisión en su DIR). Formas de participar: ancla de emisiones
+   primarias · facilidad programática (línea/warehouse a Kabal Capital / Kabal Trade Finance) · nota de colocación
+   privada · liquidez secundaria. Sin referencias a KTFT en correos ni materiales.
+   **Adjuntos.** Por API desde el chat solo es viable adjuntar archivos de pocos KB; el one-pager (≈190 KB) y el deck
+   (≈260 KB) se adjuntan desde el tablero, que corre con el conector Gmail del navegador: **Correos → «Crear
+   borradores en Gmail con one-pager»** o **«Reponer one-pager oficial»**. Los materiales se generan con
+   `tools/marketplace_materials/` (HTML en marca → PDF con Chromium; Nexa embebida, isologo oficial).
    Método del primer contacto (kabal-capital-pipeline + email_playbooks): ≤200 palabras, un solo CTA (20 min), una línea
    personalizada por la tesis, yields "objetivo, no garantizado", nada de "first/only", pricing solo bajo NDA;
    secuencia después del envío: D+4 bump corto · D+10 aporte de valor · D+18 breakup · D+30 nurture.

@@ -13,7 +13,8 @@ liquidity-agent/
 │   ├── migrations/20260904230000_liquidity_monto_potencial.sql  monto potencial por institución + vista liq_v_potencial_directorio
 │   ├── migrations/20260905150000_liquidity_correos.sql   correos por etapa: plantillas, cola liq_correos, triggers y RPC para Gmail
 │   ├── migrations/20260906010000_liquidity_correos_outreach.sql  lote diario de outreach: adjuntos, firma del CEO, deck por defecto, vista del día
-│   ├── migrations/20260906120000_liquidity_correos_envio.sql  correo enviado ⇒ la ficha avanza sola; lote de 8/día; one-pager oficial
+│   ├── migrations/20260906120000_liquidity_correos_envio.sql  correo enviado ⇒ la ficha avanza sola; lote de 8/día
+│   ├── migrations/20260906150000_liquidity_vehiculo_marketplace.sql  vehículo `marketplace`: liquidez para el Kabal Digital Marketplace, materiales en config
 │   ├── directorio/                                   directorio maestro RWA (172 instituciones): .py, .json e insert idempotente
 │   └── seed_demo.sql                                 datos ficticios para probar en local
 ├── src/
@@ -31,7 +32,7 @@ liquidity-agent/
 | Tabla | Qué es |
 |---|---|
 | `liq_proveedores` | La cuenta: tipo (family office, fondo, HNWI, banco, fintech lender, tesorería, DAO…), país, rango de ticket, vehículos de interés, yield objetivo, decisor, **estado KYC**, calificación GO/EXPLORE/DROP. |
-| `liq_oportunidades` | El funnel: proveedor × vehículo (`ktft`, `emision_b2b`, `linea_credito`, `warehouse`, `deuda_privada`), monto objetivo / comprometido / firmado, etapa, probabilidad, próximo paso con fecha, motivo de pérdida. Enlace opcional a `bridge_emisiones`. |
+| `liq_oportunidades` | El funnel: proveedor × vehículo (`marketplace`, `ktft`, `emision_b2b`, `linea_credito`, `warehouse`, `deuda_privada`), monto objetivo / comprometido / firmado, etapa, probabilidad, próximo paso con fecha, motivo de pérdida. Enlace opcional a `bridge_emisiones`. |
 | `liq_interacciones` | Bitácora: email, llamada, reunión, WhatsApp, evento, documento, nota. |
 | `liq_desembolsos` | Wires recibidos (USD / USDC / HNL), referencia, cuenta destino, verificado. |
 | `liq_etapa_historial` | Auditoría automática de cada cambio de etapa con días en la etapa anterior. |
@@ -76,14 +77,23 @@ Al cambiar `liq_oportunidades.etapa`, el trigger `liq_oport_correo_etapa` render
 Etapas con plantilla: contactado, primera_reunion, segunda_reunion, due_diligence, compromiso_verbal, firmado, wired, nurture
 (identificado y perdido no generan correo). Firma y CC por defecto en `liq_correo_config`.
 
+**Posicionamiento: liquidez para el Kabal Digital Marketplace.** Desde el 6-sep-2026 el outreach no vende un token
+específico sino el marketplace (Kabal Invest, operado por Kabal Bridge S.A. de C.V., PSAD-0056): un venue licenciado
+por la CNAD donde se emiten y negocian activos reales tokenizados de Centroamérica y México (trade finance, cuentas por
+cobrar, inmobiliario, energía renovable, commodities, crédito privado). El proveedor participa como ancla de emisiones
+primarias, con una facilidad programática a los vehículos originadores, con una nota de colocación privada o dando
+liquidez secundaria. Vehículo `marketplace` en `liq_oportunidades`. Materiales en marca (Nexa, teal/lime/navy, isologo
+oficial): `Kabal_Digital_Marketplace_One_Pager_EN.pdf` (adjunto del primer contacto) y
+`Kabal_Digital_Marketplace_Liquidity_Partners_EN.pdf` (deck, en la llamada o bajo NDA); el tablero los lleva embebidos
+y los sube a Drive con **Correos → «Subir materiales a Drive»** (ids en `liq_correo_config`).
+
 **Lote diario de 8 GO (outreach).** Cada mañana el agente elige los siguientes 8 proveedores GO sin oportunidad
 (por `monto_potencial_usd`; `outreach_diario_go` en `liq_correo_config`), crea la oportunidad en `identificado`, deja
 en `liq_correos` el primer correo en inglés (≤200 palabras, una línea personalizada por la tesis del proveedor, un solo
-CTA de 20 minutos, sin promesas) con `adjuntos = [one-pager oficial, deck]`, crea el borrador en Gmail por API y arma en
-Drive una carpeta por institución con el one-pager oficial (`03_KTFT_Investor_OnePager_v4.pdf`, con logos, manual de
-marca) y el deck. En el tablero, **Correos → «Crear borradores en Gmail con one-pager»** crea los borradores con el PDF
-oficial adjunto de un clic (el deck completo es opcional) y **«Reponer one-pager oficial»** reemplaza el adjunto de
-los borradores que se crearon por API; en Gmail solo falta la dirección y enviar.
+CTA de 20 minutos, sin promesas) con `adjuntos = [one-pager del marketplace, deck]`, crea el borrador en Gmail por API y
+arma en Drive una carpeta por institución con los materiales. En el tablero, **Correos → «Crear borradores en Gmail con
+one-pager»** crea los borradores con el PDF adjunto de un clic (el deck completo es opcional) y **«Reponer one-pager
+oficial»** reemplaza el adjunto de los borradores que se crearon por API; en Gmail solo falta la dirección y enviar.
 
 **Correo enviado ⇒ la ficha avanza sola.** El trigger `liq_correos_enviado_mueve` mueve la oportunidad a la etapa del
 correo (hasta `compromiso_verbal`) con próximo paso de seguimiento (primer correo → follow-up D+4) en cuanto el correo
