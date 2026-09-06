@@ -29,7 +29,7 @@ python3 build.py      # lee leads.json -> escribe dashboard.html
 
 ## Barrido diario (automático)
 
-Rutina `Barrido diario · Valoración Pipeline RWA` (6:00 AM Honduras · `0 12 * * *` UTC).
+Rutina `Barrido diario · Valoración Pipeline RWA` (7:00 AM Honduras · `0 13 * * *` UTC — después del scout diario, que escribe ~12:15 UTC).
 Dispara **dentro de la sesión de Claude que la creó** (así hereda el acceso a Supabase,
 Artifact y git; una sesión nueva no traía los conectores y por eso la rutina anterior
 quedó desactivada). Cada mañana:
