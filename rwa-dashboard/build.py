@@ -21,6 +21,7 @@ KEEP = [
     # valoracion potencial (LEFT JOIN bridge_lead_valoraciones)
     "valor_potencial_usd", "valor_tier", "valor_confianza", "valor_clase",
     "valor_racional", "fee_potencial_usd", "fee_recurrente_anual_usd",
+    "valor_canal",
 ]
 MARKER = "/*__LEADS__*/[]"
 

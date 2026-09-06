@@ -60,7 +60,7 @@ select json_agg(l order by l.updated_at desc) from (
          b.created_at, b.updated_at,
          v.valor_potencial_usd, v.tier as valor_tier, v.confianza as valor_confianza,
          v.clase as valor_clase, v.racional as valor_racional,
-         v.fee_potencial_usd, v.fee_recurrente_anual_usd
+         v.fee_potencial_usd, v.fee_recurrente_anual_usd, v.canal as valor_canal
   from bridge_leads b
   left join bridge_lead_valoraciones v on v.lead_id = b.id
 ) l;

@@ -363,7 +363,7 @@ const TIERS={0:"Sub-escala (< $1M)",1:"Tier 1 · $1–5M",2:"Tier 2 · $5–25M"
 function tierChip(t){ if(t==null||t==="") return ""; return `<span class="tier t${t}" title="${TIERS[t]||''}">T${t}</span>`; }
 function confDot(c){ if(!c) return ""; return `<span class="conf ${c}" title="Confianza ${c}"></span>`; }
 function potHTML(l){ const p=money(l.valor_potencial_usd); if(!p) return "";
-  return `<div class="pot"><span class="mono potv">≈ ${p}</span>${tierChip(l.valor_tier)}${confDot(l.valor_confianza)}<span class="potlbl">potencial</span></div>`; }
+  return `<div class="pot"><span class="mono potv">≈ ${p}</span>${tierChip(l.valor_tier)}${confDot(l.valor_confianza)}<span class="potlbl">marketplace</span></div>`; }
 
 /* ---------- filters ---------- */
 const state={ q:"", pais:"", sector:"", activo:"", quals:new Set(), money:false, includeOutbox:false, view:"board", sort:{key:"empresa",dir:1}, osort:{key:"valor_potencial_usd",dir:-1} };
@@ -421,10 +421,10 @@ function renderKpis(){
       <div class="sub">con contacto y fuera de «nuevo»</div></div>
     <div class="kpi outbox-kpi"><div class="eyebrow">Outbox · sin contacto</div><div class="big mono" style="color:var(--explore)">${box}</div>
       <div class="sub"><b>${goBox}</b> de ellos GO · falta correo/decisor</div></div>
-    <div class="kpi pot-kpi"><div class="eyebrow">Valor potencial de emisión</div><div class="big mono">${money(pot)||"—"}</div>
-      <div class="sub">${withPot} valorados · <b>${money(potGo)||"—"}</b> en GO</div></div>
-    <div class="kpi"><div class="eyebrow">Fee potencial Kabal</div><div class="big mono" style="color:var(--accent-ink)">${money(fees)||"—"}</div>
-      <div class="sub">US$15k + 2% colocado · +${money(feesRec)||"—"}/año admin</div></div>`;
+    <div class="kpi pot-kpi"><div class="eyebrow">Capital a levantar · Marketplace Bridge</div><div class="big mono">${money(pot)||"—"}</div>
+      <div class="sub">${withPot} emisiones propias valoradas · <b>${money(potGo)||"—"}</b> en GO</div></div>
+    <div class="kpi"><div class="eyebrow">Fee potencial Kabal Bridge</div><div class="big mono" style="color:var(--accent-ink)">${money(fees)||"—"}</div>
+      <div class="sub">estructuración US$15k + 2% colocado en el marketplace · +${money(feesRec)||"—"}/año admin</div></div>`;
 }
 
 /* ---------- board ---------- */
@@ -453,7 +453,7 @@ function renderBoard(){
       <div class="col-head">
         <div class="top"><span class="col-dot" style="background:${s.c}"></span>
           <h3>${s.label}</h3><span class="n mono">${items.length}</span></div>
-        ${val>0?`<div class="val">≈ ${money(val)} potencial</div>`:""}
+        ${val>0?`<div class="val">≈ ${money(val)} · marketplace</div>`:""}
       </div>
       <div class="col-body" data-stage="${s.k}">${items.map(cardHTML).join("")}</div>
     </div>`;
@@ -491,7 +491,7 @@ const COLS=[
   {k:"sector",t:"Sector"},
   {k:"tipo_activo",t:"Activo"},
   {k:"monto_estimado_usd",t:"Monto",num:true},
-  {k:"valor_potencial_usd",t:"Potencial",num:true},
+  {k:"valor_potencial_usd",t:"Liq. marketplace",num:true},
   {k:"valor_tier",t:"Tier",num:true},
   {k:"calificacion",t:"Calif."},
   {k:"etapa",t:"Etapa"},
@@ -550,7 +550,8 @@ function openDrawer(id){
       </div>
       <dl class="kv">
         <dt>Monto est.</dt><dd class="mono" style="color:var(--gold);font-weight:600">${amt||"—"}</dd>
-        <dt>Valor potencial</dt><dd>${money(l.valor_potencial_usd)?`<span class="potv">≈ ${money(l.valor_potencial_usd)}</span> ${tierChip(l.valor_tier)} ${confDot(l.valor_confianza)} <span style="color:var(--muted);font-size:11px">${TIERS[l.valor_tier]||""}${l.valor_confianza?" · confianza "+esc(l.valor_confianza):""}</span>`:"— <span style=\"color:var(--muted);font-size:11px\">sin valorar</span>"}</dd>
+        <dt>Liq. potencial</dt><dd>${money(l.valor_potencial_usd)?`<span class="potv">≈ ${money(l.valor_potencial_usd)}</span> ${tierChip(l.valor_tier)} ${confDot(l.valor_confianza)} <span style="color:var(--muted);font-size:11px">${TIERS[l.valor_tier]||""}${l.valor_confianza?" · confianza "+esc(l.valor_confianza):""}</span>`:"— <span style=\"color:var(--muted);font-size:11px\">sin valorar</span>"}</dd>
+        ${l.valor_potencial_usd>0?`<dt>Canal</dt><dd><span class="tier" style="text-transform:none;font-size:10.5px">${l.valor_canal==='ktft'?'Kabal Trade Finance Token':'Marketplace Bridge · emisión propia'}</span></dd>`:""}
         ${l.valor_racional?`<dt>Racional</dt><dd style="color:var(--ink-2);font-size:12px">${esc(l.valor_racional)}</dd>`:""}
         ${l.fee_potencial_usd>0?`<dt>Fee Kabal</dt><dd class="mono" style="color:var(--accent-ink);font-weight:600">${money(l.fee_potencial_usd)} <span style="color:var(--muted);font-weight:400;font-size:11px">estructuración + 2% · +${money(l.fee_recurrente_anual_usd)||"—"}/año</span></dd>`:""}
         <dt>Tipo activo</dt><dd>${esc(l.tipo_activo||"—")}</dd>
@@ -641,7 +642,7 @@ modal.onclick=e=>{ if(e.target===modal) modal.classList.remove("open"); };
 /* ---------- outbox ---------- */
 const OCOLS=[
   {k:"empresa",t:"Empresa"},{k:"pais",t:"País"},{k:"sector",t:"Sector"},
-  {k:"tipo_activo",t:"Activo"},{k:"valor_potencial_usd",t:"Potencial",num:true},{k:"calificacion",t:"Calif."},{k:"senal",t:"Señal de origen"},
+  {k:"tipo_activo",t:"Activo"},{k:"valor_potencial_usd",t:"Liq. marketplace",num:true},{k:"calificacion",t:"Calif."},{k:"senal",t:"Señal de origen"},
 ];
 function renderOutbox(){
   let v=outboxList();
