@@ -1,0 +1,120 @@
+{
+ "institucion": "Goldfinch",
+ "programa": "Protocolo descentralizado de crédito privado (Goldfinch V1: préstamos sin colateral cripto a fintechs de mercados emergentes, incl. LatAm: PayJoy México, Addem Capital, Divibank, Cauris; Almavest con exposición a Colombia) y Goldfinch Prime (lanzado feb-2025; exposición on-chain a fondos de Apollo, Ares, Golub, KKR vía Heron Finance como pool manager; alianza con Plume mar-2025). ESTADO 2026: GIP-87 (publicada 12-jun-2026 por Mike Sall y Blake West de Warbler Labs) propuso el cierre ordenado de Goldfinch Prime y pasar el protocolo a 'modo mantenimiento' solo para cobrar los préstamos legacy; votación Snapshot 20–23 jun-2026 aprobada con 100% (1,052,820 GFI). Warbler Labs recibe $150,000 para soporte operativo por 2 años. Warbler Labs ~6 empleados (Tracxn ene-2026). Historial de defaults: Tugende (Kenia/Uganda), Lend East (58% pérdida), Almavest (retraso $2.1M), Stratos (respaldado por Warbler).",
+ "formato_email": {
+  "patron": "[nombre]@warblerlabs.com o [nombre].[apellido]@warblerlabs.com (dominio corporativo confirmado; el patrón exacto de nombre NO fue verificado). El dominio @goldfinch.finance fue usado anteriormente.",
+  "fuente": "https://goldfinch.substack.com/p/goldfinch-update-31 (buzón IR@warblerlabs.com) ; https://www.linkedin.com/posts/warbler-labs-crypto_we-the-founding-and-core-development-team-activity-6951185905252528128-S5YZ",
+  "confianza": "baja"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Email inversores/institucional",
+   "valor": "IR@warblerlabs.com (para inversiones ≥ $100k; vigencia post-wind-down no confirmada)",
+   "fuente": "https://goldfinch.substack.com/p/goldfinch-update-31"
+  },
+  {
+   "canal": "Discord oficial Goldfinch",
+   "valor": "https://discord.com/invite/HVeaca3fN8",
+   "fuente": "https://docs.goldfinch.finance/goldfinch/goldfinch-v1/"
+  },
+  {
+   "canal": "Telegram oficial (anuncios)",
+   "valor": "https://t.me/goldfinch_finance",
+   "fuente": "https://t.me/s/goldfinch_finance"
+  },
+  {
+   "canal": "Foro de gobernanza",
+   "valor": "https://gov.goldfinch.finance/ (GIP-87: https://gov.goldfinch.finance/t/gip-87-maintenance-mode-of-goldfinch-operations-and-wind-down-goldfinch-prime/2202)",
+   "fuente": "https://gov.goldfinch.finance/t/gip-87-maintenance-mode-of-goldfinch-operations-and-wind-down-goldfinch-prime/2202"
+  },
+  {
+   "canal": "Documentación",
+   "valor": "https://docs.goldfinch.finance/",
+   "fuente": "https://docs.goldfinch.finance/"
+  },
+  {
+   "canal": "X (Twitter)",
+   "valor": "https://x.com/warblerlabs (Warbler Labs) ; @goldfinch_fi (Goldfinch)",
+   "fuente": "https://x.com/warblerlabs"
+  },
+  {
+   "canal": "LinkedIn empresa",
+   "valor": "https://www.linkedin.com/company/warbler-labs-crypto ; https://www.linkedin.com/company/goldfinchfinance",
+   "fuente": "https://www.linkedin.com/company/warbler-labs-crypto"
+  },
+  {
+   "canal": "Sitios web",
+   "valor": "https://www.goldfinch.finance/ ; https://www.warblerlabs.com/ ; Heron Finance (RIA registrada en la SEC, de Warbler Labs)",
+   "fuente": "https://www.warblerlabs.com/ ; https://www.axios.com/2023/12/05/exclusive-robo-advisor-blockchain-heron-goldfinch"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Mike (Michael) Sall",
+   "cargo": "Co-founder & CEO, Warbler Labs; Co-founder & CEO, Heron Finance; co-fundador de Goldfinch",
+   "area": "Dirección general / capital markets / relaciones con gestores (Apollo, Ares, Golub)",
+   "ubicacion": "EE.UU. (San Francisco Bay Area, no verificado)",
+   "linkedin": "https://www.linkedin.com/in/michaelsall/",
+   "email": "mike@warblerlabs.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Coautor de GIP-87 y dueño de la decisión sobre qué hace Warbler Labs/Heron Finance después del cierre de Prime. Ex-Head of Product Analytics en Coinbase. Con Goldfinch en modo mantenimiento, el ángulo realista es Heron Finance (distribución de crédito privado institucional) o su red de fondos/LPs, no liquidez del protocolo.",
+   "fuente": "https://theorg.com/org/warbler-labs/org-chart/mike-sall ; https://www.linkedin.com/in/michaelsall/ ; https://financefeeds.com/goldfinch-set-to-wind-down-prime-after-token-holder-vote/"
+  },
+  {
+   "nombre": "Blake West",
+   "cargo": "Co-founder & CTO, Goldfinch / Warbler Labs; co-fundador de Heron Finance",
+   "area": "Producto / tecnología / portavoz en alianzas (firmó la cita oficial de la alianza con Plume, mar-2025)",
+   "ubicacion": "EE.UU. (no verificado)",
+   "linkedin": "https://www.linkedin.com/in/blakewest87/",
+   "email": "blake@warblerlabs.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "Coautor de GIP-87 y el cofundador más visible en podcasts/conferencias (Blockworks, Amberdata); ha declarado públicamente las lecciones de 6 años de crédito privado on-chain. Buen CC y receptivo a conversaciones sobre 'qué sí funciona' en RWA de mercados emergentes.",
+   "fuente": "https://www.linkedin.com/in/blakewest87/ ; https://blockworks.co/speaker/blake-west ; https://chainwire.org/2025/03/20/plume-and-goldfinch-partner-to-expand-access-to-private-credit-from-apollo-ares-golub-kkr-and-more/"
+  },
+  {
+   "nombre": "Khang Nguyen",
+   "cargo": "Chief Credit Officer, Heron Finance (Warbler Labs)",
+   "area": "Crédito / selección y due diligence de gestores de crédito privado",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "influencer",
+   "prioridad": 3,
+   "por_que": "Casi dos décadas en investigación e inversión en crédito privado; es quien evalúa originadores/gestores para Heron. Interlocutor técnico para presentar un pipeline de crédito RWA centroamericano (trade finance, receivables) como activo elegible.",
+   "fuente": "https://www.businesswire.com/news/home/20240529340924/en/Heron-Finance-Hires-Khang-Nguyen-as-Chief-Credit-Officer-and-Michael-Jen-as-Head-of-Compliance"
+  },
+  {
+   "nombre": "Michael Jen",
+   "cargo": "Head of Compliance, Heron Finance",
+   "area": "Cumplimiento / RIA SEC",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Cualquier estructura transfronteriza con un PSAD salvadoreño pasará por su revisión regulatoria; incluirlo en CC en una segunda etapa evita que la propuesta muera en compliance.",
+   "fuente": "https://www.businesswire.com/news/home/20240529340924/en/Heron-Finance-Hires-Khang-Nguyen-as-Chief-Credit-Officer-and-Michael-Jen-as-Head-of-Compliance"
+  },
+  {
+   "nombre": "Teddy Pornprinya",
+   "cargo": "Co-Founder & Chief Business Officer, Plume (no es empleado de Goldfinch)",
+   "area": "Camino tibio: socio de distribución de Goldfinch Prime (mar-2025) y de Shinhan; red RWA activa",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "cobertura_latam",
+   "prioridad": 5,
+   "por_que": "Con Goldfinch en wind-down, Plume es el socio que sigue operativo en la misma tesis (crédito privado de Apollo/Ares/Golub on-chain) y tiene relación directa con Sall/West; una intro desde Plume o una conversación con Plume mismo puede rendir más que Goldfinch.",
+   "fuente": "https://chainwire.org/2025/03/20/plume-and-goldfinch-partner-to-expand-access-to-private-credit-from-apollo-ares-golub-kkr-and-more/ ; https://plume.org/blog/goldfinch"
+  }
+ ],
+ "ruta_recomendada": "ADVERTENCIA: Goldfinch Prime está en cierre ordenado y el protocolo en 'modo mantenimiento' desde el 23-jun-2026 (GIP-87), por lo que NO es un socio de liquidez viable en 2026. Ruta sugerida: 1) Email frío a Mike Sall (mike@warblerlabs.com, patrón no verificado) con CC a IR@warblerlabs.com (verificado) y a Blake West, reencuadrando la propuesta hacia Heron Finance / Warbler Labs (distribución de crédito privado regulado, lecciones de underwriting en mercados emergentes, posible advisory o co-inversión) y NO hacia Goldfinch. 2) LinkedIn a Blake West (muy activo públicamente) con un mensaje corto sobre RWA regulado en Centroamérica. 3) Camino tibio: intro vía Plume (Teddy Pornprinya) o vía inversores comunes (a16z crypto, Coinbase Ventures) si Kabal tiene acceso. 4) Foro de gobernanza y Discord solo como respaldo; Discord tiene ~38k miembros pero la actividad del equipo será mínima post-wind-down.",
+ "notas": "Fuentes clave del wind-down: The Block (2026-06), The Defiant, FinanceFeeds, CryptoSlate, foro gov.goldfinch.finance (GIP-87). Warbler Labs tiene ~6 empleados (Tracxn ene-2026); no se identificó un Head of BD/Partnerships vigente (hubo vacante de 'Head of Capital Markets' en 2023 y un perfil 'Jean Miller – Warbler Labs' en LinkedIn con título no verificado: https://www.linkedin.com/in/jeanemiller/). Relaciones LatAm históricas: PayJoy (MX), Addem Capital, Divibank, Cauris (África/Asia/LatAm), Almavest (Colombia entre otros) — fuente https://research.nansen.ai/articles/goldfinch-a-defi-credit-protocol y https://app.rwa.xyz/blog/case-study-goldfinch-distressed-debt. Los emails personales son patrón inferido; solo IR@warblerlabs.com se vio literalmente. Limitación: linkedin.com, warblerlabs.com, goldfinch.finance, gov.goldfinch.finance, businesswire y theorg estaban bloqueados desde este entorno y se agotó el presupuesto de búsqueda web; ubicaciones y LinkedIn de Nguyen/Jen/Pornprinya quedan como null y deben confirmarse manualmente."
+}

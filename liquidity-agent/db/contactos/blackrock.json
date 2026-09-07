@@ -1,0 +1,177 @@
+{
+ "institucion": "BlackRock",
+ "programa": "BUIDL (BlackRock USD Institutional Digital Liquidity Fund, ~US$2.3–2.9B AUM, tokenizado por Securitize) + plataforma de cash tokenizado 2026 (BSTBL OnChain Shares y BRSRV, lanzados 3-ago-2026 con Securitize Transfer Agent) + facilidades de liquidez con Ethena/Frax/Avalanche/Binance; todo bajo el grupo Digital Assets (Robert Mitchnick) y el negocio de Cash Management (Jon Steel).",
+ "formato_email": {
+  "patron": "firstname.lastname@blackrock.com (ej. jane.doe@blackrock.com); variante minoritaria FLast@blackrock.com",
+  "fuente": "https://www.clay.com/dossier/blackrock-email-format ; https://rocketreach.co/blackrock-email-format_b5c60b4ef42e0c52 (reportan first.last en ~96.9% de empleados)",
+  "confianza": "alta"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Investor Relations BlackRock (email publico)",
+   "valor": "invrel@blackrock.com",
+   "fuente": "https://ir.blackrock.com/resources/contact-ir/default.aspx"
+  },
+  {
+   "canal": "Media Relations Americas (Corporate Communications)",
+   "valor": "Ed Sweeney, Managing Director, Corporate Communications Americas, +1 646 231 0268; Patrick Scanlan, Managing Director, +1 212 810 3622 (la pagina tiene boton de email por region, direccion no visible en texto)",
+   "fuente": "https://www.blackrock.com/corporate/newsroom/media/media-contacts"
+  },
+  {
+   "canal": "BlackRock contactos y oficinas (incl. Mexico City, Sao Paulo, Bogota, Santiago, Lima, Miami)",
+   "valor": "https://www.blackrock.com/corporate/about-us/contacts-locations",
+   "fuente": "https://www.blackrock.com/corporate/about-us/contacts-locations"
+  },
+  {
+   "canal": "Equipo Americas Offshore / LatAm (pagina de equipo)",
+   "valor": "https://www.blackrock.com/americas-offshore/en/resources/team",
+   "fuente": "https://www.blackrock.com/americas-offshore/en/resources/team"
+  },
+  {
+   "canal": "BUIDL – pagina oficial y agenda de reunion (Securitize Markets, distribuidor)",
+   "valor": "https://securitize.io/blackrock/buidl ; https://securitize.io/buidl-booking-page",
+   "fuente": "https://securitize.io/buidl-booking-page"
+  },
+  {
+   "canal": "BUIDL – contacto de Securitize Markets para inversionistas institucionales (email publico)",
+   "valor": "Jonathan Espinosa, Director of Investments, jonathan.espinosa@securitize.io ; Securitize Markets, 701 S Miami Ave 5th FL, Miami FL 33131",
+   "fuente": "https://forum.arbitrum.foundation/t/securitize-markets-buidl-step-application/23652"
+  },
+  {
+   "canal": "Securitize investor support (email publico)",
+   "valor": "investorsupport@securitize.io",
+   "fuente": "https://investorsupport.securitize.io/hc/en-us/articles/360051589913-Contacting-Securitize-Support"
+  },
+  {
+   "canal": "Securitize contacto corporativo",
+   "valor": "https://securitize.io/about-us/contact-us",
+   "fuente": "https://securitize.io/about-us/contact-us"
+  },
+  {
+   "canal": "Vacantes del equipo Digital Assets (evidencia de estructura: Director/MD Digital Assets NY, Singapur; Digital Assets Legal Counsel)",
+   "valor": "https://careers.blackrock.com/job/new-york/director-digital-assets/45831/89314536656",
+   "fuente": "https://careers.blackrock.com/job/new-york/director-digital-assets/45831/89314536656"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Tony Ashraf",
+   "cargo": "Managing Director, Global Head of Digital Asset Transformation",
+   "area": "Digital Assets / DLT market infrastructure, tokenizacion, partnerships",
+   "ubicacion": "Emiratos Arabes Unidos (perfil LinkedIn en dominio ae.; cubre Medio Oriente) – confirmar",
+   "linkedin": "https://ae.linkedin.com/in/tony-ashraf-4923663a",
+   "email": "tony.ashraf@blackrock.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 1,
+   "por_que": "Su mandato publico es explicitamente 'partnerships, scale creation and product innovation' usando DLT para redefinir infraestructura de mercado y tokenizacion; habla en conferencias cripto (Proof of Talk, Digital Assets Week, Blockworks, Leap) y es el perfil mas orientado a alianzas externas dentro del grupo. Ideal para un pitch de liquidez de mercado secundario RWA.",
+   "fuente": "https://www.proofoftalk.io/speakers/tony-ashraf ; https://blockworks.co/speaker/tony-ashraf ; https://daweek.org/speaker/tony-ashraf/ ; https://www.finews.com/news/english-news/70421-blackrock-digital-assets-blockchain-stabelcoins-middle-east-tony-ashraf"
+  },
+  {
+   "nombre": "Nikhil Sharma",
+   "cargo": "Director, Digital Assets",
+   "area": "Digital Assets – iniciativas internacionales (cripto, stablecoins, activos tokenizados)",
+   "ubicacion": "Londres, Reino Unido",
+   "linkedin": "https://uk.linkedin.com/in/nikhilbsharma",
+   "email": "nikhil.sharma@blackrock.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "entrada",
+   "prioridad": 2,
+   "por_que": "Nivel Director (mas accesible que un MD), remit internacional/no-US del equipo Digital Assets, activo como speaker en Paris Blockchain Week 2026 y TOK26 London Tokenisation Summit; punto de entrada natural para una plataforma fuera de EE.UU. que quiere integrar BUIDL/BSTBL como colateral o liquidez.",
+   "fuente": "https://www.parisblockchainweek.com/speaker-2026/nikhil-sharma ; https://www.cityandfinancialglobal.com/the-tokenisation-summit-2026/speaker/2059002/nikhil-sharma ; https://uk.linkedin.com/in/nikhilbsharma"
+  },
+  {
+   "nombre": "Jon Steel",
+   "cargo": "Managing Director, Global Head of Product and Platform, Cash Management",
+   "area": "Cash Management (dueno de producto de BUIDL, BSTBL OnChain Shares y BRSRV)",
+   "ubicacion": "Nueva York, EE.UU.",
+   "linkedin": "https://www.linkedin.com/in/jon-steel-21292bb/",
+   "email": "jon.steel@blackrock.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 3,
+   "por_que": "Portavoz oficial del lanzamiento de la plataforma de cash tokenizado (3-ago-2026) y responsable de producto/plataforma de los fondos que se tokenizan con Securitize; decide en que venues y con que canales de distribucion se usan los fondos tokenizados como reserva/colateral.",
+   "fuente": "https://www.businesswire.com/news/home/20260803468591/en/BlackRock-Expands-Tokenized-Cash-Platform-with-BSTBL-OnChain-Shares-and-BRSRV ; https://www.theblock.co/post/410469/blackrock-launches-two-tokenized-money-market-funds-stablecoin-reserves"
+  },
+  {
+   "nombre": "Robert (Robbie) Mitchnick",
+   "cargo": "Managing Director, Head of Digital Assets (Global)",
+   "area": "Digital Assets (estrategia y ejecucion de cripto, stablecoins y tokenizacion; firma las declaraciones de los acuerdos BUIDL con Ethena, Securitize, Binance)",
+   "ubicacion": "Nueva York, EE.UU.",
+   "linkedin": "https://www.linkedin.com/in/robert-mitchnick-39b25a1b1/",
+   "email": "robert.mitchnick@blackrock.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 4,
+   "por_que": "Dueno del programa desde 2018; citado en el acuerdo de liquidez BUIDL–Ethena (29-jun-2026) y en toda la cobertura 2026. Muy expuesto a frio (alto volumen), por eso se recomienda CC o escalamiento tras respuesta de Ashraf/Sharma, o abordaje en conferencia (SXSW London 2026, SALT, Bitcoin Treasuries Conference, Digital Assets Week).",
+   "fuente": "https://www.coindesk.com/markets/2026/02/13/blackrock-s-head-of-digital-assets-warns-leverage-driven-volatility-risks-undermine-bitcoin-s-institutional-narrative ; https://unchainedcrypto.com/ethena-and-blackrock-expand-tie-adding-usde-to-its-20-trillion-platform/ ; https://www.sxswlondon.com/speakers/robert-mitchnick-d017a3d8 ; https://www.aima.org/widgets/team_members/teamMemberDetails/?id=E8925CC2-A204-4567-A54DE04C77F31DF1"
+  },
+  {
+   "nombre": "Aitor Jauregui",
+   "cargo": "Managing Director, Head of Latin America (preside el Latin America Executive Committee)",
+   "area": "Latin America – todas las actividades de BlackRock en la region",
+   "ubicacion": "Miami, EE.UU.",
+   "linkedin": "https://www.linkedin.com/in/aitor-jauregui-6569516/",
+   "email": "aitor.jauregui@blackrock.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 5,
+   "por_que": "Responsable regional; ruta para que un operador salvadoreno licenciado (CNAD) sea presentado internamente al equipo Digital Assets con contexto LatAm. Publica reflexiones anuales sobre la region en LinkedIn (activo en la red).",
+   "fuente": "https://www.blackrock.com/americas-offshore/en/biographies/aitor-jauregui ; https://citywire.com/americas/news/blackrock-names-new-latam-boss-in-americas-leadership-shakeup/a2408403 ; https://www.linkedin.com/posts/aitor-jauregui-6569516_2025-was-a-year-of-important-progress-for-activity-7407148068430565377-gIor"
+  },
+  {
+   "nombre": "Sergio Mendez",
+   "cargo": "Managing Director, Country Head Mexico / Director General BlackRock Mexico; miembro del Latin America Regional Executive Committee",
+   "area": "BlackRock Mexico (institucional; ex-CIO Afore XXI Banorte)",
+   "ubicacion": "Ciudad de Mexico (LinkedIn: Naucalpan de Juarez), Mexico",
+   "linkedin": "https://www.linkedin.com/in/sergio-mendez-4b8b8a12/",
+   "email": "sergio.mendez@blackrock.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 6,
+   "por_que": "Oficina mas grande de BlackRock en LatAm (~250 empleados, plan de llegar a 400); interlocutor natural en espanol y en la misma zona horaria para una reunion presencial/virtual y para una introduccion al equipo Digital Assets.",
+   "fuente": "https://www.blackrock.com/mx/intermediarios/biografias/sergio-mendez ; https://www.jornada.com.mx/noticia/2026/03/19/economia/mexico-necesita-cosas-nuevas-no-refritos-para-desarrollar-nuevos-proyectos-blackrock ; https://finance.yahoo.com/news/blackrock-considers-increasing-mexico-headcount-155000042.html"
+  },
+  {
+   "nombre": "Samara Cohen",
+   "cargo": "Senior Managing Director, Global Head of Market Development (miembro del Global Executive Committee)",
+   "area": "Market Development – estructura de mercado, tokenizacion, stablecoins",
+   "ubicacion": "Nueva York, EE.UU.",
+   "linkedin": "https://www.linkedin.com/in/samara-epstein-cohen-9a661b76/",
+   "email": "samara.cohen@blackrock.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 7,
+   "por_que": "Voz publica de BlackRock sobre tokenizacion y stablecoins en 2026 (Bloomberg Invest, Asia Centric); demasiado senior para frio, pero util como referencia de narrativa y para eventos. No emailar primero.",
+   "fuente": "https://www.blackrock.com/corporate/about-us/leadership/samara-cohen ; https://www.bloomberg.com/news/videos/2026-03-03/blackrock-s-samara-cohen-on-public-markets-tokenization-video"
+  },
+  {
+   "nombre": "Jonathan Espinosa (Securitize Markets – socio distribuidor de BUIDL)",
+   "cargo": "Director of Investments, Securitize Markets LLC",
+   "area": "Securitize – distribucion/suscripcion de BUIDL y fondos tokenizados de BlackRock",
+   "ubicacion": "Miami, FL, EE.UU.",
+   "linkedin": null,
+   "email": "jonathan.espinosa@securitize.io",
+   "email_estado": "publico",
+   "rol": "entrada",
+   "prioridad": 1,
+   "por_que": "Unico email publico verificado ligado directamente a BUIDL; Securitize es el transfer agent/distribuidor y quien en la practica integra venues, colateral y liquidez (Uniswap, Binance, Ethena). Camino calido: Securitize puede referir a Kabal Bridge al equipo Digital Assets de BlackRock. Securitize cotiza en NYSE (SECZ) desde jul-2026 y obtuvo licencia de investment adviser SEC.",
+   "fuente": "https://forum.arbitrum.foundation/t/securitize-markets-buidl-step-application/23652 ; https://www.coindesk.com/business/2026/07/27/securitize-builds-wall-street-credentials-with-sec-adviser-license-as-tokenization-expands"
+  },
+  {
+   "nombre": "Carlos Domingo (Securitize – socio)",
+   "cargo": "Co-founder & CEO, Securitize (NYSE: SECZ)",
+   "area": "Securitize – tokenizacion de BUIDL/BSTBL/BRSRV",
+   "ubicacion": "Miami, FL, EE.UU.",
+   "linkedin": "https://www.linkedin.com/in/carlosdomingo/",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "influencer",
+   "prioridad": 2,
+   "por_que": "Hispanohablante, sede en Miami, muy activo en X/LinkedIn; anuncio la facilidad de liquidez 24/7 en stablecoins para BUIDL. Un partnership con Securitize (marketplace regulado en El Salvador como venue/colateral) es la via mas realista para llegar a BlackRock con credibilidad.",
+   "fuente": "https://x.com/carlosdomingo/status/2054912500257136789 ; https://finance.yahoo.com/markets/stocks/articles/securitize-lists-nyse-secz-backed-132942716.html"
+  }
+ ],
+ "ruta_recomendada": "1) Email frio credible (ingles, 6-8 lineas, con licencia PSAD-0056/CNAD, volumen y caso de uso concreto: BUIDL/BSTBL como colateral y liquidez en un marketplace regulado LatAm) a Tony Ashraf (Global Head of Digital Asset Transformation – mandato de partnerships) con CC a Nikhil Sharma (Director, Digital Assets, remit internacional). 2) En paralelo y por separado, abrir el canal calido via Securitize: escribir a jonathan.espinosa@securitize.io (email publico) y/o agendar en https://securitize.io/buidl-booking-page pidiendo una intro al equipo Digital Assets de BlackRock; conectar con Carlos Domingo en LinkedIn/X (Miami, hispanohablante). 3) Si hay traccion, escalar a Jon Steel (producto/plataforma Cash Management, dueno de BUIDL/BRSRV) y a Robert Mitchnick (dueno del programa) – Mitchnick mejor abordado en persona en conferencia (SXSW London, SALT, Bitcoin Treasuries Conference, Digital Assets Week) o con referencia de Securitize. 4) Ruta regional: pedir a Sergio Mendez (BlackRock Mexico) o Aitor Jauregui (Head LatAm, Miami) una introduccion interna; enmarcar como oportunidad de distribucion institucional LatAm/Centroamerica. Conferencias donde coinciden: Paris Blockchain Week (Sharma), TOK26 London Tokenisation Summit (Sharma), Proof of Talk / Digital Assets Week (Ashraf), Digital Assets Week / SALT / SXSW London (Mitchnick).",
+ "notas": "Todos los emails @blackrock.com listados son PATRON (no verificados); el unico email publico verificado ligado a BUIDL es jonathan.espinosa@securitize.io y los institucionales invrel@blackrock.com / investorsupport@securitize.io. Joseph Chalom (ex Head of Strategic Ecosystem Partnerships, quien arquitecto los acuerdos con Coinbase, Anchorage, BNY, Circle y el lanzamiento de BUIDL) dejo BlackRock en jun-2025 (SharpLink, luego Franklin Templeton) – NO es contacto. BlackRock esta contratando 'Director/Managing Director, Digital Assets' en Nueva York y Singapur (2026), senal de que el equipo crece y hay capacidad para partnerships. La ubicacion de Tony Ashraf se infiere del dominio ae.linkedin.com y cobertura de Medio Oriente; confirmar antes de fijar zona horaria. No se encontro un responsable de digital assets especifico para LatAm; la cobertura regional pasa por Jauregui (Miami) y Mendez (CDMX). Varias fuentes primarias (blackrock.com, prnewswire, linkedin, securitize.io) estaban bloqueadas por el proxy en esta sesion, por lo que los datos provienen de snippets de busqueda y cobertura de prensa; validar titulos en LinkedIn antes de enviar."
+}

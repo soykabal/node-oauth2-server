@@ -1,0 +1,120 @@
+{
+ "institucion": "Brickken",
+ "programa": "Plataforma española de tokenization-as-a-service (Brickken Token Suite / Digital Asset Suite; sede Barcelona; participante del sandbox regulatorio; co-autora de ERC-7943; proveedor oficial de tokenización de BNB Chain, Chainlink BUILD, Circle Alliance, XDC); partnerships / business development; expansión internacional (foco declarado: Norteamérica y Asia; casos en LatAm como CONSA en Chile; 150+ clientes en 40+ países y US$660M+ tokenizados a ago-2026)",
+ "formato_email": {
+  "patron": "Único email visto públicamente: hello@brickken.com (inbox general). Patrón personal probable {nombre}@brickken.com — patrón (no verificado)",
+  "fuente": "https://www.brickken.com/contact (hello@brickken.com, según fragmento de resultado de búsqueda) ; https://www.brickken.com/en/privacy-policy",
+  "confianza": "media para hello@brickken.com; baja para el patrón personal"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Email general",
+   "valor": "hello@brickken.com",
+   "fuente": "https://www.brickken.com/contact"
+  },
+  {
+   "canal": "Formulario de contacto",
+   "valor": "https://www.brickken.com/contact",
+   "fuente": "https://www.brickken.com/contact"
+  },
+  {
+   "canal": "Dirección física",
+   "valor": "Carrer del Rosselló 25, 08029 Barcelona, España",
+   "fuente": "https://www.brickken.com/en/privacy-policy ; https://www.eu-startups.com/directory/brickken/"
+  },
+  {
+   "canal": "Programa de partners (legales, estructuradores, distribuidores)",
+   "valor": "https://partners.brickken.com/",
+   "fuente": "https://partners.brickken.com/"
+  },
+  {
+   "canal": "LinkedIn empresa",
+   "valor": "https://www.linkedin.com/company/brickken/",
+   "fuente": "https://www.linkedin.com/company/brickken/"
+  },
+  {
+   "canal": "Sitio web / About",
+   "valor": "https://www.brickken.com/about-us (versión ES: https://www.brickken.com/es/about-us)",
+   "fuente": "https://www.brickken.com/about-us"
+  },
+  {
+   "canal": "Facebook",
+   "valor": "https://www.facebook.com/Brickken/",
+   "fuente": "https://www.facebook.com/Brickken/"
+  },
+  {
+   "canal": "Telegram / Discord oficiales",
+   "valor": null,
+   "fuente": "No se pudo verificar la URL oficial durante esta investigación (existe comunidad del token BKN; confirmar desde brickken.com antes de usar)"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Edwin Mata",
+   "cargo": "CEO & Co-Founder",
+   "area": "Dirección general / regulación y estrategia",
+   "ubicacion": "Barcelona, España",
+   "linkedin": "https://es.linkedin.com/in/edwinmata",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "dueno_programa",
+   "prioridad": 2,
+   "por_que": "Dueño del programa; ex abogado de M&A, Forbes 40U40, Forbes Council, LinkedIn Top Voice, muy activo públicamente y en español. En Consensus HK 2026 declaró que las economías en desarrollo presentan un caso de uso más fuerte para tokenización que Europa: mensaje alineado con un marketplace regulado en El Salvador. Responde a mensajes de fundadores/instituciones en LinkedIn.",
+   "fuente": "https://es.linkedin.com/in/edwinmata ; https://bitpinas.com/business/interview-brickken-edwin-mata-consensus ; https://councils.forbes.com/profile/Edwin-Mata-CEO-CoFounder-Brickken/732b705e-67ba-42de-9439-304b07cd2d63"
+  },
+  {
+   "nombre": "Rodrigo Palacios Pérez",
+   "cargo": "Head of Business Development (The Org) / Business Development – Digital Finance & RWA Specialist (LinkedIn)",
+   "area": "Business Development / clientes y partnerships",
+   "ubicacion": "Barcelona, España",
+   "linkedin": "https://www.linkedin.com/in/rodrigo-palacios12/",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "entrada",
+   "prioridad": 1,
+   "por_que": "Responsable de estrategia comercial vía clientes y partnerships, go-to-market e inbound; 10+ años de ventas en EE.UU., Latinoamérica y Europa; hispanohablante; en Brickken desde 2022. Es el punto de entrada natural para una propuesta de canal/partner en Centroamérica.",
+   "fuente": "https://theorg.com/org/brickken/org-chart/rodrigo-palacios-perez ; https://www.linkedin.com/in/rodrigo-palacios12/ ; https://www.thedistrictshow.com/agenda-speakers/rodrigo-palacios-perez/"
+  },
+  {
+   "nombre": "Bram Duindam",
+   "cargo": "Co-Founder (listado como COO en LinkedIn de la empresa; The Org lo lista como Co-Founder)",
+   "area": "Operaciones / cofundador",
+   "ubicacion": null,
+   "linkedin": "https://www.linkedin.com/in/bramduindam/",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "decisor",
+   "prioridad": 3,
+   "por_que": "Cofundador (2020) con perfil de growth/marketing digital; decisor en alianzas operativas y de distribución. Buen CC cuando la propuesta pasa de exploración a implementación.",
+   "fuente": "https://theorg.com/org/brickken/org-chart/bram-duindam ; https://www.linkedin.com/company/brickken/ ; https://www.rootdata.com/member/Bram%20Duindam?k=MjI3ODg%3D"
+  },
+  {
+   "nombre": "Jane Kiatkina",
+   "cargo": "General Counsel",
+   "area": "Legal / regulatorio (sandbox, ERC-7943, MiCA)",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Interlocutora para el encaje regulatorio LEAD/CNAD ↔ marco europeo (sandbox, MiCA) y para reconocimiento mutuo de tokens compliant (ERC-7943/ERC-3643); relevante para que Kabal Bridge sea aceptado como venue secundario de emisiones Brickken.",
+   "fuente": "https://www.linkedin.com/company/brickken/ (listado de liderazgo en fragmento de búsqueda)"
+  },
+  {
+   "nombre": "Elisenda Fàbrega",
+   "cargo": "CTO",
+   "area": "Tecnología / integraciones",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "influencer",
+   "prioridad": 5,
+   "por_que": "Decisora técnica para integración del Token Suite con el marketplace de Kabal Bridge (listado secundario, whitelisting cross-venue). CC solo cuando se aborde la integración.",
+   "fuente": "https://www.linkedin.com/company/brickken/ (listado de liderazgo en fragmento de búsqueda)"
+  }
+ ],
+ "ruta_recomendada": "1) Email en español a Rodrigo Palacios Pérez (BD) con CC a hello@brickken.com, presentando a Kabal Bridge como PSAD licenciado por CNAD (El Salvador) y venue secundario/distribución para emisiones Brickken en Centroamérica, más la oportunidad de emisores centroamericanos usando Token Suite. 2) En paralelo, mensaje LinkedIn corto a Edwin Mata citando su tesis de Consensus HK 2026 sobre economías en desarrollo. 3) Ruta 'warm': aplicar al programa Brickken Partners (partners.brickken.com) como socio legal/estructurador/distribuidor para El Salvador; apalancar redes compartidas (Chainlink BUILD, Circle Alliance, BNB Chain, XDC) y el caso CONSA (Chile) como precedente LatAm. 4) Escalar a Bram Duindam (operaciones) y a Jane Kiatkina (legal) al pasar a term sheet / MoU.",
+ "notas": "Limitaciones: el proxy bloqueó brickken.com, theorg.com, LinkedIn y medios; los datos provienen de fragmentos de resultados de búsqueda y deben verificarse antes del envío. No se encontró evidencia pública de oficinas o responsables dedicados en México o Colombia; la expansión declarada 2025-2026 apunta a Norteamérica, Asia y Medio Oriente, con presencia LatAm por casos de cliente (CONSA, Chile) y 40+ países atendidos. Financiación: seed US$2.5M (ene-2025, €22.5M post-money) y pre-Serie A €3M en 2026 (€38M post-money): la empresa está en modo de expansión comercial, buen momento para propuesta de canal. Alianza reciente: MAIV (mar-2026, 'tokenized capital stack'). El email personal de cada contacto sería patrón no verificado ({nombre}@brickken.com); usar hello@brickken.com o LinkedIn hasta confirmar."
+}

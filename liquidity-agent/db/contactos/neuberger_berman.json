@@ -1,0 +1,110 @@
+{
+ "institucion": "Neuberger Berman",
+ "programa": "Neuberger Securitize High Income Tokenized Fund ('HINC'), lanzado 18-ago-2026 por Securitize con Neuberger como subadvisor (primer mandato de Neuberger en un fondo tokenizado): bonos high yield más CLOs y leveraged loans, disponible para inversionistas elegibles en Avalanche, Ethereum, Solana y Sui; plataforma de renta fija de US$230B. Página: https://securitize.io/hinc. Distribución LatAm: oficinas en Buenos Aires y Bogotá y alianza con Becon Investment Management (third-party distributor).",
+ "formato_email": {
+  "patron": "{nombre}.{apellido}@nb.com (ej. jane.smith@nb.com); ~51-76% de direcciones según LeadIQ/RocketReach; variantes FLast@nb.com y FirstLast@nb.com",
+  "fuente": "https://leadiq.com/c/neuberger-berman/5a1d8aa0240000240064775d/email-format ; https://rocketreach.co/neuberger-berman-email-format_b5c49ce0f42e0dc5 ; confirmado por email público Soogyung.Jordan@nb.com en https://www.nb.com/contact-us",
+  "confianza": "alta"
+ },
+ "canales_publicos": [
+  {
+   "canal": "teléfono sede Nueva York",
+   "valor": "+1 (212) 476-9000",
+   "fuente": "https://www.nb.com/contact-us"
+  },
+  {
+   "canal": "media / comunicaciones externas (EE.UU.)",
+   "valor": "Soogyung Jordan, Managing Director, Head of External Communications — Soogyung.Jordan@nb.com",
+   "fuente": "https://www.nb.com/contact-us ; https://www.nb.com/who-we-are/newsroom"
+  },
+  {
+   "canal": "newsroom / comunicado HINC",
+   "valor": "https://www.nb.com/who-we-are/newsroom/securitize-and-neuberger-launch-new-tokenized-fixed-income-fund",
+   "fuente": "https://www.nb.com/who-we-are/newsroom/securitize-and-neuberger-launch-new-tokenized-fixed-income-fund"
+  },
+  {
+   "canal": "formulario de contacto",
+   "valor": "https://www.nb.com/contact-us",
+   "fuente": "https://www.nb.com/contact-us"
+  },
+  {
+   "canal": "oficina Buenos Aires",
+   "valor": "Av. del Libertador 1068, Piso 4, Buenos Aires, Argentina",
+   "fuente": "https://www.nb.com/en/global/press-releases/press-colombia-office-opening"
+  },
+  {
+   "canal": "LinkedIn corporativo",
+   "valor": "https://www.linkedin.com/company/neuberger-berman",
+   "fuente": "https://www.linkedin.com/company/neuberger-berman"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Anil Abraham",
+   "cargo": "Senior Vice President, Head of Product Management (Product Strategy & Development)",
+   "area": "Product Management / Product Strategy & Development (dueño de producto de HINC)",
+   "ubicacion": "Nueva York, EE.UU.",
+   "linkedin": "https://www.linkedin.com/in/anil-abraham-09730816/",
+   "email": "anil.abraham@nb.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Es el ejecutivo de Neuberger citado en el comunicado de lanzamiento de HINC ('Neuberger's fixed income platform has navigated decades of market cycles...'); como Head of Product Management es quien estructuró el mandato de subadvisor con Securitize y quien evaluaría nuevas plataformas/mercados secundarios regulados para el fondo tokenizado.",
+   "fuente": "https://www.marketsmedia.com/securitize-neuberger-launch-tokenized-fixed-income-fund/ ; https://www.prnewswire.com/news-releases/securitize-and-neuberger-launch-new-tokenized-fixed-income-fund-302853551.html ; https://www.linkedin.com/in/anil-abraham-09730816/"
+  },
+  {
+   "nombre": "Jose Cosio",
+   "cargo": "Managing Director, Head of Intermediary — EMEA, Asia and Latin America; miembro del Partners Committee",
+   "area": "Intermediary / Global Client Group (cobertura de distribuidores y plataformas en LatAm)",
+   "ubicacion": "Londres, Reino Unido",
+   "linkedin": null,
+   "email": "jose.cosio@nb.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 2,
+   "por_que": "Dirige la cobertura de intermediarios y plataformas para LatAm; un marketplace licenciado de activos digitales en Centroamérica encaja como canal intermediario. Hispanohablante, con trayectoria en AllianceBernstein cubriendo LatAm/offshore.",
+   "fuente": "https://www.nb.com/en/global/biographies/jose-cosio ; https://www.nb.com/en/gb/press-releases/neuberger-berman-hires-jose-cosio-as-head-of-intermediary-for-emea-and-latam"
+  },
+  {
+   "nombre": "Maximiliano (Maxi) Rohm",
+   "cargo": "Managing Director, Global Equity Megatrends team (ex Head of Corporate Development, Latin America)",
+   "area": "Inversiones / ex desarrollo corporativo LatAm",
+   "ubicacion": "Área metropolitana de Nueva York (origen Buenos Aires)",
+   "linkedin": "https://www.linkedin.com/in/maximiliano-rohm-a080982/",
+   "email": "maximiliano.rohm@nb.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Construyó el negocio de clientes de Neuberger en LatAm (2006-2017) y sigue en la firma; puede orientar sobre quién cubre hoy Centroamérica/offshore y hacer una introducción interna. No es decisor del programa.",
+   "fuente": "https://www.nb.com/en/global/biographies/maximiliano-rohm ; https://www.linkedin.com/in/maximiliano-rohm-a080982/"
+  },
+  {
+   "nombre": "Dik van Lomwel",
+   "cargo": "Vice Chairman EMEA (Head of EMEA & Latin America 2009-ene-2024); miembro de Partners y Operating Committees",
+   "area": "Dirección regional EMEA/LatAm",
+   "ubicacion": "Londres, Reino Unido",
+   "linkedin": null,
+   "email": "dik.vanlomwel@nb.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 5,
+   "por_que": "Patrocinador histórico del negocio LatAm (aperturas de Buenos Aires y Bogotá, alianza Becon); útil como CC o escalamiento si Cosio responde. Su sucesor como Head of EMEA es Matt Malloy.",
+   "fuente": "https://www.nb.com/en/global/press-releases/neuberger-berman-appoints-matt-malloy-as-head-of-emea ; https://theorg.com/org/neuberger-berman/org-chart/dik-van-lomwel"
+  },
+  {
+   "nombre": "Soogyung Jordan",
+   "cargo": "Managing Director, Head of External Communications",
+   "area": "Comunicaciones",
+   "ubicacion": "Nueva York, EE.UU.",
+   "linkedin": "https://www.linkedin.com/in/soogyung/",
+   "email": "Soogyung.Jordan@nb.com",
+   "email_estado": "publico",
+   "rol": "entrada",
+   "prioridad": 3,
+   "por_que": "Único email individual publicado por Neuberger; canal formal para solicitar el contacto correcto del equipo de producto/tokenización o para que una carta institucional de Kabal Bridge sea enrutada internamente.",
+   "fuente": "https://www.nb.com/contact-us ; https://www.linkedin.com/in/soogyung/"
+  }
+ ],
+ "ruta_recomendada": "1) Email directo a Anil Abraham (citado en el comunicado de HINC) referenciando HINC en Avalanche/Ethereum/Solana/Sui y proponiendo a Kabal Bridge como mercado secundario/canal licenciado (PSAD, El Salvador) para inversionistas elegibles de Centroamérica; CC a Jose Cosio (Head of Intermediary LatAm). 2) Camino cálido preferente: Securitize (Carlos Domingo, CEO) es el sponsor y asesor del fondo y controla la distribución de HINC; una introducción vía Securitize a Neuberger es la más creíble. Alternativa regional: Becon Investment Management (distribuidor third-party de Neuberger en LatAm) como puerta a los equipos de Buenos Aires/Bogotá. 3) Maxi Rohm por LinkedIn para intro interna a la cobertura LatAm actual. 4) Paralelo formal: nota institucional a Soogyung.Jordan@nb.com y formulario nb.com/contact-us solicitando enrutamiento al equipo de producto de fondos tokenizados. Evitar contacto en frío a van Lomwel; usar solo como CC/escalamiento.",
+ "notas": "Neuberger no tiene un 'Head of Digital Assets' público identificable en 2026; el programa de tokenización está anclado en Product Management (Anil Abraham) y la relación es operada por Securitize (sponsor/asesor de HINC; Neuberger es subadvisor). No se pudo confirmar quiénes son los portfolio managers de HINC (los co-heads de US High Yield son Joseph Lind y Chris Kocinski, pero no hay fuente que los vincule a HINC). No se identificó al responsable actual de cobertura institucional LatAm/Centroamérica (Rohm dejó ese rol en 2017; van Lomwel pasó a Vice Chairman en 2024). Limitación: el proxy bloqueó la lectura directa de nb.com, prnewswire, marketsmedia, theblock, LinkedIn y theorg; datos tomados de extractos de búsqueda, verificar antes de enviar. Todos los emails individuales salvo Soogyung.Jordan@nb.com son patrón (no verificados)."
+}

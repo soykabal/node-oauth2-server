@@ -15,12 +15,14 @@ liquidity-agent/
 │   ├── migrations/20260906010000_liquidity_correos_outreach.sql  lote diario de outreach: adjuntos, firma del CEO, deck por defecto, vista del día
 │   ├── migrations/20260906120000_liquidity_correos_envio.sql  correo enviado ⇒ la ficha avanza sola; lote de 8/día
 │   ├── migrations/20260906150000_liquidity_vehiculo_marketplace.sql  vehículo `marketplace`: liquidez para el Kabal Digital Marketplace, materiales en config
+│   ├── migrations/20260907140000_liquidity_contactos.sql  contactos por institución (`liq_contactos`), patrón de email, canales públicos y ruta recomendada
+│   ├── contactos/                                    investigación de contactos (26 GO): .json por institución + generador de SQL idempotente
 │   ├── directorio/                                   directorio maestro RWA (172 instituciones): .py, .json e insert idempotente
 │   └── seed_demo.sql                                 datos ficticios para probar en local
 ├── src/
 │   ├── crm.js        cliente PostgREST sin dependencias + lógica de priorización/resumen
 │   └── cli.js        línea de comandos del agente
-├── dashboard/pipeline-liquidez.html                  tablero visual (Artifact): funnel, tablero kanban, tabla, proveedores, lunes
+├── dashboard/pipeline-liquidez.html                  tablero visual (Artifact): funnel, tablero kanban, tabla, proveedores, contactos, lunes
 ├── skill/kabal-liquidity-agent/SKILL.md              definición del agente (reglas, flujos, formato)
 └── test/
     ├── crm_test.js   unit tests (mocha)
@@ -87,13 +89,24 @@ oficial): `Kabal_Digital_Marketplace_One_Pager_EN.pdf` (adjunto del primer conta
 `Kabal_Digital_Marketplace_Liquidity_Partners_EN.pdf` (deck, en la llamada o bajo NDA); el tablero los lleva embebidos
 y los sube a Drive con **Correos → «Subir materiales a Drive»** (ids en `liq_correo_config`).
 
-**Lote diario de 8 GO (outreach).** Cada mañana el agente elige los siguientes 8 proveedores GO sin oportunidad
-(por `monto_potencial_usd`; `outreach_diario_go` en `liq_correo_config`), crea la oportunidad en `identificado`, deja
+**Lote semanal de 8 GO (outreach).** Cada **lunes** el agente elige los siguientes 8 proveedores GO sin oportunidad
+(por `monto_potencial_usd`; `outreach_frecuencia=semanal`, `outreach_dia=lunes` y `outreach_lote_go=8` en
+`liq_correo_config`), crea la oportunidad en `identificado`, deja
 en `liq_correos` el primer correo en inglés (≤200 palabras, una línea personalizada por la tesis del proveedor, un solo
 CTA de 20 minutos, sin promesas) con `adjuntos = [one-pager del marketplace, deck]`, crea el borrador en Gmail por API y
 arma en Drive una carpeta por institución con los materiales. En el tablero, **Correos → «Crear borradores en Gmail con
 one-pager»** crea los borradores con el PDF adjunto de un clic (el deck completo es opcional) y **«Reponer one-pager
 oficial»** reemplaza el adjunto de los borradores que se crearon por API; en Gmail solo falta la dirección y enviar.
+
+**Contactos por institución.** `liq_contactos` guarda, para cada una de las 26 instituciones GO, al dueño del programa
+de activos digitales/tokenización y a las personas con mayor probabilidad de respuesta (rol `dueno_programa`, `decisor`,
+`entrada`, `influencer`, `cobertura_latam`, `canal_generico`; `prioridad` 1 = escribir primero) con cargo, LinkedIn,
+email y su estado (`publico`, `verificado`, `patron_no_verificado`, `rebotado`, `desconocido`), el porqué y la fuente.
+En `liq_proveedores` quedan el patrón de email corporativo (`email_patron`), los canales públicos (`canales_publicos`)
+y la `ruta_recomendada` de abordaje. El agente dirige el primer correo al contacto de prioridad 1 y solo usa direcciones
+`publico`/`verificado`; un `patron_no_verificado` debe confirmarse antes de enviar (nunca inventa direcciones). El
+tablero lo muestra en **Contactos** (búsqueda, filtro por rol/estado, CSV) y en la ficha de cada proveedor. Los datos
+salen de `db/contactos/*.json` y se cargan con `db/contactos/generar_sql.py`.
 
 **Correo enviado ⇒ la ficha avanza sola.** El trigger `liq_correos_enviado_mueve` mueve la oportunidad a la etapa del
 correo (hasta `compromiso_verbal`) con próximo paso de seguimiento (primer correo → follow-up D+4) en cuanto el correo

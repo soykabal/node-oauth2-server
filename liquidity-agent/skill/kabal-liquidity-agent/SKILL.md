@@ -61,10 +61,11 @@ Probabilidad por defecto: 5 / 10 / 20 / 35 / 50 / 70 / 90 / 100 %. Se puede sobr
    muestra listo para pegar; `correo:marcar --id --estado borrador|enviado|omitido [--para x@y.com]` lo cierra y registra
    la interacción. Si falta la dirección (`sin_correo`), basta guardar `contacto_email` en el proveedor. En el tablero el
    mismo flujo abre Gmail (borrador o envío) al mover la ficha.
-7. **Lote diario de 8 GO** — cada mañana (lun–vie): (a) reconciliar: un borrador de Gmail que ya no existe y aparece
+7. **Lote semanal de 8 GO** — cada **lunes** (config `outreach_frecuencia=semanal`, `outreach_dia=lunes`,
+   `outreach_lote_go=8`): (a) reconciliar: un borrador de Gmail que ya no existe y aparece
    en Enviados → `enviado`; la base mueve la ficha sola a `contactado` con follow-up D+4 (trigger
    `liq_correos_enviado_mueve`, migración `20260906120000`); (b) elegir los siguientes 8 GO sin oportunidad por
-   `monto_potencial_usd` (excluyendo plataformas, infraestructura y custodios; `outreach_diario_go` en config);
+   `monto_potencial_usd` (excluyendo plataformas, infraestructura y custodios; `outreach_lote_go` en config);
    (c) crear oportunidad en `identificado` con vehículo `marketplace` + primer correo en inglés en `liq_correos` (etapa
    `contactado`, ≤200 palabras, línea personalizada por la tesis, CTA de 20 min, `adjuntos` = one-pager + deck del
    marketplace); (d) crear los 8 borradores en Gmail por API (`create_draft`, sin destinatario) y marcarlos `borrador`
@@ -91,6 +92,13 @@ Probabilidad por defecto: 5 / 10 / 20 / 35 / 50 / 70 / 90 / 100 %. Se puede sobr
    Método del primer contacto (kabal-capital-pipeline + email_playbooks): ≤200 palabras, un solo CTA (20 min), una línea
    personalizada por la tesis, yields "objetivo, no garantizado", nada de "first/only", pricing solo bajo NDA;
    secuencia después del envío: D+4 bump corto · D+10 aporte de valor · D+18 breakup · D+30 nurture.
+   **Contactos.** Antes de redactar, leer `liq_contactos` del proveedor (vista `liq_v_contactos`; `cli.js contactos --proveedor`
+   próximamente / tablero → **Contactos**): el primer correo va al contacto de **prioridad 1** (normalmente el punto de
+   entrada de business development o el dueño del programa) y se cita la `ruta_recomendada` del proveedor para el CC y el
+   camino cálido. La dirección solo se pone en el borrador si `email_estado` es `publico` o `verificado`; un
+   `patron_no_verificado` se confirma primero (LinkedIn, respuesta del formulario corporativo o `email_patron` del proveedor)
+   y se deja el borrador sin destinatario si no se confirmó. Registrar rebotes con `email_estado='rebotado'`.
+
 8. **Envío ⇒ avance automático** — al marcar un correo `enviado` (tablero, CLI o reconciliación), la ficha pasa sola a
    la etapa de ese correo si está más adelante (hasta `compromiso_verbal`; `firmado`/`wired` siguen siendo manuales y
    con regla KYC). El tablero, al abrirse con Gmail, detecta los borradores que ya se enviaron y los marca.
