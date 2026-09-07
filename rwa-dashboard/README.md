@@ -39,6 +39,9 @@ quedó desactivada). Cada mañana:
    canónicos) y los inserta.
 0b. **Genera el paquete de outreach** de los GO del Outbox (sin correo) que aún no tienen
    fila en `bridge_lead_outreach` (ver sección "Paquete de outreach") y lo inserta.
+0c. **Busca contactos** (correo del decisor o buzón corporativo publicado, con fuente) para
+   los GO del Outbox que aún no tienen fila en `bridge_lead_contactos` y los inserta
+   (ver sección "Contactos encontrados").
 
 Y luego hace el refresco del tablero:
 
@@ -65,12 +68,29 @@ select json_agg(l order by l.updated_at desc) from (
          v.fee_potencial_usd, v.fee_recurrente_anual_usd, v.canal as valor_canal,
          o.gancho as outreach_gancho, o.propuesta as outreach_propuesta,
          o.email_asunto as outreach_asunto, o.email_cuerpo as outreach_cuerpo,
-         o.proximo_paso as outreach_proximo_paso, o.generado_en as outreach_generado_en
+         o.proximo_paso as outreach_proximo_paso, o.generado_en as outreach_generado_en,
+         c.contactos
   from bridge_leads b
   left join bridge_lead_valoraciones v on v.lead_id = b.id
   left join bridge_lead_outreach o on o.lead_id = b.id
+  left join lateral (
+    select json_agg(json_build_object('nombre', k.nombre, 'cargo', k.cargo, 'email', k.email, 'telefono', k.telefono,
+             'linkedin_url', k.linkedin_url, 'tipo', k.tipo, 'confianza', k.confianza, 'fuente_url', k.fuente_url, 'notas', k.notas)
+             order by (k.tipo = 'directo') desc, k.confianza) as contactos
+    from bridge_lead_contactos k where k.lead_id = b.id
+  ) c on true
 ) l;
 ```
+
+## Contactos encontrados (Outbox)
+
+Tabla lateral `public.bridge_lead_contactos` (aditiva). Para los prospectos del Outbox
+(sin correo) los agentes investigadores buscan en fuentes públicas correos del decisor
+o buzones corporativos, con `fuente_url`, `tipo` (directo/genérico) y `confianza`.
+Nunca se inventan ni infieren correos. En el tablero aparecen en el drawer como
+"Contactos encontrados" y en la columna "Correo encontrado" del Outbox; el botón
+**Usar como contacto** carga el correo/decisor en el prospecto (sale del Outbox) y el
+cambio se exporta con **Sincronizar** como `UPDATE bridge_leads SET contacto_email=…`.
 
 El resultado (columna `json_agg`) es el contenido de `leads.json`.
 

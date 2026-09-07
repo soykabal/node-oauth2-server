@@ -25,6 +25,8 @@ KEEP = [
     # paquete de outreach (LEFT JOIN bridge_lead_outreach)
     "outreach_gancho", "outreach_propuesta", "outreach_asunto", "outreach_cuerpo",
     "outreach_proximo_paso", "outreach_generado_en",
+    # contactos encontrados (json_agg de bridge_lead_contactos)
+    "contactos",
 ]
 MARKER = "/*__LEADS__*/[]"
 
