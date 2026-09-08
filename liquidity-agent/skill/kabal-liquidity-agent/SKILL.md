@@ -92,7 +92,9 @@ Probabilidad por defecto: 5 / 10 / 20 / 35 / 50 / 70 / 90 / 100 %. Se puede sobr
    Método del primer contacto (kabal-capital-pipeline + email_playbooks): ≤200 palabras, un solo CTA (20 min), una línea
    personalizada por la tesis, yields "objetivo, no garantizado", nada de "first/only", pricing solo bajo NDA;
    secuencia después del envío: D+4 bump corto · D+10 aporte de valor · D+18 breakup · D+30 nurture.
-   **Contactos.** Antes de redactar, leer `liq_contactos` del proveedor (vista `liq_v_contactos`; `cli.js contactos --proveedor`
+   **Automático los lunes.** La rutina «Lote semanal de liquidez — 8 GO cada lunes» (cron `0 13 * * 1` UTC) ejecuta el lote sola, en una sesión nueva, siguiendo `LOTE_SEMANAL.md` de esta misma carpeta. Deja borradores; **nunca envía**.
+
+**Contactos.** Antes de redactar, leer `liq_contactos` del proveedor (vista `liq_v_contactos`; `cli.js contactos --proveedor`
    próximamente / tablero → **Contactos**): el primer correo va al contacto de **prioridad 1** (normalmente el punto de
    entrada de business development o el dueño del programa) y se cita la `ruta_recomendada` del proveedor para el CC y el
    camino cálido. La dirección solo se pone en el borrador si `email_estado` es `publico` o `verificado`; un
