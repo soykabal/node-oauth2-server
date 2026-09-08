@@ -28,17 +28,24 @@ Rebotes: buscá en Gmail `from:mailer-daemon OR subject:"Delivery Status Notific
 
 ## 2. Elegir las 8 instituciones
 
+Solo entran instituciones a las que se les puede escribir hoy, o sea `cobertura` `listo_verificado` o `listo_patron` en la vista `liq_v_cobertura_contacto`:
+
 ```sql
-select p.* from liq_proveedores p
-where p.calificacion='GO'
-  and not exists (select 1 from liq_oportunidades o where o.proveedor_id=p.id)
-order by p.monto_potencial_usd desc nulls last
+select * from liq_v_cobertura_contacto
+where calificacion='GO'
+  and cobertura in ('listo_verificado','listo_patron')
+  and not tiene_oportunidad
+order by monto_potencial_usd desc nulls last
 limit 8;
 ```
 
-Si quedan menos de 8 GO sin oportunidad, completá con `calificacion='EXPLORE'` por el mismo criterio y decilo en el reporte.
+Si salen menos de 8, completá **en este orden** y decilo en el reporte:
 
-Si una institución elegida no tiene filas en `liq_contactos`, investigá primero a su responsable de programa y a 3-5 contactos con WebSearch, cargalos con el mismo esquema que `liquidity-agent/db/contactos/` (rol, prioridad 1-5, `por_que`, `fuente`, `email_estado`) y recién ahí seguí.
+1. `cobertura='sin_email'` (hay contactos pero ninguna dirección usable): reintentá encontrar el correo del contacto de prioridad 1 con WebSearch. Si aparece, cargalo y entra al lote. Si no, **no** generes borrador: dejá la institución para abordaje por `canales_publicos` / `ruta_recomendada` y listala aparte en el reporte.
+2. `cobertura='sin_contacto'`: investigá al responsable de programa y a 3-5 contactos con WebSearch, cargalos con el mismo esquema que `liquidity-agent/db/contactos/` (rol, prioridad 1-5, `por_que`, `fuente`, `email_estado`) y recién ahí entran al lote.
+3. Recién al final, `calificacion='EXPLORE'` por el mismo criterio.
+
+Nunca metas al lote una institución cuya `cobertura` sea `sin_email` o `sin_contacto`: sin destinatario el borrador no sirve.
 
 ## 3. Crear la oportunidad
 
