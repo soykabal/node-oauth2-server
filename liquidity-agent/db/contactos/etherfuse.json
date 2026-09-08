@@ -1,0 +1,112 @@
+{
+ "institucion": "Etherfuse",
+ "programa": "Stablebonds (bonos soberanos tokenizados: CETES México, TESOURO Brasil, USTRY, EUROB, GILTS, KTB Corea), stablecoin MXNe (Real MXN, emitida con Brale; respaldada por CETES) y Etherfuse FX (lanzado comercialmente desde CDMX en marzo 2026). Alianzas 2026: Shinhan Securities (KTB, ene-2026), Shinhan/Solana Foundation/Orca fondo tokenizado (ago-2026), Anchorage Digital custodia de CETES en Stellar (jun-2026), Monad (KTB), Falcon Finance (CETES como colateral USDf), Brale (MXNe). Seed $3M liderado por White Star Capital a $12.5M de valuación; ~15 empleados (abr-2026); equipo en Ciudad de México, EE.UU. (Irvine) y Europa.",
+ "formato_email": {
+  "patron": "[nombre]@etherfuse.com (ej. david@etherfuse.com) — reportado como el formato del ~91% de direcciones; alternativa menos común [nombre].[apellido]@etherfuse.com",
+  "fuente": "https://rocketreach.co/etherfuse-email-format_b79b215ac54ef605 (snippet de búsqueda; página no accesible desde este entorno)",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Email general / contacto",
+   "valor": "contact@etherfuse.com",
+   "fuente": "https://forum.arbitrum.foundation/t/etherfuse-step-application/27933 (aplicación STEP de Etherfuse; email listado bajo el CEO David Taylor) y https://www.crunchbase.com/organization/etherfuse"
+  },
+  {
+   "canal": "Sitio web / equipo",
+   "valor": "https://etherfuse.com/about",
+   "fuente": "https://etherfuse.com/about"
+  },
+  {
+   "canal": "Centro de soporte",
+   "valor": "https://support.etherfuse.com/",
+   "fuente": "https://support.etherfuse.com/"
+  },
+  {
+   "canal": "X (Twitter) oficial",
+   "valor": "https://x.com/etherfuse",
+   "fuente": "https://x.com/etherfuse?lang=en"
+  },
+  {
+   "canal": "LinkedIn empresa",
+   "valor": "https://www.linkedin.com/company/etherfuse",
+   "fuente": "https://www.linkedin.com/company/etherfuse"
+  },
+  {
+   "canal": "Blog / newsletter",
+   "valor": "https://etherfuse.substack.com y https://www.etherfuse.com/blogs",
+   "fuente": "https://etherfuse.substack.com/p/etherfuse-introduces-real-mxn-mxne"
+  },
+  {
+   "canal": "App institucional",
+   "valor": "https://app.etherfuse.com",
+   "fuente": "https://app.etherfuse.com/bonds/BRNTNaZeTJANz9PeuD8drNbBHwGgg7ZTjiQYrFgWQ48p"
+  },
+  {
+   "canal": "Dirección física (HQ CDMX)",
+   "valor": "Blvd. Adolfo López Mateos 172, Int. 2, Col. Merced Gómez, Benito Juárez, Ciudad de México, C.P. 03930",
+   "fuente": "https://www.etherfuse.com/blogs/etherfuse-faqs (snippet de búsqueda)"
+  },
+  {
+   "canal": "Discord / Telegram",
+   "valor": null,
+   "fuente": "No se localizó enlace oficial público en las fuentes consultadas"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "David (Dave) Taylor",
+   "cargo": "Co-founder & CEO",
+   "area": "Dirección general / alianzas estratégicas (firma las alianzas con Shinhan, Anchorage, Brale; portavoz en prensa)",
+   "ubicacion": "Ciudad de México / EE.UU. (equipo distribuido CDMX–Irvine–Europa)",
+   "linkedin": "https://www.linkedin.com/in/lifehug/",
+   "email": "david@etherfuse.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Es quien lidera personalmente las alianzas institucionales (Shinhan, Anchorage, White Star) y ha declarado públicamente que su foco es 'impulsar alianzas locales en Latinoamérica'. Empresa de ~15 personas: el CEO es el decisor real y responde directamente. Ex-MIT, Boeing, Apple.",
+   "fuente": "https://solanacompass.com/learn/Solfate/etherfuse-stablebonds-as-an-essential-blockchain-primitive-feat-dave-taylor-ceo-of-etherfuse ; https://whitestarcapital.com/companies/etherfuse/ ; https://www.linkedin.com/posts/lifehug_etherfuse-and-mexico-activity-6966522627796471809-Eyux ; https://www.theblock.co/post/306490/tokenization-platform-etherfuse-funding-valuation"
+  },
+  {
+   "nombre": "AJ Taylor",
+   "cargo": "Co-founder & CTO",
+   "area": "Tecnología / integraciones (multi-chain: Solana, Stellar, Base, Monad)",
+   "ubicacion": "EE.UU. (no verificado)",
+   "linkedin": "https://www.linkedin.com/in/aj-taylor-977a5481/",
+   "email": "aj@etherfuse.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "Cofundador (hermano del CEO); decide sobre integraciones técnicas de Stablebonds/MXNe con marketplaces externos. Fundador previo de Neural Payments (infraestructura de pagos). Buen CC para dar credibilidad técnica a la propuesta de integrar CETES/MXNe como colateral o liquidez.",
+   "fuente": "https://www.linkedin.com/in/aj-taylor-977a5481/ ; https://medium.com/venture-beyond/bringing-stablebonds-to-defi-why-we-invested-in-etherfuse-0f2fe04b57ed"
+  },
+  {
+   "nombre": "Don Elefson",
+   "cargo": "Miembro del equipo etherfuse (título exacto no verificado; perfil describe '39 años de experiencia en finanzas tradicionales aplicada a tokenización DeFi')",
+   "area": "Finanzas tradicionales / relaciones institucionales (probable)",
+   "ubicacion": null,
+   "linkedin": "https://www.linkedin.com/in/don-elefson/",
+   "email": "don@etherfuse.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 3,
+   "por_que": "Único perfil público del equipo (además de los fundadores) con perfil TradFi senior; es el interlocutor natural para una conversación sobre liquidez institucional, custodia y cumplimiento. Confirmar título en LinkedIn antes de escribir.",
+   "fuente": "https://www.linkedin.com/in/don-elefson/ (resultado de búsqueda site:linkedin.com/in etherfuse)"
+  },
+  {
+   "nombre": "Rob Durscki",
+   "cargo": "Business Development / Partnerships, Stellar Development Foundation (no es empleado de Etherfuse)",
+   "area": "Camino tibio: SDF lideró la puesta de CETES en Stellar junto con Etherfuse y Anchorage Digital",
+   "ubicacion": null,
+   "linkedin": "https://www.linkedin.com/in/durscki/",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "cobertura_latam",
+   "prioridad": 4,
+   "por_que": "Aliado externo que trabajó directamente con Etherfuse en CETES sobre Stellar; una intro vía SDF (que además impulsa activamente proyectos RWA en LatAm) tiene más probabilidad de respuesta que un frío directo si el frío no responde.",
+   "fuente": "https://www.linkedin.com/in/durscki/ ; https://www.territoriobitcoin.com/anchorage-digital-asume-la-custodia-de-cetes-mexicanos-tokenizados-en-la-red-stellar/"
+  }
+ ],
+ "ruta_recomendada": "1) Email frío a David Taylor (david@etherfuse.com, patrón no verificado) con CC a contact@etherfuse.com (verificado) y a AJ Taylor; asunto en español/inglés mencionando la licencia PSAD-CNAD de El Salvador, la demanda de CETES/MXNe como colateral y liquidez en un mercado regulado centroamericano, y el precedente Anchorage/Shinhan. 2) En paralelo, mensaje de LinkedIn a David Taylor (perfil público muy activo con posts sobre 'etherfuse and Mexico') y a Don Elefson. 3) Camino tibio: pedir intro a través de Stellar Development Foundation (Rob Durscki) o de Anchorage Digital, ambos socios directos de Etherfuse en 2026; alternativamente vía White Star Capital (inversor líder de la ronda seed). 4) Si no hay respuesta en 7–10 días, seguir por el formulario/soporte (support.etherfuse.com) y X (@etherfuse).",
+ "notas": "Empresa pequeña (~15 personas, Tracxn abr-2026) sin un 'Head of Partnerships' identificable públicamente: las alianzas las firma el CEO. No se encontró Discord/Telegram oficial en las fuentes accesibles. Los emails de personas son patrón inferido del formato [nombre]@etherfuse.com; solo contact@etherfuse.com se vio literalmente citado. Limitación: desde este entorno los sitios etherfuse.com, linkedin.com, theblock.co y otros estaban bloqueados y se agotó el presupuesto de búsqueda, así que títulos de LinkedIn (Don Elefson) deben verificarse manualmente antes del envío. Ángulo de valor para Etherfuse: distribución regulada de Stablebonds/MXNe en Centroamérica bajo marco LEAD/CNAD y uso de CETES tokenizados como colateral de liquidez para RWA."
+}
