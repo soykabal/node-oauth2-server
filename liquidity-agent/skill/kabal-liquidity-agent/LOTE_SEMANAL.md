@@ -2,6 +2,8 @@
 
 Guion que ejecuta la rutina **«Lote semanal de liquidez — 8 GO cada miércoles»** (cron `0 13 * * 3` UTC = 7:00 a.m. de El Salvador). Cada disparo abre una sesión nueva sin memoria: este archivo es la fuente de verdad.
 
+Este guion es el **paso 2 de 2** del ciclo semanal. El lunes anterior, `LOTE_LUNES_IDENTIFICACION.md` ya identificó (creó en `liq_oportunidades`, etapa `identificado`) hasta 8 instituciones para esta semana. Este guion las redacta, las adjunta y las deja como borrador — no vuelve a elegir instituciones desde cero salvo que el lunes haya dejado menos de 8.
+
 **Regla que no se rompe:** el agente **nunca envía** un correo. Solo deja borradores en Gmail. El CEO (Guillermo Kattan, `gkattan@soykabal.com`) revisa y envía.
 
 ## Contexto
@@ -28,28 +30,34 @@ Rebotes: buscá en Gmail `from:mailer-daemon OR subject:"Delivery Status Notific
 
 ## 2. Elegir las 8 instituciones
 
-Solo entran instituciones a las que se les puede escribir hoy, o sea `cobertura` `listo_verificado` o `listo_patron` en la vista `liq_v_cobertura_contacto`:
+Primero, tomá lo que el lunes ya dejó `identificado` y todavía no tiene correo redactado:
 
 ```sql
-select * from liq_v_cobertura_contacto
-where calificacion='GO'
-  and cobertura in ('listo_verificado','listo_patron')
-  and not tiene_oportunidad
-order by monto_potencial_usd desc nulls last
+select o.id as oportunidad_id, o.proveedor_id, p.nombre as proveedor, p.monto_potencial_usd
+from liq_oportunidades o
+join liq_proveedores p on p.id = o.proveedor_id
+where o.etapa = 'identificado'
+  and o.vehiculo = 'marketplace'
+  and o.etapa_desde >= date_trunc('week', now())
+  and not exists (select 1 from liq_correos c where c.oportunidad_id = o.id)
+order by p.monto_potencial_usd desc nulls last
 limit 8;
 ```
 
-Si salen menos de 8, completá **en este orden** y decilo en el reporte:
+Si eso te da 8, saltá directo al paso 4 — no crees ninguna oportunidad nueva, ya existen.
 
-1. `cobertura='sin_email'` (hay contactos pero ninguna dirección usable): reintentá encontrar el correo del contacto de prioridad 1 con WebSearch. Si aparece, cargalo y entra al lote. Si no, **no** generes borrador: dejá la institución para abordaje por `canales_publicos` / `ruta_recomendada` y listala aparte en el reporte.
-2. `cobertura='sin_contacto'`: investigá al responsable de programa y a 3-5 contactos con WebSearch, cargalos con el mismo esquema que `liquidity-agent/db/contactos/` (rol, prioridad 1-5, `por_que`, `fuente`, `email_estado`) y recién ahí entran al lote.
-3. Recién al final, `calificacion='EXPLORE'` por el mismo criterio.
+Si te da **menos de 8** (el lunes no llegó a 8, o esta corrida no tuvo lunes previo), completá el resto **en este orden**, creando la oportunidad de una vez para cada institución que sumes (ver paso 3):
+
+1. `cobertura='listo_verificado'` o `listo_patron` en `liq_v_cobertura_contacto`, `calificacion='GO'`, `not tiene_oportunidad`, orden `monto_potencial_usd desc nulls last`.
+2. `cobertura='sin_email'` (hay contactos pero ninguna dirección usable): reintentá encontrar el correo del contacto de prioridad 1 con WebSearch. Si aparece, cargalo y entra al lote. Si no, **no** generes borrador: dejá la institución para abordaje por `canales_publicos` / `ruta_recomendada` y listala aparte en el reporte.
+3. `cobertura='sin_contacto'`: investigá al responsable de programa y a 3-5 contactos con WebSearch, cargalos con el mismo esquema que `liquidity-agent/db/contactos/` (rol, prioridad 1-5, `por_que`, `fuente`, `email_estado`) y recién ahí entran al lote.
+4. Recién al final, `calificacion='EXPLORE'` por el mismo criterio.
 
 Nunca metas al lote una institución cuya `cobertura` sea `sin_email` o `sin_contacto`: sin destinatario el borrador no sirve.
 
-## 3. Crear la oportunidad
+## 3. Crear la oportunidad (solo para lo que sumaste hoy como fallback)
 
-Etapa `identificado`, vehículo `marketplace`. El trigger de etapa deja sola la fila en `liq_correos`.
+Las que ya vinieron `identificado` desde el lunes **no** se tocan acá. Para una institución nueva que agregaste en el paso 2 por quedar corto el lunes: etapa `identificado`, vehículo `marketplace`, `monto_objetivo_usd = liq_proveedores.monto_potencial_usd` (si es `null`, no la identifiques: no se inventa un monto). El trigger de etapa deja sola la fila en `liq_correos`.
 
 ## 4. Redactar el correo
 
