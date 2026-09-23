@@ -1,6 +1,6 @@
-# Lote semanal de outreach — guion del lunes (automático)
+# Lote semanal de outreach — guion del miércoles (automático)
 
-Guion que ejecuta la rutina **«Lote semanal de liquidez — 8 GO cada lunes»** (cron `0 13 * * 1` UTC = 7:00 a.m. de El Salvador). Cada disparo abre una sesión nueva sin memoria: este archivo es la fuente de verdad.
+Guion que ejecuta la rutina **«Lote semanal de liquidez — 8 GO cada miércoles»** (cron `0 13 * * 3` UTC = 7:00 a.m. de El Salvador). Cada disparo abre una sesión nueva sin memoria: este archivo es la fuente de verdad.
 
 **Regla que no se rompe:** el agente **nunca envía** un correo. Solo deja borradores en Gmail. El CEO (Guillermo Kattan, `gkattan@soykabal.com`) revisa y envía.
 
