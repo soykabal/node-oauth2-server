@@ -1,0 +1,115 @@
+{
+ "institucion": "Figure Technology Solutions (FIGR)",
+ "programa": "Figure Connect (marketplace blockchain-native de préstamos sobre Provenance; 65% del volumen del Consumer Loan Marketplace en 2T-2026; JV con Sixth Street de US$200M en equity, feb-2025) + Democratized Prime (marketplace DeFi de warehouse liquidity en Figure Markets) + Hastra (plataforma de yield on-chain; auto loans añadidos abr-2026) + Figure Forge (mar-2026, convierte préstamos on-chain en tokens de participación) + alianza Agora Data (26-feb-2026, auto loans tokenizados en Provenance) + RWA Consortium en Solana (dic-2025). Fuentes: https://investors.figure.com/news-releases/news-release-details/figure-technology-solutions-reports-strong-second-quarter-2026 ; https://investors.figure.com/news-releases/news-release-details/figure-announces-strategic-partnership-agora-data-bring-ai ; https://www.crowdfundinsider.com/2026/03/267959-figure-launches-figure-forge-to-transform-illiquid-loans-into-tradable-defi-collateral/ ; https://www.crowdfundinsider.com/2026/04/273512-figure-technology-solutions-expands-rwa-tokenization-with-auto-loans-on-hastra-platform/",
+ "formato_email": {
+  "patron": "{f}{last}@figure.com (ej. jdoe@figure.com) — patrón principal (~90%); patrones secundarios reportados: {first}_{l}@figure.com, {last}@figure.com, {first}@figure.com. Todo es patrón (no verificado).",
+  "fuente": "https://leadiq.com/c/figure/5aba602f5200001d014854b3/email-format ; https://rocketreach.co/figure-email-format_b455d8c2fc94d1ba ; https://www.signalhire.com/companies/figure/email-format",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Página Investor Relations (contacto IR / formulario)",
+   "valor": "https://investors.figure.com/investor-relations",
+   "fuente": "https://investors.figure.com/investor-relations"
+  },
+  {
+   "canal": "Página Figure Connect para socios / compradores de préstamos (formulario de partner)",
+   "valor": "https://www.figure.com/partner/figure-connect/",
+   "fuente": "https://www.figure.com/partner/figure-connect/"
+  },
+  {
+   "canal": "Newsroom (prensa)",
+   "valor": "https://www.figure.com/newsroom/",
+   "fuente": "https://www.figure.com/newsroom/"
+  },
+  {
+   "canal": "Página Leadership (nombres y cargos oficiales)",
+   "valor": "https://investors.figure.com/corporate-governance/leadership",
+   "fuente": "https://investors.figure.com/corporate-governance/leadership"
+  },
+  {
+   "canal": "LinkedIn corporativo",
+   "valor": "https://www.linkedin.com/company/figuretechnologies",
+   "fuente": "https://www.linkedin.com/company/figuretechnologies"
+  },
+  {
+   "canal": "Conferencias de inversionistas sep-2026 (vía de contacto presencial con CEO/CFO/IR)",
+   "valor": "https://www.globenewswire.com/news-release/2026/09/03/3356290/0/en/figure-technology-solutions-to-participate-in-upcoming-investor-conferences.html",
+   "fuente": "https://www.globenewswire.com/news-release/2026/09/03/3356290/0/en/figure-technology-solutions-to-participate-in-upcoming-investor-conferences.html"
+  },
+  {
+   "canal": "Buzón de prensa / partnerships (email)",
+   "valor": null,
+   "fuente": "No se vio literalmente ningún email en páginas públicas durante esta investigación"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Todd Stevens",
+   "cargo": "Chief Capital Officer (primer CCO de Figure; reporta al CEO; en Figure desde nov-2023)",
+   "area": "Capital Markets / Figure Connect (arquitecto de la estrategia Figure Connect; programa de securitización)",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "tstevens@figure.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Es el dueño directo de Figure Connect y de las relaciones con compradores de préstamos / socios de capital; el pitch de liquidez institucional para RWA tokenizados cae exactamente en su mandato.",
+   "fuente": "https://www.housingwire.com/winner-profile/2025-finance-leader-todd-stevens/ ; https://investors.figure.com/corporate-governance/leadership"
+  },
+  {
+   "nombre": "Reid Simon",
+   "cargo": "Head of Democratized Prime",
+   "area": "Figure Markets / Democratized Prime / Hastra (autor de 'Hastra & DeFi 2.0: The Capital Markets Highway', 1-jul-2026)",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "rsimon@figure.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "entrada",
+   "prioridad": 2,
+   "por_que": "Lidera el marketplace DeFi donde se listan los RWA tokenizados (auto loans de Agora, Figure Forge); es la persona operativa más cercana a la integración de nuevos activos/colateral y publica contenido público, lo que facilita un cold email con referencia a su artículo.",
+   "fuente": "https://www.figure.com/newsroom/ ; https://www.figure.com/newsroom/company-voices/from-speculation-to-productivity-how-hastra-changes-on-chain-yield/"
+  },
+  {
+   "nombre": "Michael Tannenbaum",
+   "cargo": "Chief Executive Officer & Director (CEO desde abr-2024; ex COO/CFO de Brex, ex CRO de SoFi)",
+   "area": "Dirección general",
+   "ubicacion": null,
+   "linkedin": "https://www.linkedin.com/in/michaeltannenbaum",
+   "email": "mtannenbaum@figure.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 3,
+   "por_que": "Decisor final y portavoz público de la estrategia de tokenización (US$22B+ de préstamos on-chain); usar en CC o como escalamiento, no como primer contacto.",
+   "fuente": "https://investors.figure.com/management/michael-tannenbaum ; https://www.figure.com/newsroom/announcement/figure-technology-solutions-names-michael-tannenbaum-as-chief-executive-officer/"
+  },
+  {
+   "nombre": "Macrina Kgil",
+   "cargo": "Chief Financial Officer",
+   "area": "Finanzas / Investor Relations",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "mkgil@figure.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Presente en las conferencias de inversionistas de sep-2026; vía alternativa (IR) si el canal de capital markets no responde.",
+   "fuente": "https://investors.figure.com/corporate-governance/leadership ; https://www.globenewswire.com/news-release/2026/09/03/3356290/0/en/figure-technology-solutions-to-participate-in-upcoming-investor-conferences.html"
+  },
+  {
+   "nombre": "Clare Hove",
+   "cargo": "Chief Operating Officer",
+   "area": "Operaciones",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "chove@figure.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 5,
+   "por_que": "Responsable de operaciones de onboarding de originadores/partners; útil en CC para la parte de integración técnica-operativa en Provenance.",
+   "fuente": "https://investors.figure.com/corporate-governance/leadership"
+  }
+ ],
+ "ruta_recomendada": "1) Email frío a Todd Stevens (CCO) con asunto sobre 'liquidez institucional para RWA tokenizados / posible originador-partner en Figure Connect desde Centroamérica', CC a Reid Simon (Democratized Prime) para el ángulo DeFi/Hastra. 2) En paralelo, enviar el formulario de partner de https://www.figure.com/partner/figure-connect/ para que quede registro en el pipeline comercial. 3) Camino tibio: referenciar la alianza con Agora Data (feb-2026) y el RWA Consortium en Solana (dic-2025) como precedentes de terceros originadores; si hay relación con Sixth Street (socio JV de Figure Connect) o con Agora Data, pedir intro. 4) Escalar a Michael Tannenbaum (CEO) solo tras una primera respuesta o mediante encuentro en las conferencias de inversionistas de sep-2026.",
+ "notas": "Limitaciones de la investigación: el presupuesto de búsqueda web se agotó y el proxy bloqueó el acceso directo a figure.com, investors.figure.com, LinkedIn, GlobeNewswire, BusinessWire y bases de datos de contactos, por lo que: (a) no se pudo confirmar ubicación ni URL de LinkedIn de Todd Stevens, Reid Simon, Macrina Kgil ni Clare Hove; (b) no se vio literalmente ningún email público (prensa/IR/partnerships) — todos los emails listados son patrón no verificado; (c) no se identificó un 'Head of Business Development / Partnerships' específico de Figure Connect distinto del CCO. Otros ejecutivos confirmados en la página de Leadership: Ronald Chillemi (Chief Legal Officer & Corporate Secretary) y Matt Hellwinkel (CTO). Mike Cagney figura como fundador (https://en.wikipedia.org/wiki/Mike_Cagney); su cargo actual exacto no se verificó en esta sesión. Verificar todo en https://investors.figure.com/corporate-governance/leadership antes de enviar."
+}

@@ -1,0 +1,199 @@
+{
+ "institucion": "Midas / Fasanara Capital",
+ "programa": "Midas (Midas Software GmbH, Berlin) — plataforma de productos de inversión onchain (mTokens / Liquid Yield Tokens): mTBILL (T-bills), mBASIS (basis trade), mEDGE (Edge Capital), mRe7YIELD (Re7 Capital), mMEV (MEV Capital), mF-ONE (feeder tokenizado del fondo F-ONE de Fasanara, lanzado jun-2025 con Morpho/Steakhouse, ~US$190M en Morpho), mWIN (Wellington Management, ago-2026, vehículo de titularización en Luxemburgo, custodio Northern Trust). Serie A US$50M (mar-2026) co-liderada por RRE Ventures y Creandum con Franklin Templeton, Anchorage Digital, North Island. Fasanara Capital (Londres, FCA-regulada, ~US$4.5-5.5B AUM) — plataforma de crédito privado fintech con 141 originadores en 60+ países; Fasanara Digital (fundada 2018) gestiona estrategias delta-neutral de activos digitales y la línea de fondos tokenizados (money market tokenizado en estándar permisionado y feeder tokenizado a F-ONE usado como colateral onchain).",
+ "formato_email": {
+  "patron": "Fasanara: First.Last@fasanara.com (93% según LeadIQ; alternativas Last@ y First.L@). Midas: sin patrón público verificado; único buzón visto públicamente es team@midas.app (patrón nominal desconocido — tratar cualquier nombre@midas.app como 'pattern (unverified)').",
+  "fuente": "https://leadiq.com/c/fasanara-capital/5b1e77b9390000da00804b62/email-format ; https://www.crunchbase.com/organization/midas-eb5f (team@midas.app)",
+  "confianza": "media (Fasanara) / baja (Midas)"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Email general Midas",
+   "valor": "team@midas.app",
+   "fuente": "https://www.crunchbase.com/organization/midas-eb5f"
+  },
+  {
+   "canal": "Formulario de contacto Midas",
+   "valor": "https://midas.app/contact-us",
+   "fuente": "https://midas.app/contact-us"
+  },
+  {
+   "canal": "Telegram Midas (discusión pública oficial)",
+   "valor": "https://t.me/MidasApp",
+   "fuente": "https://t.me/MidasApp"
+  },
+  {
+   "canal": "Telegram Midas (anuncios)",
+   "valor": "https://t.me/midasrwa",
+   "fuente": "https://t.me/s/midasrwa"
+  },
+  {
+   "canal": "Discord oficial Midas",
+   "valor": "discord.gg/jFbYr6cKP8",
+   "fuente": "https://x.com/MidasRWA/status/1868987663623373053"
+  },
+  {
+   "canal": "X Midas",
+   "valor": "@MidasRWA",
+   "fuente": "https://x.com/MidasRWA"
+  },
+  {
+   "canal": "Documentación Midas",
+   "valor": "https://docs.midas.app/",
+   "fuente": "https://docs.midas.app/"
+  },
+  {
+   "canal": "Domicilio Midas Software GmbH",
+   "valor": "Kurfürstendamm 15, 10719 Berlin, Alemania",
+   "fuente": "https://www.crunchbase.com/organization/midas-eb5f"
+  },
+  {
+   "canal": "Email inversores Fasanara",
+   "valor": "ir@fasanara.com",
+   "fuente": "https://www.fasanara.com/press/internal/ministry-of-investment-for-saudi-arabia-and-fasanara-capital-sign-memorandum-of-understanding"
+  },
+  {
+   "canal": "Email IR Fasanara (reportado por terceros, no visto en página propia)",
+   "valor": "investor.relations@fasanara.com — pattern (unverified)",
+   "fuente": "https://leadiq.com/c/fasanara-capital/5b1e77b9390000da00804b62"
+  },
+  {
+   "canal": "Prensa Fasanara",
+   "valor": "fasanara@peregrinecommunications.com",
+   "fuente": "https://www.fasanara.com/press/internal/ministry-of-investment-for-saudi-arabia-and-fasanara-capital-sign-memorandum-of-understanding"
+  },
+  {
+   "canal": "Formulario Fasanara Digital",
+   "valor": "https://www.fasanara.com/digital/contact-us",
+   "fuente": "https://www.fasanara.com/digital/contact-us"
+  },
+  {
+   "canal": "Formulario Fasanara Capital",
+   "valor": "https://www.fasanara.com/contact",
+   "fuente": "https://www.fasanara.com/contact"
+  },
+  {
+   "canal": "Teléfono Fasanara Londres",
+   "valor": "+44 203 430 2482",
+   "fuente": "https://www.crunchbase.com/organization/fasanara-capital"
+  },
+  {
+   "canal": "Domicilio Fasanara",
+   "valor": "4th Floor, 25 Argyll Street, London W1F 7TU, UK",
+   "fuente": "https://www.fasanara.com/press/internal/ministry-of-investment-for-saudi-arabia-and-fasanara-capital-sign-memorandum-of-understanding"
+  },
+  {
+   "canal": "Plataforma originadores fintech Fasanara",
+   "valor": "https://fintech.fasanara.com/",
+   "fuente": "https://fintech.fasanara.com/"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Dennis Dinkelmeyer",
+   "cargo": "Co-Founder & CEO",
+   "area": "Midas — dirección general",
+   "ubicacion": "Nueva York, EE.UU. (empresa con sede en Berlín)",
+   "linkedin": null,
+   "email": "dennis@midas.app — pattern (unverified)",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 2,
+   "por_que": "Fundador y decisor final; ex Goldman Sachs / Capital Group; contacto primario listado en Crunchbase junto a team@midas.app. Muy activo en conferencias (Stable Summit) y X (@DDinkelmeyer). Tras la salida del Head of BD en may-2026, la decisión sobre nuevos partners de distribución/liquidez probablemente pase por él.",
+   "fuente": "https://www.crunchbase.com/person/dennis-dinkelmeyer ; https://www.linkedin.com/posts/stable-summit_dennis-dinkelmeyer-co-founder-ceo-activity-7338179726684958720-vOlA ; https://x.com/DDinkelmeyer"
+  },
+  {
+   "nombre": "Romain Bourgois",
+   "cargo": "Co-Founder & Chief Product Officer",
+   "area": "Midas — producto / estructuración de mTokens",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "decisor",
+   "prioridad": 3,
+   "por_que": "Cofundador, ex Ondo Finance; dueño de la hoja de ruta de producto (qué estrategias/emisores se tokenizan y en qué cadenas). Relevante si Kabal propone listar/distribuir mTokens o estructurar un producto LatAm.",
+   "fuente": "https://app.dealroom.co/companies/midas_4 ; https://www.cathaycapital.com/midas-raises-50m-series-a-led-by-rre-and-creandum/"
+  },
+  {
+   "nombre": "Greg Feibus",
+   "cargo": "Ex Head of BD & Partnerships / Head of Institutional Sales, Midas (hasta may-2026); ahora Global Head of Capital Markets, Sky Frontier Foundation",
+   "area": "Ex-Midas — distribución institucional",
+   "ubicacion": "Área metropolitana de Nueva York",
+   "linkedin": "https://www.linkedin.com/in/greg-feibus/",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Construyó la distribución institucional de Midas (Tezos, Plume, mF-ONE). Ya NO está en Midas (nombrado en Sky Frontier Foundation, press release ~28-may-2026), pero es un puente cálido para una intro al CEO y una vía alterna hacia Sky/USDS como socio de liquidez. No dirigir a él el pitch de Midas.",
+   "fuente": "https://www.crypto-reporter.com/press-releases/sky-frontier-foundation-appoints-greg-feibus-as-global-head-of-capital-markets-to-deepen-institutional-capital-flows-into-sky-protocol-126942/ ; https://www.linkedin.com/posts/midasrwa_join-greg-feibus-our-head-of-institutional-activity-7259898447376371713-8Cde"
+  },
+  {
+   "nombre": "David Vatchev",
+   "cargo": "Head of Tokenization",
+   "area": "Fasanara Capital — tokenización (producto, partnerships y distribución estratégica de fondos tokenizados)",
+   "ubicacion": "Londres, UK (inferido: sede Fasanara; ex R3 y Credit Suisse/UBS en Londres)",
+   "linkedin": "https://www.linkedin.com/in/david-vatchev/",
+   "email": "David.Vatchev@fasanara.com — pattern (unverified)",
+   "email_estado": "patron_no_verificado",
+   "rol": "entrada",
+   "prioridad": 1,
+   "por_que": "Dueño operativo del programa de fondos tokenizados de Fasanara (incl. mF-ONE con Midas, emisión con Tokeny/ERC-3643); su mandato explícito incluye 'partnerships and strategic distribution'. Ex Head of Sales Digital Assets en R3 — perfil comercial que responde a emails institucionales; speaker habitual (Stable Summit, RWA Paris, NFT Paris) y autor en CoinDesk.",
+   "fuente": "https://www.linkedin.com/posts/stable-summit_david-vatchev-head-of-tokenization-activity-7338535547256143877-hH1G ; https://x.com/TokenySolutions/status/1909632557982900303 ; https://www.rwaparis.xyz/speakers/david-vatchev"
+  },
+  {
+   "nombre": "Nikita Fadeev",
+   "cargo": "Co-Head, Digital (socio fundador de Fasanara Digital)",
+   "area": "Fasanara Digital — estrategias de activos digitales y multi-manager",
+   "ubicacion": "Londres, UK",
+   "linkedin": "https://www.linkedin.com/in/nikitafadeev/",
+   "email": "Nikita.Fadeev@fasanara.com — pattern (unverified)",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "Co-dirige Fasanara Digital (con Alessandro Balata), la unidad que actúa como risk manager/estrategia detrás de los productos con Midas y del brazo digital de F-ONE; decide asignaciones a nuevas venues/colateral onchain. Speaker en Blockworks DAS.",
+   "fuente": "https://theorg.com/org/fasanara-capital/org-chart/nikita-fadeev ; https://www.fasanara.com/press/internal/fasanara-digital-debuts-multi-strategy ; https://www.hedgeweek.com/generating-performance-while-managing-risk-key-balance-crypto-markets/"
+  },
+  {
+   "nombre": "Alessandro Balata",
+   "cargo": "Co-Head, Digital (socio fundador de Fasanara Digital)",
+   "area": "Fasanara Digital",
+   "ubicacion": "Londres, UK (inferido)",
+   "linkedin": null,
+   "email": "Alessandro.Balata@fasanara.com — pattern (unverified)",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 3,
+   "por_que": "Co-líder de Fasanara Digital; CC natural de cualquier propuesta enviada a Fadeev/Vatchev sobre liquidez o colateral tokenizado.",
+   "fuente": "https://www.fasanara.com/team ; https://www.fasanara.com/press/internal/fasanara-digital-debuts-multi-strategy"
+  },
+  {
+   "nombre": "Cameron Arrington",
+   "cargo": "Head of US Capital Formation",
+   "area": "Fasanara Capital — captación de capital / oficina Nueva York",
+   "ubicacion": "Nueva York, EE.UU.",
+   "linkedin": null,
+   "email": "Cameron.Arrington@fasanara.com — pattern (unverified)",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 3,
+   "por_que": "Dirige la primera oficina de Fasanara en EE.UU. (ex Goldman Sachs, 20+ años, ventas de leveraged loans); es el asiento comercial en zona horaria de las Américas más cercano a Centroamérica. No hay cobertura LatAm dedicada publicada.",
+   "fuente": "https://alternativefundinsight.com/fasanara-establishes-first-us-office-with-new-york-launch-and-goldman-hire/"
+  },
+  {
+   "nombre": "Francesco Filia",
+   "cargo": "Co-Founder, CEO & CIO",
+   "area": "Fasanara Capital — dirección general e inversiones",
+   "ubicacion": "Londres, UK",
+   "linkedin": null,
+   "email": "Francesco.Filia@fasanara.com — pattern (unverified)",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 4,
+   "por_que": "Decisor último de Fasanara (ex MD BofA Merrill Lynch); no es el punto de entrada para un cold email — usar solo como CC tras respuesta de Vatchev/Fadeev o vía intro.",
+   "fuente": "https://www.fasanara.com/about ; https://www.bloomberg.com/profile/person/3260102 ; https://cfany.org/speaker-organizer/francesco-filia/"
+  }
+ ],
+ "ruta_recomendada": "1) Email primero a David Vatchev (Fasanara, Head of Tokenization) con CC a Nikita Fadeev: propuesta concreta de Kabal Bridge como venue regulada (PSAD, CNAD El Salvador) para listar/distribuir mF-ONE u otros fondos tokenizados de Fasanara y como canal de originación de receivables/SME lending centroamericano hacia la red de 141 originadores de Fasanara (ángulo doble: liquidez + originación). 2) En paralelo, escribir a team@midas.app y al formulario midas.app/contact-us mencionando el interés como partner de distribución/liquidez de mTokens en LatAm, y pedir el contacto del nuevo responsable de BD (puesto Head of Business Development abierto en 2026 tras la salida de Greg Feibus); enviar copia por LinkedIn a Dennis Dinkelmeyer. 3) Camino cálido: pedir intro a Feibus (ex Head of BD Midas, ahora Sky) o a Fasanara vía Vatchev para llegar a Dinkelmeyer; si Kabal usa Tokeny (ERC-3643), Tokeny también conecta con Vatchev. 4) Si interesa capital de EE.UU./Américas, CC a Cameron Arrington (NY).",
+ "notas": "Limitaciones: durante la investigación los sitios midas.app, docs.midas.app, fasanara.com, theorg.com, crunchbase.com, linkedin.com y varios medios estaban bloqueados por el proxy, y el presupuesto de búsquedas se agotó; los datos provienen de resúmenes de resultados de búsqueda y no de la lectura directa de cada página. Verificar en LinkedIn antes de enviar: (a) sucesor de Greg Feibus en BD de Midas (no identificado públicamente a sep-2026; Midas publicó vacantes 'Head of Business Development' (Londres) y 'Business Development Manager' en 2026); (b) ubicación exacta de Dinkelmeyer (Crunchbase: Nueva York; empresa: Berlín). URLs de LinkedIn solo se incluyen cuando aparecieron literalmente en resultados públicos. No se encontró ninguna iniciativa LatAm/Centroamérica publicada ni para Midas ni para Fasanara; no se hallaron emails nominales públicos de ninguna persona listada — todos los nominales son patrón no verificado. Midas ofrece mTBILL/mBASIS a minoristas en la UE (primer caso) y opera con custodia Fordefi; Fasanara es regulada por la FCA."
+}

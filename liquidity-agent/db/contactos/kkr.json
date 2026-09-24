@@ -1,0 +1,123 @@
+{
+ "institucion": "KKR",
+ "programa": "Exposición tokenizada al KKR Health Care Strategic Growth Fund II vía Securitize (Avalanche, Reg D 506(c), lanzado sept-2022; Securitize Capital gestiona el vehículo y el mercado secundario tras lock-up de 1 año). KKR no publica un 'head of digital assets'; el patrocinio interno vino de Private Wealth (Dan Parant, quien dejó KKR en 2024 hacia Vista Equity). En 2026 la iniciativa depende estructuralmente de Global Wealth Solutions (GWS) y, para LatAm, de la oficina de Miami (wealth ex-EE.UU. e institucional LatAm/México dentro de Global Client Solutions).",
+ "formato_email": {
+  "patron": "first.last@kkr.com (ej. jane.doe@kkr.com; ~68% de direcciones según agregadores; variantes minoritarias: lastf@kkr.com, first-last@kkr.com, First.Last@consultant.kkr.com para consultores)",
+  "fuente": "https://www.clay.com/dossier/kkr-email-format ; https://leadiq.com/c/kkr/5a1d95e22300005c008485d2/email-format ; https://rocketreach.co/kkr-email-format_b5c62479f42e0ca9",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Investor Relations (email)",
+   "valor": "Investor-Relations@kkr.com | +1 (877) 610-4910 (US) / +1 (212) 230-9410 (intl)",
+   "fuente": "https://ir.kkr.com/contacts-email-alerts/contact-us"
+  },
+  {
+   "canal": "Media (email)",
+   "valor": "media@kkr.com | Kristi Huller +1 (212) 750-8300",
+   "fuente": "https://ir.kkr.com/contacts-email-alerts/contact-us ; https://media.kkr.com/"
+  },
+  {
+   "canal": "Formulario de contacto corporativo",
+   "valor": "https://www.kkr.com/contact",
+   "fuente": "https://www.kkr.com/contact"
+  },
+  {
+   "canal": "Formulario de contacto Global Wealth",
+   "valor": "https://www.kkr.com/wealth/contact",
+   "fuente": "https://www.kkr.com/wealth/contact"
+  },
+  {
+   "canal": "Página regional Latin America",
+   "valor": "https://www.kkr.com/latin-america (equipos en Miami, São Paulo y Nueva York; equipo regional formal desde 2021)",
+   "fuente": "https://www.kkr.com/latin-america"
+  },
+  {
+   "canal": "Directorio público de personas",
+   "valor": "https://www.kkr.com/about/our-people",
+   "fuente": "https://www.kkr.com/about/our-people"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Jordie Olivella",
+   "cargo": "Managing Director, Head of Americas ex-U.S., Global Wealth Solutions",
+   "area": "Global Wealth Solutions (wealth Canadá, LatAm y Caribe)",
+   "ubicacion": "Miami, FL",
+   "linkedin": "https://www.linkedin.com/in/jordieolivella",
+   "email": "jordie.olivella@kkr.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 1,
+   "por_que": "Lidera el negocio de wealth de KKR para LatAm desde la nueva oficina de Miami; ex-head de distribución offshore de BlackRock (conoce bancas privadas y plataformas offshore de Centroamérica); MD desde ene-2024. Es la persona con mandato explícito de crecer distribución en la región y la más cercana al canal donde KKR ya probó tokenización (wealth).",
+   "fuente": "https://www.kkr.com/about/our-people/jordie-olivella ; https://news.bloomberglaw.com/private-equity/kkr-opening-first-miami-office-in-latin-america-wealth-push ; https://privateequitywire.co.uk/2022/10/18/317960/blackrock-offshore-sales-head-quits-join-kkr"
+  },
+  {
+   "nombre": "Gio Onate",
+   "cargo": "Head of Institutional Business for Latin America (ex-Brazil) and Head of Mexico, Global Client Solutions",
+   "area": "Global Client Solutions (institucional LatAm ex-Brasil / México)",
+   "ubicacion": "Miami / México (no confirmado)",
+   "linkedin": null,
+   "email": "gio.onate@kkr.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 2,
+   "por_que": "Cubre inversionistas institucionales de LatAm ex-Brasil (incluye Centroamérica) y México; se unió a KKR en 2022. Contraparte natural para un operador regulado centroamericano que busca socios institucionales.",
+   "fuente": "https://www.kkr.com/about/our-people/gio-onate ; https://www.kkr.com/latin-america"
+  },
+  {
+   "nombre": "Monica Mandelli",
+   "cargo": "Managing Director, Head of Americas ex-US, Global Client Solutions",
+   "area": "Global Client Solutions (capital formation, institucional, family capital y wealth en LatAm onshore/offshore y Canadá)",
+   "ubicacion": "Nueva York / Miami (KKR indica equipos LatAm en Miami, São Paulo y NY)",
+   "linkedin": null,
+   "email": "monica.mandelli@kkr.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 3,
+   "por_que": "Dirige toda la actividad de captación de capital y relaciones con clientes de KKR en LatAm; en KKR desde 2015, ex-Goldman Sachs (17 años, global head de cobertura de family offices). Es a quien reportan Olivella y Onate funcionalmente en la región; CC o escalamiento.",
+   "fuente": "https://www.kkr.com/about/our-people/monica-mandelli ; https://x.com/KKR_Co/status/1575183776228835328 ; https://www.kkr.com/latin-america"
+  },
+  {
+   "nombre": "Doug Krupa",
+   "cargo": "Partner, Head of Global Wealth Solutions, Americas",
+   "area": "Global Wealth Solutions (producto y distribución wealth Américas)",
+   "ubicacion": "Nueva York",
+   "linkedin": "https://www.linkedin.com/in/doug-krupa-cfa-0441103",
+   "email": "doug.krupa@kkr.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 4,
+   "por_que": "Co-lideró el negocio de wealth de EE.UU. junto a Dan Parant (patrocinador de la tokenización con Securitize) y lideró Global Private Wealth Product Strategies; hoy dirige GWS Américas. Es el decisor de producto/estructura para cualquier vehículo tokenizado o feeder dirigido a wealth.",
+   "fuente": "https://www.kkr.com/about/our-people/doug-krupa ; https://www.businesswire.com/news/home/20220125006274/en/KKR-Names-Todd-Builione-Global-Head-of-Private-Wealth ; https://www.linkedin.com/posts/doug-krupa-cfa-0441103_not-long-after-i-joined-kkr-we-began-preparing-activity-7394213147764543489--UbH"
+  },
+  {
+   "nombre": "Todd Builione",
+   "cargo": "Partner, Global Head of Private Wealth (nombrado ene-2022; en 2026 lidera Global Wealth Solutions; título exacto 2026 no verificado)",
+   "area": "Global Wealth Solutions (global)",
+   "ubicacion": "Nueva York",
+   "linkedin": null,
+   "email": "todd.builione@kkr.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 5,
+   "por_que": "Dueño global de la plataforma de distribución wealth bajo la cual se lanzó la exposición tokenizada; ex-Presidente de KKR Credit & Markets (puente con KKR Credit). No es entrada fría recomendable; usarlo como escalamiento tras tracción con Olivella/Krupa.",
+   "fuente": "https://www.businesswire.com/news/home/20220125006274/en/KKR-Names-Todd-Builione-Global-Head-of-Private-Wealth ; https://www.institutionalinvestor.com/article/2aucs5959u81bazsae60w/ria-intel/kkr-names-new-head-of-global-private-wealth-to-deepen-relationships-with-advisors"
+  },
+  {
+   "nombre": "Lauren Goodwin",
+   "cargo": "Managing Director, Chief Investment Strategist, Global Wealth Solutions (nombrada 28-abr-2026)",
+   "area": "Global Wealth Solutions (estrategia/contenido para wirehouses, RIAs, bancas privadas)",
+   "ubicacion": "Nueva York (no confirmado)",
+   "linkedin": null,
+   "email": "lauren.goodwin@kkr.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 6,
+   "por_que": "Nueva voz de GWS hacia intermediarios; útil como influencer/CC si el pitch se enmarca en acceso a mercados privados para wealth LatAm, no como decisor de liquidez.",
+   "fuente": "https://finance.yahoo.com/markets/stocks/articles/kkr-appoints-lauren-goodwin-chief-120000661.html ; https://alternativecreditinvestor.com/2026/04/29/kkr-appoints-new-md-for-global-wealth-solutions/"
+  }
+ ],
+ "ruta_recomendada": "1) Email a Jordie Olivella (Miami, wealth LatAm) con CC a Gio Onate (institucional LatAm ex-Brasil/México): enmarcar a Kabal Bridge como PSAD licenciado (CNAD, El Salvador) que puede ser canal de distribución/secundario regulado en Centroamérica para exposición tokenizada de KKR y como originador de RWA para KKR Credit. 2) Si hay respuesta, escalar a Monica Mandelli (dueña de cobertura Américas ex-US) y a Doug Krupa (decisor de producto wealth). 3) Camino cálido paralelo: Securitize es quien operativamente tokeniza y distribuye el feeder de KKR — abordar a Securitize (Carlos Domingo, CEO; Securitize Capital) para una introducción a KKR GWS es más realista que una entrada fría a Builione. 4) Usar Investor-Relations@kkr.com/media@kkr.com solo como respaldo, no como canal comercial.",
+ "notas": "Dan Parant, el ejecutivo de KKR citado en la tokenización con Securitize (2022), dejó KKR en feb-2024 (hoy Global Head of Private Wealth Solutions en Vista Equity Partners) — no contactarlo por KKR. No se encontró en fuentes públicas un 'head of digital assets/blockchain' en KKR a 2026; la señal más reciente relacionada con tecnología es el nombramiento de Adam Selipsky (ex-AWS) como Senior Technology & AI Strategy Advisor (sept-2025), no digital assets. KKR abrió su primera oficina en Miami para el push de wealth en LatAm (cubre Canadá, LatAm y Caribe). Jorge Lange figura como Brazil Advisor (desde 2024) — relevante solo para Brasil. No se pudo acceder directamente a kkr.com, ir.kkr.com ni a agregadores (bloqueo de red), por lo que los títulos provienen de resúmenes de búsqueda y notas de prensa; verificar en LinkedIn antes del envío. Todos los emails individuales son patrón (no verificados)."
+}

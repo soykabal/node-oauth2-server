@@ -1,0 +1,115 @@
+{
+ "institucion": "Securitize",
+ "programa": "Plataforma líder de tokenización/emisión (BlackRock BUIDL, Apollo ACRED, Hamilton Lane HLSCOPE/HINC, fondos KKR), Securitize Markets (ATS/broker-dealer), Securitize Fund Services, sToken vaults; ~$4B+ AUM tokenizado (nov 2025); empresa cotizada que reporta resultados trimestrales (Q1 y Q2 2026). Expansión regulada a Europa vía Securitize Europe Brokerage and Markets, S.V., S.A. (autorizada por CNMV, España). Función de captación de emisores encabezada desde ene-2026 por la nueva VP, Head of Issuer Growth.",
+ "formato_email": {
+  "patron": "first.last@securitize.io (ej. carlos.domingo@securitize.io)",
+  "fuente": "https://leadiq.com/c/securitize/5a97e477590000ce00996751 (snippet: 'Securitize's email format typically follows First.Last@securitize.io'); no verificado contra un email individual visto literalmente",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Email general / Securitize Markets",
+   "valor": "info@securitizemarkets.io",
+   "fuente": "https://leadiq.com/c/securitize/5a97e477590000ce00996751 (snippet de búsqueda)"
+  },
+  {
+   "canal": "Soporte a inversionistas",
+   "valor": "investorsupport@securitize.io",
+   "fuente": "https://investorsupport.securitize.io/hc/en-us/articles/360051589913-Contacting-Securitize-Support"
+  },
+  {
+   "canal": "Prensa",
+   "valor": "press@securitize.io — pattern (unverified)",
+   "fuente": "No visto literalmente en página pública en esta sesión; derivado del dominio corporativo"
+  },
+  {
+   "canal": "Relación con inversionistas (empresa cotizada)",
+   "valor": "ir@securitize.io — pattern (unverified)",
+   "fuente": "Existencia de reportes trimestrales 2026: https://www.prnewswire.com/news-releases/securitize-reports-second-quarter-2026-results-302850119.html (el comunicado normalmente lista contactos IR/media; no pudo abrirse)"
+  },
+  {
+   "canal": "Formulario de contacto web",
+   "valor": "https://securitize.io/contact — no verificado en esta sesión",
+   "fuente": "https://securitize.io (sitio bloqueado por el proxy de red durante la investigación)"
+  },
+  {
+   "canal": "LinkedIn corporativo",
+   "valor": "https://www.linkedin.com/company/securitize",
+   "fuente": "https://www.linkedin.com/company/securitize"
+  },
+  {
+   "canal": "Registro CNMV filial europea",
+   "valor": "SECURITIZE EUROPE BROKERAGE AND MARKETS, S.V., S.A. (NIF A13691464)",
+   "fuente": "https://www.cnmv.es/portal/consultas/esi/esis?nif=A13691464&lang=en"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Giang Bui",
+   "cargo": "Vice President, Head of Issuer Growth",
+   "area": "Issuer Growth / captación de emisores públicos y privados",
+   "ubicacion": "Estados Unidos (probablemente Nueva York; ex Nasdaq/NYSE/Cboe) — ciudad no verificada",
+   "linkedin": null,
+   "email": "giang.bui@securitize.io",
+   "email_estado": "patron_no_verificado",
+   "rol": "entrada",
+   "prioridad": 1,
+   "por_que": "Nombrada el 27-ene-2026 precisamente para 'trabajar con emisores de mercados públicos y privados para llevar al mercado tokenización regulada liderada por emisores'. Es la dueña funcional del pipeline de emisores/partners: un marketplace RWA licenciado en El Salvador que quiere listar/distribuir productos Securitize o traer emisores centroamericanos cae directamente en su mandato. Recién llegada, con incentivo a construir pipeline.",
+   "fuente": "https://www.theblock.co/post/387273/nasdaq-nyse-and-cboe-vet-joins-securitize-as-vp-working-with-public-and-private-market-issuers ; https://coincentral.com/nasdaq-nyse-and-cboe-veteran-joins-securitize-as-vp-of-issuer-growth/ ; https://www.coinspeaker.com/blackrocks-partner-securitize-welcomes-former-nasdaq-as-head-of-issuer-growth/"
+  },
+  {
+   "nombre": "Amparo García Flores",
+   "cargo": "CEO, Securitize Europe Brokerage and Markets, S.V., S.A.",
+   "area": "Europa / España (sociedad de valores autorizada por CNMV)",
+   "ubicacion": "España (Madrid, sede de la S.V. — ciudad no verificada)",
+   "linkedin": null,
+   "email": "amparo.garcia@securitize.io",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "Dirige la entidad regulada europea; canal natural en español y bajo MiCA/MiFID para un operador licenciado en El Salvador que busque reciprocidad de listado, distribución transfronteriza o pasaporte a inversionistas europeos. Habla español; el equipo tecnológico de Securitize es mayoritariamente español y Santander fue inversionista temprano.",
+   "fuente": "https://eblockchainconvention.com/2025-speakers/ ; https://www.marketsmedia.com/securitize-expands-regulated-operations-to-europe/ ; https://www.crowdfundinsider.com/2024/12/234397-securitize-announces-expansion-of-operations-to-europe-with-investment-firm-approval-in-spain/"
+  },
+  {
+   "nombre": "Carlos Domingo",
+   "cargo": "Co-Founder, CEO, Chairman & Director (CEO/Chairman desde oct-2025 en la entidad cotizada)",
+   "area": "Dirección general",
+   "ubicacion": "Miami, Florida, EE.UU. (empresa Endeavor Miami)",
+   "linkedin": "https://www.linkedin.com/in/carlosdomingo/",
+   "email": "carlos.domingo@securitize.io",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 3,
+   "por_que": "Dueño último del programa; español, muy activo en X/LinkedIn y en conferencias LATAM/España (fundó SPiCE VC y Sling Ventures). No abordar en frío por email primero: usar como CC o mención en LinkedIn tras el primer contacto con Issuer Growth. Warm path viable vía red Endeavor (Endeavor Miami / Endeavor Centroamérica).",
+   "fuente": "https://people.equilar.com/bio/org/securitize-inc/5277451 ; https://www.crunchbase.com/person/carlos-domingo ; https://endeavormiami.org/endeavor-companies/securitize/ ; https://www.cnbc.com/video/2026/07/02/carlos-domingo-securitize-ceo-a-fortt-knox-update.html"
+  },
+  {
+   "nombre": "Brett Redfearn",
+   "cargo": "President and Director",
+   "area": "Presidencia / mercados y regulación (ex Director de Trading & Markets de la SEC — antecedente no verificado en esta sesión)",
+   "ubicacion": "Estados Unidos (ciudad no verificada)",
+   "linkedin": null,
+   "email": "brett.redfearn@securitize.io",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 4,
+   "por_que": "Presidente de la entidad cotizada; interlocutor adecuado para temas de estructura de mercado, ATS y reconocimiento regulatorio cruzado (CNAD/PSAD vs. broker-dealer/ATS). CC recomendado cuando la conversación pase a acuerdos de mercado secundario.",
+   "fuente": "https://people.equilar.com/bio/org/securitize-inc/5277451"
+  },
+  {
+   "nombre": "Jamie Finn",
+   "cargo": "Co-Founder (históricamente President; Equilar lista a Brett Redfearn como President en 2025-26 — verificar cargo vigente)",
+   "area": "Business development / producto (fundador)",
+   "ubicacion": "Estados Unidos (no verificado)",
+   "linkedin": null,
+   "email": "jamie.finn@securitize.io",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 5,
+   "por_que": "Cofundador con historial en desarrollo de negocio (AT&T, Telefónica, O2, Ericsson); conoce Telefónica/España y LATAM. Útil como influencer o para introducción interna si el cargo actual lo confirma.",
+   "fuente": "https://theorg.com/org/securitize/org-chart/carlos-domingo ; https://www.crunchbase.com/person/carlos-domingo (snippets de búsqueda)"
+  }
+ ],
+ "ruta_recomendada": "1) Email frío institucional a Giang Bui (VP, Head of Issuer Growth) presentando a Kabal Bridge como PSAD licenciado (CNAD, El Salvador) con marketplace RWA y pipeline de emisores centroamericanos; pedir 30 min sobre (a) distribución de productos Securitize a inversionistas calificados de la región y (b) onboarding de emisores regionales en Securitize. 2) CC a Amparo García Flores (CEO Securitize Europe) por el ángulo hispanohablante y regulatorio europeo; enviar una versión en español. 3) Tras respuesta o a los 7-10 días, mención/contacto en LinkedIn a Carlos Domingo referenciando el hilo con Issuer Growth. 4) Warm path: red Endeavor (Securitize es empresa Endeavor Miami; Endeavor tiene capítulo en Centroamérica), inversionistas comunes (ecosistema español: Santander/BBVA), o presentación desde ZKsync/Stellar/Ethereum foundations si Kabal ya tiene relación. 5) En paralelo, formulario/inbox info@securitizemarkets.io solo como respaldo, no como canal principal.",
+ "notas": "Limitaciones de esta sesión: el proxy de red bloqueó el acceso directo a securitize.io, LinkedIn, PRNewswire, CNMV, The Block, Coinspeaker, Craft, TheOrg, LeadIQ y demás fuentes, y se agotó el presupuesto de búsquedas web (200/200); por ello todos los datos provienen de snippets de resultados de búsqueda y los emails individuales son SOLO patrón no verificado. Datos no confirmados en esta sesión que conviene validar antes de enviar: ciudad exacta de Giang Bui y Brett Redfearn; URL de LinkedIn de Bui, García Flores, Redfearn y Finn; existencia de press@securitize.io e ir@securitize.io; cargo vigente de Jamie Finn; identidad del COO (por conocimiento previo, Michael Sonnenshein, ex Grayscale, se incorporó como COO en 2024 — no verificado aquí). Cobertura Latinoamérica: los resultados indican presencia de Securitize en Argentina (hub tecnológico, por conocimiento previo en Buenos Aires) pero no se identificó un responsable comercial LATAM público; el ángulo hispanohablante más sólido es la CEO de Securitize Europe y el propio CEO. Securitize cotiza en bolsa y reporta resultados trimestrales (Q1 y Q2 2026), lo que sube el listón de diligencia sobre contrapartes: incluir en el primer email número de licencia PSAD, auditor y custodio."
+}

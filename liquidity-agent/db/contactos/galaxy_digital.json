@@ -1,0 +1,131 @@
+{
+ "institucion": "Galaxy Digital",
+ "programa": "Galaxy Asset Management + Global Markets + tokenización institucional: (i) State Street Galaxy Onchain Liquidity Sweep Fund (SWEEP, mayo-2026; Solana, luego Ethereum y Stellar; Galaxy provee el sistema de tokenización, Anchorage custodia digital, State Street activos tradicionales); (ii) primer CLO tokenizado (cierre inicial US$75M, ene-2026); (iii) tokenización de la acción GLXY en blockchain de EE.UU. con Superstate; (iv) Galaxy Curator — bóvedas institucionales en Morpho distribuidas vía Fireblocks Earn (jul-2026); (v) Global Markets: liquidez principal, derivados, préstamo (libro promedio ~US$1.4B), trading electrónico, OTC de mercados de predicción (jun-2026), red de +1,600 contrapartes institucionales; participación en Digital Prime Technologies/Tokenet (lending institucional). Galaxy Ventures Fund I (US$175M, cierre jun-2025) invierte en la intersección TradFi-cripto (stablecoins, DeFi, tokenización). LatAm: alianza con Itaú Asset Management (ETFs cripto en B3 desde nov-2022).",
+ "formato_email": {
+  "patron": "First.Last@galaxy.com (RocketReach: ~99% de direcciones en su base; dominio legado First.Last@galaxydigital.io aún aparece en directorios). Otras fuentes (LeadIQ) reportan patrones minoritarios como first@galaxy.com y first_last@galaxy.com — inconsistencia entre agregadores.",
+  "fuente": "https://rocketreach.co/galaxy-digital-email-format_b4534dfefc8138fc ; https://leadiq.com/c/galaxy-digital/5a2b0c64530000f9009fdd83/email-format ; https://www.zoominfo.com/p/David-Knowlton/3746076607 (muestra d***@galaxydigital.io)",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Sitio corporativo / contacto",
+   "valor": "https://www.galaxy.com (formulario de contacto institucional; no se pudo verificar ningún email genérico en la página por bloqueo de acceso)",
+   "fuente": "https://www.galaxy.com/"
+  },
+  {
+   "canal": "Investor Relations (SEC filings / resultados)",
+   "valor": "Comunicados de resultados Q2-2026 en PRNewswire y 8-K en SEC (contienen contactos de IR y prensa; no verificados literalmente)",
+   "fuente": "https://www.prnewswire.com/news-releases/galaxy-announces-second-quarter-2026-financial-results-302843529.html ; https://www.sec.gov/Archives/edgar/data/0001859392/000185939226000084/glxy-20260630xpressrelease.htm"
+  },
+  {
+   "canal": "LinkedIn corporativo",
+   "valor": "https://www.linkedin.com/company/galaxyhq",
+   "fuente": "https://www.linkedin.com/company/galaxyhq"
+  },
+  {
+   "canal": "X corporativo",
+   "valor": "https://x.com/galaxyhq",
+   "fuente": "https://x.com/galaxyhq/status/1998826297750073533"
+  },
+  {
+   "canal": "Portal de empleo (evidencia del equipo Institutional Distribution, Digital Assets)",
+   "valor": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/6114560004",
+   "fuente": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/6114560004"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Steve Kurz",
+   "cargo": "Global Head of Asset Management & Global Co-Head, Digital Assets; miembro del equipo fundador y del Management Committee",
+   "area": "Galaxy Asset Management / Digital Assets",
+   "ubicacion": "Nueva York",
+   "linkedin": "https://www.linkedin.com/in/stevekurz/",
+   "email": "steve.kurz@galaxy.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 3,
+   "por_que": "Dueño de Asset Management (SWEEP con State Street, CLO tokenizado, ETFs con Itaú en Brasil) y co-cabeza de toda la división de activos digitales; autor del outlook 2026 'The Great Convergence'. Es el decisor final para un vehículo tokenizado o una alianza de distribución; abordar tras tracción con Glauber/Knowlton o vía introducción de State Street/Anchorage/Itaú.",
+   "fuente": "https://www.coindesk.com/business/2026/02/14/galaxy-s-steve-kurz-sees-great-convergence-driving-crypto-s-long-term-outlook ; https://ionanalytics.com/insights/mergermarket/steve-kurz-global-head-of-asset-management-at-galaxy-on-trends-in-digital-technology/ ; https://blockworks.com/news/galaxy-brings-bitcoin-etf-to-brazil-with-tradfi-giant"
+  },
+  {
+   "nombre": "Zane Glauber, CFA",
+   "cargo": "Global Head of Distribution",
+   "area": "Galaxy Asset Management / distribución institucional",
+   "ubicacion": "Nueva York (no confirmado)",
+   "linkedin": "https://www.linkedin.com/in/zane-glauber-cfa-58950316",
+   "email": "zane.glauber@galaxy.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "entrada",
+   "prioridad": 1,
+   "por_que": "Cara pública de la distribución institucional de Galaxy en 2026 (citado en el lanzamiento de Galaxy Curator/Morpho y en el webinar de prediction markets); su mandato es precisamente colocar productos (SWEEP, bóvedas, tokenizados) con contrapartes institucionales — un marketplace regulado en Centroamérica que quiere ser canal/proveedor de liquidez encaja en su KPI.",
+   "fuente": "https://www.marketsmedia.com/galaxy-adds-to-vault-ecosystem/ ; https://www.investing.com/news/company-news/galaxy-launches-institutional-vault-curation-service-on-morpho-93CH-4795897 ; https://www.marketsmedia.com/prediction-markets-move-from-niche-to-mainstream/"
+  },
+  {
+   "nombre": "David Knowlton, CFA",
+   "cargo": "Head of Product, Galaxy Asset Management (Director)",
+   "area": "Galaxy Asset Management / producto (pasivo, activo, venture, tokenización)",
+   "ubicacion": "Nueva York (no confirmado)",
+   "linkedin": "https://www.linkedin.com/in/david-knowlton-cfa-26137b8a/",
+   "email": "david.knowlton@galaxy.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 2,
+   "por_que": "Responsable de ejecutar la estrategia de producto de Asset Management y moderador del panel de tokenización de Galaxy con Chainlink y NAV Fund Services (dic-2025). Tras la salida del Head of Tokenization, es el punto de producto más visible para estructurar un vehículo/feeder tokenizado o integrar RWA de Kabal; ex-BNY Mellon y State Street (afín a la infraestructura de SWEEP).",
+   "fuente": "https://x.com/galaxyhq/status/1998826297750073533 ; https://www.linkedin.com/posts/galaxyhq_catch-david-knowlton-cfa-galaxy-asset-managements-activity-7193306964636897280-nHLq"
+  },
+  {
+   "nombre": "Jason Urban",
+   "cargo": "Global Head of Trading & Global Co-Head, Digital Assets",
+   "area": "Galaxy Global Markets (liquidez principal, derivados, trading electrónico, OTC)",
+   "ubicacion": "Nueva York (no confirmado)",
+   "linkedin": "https://www.linkedin.com/in/jason-urban-4b5b1a80/",
+   "email": "jason.urban@galaxy.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 4,
+   "por_que": "Dueño del negocio de trading/liquidez institucional (Global Markets) y co-cabeza de Digital Assets; decisor para que Galaxy actúe como proveedor de liquidez o market maker en un mercado secundario de RWA tokenizados. Entrada preferible vía Glauber o vía el equipo de ventas institucional; escalamiento, no primer correo.",
+   "fuente": "https://www.linkedin.com/posts/galaxyhq_galaxy-trading-partner-for-institutions-activity-7343267327313887232-ewD1 ; https://www.kemettrading.com/galaxy-digitals-jason-urban-building-trust-and-infrastructure-in-digital-asset-derivatives/ ; https://www.prnewswire.com/news-releases/galaxy-launches-institutional-otc-prediction-markets-trading-302788206.html"
+  },
+  {
+   "nombre": "Max Bareiss",
+   "cargo": "Head of Lending",
+   "area": "Galaxy Global Markets — Lending & Structured Products",
+   "ubicacion": "Nueva York (no confirmado)",
+   "linkedin": null,
+   "email": "max.bareiss@galaxy.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 5,
+   "por_que": "Lidera el libro de préstamos (~US$1.4B promedio) y la participación de Galaxy en Digital Prime/Tokenet (estándares de lending institucional). Contraparte para líneas de crédito/repo contra tokens RWA o financiamiento de inventario del marketplace.",
+   "fuente": "https://finance.yahoo.com/markets/crypto/articles/galaxy-backs-digital-prime-push-175300182.html ; https://www.tradingview.com/news/prnewswire:9773ed4fd7bdb:0-galaxy-digital-invests-in-digital-prime-technologies-deepening-commitment-to-institutional-digital-asset-lending/"
+  },
+  {
+   "nombre": "Mike Giampapa",
+   "cargo": "General Partner, Galaxy Ventures",
+   "area": "Galaxy Ventures (Fund I, US$175M; TradFi-cripto, stablecoins, DeFi)",
+   "ubicacion": "Nueva York (no confirmado)",
+   "linkedin": "https://www.linkedin.com/in/mike-giampapa-35045728/",
+   "email": "mike.giampapa@galaxy.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "entrada",
+   "prioridad": 6,
+   "por_que": "Co-lidera Galaxy Ventures con Will Nuelle; tesis explícita en la intersección finanzas tradicionales/cripto (stablecoins, DeFi, tokenización). Vía alterna si el objetivo incluye inversión estratégica o acceso al ecosistema de portafolio; los VCs responden mejor a correos fríos bien estructurados que los heads de negocio.",
+   "fuente": "https://fortune.com/crypto/2025/06/26/galaxy-venture-fund-stablecoins-mike-novogratz-crypto-blockchain/ ; https://www.prnewswire.com/news-releases/galaxy-announces-final-close-of-oversubscribed-galaxy-ventures-fund-i-at-over-175m-302491684.html"
+  },
+  {
+   "nombre": "Will Nuelle",
+   "cargo": "General Partner, Galaxy Ventures",
+   "area": "Galaxy Ventures",
+   "ubicacion": "Nueva York (no confirmado)",
+   "linkedin": null,
+   "email": "will.nuelle@galaxy.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "entrada",
+   "prioridad": 7,
+   "por_que": "Co-GP de Galaxy Ventures; ponente frecuente (zkDay, The Rollup). Alternativa/CC a Giampapa para la vía de venture.",
+   "fuente": "https://www.linkedin.com/posts/galaxyhq_galaxy-ventures-general-partner-will-nuelle-activity-7085636626126647299-pXGp ; https://www.linkedin.com/posts/therollup_will-nuelle-and-mike-giampapa-explain-galaxys-activity-7388235470574374912-ZhaL"
+  }
+ ],
+ "ruta_recomendada": "1) Primer email a Zane Glauber (Global Head of Distribution) con CC a David Knowlton (Head of Product, GAM): proponer a Kabal Bridge como (a) canal regulado en Centroamérica para SWEEP/productos tokenizados de Galaxy y (b) originador de RWA tokenizados (trade finance, real estate) que Galaxy podría financiar (Lending) o para los que podría proveer liquidez secundaria (Global Markets). 2) Si hay respuesta, pedir introducción interna a Steve Kurz (dueño de Asset Management/Digital Assets) y, para la pata de liquidez/crédito, a Jason Urban y Max Bareiss. 3) Vía paralela: Galaxy Ventures (Giampapa/Nuelle) con un ángulo de inversión estratégica. 4) Camino cálido: socios operativos de Galaxy en tokenización — Anchorage Digital (custodio de SWEEP), State Street Investment Management, Superstate, Chainlink, NAV Fund Services — y, para LatAm, Itaú Asset Management / Itaú Digital Assets (socio de Galaxy en Brasil desde 2022). 5) Evitar contactar a Thomas Cowan por Galaxy: salió en jul-2026 hacia Bullish (Head of Tokenization); su ficha en Bullish puede ser útil como vía alternativa de liquidez, no para Galaxy.",
+ "notas": "Cambio clave: Thomas Cowan (Head of Tokenization de Galaxy; lideró SWEEP, la tokenización de GLXY con Superstate y el board de AllUnity) fue nombrado Head of Tokenization de Bullish el 13-jul-2026; no se encontró anuncio público de sucesor en Galaxy a sept-2026 — la función de tokenización queda de facto bajo Asset Management (Kurz/Knowlton). Steve Kurz y Jason Urban figuran en LinkedIn como 'Global Co-Head, Digital Assets' (además de sus roles de Asset Management y Trading). No se encontró un responsable dedicado de Latin America en Galaxy; la exposición regional es vía Itaú Asset Management (ETFs BITI11 en B3) y el 'Direct Institutional Sales Team' global. Un directorio de terceros (RocketReach) lista a Mike Johannes como 'Sales and Trading – VP Americas' — no verificado en fuentes de Galaxy; tratar como pista. No se pudo acceder a galaxy.com, PRNewswire, SEC ni agregadores (bloqueo de red), por lo que no se verificó literalmente ningún email genérico (press/IR) — todos los emails listados son patrón no verificado; confirmar títulos en LinkedIn antes del envío."
+}

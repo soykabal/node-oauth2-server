@@ -1,0 +1,87 @@
+{
+ "institucion": "Tradable",
+ "programa": "Plataforma de tokenización de crédito privado institucional: ~$1.7B tokenizados en ~30 posiciones de crédito privado en ZKsync (anuncio 16-ene-2025; cifra posterior reportada ~$2.1B y ~90% del RWA en ZKsync), con Victory Park Capital (VPC, adquirida por Janus Henderson), Janus Henderson Investors, Matter Labs y Spring Labs como socios del ecosistema; inversión estratégica de ParaFi Capital. En 2026 inició la migración de ~$1B en activos de crédito privado de ZKsync a Stellar. Sede en las oficinas de VPC en Chicago.",
+ "formato_email": {
+  "patron": "Desconocido; dominio corporativo tradable.xyz. Hipótesis first@tradable.xyz o first.last@tradable.xyz — pattern (unverified)",
+  "fuente": "Dominio del sitio https://tradable.xyz (referido en https://app.rwa.xyz/platforms/tradable); ningún email visto literalmente",
+  "confianza": "baja"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Sitio web / formulario",
+   "valor": "https://tradable.xyz (contacto no verificado; sitio bloqueado por el proxy en esta sesión)",
+   "fuente": "https://app.rwa.xyz/platforms/tradable"
+  },
+  {
+   "canal": "Contacto de prensa del comunicado (Business Wire)",
+   "valor": "No pudo leerse; el comunicado del 16-ene-2025 incluye sección de contacto de medios",
+   "fuente": "https://www.businesswire.com/news/home/20250116872887/en/Tradable-Brings-1.7-Billion-in-Tokenized-Alternative-Assets-to-ZKsync-Secures-Strategic-Investment-from-ParaFi-Capital"
+  },
+  {
+   "canal": "Perfil de plataforma RWA.xyz",
+   "valor": "https://app.rwa.xyz/platforms/tradable",
+   "fuente": "https://app.rwa.xyz/platforms/tradable"
+  },
+  {
+   "canal": "Vía socio ancla (Victory Park Capital)",
+   "valor": "Sitio VPC https://www.vpcadvisors.com (contacto institucional/IR; no verificado en esta sesión)",
+   "fuente": "https://www.ledgerinsights.com/janus-victory-park-backed-tradable-tokenizes-1-7-billion-in-private-credit/ (indica que Tradable opera desde las oficinas de VPC en Chicago)"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Alex Cordover",
+   "cargo": "Chief Executive Officer, Tradable (también Head of Technology en Victory Park Capital)",
+   "area": "Dirección general / tecnología",
+   "ubicacion": "Chicago, Illinois, EE.UU. (oficinas de VPC)",
+   "linkedin": null,
+   "email": "alex@tradable.xyz",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Es el CEO y, por el tamaño del equipo, quien decide sobre nuevas contrapartes de distribución y liquidez; su doble rol en VPC lo convierte en la puerta directa al originador de los activos. Tradable busca canales de distribución regulados para sus tokens de crédito privado: un marketplace licenciado (CNAD) con base de inversionistas en Centroamérica es una propuesta de valor clara de 'demand side'.",
+   "fuente": "https://www.ledgerinsights.com/janus-victory-park-backed-tradable-tokenizes-1-7-billion-in-private-credit/ ; https://alternativecreditinvestor.com/2025/01/17/tradable-has-tokenised-1-7bn-of-private-credit-positions/"
+  },
+  {
+   "nombre": null,
+   "cargo": "Head of Partnerships / Capital Formation (puesto no identificado públicamente en esta sesión)",
+   "area": "Partnerships / capital formation",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "entrada",
+   "prioridad": 2,
+   "por_que": "No se pudo confirmar un responsable público de BD/partnerships; verificar en https://tradable.xyz y en la página de LinkedIn de la empresa antes de enviar. Si no existe, el CEO es el único punto de entrada directo.",
+   "fuente": "https://tradable.xyz (bloqueado en esta sesión)"
+  },
+  {
+   "nombre": "Victory Park Capital (VPC) — equipo de relaciones con inversionistas / socios fundadores",
+   "cargo": "Socio ancla y originador de los activos tokenizados (VPC adquirida por Janus Henderson)",
+   "area": "Capital formation / crédito privado",
+   "ubicacion": "Chicago, Illinois, EE.UU.",
+   "linkedin": null,
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "cobertura_latam",
+   "prioridad": 3,
+   "por_que": "VPC recibió en jul-2025 un compromiso de $50M del IFC para expandir financiamiento a PYMES en mercados emergentes: encaje directo con un marketplace centroamericano (El Salvador/Honduras) que puede aportar originación y demanda regional. Warm path: IFC/Banco Mundial en Centroamérica → VPC → Tradable.",
+   "fuente": "https://www.businesswire.com/news/home/20250702813783/en/IFC-Commits-$50-Million-to-Victory-Park-Capital-to-Expand-SME-Financing-in-Emerging-Markets ; https://www.businesswire.com/news/home/20230822174061/en/Tradable-Partners-with-Victory-Park-Capital-and-Spring-Labs-to-Revolutionize-Access-to-Private-Credit"
+  },
+  {
+   "nombre": "ParaFi Capital / Matter Labs (ZKsync) / Stellar Development Foundation — equipos de ecosistema",
+   "cargo": "Inversionista estratégico e infraestructuras de cadena de Tradable",
+   "area": "Ecosistema / introducción cálida",
+   "ubicacion": "EE.UU. (ParaFi: Nueva York; SDF: San Francisco) — no verificado",
+   "linkedin": null,
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Tres vías de introducción cálida: ParaFi (inversionista estratégico desde ene-2025), Matter Labs/ZKsync (Tradable es ~90% del RWA en ZKsync) y Stellar (migración de ~$1B en 2026; SDF tiene programa activo de RWA/LATAM y fondos de ecosistema). Un intro desde cualquiera de ellos supera al email frío.",
+   "fuente": "https://www.businesswire.com/news/home/20250116872887/en/Tradable-Brings-1.7-Billion-in-Tokenized-Alternative-Assets-to-ZKsync-Secures-Strategic-Investment-from-ParaFi-Capital ; https://crypto-economy.com/tradable-set-to-migrate-1-billion-in-private-credit-assets-from-zksync-to-stellar/"
+  }
+ ],
+ "ruta_recomendada": "1) Buscar primero intro cálida vía Stellar Development Foundation (equipo RWA/LATAM) o ParaFi/Matter Labs, ya que Tradable es un equipo pequeño alojado dentro de VPC y el CEO es el decisor único visible. 2) Si no hay intro en 1-2 semanas, email directo a Alex Cordover (CEO) — verificar su LinkedIn y formato de email antes de enviar — con propuesta concreta: Kabal Bridge como canal regulado de distribución/secundario de tokens de crédito privado Tradable para inversionistas calificados de Centroamérica, y como aportante de originación PYME regional para VPC (alineado con el mandato IFC–VPC). 3) CC o segundo hilo a VPC (relaciones con inversionistas) mencionando el compromiso IFC de $50M para PYMES en mercados emergentes. 4) Evitar inboxes genéricos: no hay evidencia pública de partnerships@tradable.xyz.",
+ "notas": "Limitaciones: el proxy de red bloqueó tradable.xyz, Business Wire, Ledger Insights, RWA.xyz, LinkedIn, Crypto-Economy y demás fuentes, y el presupuesto de búsquedas quedó agotado; solo se dispuso de snippets de búsqueda. Por eso: no se identificaron cofundadores ni un responsable de BD/partnerships con nombre (no inventados); el LinkedIn de Alex Cordover no se verificó (null); el formato de email es hipótesis de baja confianza. Verificar antes del envío: (a) nombre exacto del contacto de prensa en el comunicado Business Wire del 16-ene-2025; (b) si Tradable tiene página 'Team' con Head of Partnerships/Capital Markets; (c) estado actual de la migración a Stellar (2026) y si Tradable sigue operando en ZKsync, porque cambia el ángulo técnico de integración con el marketplace de Kabal; (d) la cifra actualizada de activos tokenizados (~$1.7B ene-2025; ~$2.1B reportado después). Dato de contexto útil: VPC fue adquirida por Janus Henderson, por lo que las decisiones de distribución pueden requerir aval de Janus Henderson."
+}

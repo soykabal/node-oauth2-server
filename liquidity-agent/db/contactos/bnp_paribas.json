@@ -1,0 +1,164 @@
+{
+ "institucion": "BNP Paribas",
+ "programa": "Digital assets & tokenización: (1) BNP Paribas Securities Services – Digital Assets (custodia de activos digitales con Fireblocks/METACO, tokenización de fondos MMF con BNPP AM/Allfunds, participante como custodio en el DTCC Industry Working Group y en las primeras operaciones con activos tokenizados por DTC, julio 2026, vía BNP Paribas Securities Corp.); (2) BNP Paribas CIB – AssetFoundry (plataforma de tokenización/digital assets; bono verde tokenizado EDF ENR 2022; share class tokenizada de MMF de BNPP AM en Ethereum público, feb-2026) y Global Markets – Neobonds (plataforma privada de tokenización sobre Canton; bono digital soberano de Eslovenia 2024; miembro de Canton Foundation desde sep-2025); (3) BNP Paribas Asset Management – Digital Assets (MMF tokenizado en Allfunds Blockchain, mayo 2025); (4) CIB Latin America (Brasil, México, Colombia/Caribe, Cono Sur) bajo la CEO de CIB Latin America.",
+ "formato_email": {
+  "patron": "firstname.lastname@bnpparibas.com (≈90% según RocketReach/LeadIQ). Variantes: firstname.lastname@americas.bnpparibas.com (Américas/EE.UU.); BNPP Asset Management usa dominio bnpparibas-am.com con patrón mixto (firstname-l@bnpparibas-am.com o firstname.lastname@bnpparibas-am.com); Colombia/México/Brasil suelen usar sufijos regionales del tipo @bnpparibas.com o @br.bnpparibas.com (no verificado).",
+  "fuente": "https://rocketreach.co/bnp-paribas-email-format_b5c61c36f42e0c49 ; https://leadiq.com/c/bnp-paribas/5a1d7e4724000024005825e4/email-format ; https://www.signalhire.com/companies/bnp-paribas-asset-management/email-format ; https://www.email-format.com/d/bnpparibas.com/",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Prensa global (Group Media Relations, París)",
+   "valor": "pressoffice.paris@bnpparibas.com",
+   "fuente": "https://group.bnpparibas/en/mediaroom/contacts"
+  },
+  {
+   "canal": "Global Head of Media Relations",
+   "valor": "Hacina Habchi – hacina.habchi@bnpparibas.com",
+   "fuente": "https://group.bnpparibas/en/mediaroom/contacts"
+  },
+  {
+   "canal": "Prensa BNP Paribas USA / Américas",
+   "valor": "dl.pressoffice@us.bnpparibas.com",
+   "fuente": "https://usa.bnpparibas/en/homepage/news/media-room-contact/"
+  },
+  {
+   "canal": "Prensa BNP Paribas Asset Management",
+   "valor": "am.press@bnpparibas.com",
+   "fuente": "https://www.bnpparibas-am.com/en/press-releases/press-contacts/"
+  },
+  {
+   "canal": "Formulario de contacto corporativo del Grupo",
+   "valor": "https://group.bnpparibas/en/contacts",
+   "fuente": "https://group.bnpparibas/en/contacts"
+  },
+  {
+   "canal": "Página de país – BNP Paribas CIB Colombia (Corporación Financiera, Bogotá)",
+   "valor": "https://cib.bnpparibas/colombia/",
+   "fuente": "https://cib.bnpparibas/colombia/"
+  },
+  {
+   "canal": "Página regional – BNP Paribas CIB Americas",
+   "valor": "https://cib.bnpparibas/americas/",
+   "fuente": "https://cib.bnpparibas/americas/"
+  },
+  {
+   "canal": "LinkedIn corporativo – BNP Paribas Securities Services",
+   "valor": "https://www.linkedin.com/company/bnpparibassecuritiesservices",
+   "fuente": "https://www.linkedin.com/company/bnpparibassecuritiesservices"
+  },
+  {
+   "canal": "Contenido oficial de digital assets (Securities Services)",
+   "valor": "https://securities.cib.bnpparibas/digital-asset-regulation-experimentation/",
+   "fuente": "https://securities.cib.bnpparibas/digital-asset-regulation-experimentation/"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Wayne Hughes",
+   "cargo": "Head of Digital Assets, BNP Paribas – Securities Services",
+   "area": "Securities Services – Digital Assets (custodia digital, tokenización, digital cash; interlocutor de Fireblocks/METACO, Allfunds Blockchain, DTCC)",
+   "ubicacion": "Greater Madrid Metropolitan Area (según LinkedIn); negocio global con sede en París/Londres",
+   "linkedin": "https://www.linkedin.com/in/wayne-hughes-8bbb312/",
+   "email": "wayne.hughes@bnpparibas.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Dueño de la estrategia de activos digitales de Securities Services (+25 años en JPMorgan/Paribas/BNPP). Firmó las alianzas de custodia digital, co-lidera la tokenización de MMF con BNPP AM y sigue activo públicamente en 2026 (Global Custodian 'Fireside Friday' 2026, op-eds en Ledger Insights, speaker en EBC/Blockworks/Digital Assets Week). Es quien decide si la custodia/servicio de un marketplace RWA regulado en Centroamérica encaja en el roadmap.",
+   "fuente": "https://www.fintechfutures.com/partnerships/bnp-paribas-partners-fintechs-to-develop-digital-asset-custody-offering ; https://www.globalcustodian.com/fireside-friday-with-bnp-paribas-wayne-hughes-and-haroun-boucheta/ ; https://x.com/EBlockchainCon/status/1797923564739293466 ; https://blockworks.co/speaker/wayne-hughes"
+  },
+  {
+   "nombre": "Julien Clausse",
+   "cargo": "Head of AssetFoundry (Digital Assets & Tokenisation Platform), BNP Paribas CIB",
+   "area": "CIB – AssetFoundry (tokenización de instrumentos financieros; bono verde tokenizado EDF ENR; MMF tokenizado de BNPP AM en Ethereum público, feb-2026)",
+   "ubicacion": "París, Francia",
+   "linkedin": "https://fr.linkedin.com/in/julienclausse",
+   "email": "julien.clausse@bnpparibas.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "Lidera la plataforma de tokenización del CIB; perfil de 'venture builder' orientado a nuevos casos de uso y a blockchains públicas (Ethereum permisionado). Muy activo en LinkedIn (publica en francés e inglés), responde a la comunidad y fue quien anunció la tokenización de MMF de 2026. Entrada natural para hablar de emisión/estructuración tokenizada de RWA y de interoperabilidad con un marketplace licenciado.",
+   "fuente": "https://cib.bnpparibas/unlocking-the-power-of-digital-assets-to-modernise-the-financial-markets/ ; https://www.linkedin.com/posts/julienclausse_bnp-paribas-explores-public-blockchain-infrastructure-activity-7430609836993847296-Sk5- ; https://digitalassets.wbresearch.com/speakers/julien-clausse"
+  },
+  {
+   "nombre": "Stefan Brinaru",
+   "cargo": "Head of Digital Assets, BNP Paribas Asset Management",
+   "area": "BNPP AM – Digital Assets (estrategia digital, blockchain, fondos tokenizados: Allfunds Blockchain 2025, Ethereum 2026)",
+   "ubicacion": "Courbevoie / París (La Défense), Francia",
+   "linkedin": "https://fr.linkedin.com/in/stefan-brinaru-4a235046",
+   "email": "stefan.brinaru@bnpparibas-am.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Dirige el programa de activos digitales de la gestora desde 2021 y ha declarado interés en distribución de fondos tokenizados por nuevos canales. Un marketplace RWA regulado en LatAm es un posible canal de distribución/liquidez para share classes tokenizadas (MMF), lo que da un motivo concreto para responder. Perfil público en bnpparibas-am.com y speaker en DigiAssets.",
+   "fuente": "https://www.bnpparibas-am.com/en/people/stefan-brinaru ; https://www.bnpparibas-am.com/en/press/mediaroom-en-bnp-paribas-asset-management-launches-first-natively-tokenised-money-market-fund-shares-on-allfunds-blockchain/ ; https://digitalassets.wbresearch.com/speakers/stefan-brinaru"
+  },
+  {
+   "nombre": "Amélie Fremy",
+   "cargo": "Chief Operating Officer, Innovation & Digital Assets, Global Markets, BNP Paribas",
+   "area": "CIB Global Markets – Neobonds (plataforma privada de tokenización sobre Canton; bono digital soberano de Eslovenia 2024; trials del Eurosistema)",
+   "ubicacion": "París, Francia",
+   "linkedin": null,
+   "email": "amelie.fremy@bnpparibas.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 5,
+   "por_que": "Desarrolló e integró Neobonds en la infraestructura de Global Markets y es la portavoz técnica de los bonos digitales (secondary trading, settlement on-chain). Relevante si Kabal Bridge quiere plantear liquidez secundaria/settlement de deuda tokenizada con un banco de inversión; Global Markets es además el negocio de productos estructurados que cubre LatAm.",
+   "fuente": "https://cib.bnpparibas/unlocking-the-power-of-digital-assets-to-modernise-the-financial-markets/ ; https://globalmarkets.cib.bnpparibas/digital-bonds-blockchain-vs-traditional/ ; https://www.omfif.org/2024/08/slovenia-breaks-ground-with-first-european-sovereign-digital-bond/"
+  },
+  {
+   "nombre": "Florence Pourchet",
+   "cargo": "CEO of CIB Latin America (Head of CIB Latin America) y Head of CSR Americas, BNP Paribas",
+   "area": "CIB Latin America – supervisa los country heads de Brasil, México, Colombia/Caribe y Cono Sur",
+   "ubicacion": "Nueva York, EE.UU.",
+   "linkedin": null,
+   "email": "florence.pourchet@americas.bnpparibas.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 3,
+   "por_que": "Máxima responsable de CIB para América Latina desde mayo 2020 (sin sucesor anunciado públicamente hasta la fecha de esta búsqueda); todos los country heads le reportan. Ideal para CC o para pedir una derivación al equipo de cobertura de instituciones financieras de la región (Centroamérica se cubre desde Colombia/Caribe y desde Nueva York). Fuerte agenda de finanzas sostenibles en LatAm, útil si el pipeline de RWA incluye activos verdes.",
+   "fuente": "https://www.globenewswire.com/news-release/2020/05/14/2033682/0/en/BNP-Paribas-Appoints-Florence-Pourchet-Head-of-CIB-Latin-America.html ; https://www.americanbanker.com/author/florence-pourchet ; https://www.americanbanker.com/news/the-most-powerful-women-in-banking-2023-florence-pourchet-bnp-paribas"
+  },
+  {
+   "nombre": "Jorge Valderrama Vélez",
+   "cargo": "Country Head, BNP Paribas Colombia (Presidente, BNP Paribas Colombia Corporación Financiera S.A.); cobertura Colombia y Región Caribe",
+   "area": "CIB Latin America – Colombia y Caribe (la unidad más cercana geográficamente a El Salvador/Centroamérica)",
+   "ubicacion": "Bogotá, Colombia",
+   "linkedin": "https://www.linkedin.com/in/jorge-valderrama-velez/",
+   "email": "jorge.valderrama@bnpparibas.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 6,
+   "por_que": "Country head en Colombia desde 2014 y responsable de la región Caribe, que reporta a Pourchet. Es el punto de cobertura regional más lógico para un operador centroamericano (idioma, huso horario, conocimiento del riesgo país) y puede abrir la puerta interna hacia los equipos de digital assets en París. Verificar en LinkedIn que sigue en el cargo en 2026.",
+   "fuente": "https://www.linkedin.com/in/jorge-valderrama-velez/ ; https://thebusinessyear.com/interview/bnp-paribas/ ; https://www.globenewswire.com/news-release/2020/05/14/2033682/0/en/BNP-Paribas-Appoints-Florence-Pourchet-Head-of-CIB-Latin-America.html"
+  },
+  {
+   "nombre": "Haroun Boucheta",
+   "cargo": "Head of Public Affairs, BNP Paribas – Securities Services (título según cobertura de prensa; confirmar)",
+   "area": "Securities Services – Public Affairs / regulación de activos digitales (MiCA, GENIUS Act); co-entrevistado con Wayne Hughes en 2026",
+   "ubicacion": "París, Francia",
+   "linkedin": null,
+   "email": "haroun.boucheta@bnpparibas.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 7,
+   "por_que": "Voz regulatoria del programa; aparece junto a Hughes en la entrevista de Global Custodian 2026 sobre claridad regulatoria. Útil para el ángulo 'marketplace licenciado bajo la CNAD de El Salvador' y equivalencias regulatorias, y como segundo canal hacia Hughes.",
+   "fuente": "https://www.globalcustodian.com/fireside-friday-with-bnp-paribas-wayne-hughes-and-haroun-boucheta/ ; https://capitalpioneer.co.uk/pioneering-conversations-bnp-paribas-on-regulatory-clarity/"
+  },
+  {
+   "nombre": "Claudine Gallagher",
+   "cargo": "Head of Securities Services (global), BNP Paribas – efectiva desde el 1 de enero de 2026",
+   "area": "Securities Services – dirección global (línea jerárquica sobre Digital Assets)",
+   "ubicacion": "París / Nueva York (ex Head of Americas de Securities Services)",
+   "linkedin": null,
+   "email": "claudine.gallagher@bnpparibas.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 8,
+   "por_que": "Jefa global del negocio desde 2026; no es el primer contacto para un email frío pero es el nombre a citar/escalar si Hughes deriva. Procede de la franquicia de Américas, lo que ayuda al encuadre LatAm.",
+   "fuente": "https://securities.cib.bnpparibas/bnp-paribas-announces-leadership-transition-for-securities-services/ ; https://www.assetservicingtimes.com/assetservicesnews/peoplemovesarticle.php?article_id=16888"
+  }
+ ],
+ "ruta_recomendada": "1) Email inicial a Wayne Hughes (Head of Digital Assets, Securities Services) con CC a Julien Clausse (AssetFoundry, CIB): un solo mensaje corto y técnico —marketplace licenciado por la CNAD (PSAD) en El Salvador, tipo de RWA, volumen, estándar de token (ERC-3643/permisionado) y qué se pide exactamente (custodia/sub-custodia digital, servicio de agente de tokenización, o distribución de fondos tokenizados en LatAm). Referenciar su trabajo público de 2026 (MMF tokenizado en Ethereum permisionado con BNPP AM; participación como custodio en el piloto de DTCC) para demostrar credibilidad. 2) En paralelo, nota separada en español a Jorge Valderrama (Colombia/Caribe) o, si se prefiere nivel senior, a Florence Pourchet (CEO CIB Latin America) pidiendo la persona de cobertura de instituciones financieras para Centroamérica; ese equipo puede 'apadrinar' internamente la conversación con París. 3) Camino más cálido: (a) interacción previa en LinkedIn con las publicaciones de Julien Clausse (muy activo, responde) y Wayne Hughes antes de escribir; (b) coincidir con ellos en eventos donde hablan cada año —European Blockchain Convention, Digital Assets Week (Londres), DigiAssets (WBR), Blockworks Digital Asset Summit— y con Canton Foundation/Digital Asset (BNPP es miembro premier; un partner de Canton o Fireblocks puede hacer la intro); (c) introducción vía Allfunds Blockchain, Fireblocks o METACO/Ripple, proveedores con los que Securities Services ya opera; (d) para el ángulo de fondos tokenizados como colateral/liquidez, contactar a Stefan Brinaru (BNPP AM) después de que Hughes/Clausse hayan respondido. 4) Si no hay respuesta en 2–3 semanas, usar pressoffice.paris@bnpparibas.com o el formulario de contacto del Grupo solo para pedir derivación (no para pitch).",
+ "notas": "Limitaciones de verificación: durante la búsqueda los dominios de BNP Paribas (group.bnpparibas, cib.bnpparibas, securities.cib.bnpparibas, bnpparibas-am.com, usa.bnpparibas), LinkedIn y varios medios (Global Custodian, Ledger Insights, Finextra, Asset Servicing Times, Businesswire, GlobeNewswire, RocketReach/LeadIQ) estaban bloqueados por el proxy, por lo que títulos, ubicaciones y emails se apoyan en fragmentos de resultados de búsqueda y no en la lectura completa de las páginas. Ningún email individual fue visto literalmente en una página pública: todos están marcados como patrón no verificado; los únicos emails vistos públicamente son los buzones de prensa (pressoffice.paris@bnpparibas.com, hacina.habchi@bnpparibas.com, dl.pressoffice@us.bnpparibas.com, am.press@bnpparibas.com). Puntos a confirmar antes de enviar: (i) que Wayne Hughes sigue como Head of Digital Assets tras la llegada de Claudine Gallagher (ene-2026) — la entrevista de Global Custodian de 2026 sugiere que sí; (ii) que Florence Pourchet sigue como CEO CIB Latin America en 2026 (no se encontró anuncio de sucesión); (iii) que Jorge Valderrama sigue como Country Head Colombia; (iv) el título exacto de Haroun Boucheta y el LinkedIn de Amélie Fremy, Pourchet, Boucheta y Gallagher (no localizados en resultados públicos). Las fuentes citadas para los cargos de Hughes/Clausse/Brinaru/Fremy son publicaciones oficiales de BNP Paribas (cib.bnpparibas, bnpparibas-am.com, securities.cib.bnpparibas) referenciadas en los resultados. BNP Paribas no tiene banca CIB en El Salvador; la cobertura de Centroamérica se hace desde Colombia/Caribe, México o Nueva York — por eso se recomienda el doble canal (digital assets en París + cobertura LatAm). BNP Paribas Securities Corp. participó en julio 2026 en las primeras operaciones reales con activos tokenizados por DTC y el Grupo es miembro de la Canton Foundation desde septiembre 2025 (Hubert de Lambilly, Head of Global Markets, fue el portavoz de esa adhesión), argumentos útiles para el email."
+}
