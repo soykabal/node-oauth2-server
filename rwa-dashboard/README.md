@@ -1,0 +1,147 @@
+# Pipeline RWA · Kabal Bridge — dashboard
+
+Tablero de originación para administrar etapa, calificación y notas de los
+contactos RWA de `public.bridge_leads` (Kabal Bridge, Centroamérica).
+
+- **Artifact (URL fija):** https://claude.ai/code/artifact/e1343752-89b2-4207-8998-592b96c72ec4
+- **Proyecto Supabase:** `hnkpjrmccsehmixcsdhr`
+- **Tabla fuente:** `public.bridge_leads`
+
+## Vistas
+
+- **Tablero / Tabla** — pipeline activo: solo los prospectos **con contacto** (correo),
+  gestionables por etapa (`nuevo → … → mandato`). El chip "Incluir Outbox en el tablero"
+  los trae de vuelta si se necesita.
+- **Outbox** — prospectos **sin contacto** (sin correo/decisor). Entraron por el scout pero
+  aún no son contactables; el objetivo es conseguirles un contacto para activarlos. Al cargar
+  el `contacto_email` en Supabase, el prospecto sale del Outbox y entra al tablero
+  automáticamente (la vista se deriva de si el lead tiene correo, no de un estado en la base).
+
+## Cómo se arma
+
+`dashboard.html` = `template.html` con los datos de `bridge_leads` embebidos.
+La plantilla trae el marcador `/*__LEADS__*/[]`; `build.py` lo reemplaza por
+el array de contactos y escribe `dashboard.html`.
+
+```
+python3 build.py      # lee leads.json -> escribe dashboard.html
+```
+
+## Barrido diario (automático)
+
+Rutina `Barrido diario · Valoración Pipeline RWA` (7:00 AM Honduras · `0 13 * * *` UTC — después del scout diario, que escribe ~12:15 UTC).
+Dispara **dentro de la sesión de Claude que la creó** (así hereda el acceso a Supabase,
+Artifact y git; una sesión nueva no traía los conectores y por eso la rutina anterior
+quedó desactivada). Cada mañana:
+
+0. **Valora los leads nuevos** que el scout agregó y aún no tienen fila en
+   `bridge_lead_valoraciones` (mismo método: estimación → escéptico → tier/fees
+   canónicos) y los inserta.
+0b. **Genera el paquete de outreach** de los GO del Outbox (sin correo) que aún no tienen
+   fila en `bridge_lead_outreach` (ver sección "Paquete de outreach") y lo inserta.
+0c. **Busca contactos** (correo del decisor o buzón corporativo publicado, con fuente) para
+   los GO del Outbox que aún no tienen fila en `bridge_lead_contactos` y los inserta
+   (ver sección "Contactos encontrados").
+
+Y luego hace el refresco del tablero:
+
+1. Consulta Supabase (proyecto `hnkpjrmccsehmixcsdhr`) con el SELECT de abajo.
+   Como el resultado (~430 filas en una sola celda `json_agg`) excede el límite
+   de tokens, `execute_sql` guarda la salida en un archivo y devuelve su ruta.
+2. `python3 parse_result.py <ruta-del-archivo>` → escribe `leads.json`.
+3. `python3 build.py` → regenera `dashboard.html`.
+4. Republica el artifact a la **misma URL** (primero lo lee con `action:read`,
+   luego publica `dashboard.html` con `url=` esa URL) — así el enlace no cambia.
+5. Commit de `leads.json` y `dashboard.html` del día en la branch
+   `claude/supabase-table-query-o75meu`.
+
+### SELECT de la actualización
+
+```sql
+select json_agg(l order by l.updated_at desc) from (
+  select b.id, b.empresa, b.pais, b.sector, b.tipo_activo, b.monto_estimado_usd,
+         b.senal, b.senal_url, b.senal_fecha, b.decisor, b.contacto_email, b.telefono,
+         b.calificacion, b.etapa, b.angulo_entrada, b.fuente, b.notas,
+         b.created_at, b.updated_at,
+         v.valor_potencial_usd, v.tier as valor_tier, v.confianza as valor_confianza,
+         v.clase as valor_clase, v.racional as valor_racional,
+         v.fee_potencial_usd, v.fee_recurrente_anual_usd, v.canal as valor_canal,
+         o.gancho as outreach_gancho, o.propuesta as outreach_propuesta,
+         o.email_asunto as outreach_asunto, o.email_cuerpo as outreach_cuerpo,
+         o.proximo_paso as outreach_proximo_paso, o.generado_en as outreach_generado_en,
+         c.contactos
+  from bridge_leads b
+  left join bridge_lead_valoraciones v on v.lead_id = b.id
+  left join bridge_lead_outreach o on o.lead_id = b.id
+  left join lateral (
+    select json_agg(json_build_object('nombre', k.nombre, 'cargo', k.cargo, 'email', k.email, 'telefono', k.telefono,
+             'linkedin_url', k.linkedin_url, 'tipo', k.tipo, 'confianza', k.confianza, 'fuente_url', k.fuente_url, 'notas', k.notas)
+             order by (k.tipo = 'directo') desc, k.confianza) as contactos
+    from bridge_lead_contactos k where k.lead_id = b.id
+  ) c on true
+) l;
+```
+
+## Contactos encontrados (Outbox)
+
+Tabla lateral `public.bridge_lead_contactos` (aditiva). Para los prospectos del Outbox
+(sin correo) los agentes investigadores buscan en fuentes públicas correos del decisor
+o buzones corporativos, con `fuente_url`, `tipo` (directo/genérico) y `confianza`.
+Nunca se inventan ni infieren correos. En el tablero aparecen en el drawer como
+"Contactos encontrados" y en la columna "Correo encontrado" del Outbox; el botón
+**Usar como contacto** carga el correo/decisor en el prospecto (sale del Outbox) y el
+cambio se exporta con **Sincronizar** como `UPDATE bridge_leads SET contacto_email=…`.
+
+El resultado (columna `json_agg`) es el contenido de `leads.json`.
+
+## Valor potencial de emisión
+
+Tabla lateral `public.bridge_lead_valoraciones` (aditiva; se une por `lead_id`, no
+toca `bridge_leads`). Por prospecto guarda:
+
+- `valor_potencial_usd` — tamaño plausible de la **primera emisión tokenizada** del
+  activo (no el valor total del proyecto). Estimación IA por lotes, verificada por un
+  agente escéptico y calibrada entre lotes para consistencia.
+- `tier` — 0 sub-escala (< $1M) · 1 $1–5M · 2 $5–25M · 3 $25M+ (derivado del valor).
+- `confianza` — alta (cifra explícita) · media (inferible de la señal) · baja (norma de sector).
+- `clase`, `racional` — clase de activo y justificación corta.
+- `fee_potencial_usd` — pricing canónico Kabal: **US$15,000 + 2 % del colocado**.
+- `fee_recurrente_anual_usd` — administración post-emisión: **0.5 % anual** sobre AUM.
+
+Los leads nuevos que entren por el scout aparecen **sin valorar** hasta que se corra
+de nuevo la valoración (o se valoren a mano en la tabla).
+
+## Paquete de outreach (Outbox)
+
+Tabla lateral `public.bridge_lead_outreach` (aditiva; `lead_id` → `bridge_leads.id`). Para cada
+prospecto del Outbox calificado **GO**, el agente de ventas deja listo un paquete para enviar
+apenas aparezca el contacto:
+
+- `gancho` — una frase que conecta la señal pública con levantar capital en el marketplace.
+- `propuesta` (jsonb, 3 bullets) — el one-pager: activo y tamaño de la primera emisión ·
+  qué gana el emisor · cómo funciona / siguiente paso.
+- `email_asunto`, `email_cuerpo` — correo frío (≤200 palabras, un solo CTA: llamada de 20–30 min).
+- `proximo_paso` — qué hacer al conseguir el contacto (a quién buscar, por qué canal, qué adjuntar).
+- `version` (`v1_marketplace`), `generado_en`.
+
+En el tablero: la vista **Outbox** marca con `📎 listo` los prospectos con paquete (columna
+ordenable), y el drawer muestra la sección **Paquete de outreach** con botones para copiar
+asunto/correo, abrir el borrador en el cliente de correo (`mailto:`) y **Ver one-pager**
+(panel con marca Kabal, imprimible a PDF desde el navegador).
+
+Reglas del paquete (brand guardian + playbook): sin promesas de rendimiento ni de aprobación
+CNAD, sin pricing (solo bajo NDA), sin "primero/único", bancos como aliados, Kabal Bridge como
+PSAD estructurador (el emisor es el prospecto), firma "Guillermo Kattan · Kabal Bridge ·
+contacto@soykabal.com". El agente solo redacta; nunca envía.
+
+El barrido diario genera el paquete de los **GO nuevos del Outbox** que aún no tengan fila en
+`bridge_lead_outreach` (paso 0b). Los generados: `scratchpad/outreach/` (lotes, resultados,
+`merge_outreach.py` → `outreach_upsert.sql`).
+
+## Nota sobre los cambios hechos en el tablero
+
+El artifact publicado no escribe directo a Supabase (RLS activo, sin
+credenciales). Los cambios de etapa/calificación/notas que se hacen en el
+tablero se guardan en el navegador y se exportan como SQL desde el botón
+**Sincronizar**. Ese SQL se aplica a `bridge_leads` para que la actualización
+diaria los recoja de vuelta.
