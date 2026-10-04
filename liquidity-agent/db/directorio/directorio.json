@@ -1,0 +1,2572 @@
+[
+ {
+  "nombre": "JPMorgan Chase / Kinexys",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Global bank",
+  "region": "US / Global",
+  "pais": "US",
+  "tesis": "Runs the Kinexys (formerly Onyx) blockchain platform for tokenized deposits (JPMD), tokenized MMF shares (MONY, JLTXX) and the Fund Flow subscription/redemption network; hosts Schroders' tokenized USD MMF share class (Aug 10) — the deepest bank-run tokenization infrastructure tracked.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Goldman Sachs",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Global bank",
+  "region": "US / Global",
+  "pais": "US",
+  "tesis": "Operates its Digital Asset Platform (GS DAP); launched a tokenized real-estate fund with LRC Group, and partners with Ownera, Apex Group and Archax on distribution/infrastructure.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Citigroup",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Global bank",
+  "region": "US / UK / Singapore / Hong Kong",
+  "pais": "US",
+  "tesis": "Citi Token Services (CTS) confirmed live across four markets, a stated top priority for CEO Jane Fraser; partners include Kaleido, SIX and Siam Commercial Bank.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "HSBC",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Global bank",
+  "region": "UK / Asia / Global",
+  "pais": "UK",
+  "tesis": "Investor in Marketnode; added US coverage for tokenized deposits in 2026; participant in the UK Finance tokenized-deposit pilot.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Standard Chartered",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Global bank",
+  "region": "UK / Asia / Africa / Middle East",
+  "pais": "UK",
+  "tesis": "Active across multiple Asia, Africa and Middle East tokenization pilots and the UK Finance tokenized-deposit initiative.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "DBS Bank",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "Singapore",
+  "pais": "Singapore",
+  "tesis": "Piloting tokenized gold via DDEx institutional listing; targeting H2 2026 launch (still pre-launch as of Aug 18).",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "UBS",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Global bank",
+  "region": "Switzerland / Global",
+  "pais": "Switzerland",
+  "tesis": "Named DigiFT-ecosystem partner and broadly active in tokenized fund distribution.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Deutsche Bank",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Global bank",
+  "region": "Germany / Europe",
+  "pais": "Germany",
+  "tesis": "Active in European tokenization infrastructure alongside SG-FORGE and Deutsche Bundesbank.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "SMBC",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "Japan",
+  "pais": "Japan",
+  "tesis": "Regional Asian bank active in tokenization pilots.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "MUFG",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "Japan",
+  "pais": "Japan",
+  "tesis": "Launched a JGB repo on-chain settlement proof-of-concept via Canton Network (2026).",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Morgan Stanley",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank / broker-dealer",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Reportedly building a tokenized-asset ATS/wallet targeted for H2 2026 (still pre-launch as of Aug 21).",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Wells Fargo",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "US / UK",
+  "pais": "US",
+  "tesis": "Confirmed (Aug 4) tokenized deposits launching Fall 2026 for corporate/commercial clients (USD/GBP corridor first), integrating with TCH's shared network.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Bank of America",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Named member of The Clearing House's shared tokenized-deposit consortium.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "PNC Bank",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "US",
+  "pais": "US",
+  "tesis": "TCH consortium member.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Truist",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "US",
+  "pais": "US",
+  "tesis": "TCH consortium member.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "U.S. Bank",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "US",
+  "pais": "US",
+  "tesis": "TCH consortium member.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "TD Bank",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "US / Canada",
+  "pais": "US",
+  "tesis": "TCH consortium member.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "BMO",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "Canada / US",
+  "pais": "Canada",
+  "tesis": "TCH consortium member.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Citizens Financial Group",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "US",
+  "pais": "US",
+  "tesis": "TCH consortium member.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Fifth Third Bank",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "US",
+  "pais": "US",
+  "tesis": "TCH consortium member.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "KeyBank",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "US",
+  "pais": "US",
+  "tesis": "TCH consortium member.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Regions Financial",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "US",
+  "pais": "US",
+  "tesis": "TCH consortium member.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Huntington National Bank",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "US",
+  "pais": "US",
+  "tesis": "TCH consortium member.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Santander",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "Spain / Global",
+  "pais": "Spain",
+  "tesis": "Confirmed (Aug 21) as the 17th named TCH consortium member; also part of the UK Finance pilot.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Maybank",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "Malaysia",
+  "pais": "Malaysia",
+  "tesis": "Named participant in DTCC's live tokenization pilot.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "BNP Paribas",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Global bank",
+  "region": "France / Global",
+  "pais": "France",
+  "tesis": "Named participant in DTCC's live tokenization pilot.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Charles Schwab",
+  "tipo": "banca_inversion",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Brokerage",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Named participant in DTCC's live tokenization pilot and Plume's DTCC working group.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Itaú Unibanco",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "Brazil",
+  "pais": "Brazil",
+  "tesis": "Brazil's largest bank; running a fixed-income/fund tokenization pilot with OpenAssets under the ANBIMA regulatory framework.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "First Abu Dhabi Bank",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Bank",
+  "region": "UAE",
+  "pais": "UAE",
+  "tesis": "Part of a UAE consortium (with International Holding Company and Sirius International Holding) developing the DDSC dirham-pegged stablecoin for ADGM tokenization settlement.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Africa Finance Corporation",
+  "tipo": "multilateral",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Pan-African DFI",
+  "region": "Africa",
+  "pais": "Africa",
+  "tesis": "Priced a CHF 350M digital bond on SIX/SDX — first African issuer, and the largest international issuer, in that market.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "SBI Holdings / SBI Group",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Diversified financial conglomerate",
+  "region": "Japan",
+  "pais": "Japan",
+  "tesis": "Launched \"SBI Onchain\" with DigiFT for institutional RWA access — first major Japanese financial group named in this tracker.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "The Clearing House (TCH)",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Bank-owned payments consortium",
+  "region": "US",
+  "pais": "US",
+  "tesis": "17-bank consortium building a shared tokenized-deposit network; timeline slipped to H1 2027.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Euroclear",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Securities settlement infrastructure",
+  "region": "Belgium / Europe",
+  "pais": "Belgium",
+  "tesis": "Investor in Marketnode alongside HSBC.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Banque de France",
+  "tipo": "otro",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Central bank",
+  "region": "France",
+  "pais": "France",
+  "tesis": "Runs tokenization / wholesale-CBDC experiments.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "SG-FORGE",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Tokenization arm of Société Générale",
+  "region": "France",
+  "pais": "France",
+  "tesis": "Active European tokenization issuer.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Deutsche Bundesbank",
+  "tipo": "otro",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Central bank",
+  "region": "Germany",
+  "pais": "Germany",
+  "tesis": "Active in European tokenization pilots.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "UK Finance",
+  "tipo": "otro",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Banking trade body",
+  "region": "UK",
+  "pais": "UK",
+  "tesis": "Runs a tokenized-deposit pilot with Barclays, HSBC, Lloyds, NatWest, Nationwide and Santander (conclusion still pending).",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Komgo",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Trade-finance blockchain consortium",
+  "region": "Switzerland",
+  "pais": "Switzerland",
+  "tesis": "Bank-backed platform for trade-finance tokenization.",
+  "vehiculos": [],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "DTCC",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "US central securities depository",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Ran a live tokenization pilot (~40 institutions incl. Citadel Securities, BNP Paribas, Schwab, Apex Clearing, Alpaca, Tradeweb, Maybank, Invesco); October 2026 full-launch scope pending.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Chainlink",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Oracle / interoperability infrastructure",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Powers Caliber's Automated Compliance Engine for tokenized CRE; Collateral AppChain targeted for Q4 2026.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Nasdaq",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Exchange operator",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Agreed (Aug 12) to acquire LeveL Markets into a new \"Digital Liquidity Networks\" division combining tokenization with 24/7 trading; also runs the Nasdaq-Talos tokenized-collateral rollout (~$35B target).",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "LeveL Markets",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Alternative trading system (ATS)",
+  "region": "US",
+  "pais": "US",
+  "tesis": "3rd-largest US ATS (~2,500 institutional clients), being acquired by Nasdaq.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "21X",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Regulated tokenization trading venue",
+  "region": "EU",
+  "pais": "EU",
+  "tesis": "EU-licensed venue for tokenized securities trading.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Talos",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Institutional trading infrastructure",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Partnering with Nasdaq on tokenized-collateral infrastructure.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Digital Asset / Canton Network",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Institutional blockchain network",
+  "region": "US / Global",
+  "pais": "US",
+  "tesis": "Hosts MUFG's JGB repo PoC and Northern Trust's tokenized custody.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Broadridge Financial Solutions",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Fintech / market infrastructure",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Distributed Ledger Repo processed $8.0T in July 2026 (392% YoY growth); integrates governance for Ondo's custodial tokenized-securities offering.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Marketnode",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Market infrastructure JV (Temasek / SGX)",
+  "region": "Singapore",
+  "pais": "Singapore",
+  "tesis": "HSBC- and Euroclear-backed; tokenizing BNY Investments (Mellon) funds on Stellar via its Fundnode platform.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Moody's Ratings",
+  "tipo": "otro",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Credit rating agency",
+  "region": "US / Global",
+  "pais": "US",
+  "tesis": "First major rating agency active on tokenized/on-chain instruments.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Injective",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Layer-1 blockchain",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Became an SEC-registered transfer agent (Aug 19) via its institutional services arm.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Quant",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Interoperability infrastructure",
+  "region": "UK",
+  "pais": "UK",
+  "tesis": "Provides interoperability rails for tokenized-asset networks.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "NYSE",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Exchange operator",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Reportedly developing an on-chain platform; no firm launch date surfaced yet.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "BlackRock",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Asset manager",
+  "region": "US / Global",
+  "pais": "US",
+  "tesis": "BUIDL tokenized MMF (~$2.68B TVL); debuted tokenized access to $311B of European money-market funds (Aug 4).",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Franklin Templeton",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Asset manager",
+  "region": "US / Global (Asia via DigiFT)",
+  "pais": "US",
+  "tesis": "BENJI tokenized MMF (~$1.72B TVL, fund ~$726M); SEC granted custody relief for onchain cash management; BENJI now distributed into Asia through DigiFT (May 2026).",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Vanguard",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Asset manager",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Named among major managers exploring tokenized fund infrastructure.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Invesco",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Asset manager",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Tokenized QQQ as DTCC-pilot collateral; filed a tokenized stablecoin-reserve MMF; took over Superstate's USTB fund (~$967M AUM).",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Apollo Global Management",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Alternative asset manager",
+  "region": "US / Global",
+  "pais": "US",
+  "tesis": "ACRED diversified credit fund distributed via Securitize into Asia through HashKey Exchange's Wealth Management channel.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Hamilton Lane",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Private-markets asset manager",
+  "region": "US / Global — new TRON venue",
+  "pais": "US",
+  "tesis": "Senior Credit Opportunities Fund (HLSCOPE) tokenized via Securitize became the first Securitize product issued on TRON (June 2026, ~$4.28M AUM, ~5.87% advertised yield).",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Aviva Investors",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Asset manager",
+  "region": "UK",
+  "pais": "UK",
+  "tesis": "Active in European tokenized fund initiatives.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "State Street",
+  "tipo": "custodio",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Asset servicer / custodian",
+  "region": "US / Global",
+  "pais": "US",
+  "tesis": "Announced tokenized fund servicing launch from Luxembourg by year-end 2026.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Fidelity International",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Asset manager",
+  "region": "UK / Global",
+  "pais": "UK",
+  "tesis": "Runs the FILQ tokenized fund on Ethereum.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "VanEck",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Asset manager",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Active tokenized-product issuer.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "WisdomTree",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Asset manager",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Tokenized fund issuer across Ethereum and Stellar.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Neuberger Berman",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Asset manager",
+  "region": "US / Global",
+  "pais": "US",
+  "tesis": "Launched first tokenized high-yield bond fund (HINC, Aug 18) via Securitize, bringing its $230B fixed-income platform onchain across Sui, Avalanche, Ethereum and Solana.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Janus Henderson",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Asset manager",
+  "region": "US / UK",
+  "pais": "US",
+  "tesis": "Sponsors JAAA (AAA CLO) and JTRSY (Treasury) tokenized funds covered by Symbiotic's Liquid Lane instant-liquidity facility.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "New York Life Investment Management (NYLIM)",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Asset manager (insurance-affiliated)",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Sponsors HYB tokenized high-yield bond fund on the same Symbiotic facility — first insurance-affiliated asset manager entrant.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Federated Hermes",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Asset manager",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Participant in the BNY-Goldman mirrored-tokenization MMF subscription platform.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Wellington Management",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Global asset manager",
+  "region": "US / Global (via Singapore)",
+  "pais": "US",
+  "tesis": "Sub-manages a tokenized US Treasury strategy distributed through DigiFT's regulated exchange.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Khazanah",
+  "tipo": "soberano",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Sovereign wealth fund",
+  "region": "Malaysia",
+  "pais": "Malaysia",
+  "tesis": "Piloted RM100M (~$25M) tokenized sukuk with Securities Commission Malaysia — first named SWF and first tokenized-sukuk instrument tracked.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Schroders",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Asset manager",
+  "region": "UK / Global",
+  "pais": "UK",
+  "tesis": "First global asset manager approved for a tokenized USD MMF share class on JPMorgan's Kinexys platform (Aug 10).",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Baillie Gifford",
+  "tipo": "gestor_activos",
+  "categoria": "Asset Managers, Funds & Sovereign Wealth",
+  "tipo_detalle": "Asset manager",
+  "region": "UK",
+  "pais": "UK",
+  "tesis": "Launched a UK-regulated tokenized fund with BNY Mellon under the FCA's PS26/7 framework.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Anchorage Digital",
+  "tipo": "custodio",
+  "categoria": "Custodians",
+  "tipo_detalle": "Federally chartered digital-asset bank / custodian",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Partnered with Real Finance (June 2026) to pair EVM tokenization infrastructure with regulated custody, treasury and settlement across private credit, funds, real estate and structured products.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Fireblocks",
+  "tipo": "custodio",
+  "categoria": "Custodians",
+  "tipo_detalle": "Digital-asset custody / infrastructure",
+  "region": "US / Global",
+  "pais": "US",
+  "tesis": "Widely used custody/infrastructure layer across tokenization platforms.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "BitGo",
+  "tipo": "custodio",
+  "categoria": "Custodians",
+  "tipo_detalle": "Digital-asset custodian",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Partnered with OTC Markets Group for tokenized-securities trading on its SEC-regulated OTC Link ATS (150+ broker-dealers).",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Zodia Custody",
+  "tipo": "custodio",
+  "categoria": "Custodians",
+  "tipo_detalle": "Institutional custodian",
+  "region": "UK",
+  "pais": "UK",
+  "tesis": "Bank-backed custodian (Standard Chartered-founded) serving institutional tokenized-asset clients.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Komainu",
+  "tipo": "custodio",
+  "categoria": "Custodians",
+  "tipo_detalle": "Institutional custodian",
+  "region": "UK / Global",
+  "pais": "UK",
+  "tesis": "Nomura/Ledger/CoinShares-backed custodian active in institutional digital-asset custody.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "BNY (Bank of New York Mellon)",
+  "tipo": "custodio",
+  "categoria": "Custodians",
+  "tipo_detalle": "Custodian bank / asset servicer",
+  "region": "US / Global",
+  "pais": "US",
+  "tesis": "Custody/fund-servicing across multiple platforms; new role as investment manager for DigiFT's tokenized US equity income fund (bEQTY); tokenizes BNY Investments funds via Marketnode/Stellar; UK-regulated fund with Baillie Gifford.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Sygnum Bank",
+  "tipo": "custodio",
+  "categoria": "Custodians",
+  "tipo_detalle": "Digital-asset bank / custodian",
+  "region": "Switzerland",
+  "pais": "Switzerland",
+  "tesis": "Regulated digital-asset bank active in tokenized custody and issuance.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Citco",
+  "tipo": "custodio",
+  "categoria": "Custodians",
+  "tipo_detalle": "Fund administrator",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Fund administration for tokenized fund structures.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Galaxy Digital",
+  "tipo": "banca_inversion",
+  "categoria": "Market Makers, OTC Desks & Liquidity Providers",
+  "tipo_detalle": "Digital-asset merchant bank",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Institutional liquidity and capital-markets provider active in RWA tokenization.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Hidden Road",
+  "tipo": "banca_inversion",
+  "categoria": "Market Makers, OTC Desks & Liquidity Providers",
+  "tipo_detalle": "Prime broker / liquidity provider",
+  "region": "US / Global",
+  "pais": "US",
+  "tesis": "Prime brokerage and liquidity services for digital and tokenized assets.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Wintermute",
+  "tipo": "market_maker",
+  "categoria": "Market Makers, OTC Desks & Liquidity Providers",
+  "tipo_detalle": "Market maker / OTC desk",
+  "region": "UK / Global",
+  "pais": "UK",
+  "tesis": "Cleared SEC/FINRA broker-dealer registration (Aug 6); launched an institutional tokenized-gold OTC desk, projecting the tokenized-gold market to reach $15B in 2026.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "GSR",
+  "tipo": "market_maker",
+  "categoria": "Market Makers, OTC Desks & Liquidity Providers",
+  "tipo_detalle": "Market maker / OTC desk",
+  "region": "US / Global",
+  "pais": "US",
+  "tesis": "Runs an OTC liquidity desk for DigiFT's tokenized-RWA marketplace (~$13.4B addressable market).",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Cumberland (DRW)",
+  "tipo": "market_maker",
+  "categoria": "Market Makers, OTC Desks & Liquidity Providers",
+  "tipo_detalle": "OTC liquidity provider",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Institutional OTC digital-asset liquidity desk.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Flow Traders",
+  "tipo": "market_maker",
+  "categoria": "Market Makers, OTC Desks & Liquidity Providers",
+  "tipo_detalle": "ETP market maker",
+  "region": "Netherlands",
+  "pais": "Netherlands",
+  "tesis": "Launched a 24/7 OTC liquidity service for tokenized stocks, gold and money-market funds.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "B2C2",
+  "tipo": "market_maker",
+  "categoria": "Market Makers, OTC Desks & Liquidity Providers",
+  "tipo_detalle": "OTC liquidity provider",
+  "region": "UK / Global",
+  "pais": "UK",
+  "tesis": "Institutional OTC crypto/tokenized-asset liquidity provider.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Citadel Securities",
+  "tipo": "market_maker",
+  "categoria": "Market Makers, OTC Desks & Liquidity Providers",
+  "tipo_detalle": "Market maker",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Named market-maker participant in DTCC's live tokenization pilot.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Mubadala Capital",
+  "tipo": "soberano",
+  "categoria": "Crypto-Native Investment Firms",
+  "tipo_detalle": "Sovereign-linked investment firm",
+  "region": "UAE",
+  "pais": "UAE",
+  "tesis": "Active digital-asset allocator with RWA exposure.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Coinbase Asset Management / Superstate",
+  "tipo": "fondo",
+  "categoria": "Crypto-Native Investment Firms",
+  "tipo_detalle": "Asset manager",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Manages tokenized fund products; its USTB fund was taken over by Invesco.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "KKR",
+  "tipo": "fondo",
+  "categoria": "Crypto-Native Investment Firms",
+  "tipo_detalle": "Private-equity firm",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Tokenized fund exposure distributed via Securitize.",
+  "vehiculos": [
+   "ktft",
+   "emision_b2b",
+   "deuda_privada"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Securitize",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "Tokenization / issuance platform",
+  "region": "US / Global",
+  "pais": "US",
+  "tesis": "Leading RWA issuance platform — Hamilton Lane HLSCOPE (first product on TRON), Neuberger Berman HINC, KKR and Apollo funds; ~$1B AUM added in Q2 2026.",
+  "vehiculos": [],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Figure Technology Solutions (FIGR)",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "Blockchain-native lending marketplace",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Agreed to acquire Kiavi ($717M) and partnered with Agora Data to tokenize auto loans via its Hastra platform — first named auto-loan receivables sub-class.",
+  "vehiculos": [],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Brickken",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "Tokenization-as-a-service platform",
+  "region": "Spain / EU",
+  "pais": "Spain",
+  "tesis": "European RWA tokenization infrastructure provider.",
+  "vehiculos": [],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Liqi Digital Assets",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "RWA tokenization platform",
+  "region": "Brazil",
+  "pais": "Brazil",
+  "tesis": "Latin American tokenization platform.",
+  "vehiculos": [],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Alphaledger",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "Municipal-bond tokenization platform",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Focused on tokenizing US municipal debt.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Tradable",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "Private-credit tokenization platform",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Tokenization infrastructure for private-credit assets.",
+  "vehiculos": [],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Dinari",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "Tokenized-equity issuance / broker-dealer rail",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Broker-dealer distribution rail for tokenized equities.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "tZERO",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "Tokenized-securities ATS",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Signed Siebert Financial Corp (Aug 20) as a named broker-dealer client for its rail.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Datavault AI (DVLT) / Coppercore",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "Commodity tokenization issuer",
+  "region": "US",
+  "pais": "US",
+  "tesis": "First named copper-specific commodity tokenization ($100M initial Coppercoin mint, COMEX-linked, in-ground copper resources).",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Caliber (Nasdaq: CWD)",
+  "tipo": "gestor_activos",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "CRE alt-asset manager",
+  "region": "US",
+  "pais": "US",
+  "tesis": "~$2.6B AUM manager; went live (Aug 13) with first tokenized CRE offering (\"PURE Pickleball & Padel\") under a ~$100M program using Chainlink's Automated Compliance Engine.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "DigiFT",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "MAS-licensed regulated tokenization exchange",
+  "region": "Singapore / Asia-Pacific",
+  "pais": "Singapore",
+  "tesis": "Hub connecting BNY, Wellington, SBI, Nashpoint, Franklin Templeton, Arco, BE Trust, Quantum Solutions and GSR — one of Asia's most-connected RWA liquidity/distribution nodes.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Nashpoint",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "RWA access / distribution platform",
+  "region": "UK / Europe",
+  "pais": "UK",
+  "tesis": "Partnered with DigiFT to expand regulated RWA access for European investors.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Chuanglian Holdings",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "Hong Kong-listed / HK-focused company",
+  "region": "Hong Kong",
+  "pais": "Hong Kong",
+  "tesis": "Signed an MOU (Aug 5) to build a compliant RWA tokenization and payment-solutions platform in Hong Kong.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Arco",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "Distribution partner",
+  "region": "Asia",
+  "pais": "Asia",
+  "tesis": "DigiFT's Asia tokenized-asset distribution partner.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "BE Trust",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "Wealth platform",
+  "region": "Asia",
+  "pais": "Asia",
+  "tesis": "DigiFT's HNWI-distribution MOU partner.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Quantum Solutions",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "Platform partner",
+  "region": "Asia",
+  "pais": "Asia",
+  "tesis": "DigiFT's platform-development MOU partner.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "OpenAssets",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "Fixed-income tokenization platform",
+  "region": "Brazil",
+  "pais": "Brazil",
+  "tesis": "Fixed-income/fund tokenization partner with Itaú Unibanco under Brazil's ANBIMA framework.",
+  "vehiculos": [],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Stobox",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Tokenization & Securities Platforms",
+  "tipo_detalle": "Tokenization platform",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Launched AriyaX Capital's AXPT token via its Stobox 4 platform.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Plume Network",
+  "tipo": "dao_defi",
+  "categoria": "DeFi Protocols & On-Chain Liquidity",
+  "tipo_detalle": "RWA-focused blockchain (L1/L2)",
+  "region": "US",
+  "pais": "US",
+  "tesis": "MOU with Shinhan for a KRW tokenized fund; joined DTCC's Digital Assets Solutions Industry Working Group; holds an SEC-registered transfer-agent affiliate (Kimber Transfer Agency).",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Maple Finance",
+  "tipo": "dao_defi",
+  "categoria": "DeFi Protocols & On-Chain Liquidity",
+  "tipo_detalle": "On-chain private-credit protocol",
+  "region": "US",
+  "pais": "US",
+  "tesis": "DeFi lending protocol focused on institutional private credit.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Centrifuge",
+  "tipo": "dao_defi",
+  "categoria": "DeFi Protocols & On-Chain Liquidity",
+  "tipo_detalle": "RWA tokenization / lending protocol",
+  "region": "Germany / Global",
+  "pais": "Germany",
+  "tesis": "Integrated Symbiotic's \"Liquid Lane\" for T+0 redemptions on $1.6B of tokenized fund AUM (previously T+1 to T+5).",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Goldfinch",
+  "tipo": "dao_defi",
+  "categoria": "DeFi Protocols & On-Chain Liquidity",
+  "tipo_detalle": "Decentralized private-credit protocol",
+  "region": "US",
+  "pais": "US",
+  "tesis": "On-chain private-credit lending protocol.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Morpho",
+  "tipo": "dao_defi",
+  "categoria": "DeFi Protocols & On-Chain Liquidity",
+  "tipo_detalle": "DeFi lending protocol",
+  "region": "France",
+  "pais": "France",
+  "tesis": "Adding tokenized-RWA collateral to its lending markets.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Aave (+ Horizon)",
+  "tipo": "dao_defi",
+  "categoria": "DeFi Protocols & On-Chain Liquidity",
+  "tipo_detalle": "DeFi money market",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Leading decentralized lending protocol; Horizon arm powers RWA-collateral lending (incl. Ether.fi integration).",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Euler Finance",
+  "tipo": "dao_defi",
+  "categoria": "DeFi Protocols & On-Chain Liquidity",
+  "tipo_detalle": "DeFi lending protocol",
+  "region": "UK",
+  "pais": "UK",
+  "tesis": "Lending protocol expanding into tokenized-RWA collateral.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Midas / Fasanara Capital",
+  "tipo": "gestor_activos",
+  "categoria": "DeFi Protocols & On-Chain Liquidity",
+  "tipo_detalle": "Tokenized-yield product issuer",
+  "region": "UK / EU",
+  "pais": "UK",
+  "tesis": "Issues tokenized yield products backed by RWA strategies.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Ondo Finance",
+  "tipo": "dao_defi",
+  "categoria": "DeFi Protocols & On-Chain Liquidity",
+  "tipo_detalle": "Tokenized-asset protocol",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Tokenized Treasuries (USDY) and Ondo Stocks (>$1B value, 200,000 holders across 430+ tokenized stocks/ETFs); launched the first custodial tokenized-securities offering in the US with Broadridge.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Symbiotic",
+  "tipo": "dao_defi",
+  "categoria": "DeFi Protocols & On-Chain Liquidity",
+  "tipo_detalle": "DeFi collateral / liquidity platform",
+  "region": "Global (Paradigm/Pantera/Coinbase Ventures-backed)",
+  "pais": "Global",
+  "tesis": "\"Liquid Lane\" instant-USDC liquidity facility integrated into Centrifuge, covering Janus Henderson and NYLIM tokenized funds.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Orca",
+  "tipo": "dao_defi",
+  "categoria": "DeFi Protocols & On-Chain Liquidity",
+  "tipo_detalle": "Solana DEX / AMM (liquidity provider)",
+  "region": "Global — Solana ecosystem",
+  "pais": "Global",
+  "tesis": "Named on-chain liquidity venue in Shinhan Asset Management's tokenized-won fund pilot — first named Solana DEX tied to a bank-sponsored tokenized fund tracked.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Etherfuse",
+  "tipo": "dao_defi",
+  "categoria": "DeFi Protocols & On-Chain Liquidity",
+  "tipo_detalle": "Stablecoin / RWA infrastructure provider",
+  "region": "LatAm-founded, expanding to Asia",
+  "pais": "LatAm-founded, expanding to Asia",
+  "tesis": "Named technical partner in the Shinhan pilot, bringing stablecoin and on/off-ramp rails to a fiat-denominated (KRW) tokenized fund.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "GO",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Solana Foundation",
+  "tipo": "dao_defi",
+  "categoria": "DeFi Protocols & On-Chain Liquidity",
+  "tipo_detalle": "Blockchain foundation",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Direct named counterparty in Shinhan's four-way tokenization pact — actively courting bank-sponsored RWA issuance in Asia.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "TRON / TRON DAO",
+  "tipo": "dao_defi",
+  "categoria": "DeFi Protocols & On-Chain Liquidity",
+  "tipo_detalle": "Public blockchain network",
+  "region": "Global (383M+ accounts)",
+  "pais": "Global",
+  "tesis": "Now hosts institutional tokenized private credit (Hamilton Lane's HLSCOPE via Securitize) — first Securitize product issued on TRON.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Uniswap",
+  "tipo": "dao_defi",
+  "categoria": "DeFi Protocols & On-Chain Liquidity",
+  "tipo_detalle": "Decentralized exchange",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Leading DEX exposed to tokenized-asset trading flows.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Hyperliquid",
+  "tipo": "dao_defi",
+  "categoria": "DeFi Protocols & On-Chain Liquidity",
+  "tipo_detalle": "On-chain perpetuals exchange",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Perpetuals venue offering tokenized-asset markets.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "KAIO",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Commodities & Royalties",
+  "tipo_detalle": "Tokenized-commodities platform",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Platform for tokenized commodity exposure.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "ANote Music",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Commodities & Royalties",
+  "tipo_detalle": "Music-royalty tokenization platform",
+  "region": "France",
+  "pais": "France",
+  "tesis": "Tokenizes music royalty streams for investors.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Royalty Exchange",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Commodities & Royalties",
+  "tipo_detalle": "Royalty marketplace",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Royalty marketplace exploring tokenized distribution.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Elemental Royalty Corp",
+  "tipo": "corporativo",
+  "categoria": "Commodities & Royalties",
+  "tipo_detalle": "Royalty company",
+  "region": "Canada",
+  "pais": "Canada",
+  "tesis": "First royalty company (with EMX) to offer shareholder dividends payable in Tether Gold (XAUT).",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "EMX Royalty Corporation",
+  "tipo": "corporativo",
+  "categoria": "Commodities & Royalties",
+  "tipo_detalle": "Royalty company",
+  "region": "Canada",
+  "pais": "Canada",
+  "tesis": "Same Tether Gold dividend program, part of a reported ~$100M Tether investment into the royalty sector.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Tether (XAUT / Hadron)",
+  "tipo": "corporativo",
+  "categoria": "Commodities & Royalties",
+  "tipo_detalle": "Stablecoin / tokenized-gold issuer",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Tokenized-gold issuer (XAUT) and RWA tokenization arm (Hadron); Saudi Arabia real-estate tokenization with named partners First Data and BKN301.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Paxos (PAXG)",
+  "tipo": "corporativo",
+  "categoria": "Commodities & Royalties",
+  "tipo_detalle": "Tokenized-gold issuer",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Regulated tokenized-gold issuer.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "L4VA / Toto Finance",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Commodities & Royalties",
+  "tipo_detalle": "Commodity tokenization (Cardano)",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Tokenized silver vault — first commodities entrant beyond gold in this tracker.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Coinbase",
+  "tipo": "exchange",
+  "categoria": "Exchanges & Brokers",
+  "tipo_detalle": "Exchange",
+  "region": "US / UAE",
+  "pais": "US",
+  "tesis": "Secured FSRA permission in Abu Dhabi (ADGM) to build a \"global tokenization hub.\"",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Kraken",
+  "tipo": "exchange",
+  "categoria": "Exchanges & Brokers",
+  "tipo_detalle": "Exchange",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Tokenized-equity trading plans pending the SEC's forthcoming framework.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Robinhood",
+  "tipo": "exchange",
+  "categoria": "Exchanges & Brokers",
+  "tipo_detalle": "Brokerage",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Tokenized-equity trading plans; Robinhood Token wave of tokenized US stocks.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Binance",
+  "tipo": "exchange",
+  "categoria": "Exchanges & Brokers",
+  "tipo_detalle": "Exchange",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "bStocks tokenized-equity lineup (10 more names added Aug 22); collateral tie-up with Franklin Templeton's tokenized MMF.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Bybit",
+  "tipo": "exchange",
+  "categoria": "Exchanges & Brokers",
+  "tipo_detalle": "Exchange",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Launched \"RWA Earn,\" bringing institutional RWA investment on-chain to eligible users.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Bitget Wallet",
+  "tipo": "exchange",
+  "categoria": "Exchanges & Brokers",
+  "tipo_detalle": "Wallet infrastructure",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Wallet infrastructure supporting tokenized-asset access.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "HashKey Exchange",
+  "tipo": "exchange",
+  "categoria": "Exchanges & Brokers",
+  "tipo_detalle": "Exchange",
+  "region": "Hong Kong",
+  "pais": "Hong Kong",
+  "tesis": "Wealth Management channel launched tokenized access to Apollo's ACRED fund via Securitize — first private-credit tokenized product distributed into Asia.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Blockchain.com",
+  "tipo": "exchange",
+  "categoria": "Exchanges & Brokers",
+  "tipo_detalle": "Exchange / wallet",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Exchange/wallet platform with tokenized-asset access.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "EDX Markets",
+  "tipo": "exchange",
+  "categoria": "Exchanges & Brokers",
+  "tipo_detalle": "Institutional crypto exchange",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Citadel/Fidelity/Schwab-backed institutional exchange.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "GRVT",
+  "tipo": "exchange",
+  "categoria": "Exchanges & Brokers",
+  "tipo_detalle": "Exchange",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Committed to a $100M USDY position, deepening its Ondo Finance tie-up.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "OTC Markets Group",
+  "tipo": "exchange",
+  "categoria": "Exchanges & Brokers",
+  "tipo_detalle": "SEC-regulated ATS operator",
+  "region": "US",
+  "pais": "US",
+  "tesis": "OTC Link ATS (150+ broker-dealers) partnered with BitGo for tokenized-securities trading.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Bullish / Equiniti",
+  "tipo": "exchange",
+  "categoria": "Exchanges & Brokers",
+  "tipo_detalle": "Exchange / transfer agent (pending acquisition)",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Agreed to acquire Equiniti (global share registrar/transfer agent) for $4.2B, explicitly building \"the global transfer agent for tokenized securities\"; also tokenized its own BLSH shares.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Siebert Financial Corp (NASDAQ: SIEB)",
+  "tipo": "exchange",
+  "categoria": "Exchanges & Brokers",
+  "tipo_detalle": "Broker-dealer",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Partnered with tZERO (Aug 20) to give brokerage customers access to tokenized/digital securities.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Crypto.com",
+  "tipo": "exchange",
+  "categoria": "Exchanges & Brokers",
+  "tipo_detalle": "Exchange",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Tokenized-stock derivatives on 1,500 US equities/ETFs.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Ether.fi",
+  "tipo": "exchange",
+  "categoria": "Exchanges & Brokers",
+  "tipo_detalle": "Exchange / wallet",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Tokenized stocks/metals trading plus Aave-powered RWA-collateral lending.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "POSCO International",
+  "tipo": "corporativo",
+  "categoria": "Trade Finance & Supply Chain",
+  "tipo_detalle": "Commodities / trade-finance conglomerate",
+  "region": "South Korea",
+  "pais": "South Korea",
+  "tesis": "Active in blockchain trade-finance pilots.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "LG CNS",
+  "tipo": "infraestructura",
+  "categoria": "Trade Finance & Supply Chain",
+  "tipo_detalle": "IT / blockchain infrastructure provider",
+  "region": "South Korea",
+  "pais": "South Korea",
+  "tesis": "Provides blockchain infrastructure for trade-finance tokenization.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "TCS / PayPal (PYUSD)",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Trade Finance & Supply Chain",
+  "tipo_detalle": "IT services / stablecoin issuer",
+  "region": "India / US",
+  "pais": "India",
+  "tesis": "Freight-invoice tokenization rail using PayPal's PYUSD stablecoin.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "DMCC / FutureOne MENA",
+  "tipo": "infraestructura",
+  "categoria": "Trade Finance & Supply Chain",
+  "tipo_detalle": "Free-zone / tokenization initiative",
+  "region": "UAE",
+  "pais": "UAE",
+  "tesis": "Dubai commodities free-zone tokenization initiative — no named executed transaction yet.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "SettleMint",
+  "tipo": "infraestructura",
+  "categoria": "Trade Finance & Supply Chain",
+  "tipo_detalle": "Tokenization middleware provider",
+  "region": "Belgium / UAE",
+  "pais": "Belgium",
+  "tesis": "In active talks with major UAE banks to tokenize equities, funds, bonds, deposits and gold.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "SurancePlus / HCI Group",
+  "tipo": "aseguradora",
+  "categoria": "Insurance-Linked & Structured Products",
+  "tipo_detalle": "Insurance-linked tokenized product",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Insurance-linked security offered in tokenized form.",
+  "vehiculos": [
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Infineo",
+  "tipo": "aseguradora",
+  "categoria": "Insurance-Linked & Structured Products",
+  "tipo_detalle": "Life-insurance tokenization platform",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Tokenizes life-insurance-linked assets.",
+  "vehiculos": [
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Oxbridge Re Holdings",
+  "tipo": "aseguradora",
+  "categoria": "Insurance-Linked & Structured Products",
+  "tipo_detalle": "Reinsurer",
+  "region": "Cayman Islands / US",
+  "pais": "Cayman Islands",
+  "tesis": "Reinsurance company exploring tokenization of risk instruments.",
+  "vehiculos": [
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Re Protocol",
+  "tipo": "aseguradora",
+  "categoria": "Insurance-Linked & Structured Products",
+  "tipo_detalle": "On-chain reinsurance / risk-transfer protocol",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "DeFi protocol for tokenized reinsurance/risk transfer.",
+  "vehiculos": [
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Abacus Global Management",
+  "tipo": "aseguradora",
+  "categoria": "Insurance-Linked & Structured Products",
+  "tipo_detalle": "Life-settlement / insurance-asset manager",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Tokenizes life-settlement and insurance-linked assets.",
+  "vehiculos": [
+   "deuda_privada"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "SteelWave Digital",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Real Estate Specialists",
+  "tipo_detalle": "CRE tokenization platform",
+  "region": "US",
+  "pais": "US",
+  "tesis": "Commercial real-estate tokenization specialist.",
+  "vehiculos": [
+   "emision_b2b"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "REAL Finance",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Real Estate Specialists",
+  "tipo_detalle": "Real-estate tokenization platform",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Partnered with Anchorage Digital (June 2026) for custody/settlement infrastructure across tokenized real estate and other RWA.",
+  "vehiculos": [
+   "emision_b2b"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Factori AD",
+  "tipo": "plataforma_tokenizacion",
+  "categoria": "Real Estate Specialists",
+  "tipo_detalle": "Real-estate tokenization platform",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Real-estate-focused tokenization platform.",
+  "vehiculos": [
+   "emision_b2b"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Shipfinex / ADI Chain / ADI Foundation",
+  "tipo": "corporativo",
+  "categoria": "Maritime & Infrastructure",
+  "tipo_detalle": "Maritime-asset tokenization",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Vessel tokenization pipeline of ~35 vessels / ~$500M; ADI Foundation secured a $50M strategic investment (Jul 2026) for international expansion.",
+  "vehiculos": [
+   "emision_b2b"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "TMC Shipping",
+  "tipo": "corporativo",
+  "categoria": "Maritime & Infrastructure",
+  "tipo_detalle": "Shipowner",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Participating shipowner in the Shipfinex tokenization pipeline.",
+  "vehiculos": [
+   "emision_b2b"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "AriyaX Capital (AXPT)",
+  "tipo": "corporativo",
+  "categoria": "Maritime & Infrastructure",
+  "tipo_detalle": "Tokenized asset issuer",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Launched its AXPT token via the Stobox 4 platform.",
+  "vehiculos": [
+   "emision_b2b"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "RWA Global / Golden Dolphin Trading",
+  "tipo": "corporativo",
+  "categoria": "Maritime & Infrastructure",
+  "tipo_detalle": "Infrastructure tokenization",
+  "region": "China",
+  "pais": "China",
+  "tesis": "$300M deal to tokenize China's EV-charging/clean-energy infrastructure — first infrastructure/EV-charging sub-class tracked.",
+  "vehiculos": [
+   "emision_b2b"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "International Holding Company",
+  "tipo": "corporativo",
+  "categoria": "UAE Stablecoin & Settlement Consortium",
+  "tipo_detalle": "Investment holding company",
+  "region": "UAE",
+  "pais": "UAE",
+  "tesis": "Consortium member developing the DDSC dirham-pegged stablecoin for ADGM tokenization settlement.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Sirius International Holding",
+  "tipo": "corporativo",
+  "categoria": "UAE Stablecoin & Settlement Consortium",
+  "tipo_detalle": "Investment holding company",
+  "region": "UAE",
+  "pais": "UAE",
+  "tesis": "Consortium member developing the DDSC dirham-pegged stablecoin for ADGM tokenization settlement.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Master_Liquidity_Institution_List_20260823"
+ },
+ {
+  "nombre": "Apex Group",
+  "tipo": "custodio",
+  "categoria": "Custodians",
+  "tipo_detalle": "Global fund administrator",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Digital-asset servicing partner on the Goldman Sachs tokenized real estate fund; brings institutional fund administration rails to RWA structures.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Liquidity_Institutions_Brief_20260809"
+ },
+ {
+  "nombre": "Archax",
+  "tipo": "custodio",
+  "categoria": "Custodians",
+  "tipo_detalle": "Digital asset exchange & custodian",
+  "region": "UK (FCA-regulated)",
+  "pais": "UK",
+  "tesis": "Regulated custody/exchange partner on the Goldman Sachs tokenized real estate fund; one of the few FCA-authorized venues for tokenized securities.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Liquidity_Institutions_Brief_20260809"
+ },
+ {
+  "nombre": "Siam Commercial Bank",
+  "tipo": "banco",
+  "categoria": "Global & Regional Banks",
+  "tipo_detalle": "Regional bank",
+  "region": "Thailand",
+  "pais": "Thailand",
+  "tesis": "Partner bank for Citi Token Services' 24/7 USD clearing pilot.",
+  "vehiculos": [
+   "linea_credito",
+   "warehouse",
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Liquidity_Institutions_Brief_20260809"
+ },
+ {
+  "nombre": "SIX (SIX Digital Exchange)",
+  "tipo": "infraestructura",
+  "categoria": "Exchanges & Brokers",
+  "tipo_detalle": "Exchange / central securities depositary",
+  "region": "Switzerland",
+  "pais": "Switzerland",
+  "tesis": "Digital CSD partner for Citi's tokenized Digital Depositary Receipts.",
+  "vehiculos": [
+   "ktft"
+  ],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Liquidity_Institutions_Brief_20260809"
+ },
+ {
+  "nombre": "Kaleido",
+  "tipo": "infraestructura",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Tokenization platform",
+  "region": "Global",
+  "pais": "Global",
+  "tesis": "Technology partner behind Citi's tokenized Digital Depositary Receipts.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Liquidity_Institutions_Brief_20260809"
+ },
+ {
+  "nombre": "MetaComp Group",
+  "tipo": "otro",
+  "categoria": "Commodities & Royalties",
+  "tipo_detalle": "Institutional digital-asset services",
+  "region": "Asia",
+  "pais": "Asia",
+  "tesis": "Institutional tokenized-gold services.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Liquidity_Institutions_Brief_20260809"
+ },
+ {
+  "nombre": "Monetary Authority of Singapore (MAS)",
+  "tipo": "otro",
+  "categoria": "Bank Consortia, Market Infrastructure, Clearing & Ratings",
+  "tipo_detalle": "Regulator / central bank",
+  "region": "Singapore",
+  "pais": "Singapore",
+  "tesis": "Running a 2026 wholesale CBDC pilot for tokenized MAS bills; convenes Project Guardian.",
+  "vehiculos": [],
+  "calificacion": "EXPLORE",
+  "fuente": "scout_rwa_liquidity",
+  "origen_lista": "RWA_Liquidity_Institutions_Brief_20260809"
+ }
+]

@@ -1,0 +1,130 @@
+{
+ "institucion": "Ondo Finance",
+ "programa": "Tesoros tokenizados USDY y OUSG (12+ redes), Ondo Global Markets / Ondo Stocks (200+ acciones y ETFs tokenizados; >US$500M TVL y >US$9B volumen acumulado a feb-2026), Ondo Chain, Global Markets Alliance (wallets/exchanges/custodios), alianzas institucionales (BlackRock, J.P. Morgan Kinexys, Franklin Templeton mar-2026, Broadridge abr-2026, Mastercard, Ripple, SBI) y expansión a mercados emergentes incl. Sudamérica vía Blockchain.com DeFi Wallet.",
+ "formato_email": {
+  "patron": "[first].[last]@ondo.finance (~88.8% según RocketReach); confirmado por un email real visto en foro público: Katie.Wheeler@Ondo.Finance",
+  "fuente": "https://rocketreach.co/ondo-finance-email-format_b77b13efc5285231 ; https://forum.arbitrum.foundation/t/ondo-finance-usdy-llc-step-application/23593",
+  "confianza": "alta"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Inbox de partnerships (público)",
+   "valor": "partnerships@ondo.finance",
+   "fuente": "https://ondo.finance/blog/introducing-the-ondo-ecosystem-directory ; https://gov.ethenafoundation.com/t/reserve-fund-ondo-finance-ousg/109 (Ondo I LP lo lista como contacto institucional)"
+  },
+  {
+   "canal": "Soporte (público)",
+   "valor": "support@ondo.finance",
+   "fuente": "https://ondo.finance/contact"
+  },
+  {
+   "canal": "Formulario de contacto (producto / partnerships / soporte)",
+   "valor": "https://ondo.finance/contact",
+   "fuente": "https://ondo.finance/contact"
+  },
+  {
+   "canal": "Ondo Ecosystem Directory (alta de socios del ecosistema)",
+   "valor": "https://ondo.finance/blog/introducing-the-ondo-ecosystem-directory",
+   "fuente": "https://ondo.finance/blog/introducing-the-ondo-ecosystem-directory"
+  },
+  {
+   "canal": "Telegram oficial (único grupo de discusión reconocido)",
+   "valor": "https://t.me/ondocommunity ; canal de anuncios https://t.me/ondofinance",
+   "fuente": "https://alphagrowth.io/ondo-finance-i2f/community ; https://t.me/s/ondofinance"
+  },
+  {
+   "canal": "Discord oficial (único reconocido)",
+   "valor": "https://discord.gg/ondofinance",
+   "fuente": "https://alphagrowth.io/ondo-finance-i2f/community ; https://discord.com/invite/ondo"
+  },
+  {
+   "canal": "X / Twitter corporativo",
+   "valor": "https://x.com/OndoFinance (también @Ondo)",
+   "fuente": "https://x.com/Ondo/status/1934959287811412130"
+  },
+  {
+   "canal": "Docs (Ondo Global Markets, integraciones)",
+   "valor": "https://docs.ondo.finance/ ; https://docs.ondo.finance/ondo-global-markets/overview",
+   "fuente": "https://docs.ondo.finance/"
+  },
+  {
+   "canal": "LinkedIn corporativo",
+   "valor": "https://www.linkedin.com/company/ondo-finance",
+   "fuente": "https://www.linkedin.com/company/ondo-finance"
+  },
+  {
+   "canal": "Dirección postal (Ondo I LP, entidad emisora OUSG)",
+   "valor": "500 W Putnam Ave Ste 400, Greenwich, CT 06830-6096, EE.UU.",
+   "fuente": "https://forum.arbitrum.foundation/t/ondo-finance-ondo-i-lp-ousg-step-application/23594"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Katie Wheeler",
+   "cargo": "Managing Director, Global Partnerships (antes VP of Partnerships)",
+   "area": "Global Partnerships / distribución institucional de USDY, OUSG y Ondo Global Markets",
+   "ubicacion": null,
+   "linkedin": "https://www.linkedin.com/in/katieawheeler",
+   "email": "Katie.Wheeler@Ondo.Finance",
+   "email_estado": "publico",
+   "rol": "entrada",
+   "prioridad": 1,
+   "por_que": "Es la persona de contacto que Ondo mismo designó en sus solicitudes públicas de partnership (Arbitrum STEP, 2024) y la portavoz de hitos de TVL; ex BlackRock (VP US iShares Institutional Fixed Income) y ex Circle, por lo que entiende distribución institucional y stablecoins. Mayor probabilidad de respuesta a un email institucional serio. Email visto literalmente en foro público (2024; verificar vigencia).",
+   "fuente": "https://www.linkedin.com/in/katieawheeler ; https://forum.arbitrum.foundation/t/ondo-finance-usdy-llc-step-application/23593 ; https://www.thestreet.com/crypto/markets/ondo-exec-sees-5b-in-tokenized-stocks-by-year-end-after-crossing-1b-milestone"
+  },
+  {
+   "nombre": "Ian De Bode",
+   "cargo": "Chief Executive Officer & President (CEO desde 25-may-2026; President desde 7-nov-2025; antes Chief Strategy Officer)",
+   "area": "Dirección general / estrategia, producto y operaciones",
+   "ubicacion": null,
+   "linkedin": "https://www.linkedin.com/in/idebode",
+   "email": "ian.debode@ondo.finance",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 2,
+   "por_que": "Dueño del programa tras el fallecimiento del fundador Nathan Allman (may-2026); ex líder de digital assets en McKinsey trabajando con instituciones tradicionales — receptivo a estructuras reguladas. Usar en CC o segundo toque, no como primer email frío.",
+   "fuente": "https://www.linkedin.com/in/idebode ; https://www.coindesk.com/markets/2026/05/26/ondo-finance-founder-nathan-allman-passes-away ; https://www.cryptotimes.io/2026/05/26/ondo-finance-founder-nathan-allman-passes-away-ian-de-bode-named-ceo/ ; https://phemex.com/news/article/ondo-finance-names-ian-de-bode-as-president-to-drive-institutional-growth-33542"
+  },
+  {
+   "nombre": "Allison Parent",
+   "cargo": "Chief Policy Officer (nombrada 28-ago-2026)",
+   "area": "Política pública / regulatorio (ex Executive Director GFMA, ex Global Policy Head Barclays)",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "allison.parent@ondo.finance",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 3,
+   "por_que": "Recién llegada y con mandato regulatorio global; el ángulo 'marketplace licenciado por CNAD bajo la LEAD de El Salvador' es exactamente su tema. Buena para CC cuando el pitch enfatice el marco regulatorio centroamericano.",
+   "fuente": "https://www.prnewswire.com/news-releases/ondo-finance-hires-allison-parent-former-gfma-executive-director-and-barclays-global-policy-head-as-chief-policy-officer-302862749.html"
+  },
+  {
+   "nombre": "Adam Schlisman",
+   "cargo": "Chief Financial Officer (ex CFO de Blockchain.com)",
+   "area": "Finanzas / tesorería",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "adam.schlisman@ondo.finance",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 4,
+   "por_que": "Viene de Blockchain.com, el socio con el que Ondo lanzó acciones tokenizadas en Sudamérica y África vía DeFi Wallet; puede abrir la puerta a la lógica de distribución regional y a términos económicos.",
+   "fuente": "https://crypto.news/ondo-finance-has-hired-blockchain-coms-former-cfo-as-finance-chief/ ; https://www.prnewswire.com/news-releases/blockchaincom--ondo-finance-launch-onchain-tokenized-us-stocks-across-europe-302677088.html"
+  },
+  {
+   "nombre": "John Hoffman",
+   "cargo": "Ejecutivo senior (ex Invesco); título exacto no capturado — verificar",
+   "area": "Presumiblemente distribución / institucional (por trayectoria en Invesco); sin confirmar",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "john.hoffman@ondo.finance",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 5,
+   "por_que": "Contratación 2026 procedente de un gestor de activos tradicional; potencial responsable de distribución institucional. Confirmar título antes de escribir.",
+   "fuente": "https://crypto.news/ondo-finance-has-hired-blockchain-coms-former-cfo-as-finance-chief/"
+  }
+ ],
+ "ruta_recomendada": "1) Primer email a Katie Wheeler (MD Global Partnerships) — es el canal que Ondo publica para alianzas — con copia a partnerships@ondo.finance (inbox oficial). 2) Segundo toque (7-10 días) añadiendo en CC a Ian De Bode (CEO) y, si el pitch es regulatorio, a Allison Parent (CPO). 3) Warm path en paralelo: registrar a Kabal Bridge en el Ondo Ecosystem Directory y solicitar adhesión a la Global Markets Alliance (estándares para acciones tokenizadas; incluye Solana Foundation, Bitget, OKX, BitGo, etc.); Blockchain.com (socio de distribución de Ondo en Sudamérica) y Franklin Templeton/Broadridge son introducciones de tercero creíbles. 4) Ángulo del pitch: Ondo ya empuja USDY (≈4.25% APY) y Ondo Stocks hacia LatAm pero no tiene un socio regulado en Centroamérica; ofrecer el marketplace PSAD-CNAD como rail de distribución licenciado para USDY/OUSG/Ondo Stocks y como venue secundario de RWA.",
+ "notas": "Limitaciones: el proxy bloqueó ondo.finance, LinkedIn, PRNewswire, CoinDesk, RocketReach, etc. y se agotó el presupuesto de búsquedas; datos tomados de snippets con URL fuente. Cambio de liderazgo clave: Nathan Allman (fundador/CEO) falleció en may-2026; Ian De Bode es CEO. Discrepancia menor de fuentes sobre la fecha de ingreso de De Bode (fin 2023 vs mar-2024). No se identificó una persona con título de cobertura LatAm; CoinStats indica equipo distribuido en 13 países con presencia en Brasil — buscar en LinkedIn 'Ondo Finance' + Brasil/LatAm. La nota de Bitpanda sobre 'Brazil's Ondo Finance' parece una confusión de la fuente y no debe usarse. El email de Katie Wheeler proviene de una solicitud pública de 2024; su título ha cambiado (VP → MD) pero el dominio/patrón se mantiene. Las ubicaciones de los ejecutivos no se pudieron confirmar (HQ operativa usualmente Nueva York; entidad Ondo I LP en Greenwich, CT)."
+}

@@ -1,0 +1,143 @@
+{
+ "institucion": "Plume Network",
+ "programa": "Blockchain RWA-nativa (Plume L1/L2, Nest staking/vaults, Arc tokenization engine, SkyLink cross-chain yield, Kimber Transfer Agency LLC registrada ante la SEC oct-2025); alianzas institucionales y desarrollo de ecosistema; Global RWA Alliance (lanzada 7-oct-2025, incluye Mercado Bitcoin como miembro fundador para LatAm); nOPAL con BlackOpal para crédito brasileño (jul-2026)",
+ "formato_email": {
+  "patron": "No observado en ninguna página pública. Dominio corporativo: plume.org (NO confundir con plume.com, que es Plume Design Inc., empresa de WiFi; partner@plume.com / hello@plume.com / Dave Wechsler pertenecen a esa otra empresa). Patrón probable {nombre}@plume.org — patrón (no verificado)",
+  "fuente": "https://www.plume.org/ ; https://www.linkedin.com/company/plume-network (dominio); búsqueda de '@plume.org' no arrojó emails públicos",
+  "confianza": "baja"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Sitio web",
+   "valor": "https://plume.org/ (sección 'About': https://www.plume.org/about; equipo: https://plume.org/team)",
+   "fuente": "https://www.plume.org/"
+  },
+  {
+   "canal": "Telegram (anuncios)",
+   "valor": "https://t.me/plumenetwork",
+   "fuente": "https://docs.plume.org/plume/community-and-support/community-channels"
+  },
+  {
+   "canal": "Telegram (comunidad)",
+   "valor": "https://t.me/plumenetwork_community",
+   "fuente": "https://docs.plume.org/plume/community-and-support/community-channels"
+  },
+  {
+   "canal": "Discord",
+   "valor": "https://discord.gg/plume-network (invite: https://discord.com/invite/plume-network)",
+   "fuente": "https://docs.plume.org/plume/community-and-support/community-channels ; https://medium.com/@plumenetwork/join-the-revolutionary-world-of-rwas-with-plumes-new-discord-community-c029c0914788"
+  },
+  {
+   "canal": "X / Twitter",
+   "valor": "https://twitter.com/plumenetwork",
+   "fuente": "https://docs.plume.org/plume/community-and-support/community-channels"
+  },
+  {
+   "canal": "LinkedIn empresa",
+   "valor": "https://www.linkedin.com/company/plume-network",
+   "fuente": "https://www.linkedin.com/company/plume-network"
+  },
+  {
+   "canal": "Linktree",
+   "valor": "https://linktr.ee/plume_network",
+   "fuente": "https://linktr.ee/plume_network"
+  },
+  {
+   "canal": "Global RWA Alliance (programa de membresía / vía institucional)",
+   "valor": "https://plume.org/blog/plume-launches-the-global-rwa-alliance",
+   "fuente": "https://www.prnewswire.com/news-releases/plume-launches-the-global-rwa-alliance-to-accelerate-adoption-of-tokenized-assets-302577029.html"
+  },
+  {
+   "canal": "Vacantes BD/ecosistema (indican equipo activo de partnerships)",
+   "valor": "Head of Strategic Partnerships; Ecosystem Development Associate/Manager; Ecosystem Success Manager",
+   "fuente": "https://www.remote3.co/remote-jobs/head-of-strategic-partnerships-plume-network ; https://builtin.com/job/ecosystem-development-associate-manager/6945519"
+  },
+  {
+   "canal": "Email de partnerships",
+   "valor": null,
+   "fuente": "No se encontró inbox público de partnerships en plume.org durante esta investigación"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Chris Yin",
+   "cargo": "Founder & CEO",
+   "area": "Dirección general",
+   "ubicacion": null,
+   "linkedin": "https://www.linkedin.com/in/chrisyin/",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "dueno_programa",
+   "prioridad": 4,
+   "por_que": "Dueño último del programa; ex Rainforest / Scale Ventures. Para CC o escalamiento, no para primer contacto en frío.",
+   "fuente": "https://www.linkedin.com/in/chrisyin/ ; https://theorg.com/org/plume-network/org-chart/chris-yin ; https://plume.org/blog/introducing-the-plume-team"
+  },
+  {
+   "nombre": "Teddy Pornprinya",
+   "cargo": "Co-Founder & Chief Business Officer (CBO)",
+   "area": "Go-to-market: business development, marketing, comunidad",
+   "ubicacion": null,
+   "linkedin": "https://www.linkedin.com/in/teddy-pornprinya-b22b40a9/",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "Lidera GTM incluyendo BD; ex Coinbase Corp Dev/Ventures, ex BD lead BNB Chain (Binance) en EE.UU.; participó en Consensus 2026 Miami (hub natural para LatAm). Decisor sobre alianzas con marketplaces/emisores.",
+   "fuente": "https://www.linkedin.com/in/teddy-pornprinya-b22b40a9/ ; https://usethebitcoin.com/crypto-personalities/all-you-need-to-know-about-teddy-pornprinya-the-co-founder-of-plume-network/ ; https://fintech.tv/the-future-of-tokenized-assets-exploring-the-projected-40-billion-market-with-teddy-pornprinya/"
+  },
+  {
+   "nombre": "Jason Meng",
+   "cargo": "Head of Business Development (citado así en comunicado SkyLink ene-2025; su LinkedIn/sitio personal dicen 'Business Development – building distribution for tokenized assets')",
+   "area": "Business Development / distribución de activos tokenizados",
+   "ubicacion": "Vancouver, Canadá",
+   "linkedin": "https://www.linkedin.com/in/jasonczmeng/",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "entrada",
+   "prioridad": 1,
+   "por_que": "Responsable operativo de BD y distribución; es quien recibe propuestas de nuevos venues/marketplaces (SkyLink, integraciones de distribución). Mayor probabilidad de responder a un email institucional concreto sobre liquidez para un marketplace regulado (PSAD CNAD).",
+   "fuente": "https://www.globenewswire.com/news-release/2025/01/25/3015196/0/en/Plume-Network-unlocks-cross-chain-RWA-yields-through-SkyLink-across-16-networks.html ; https://www.jasonmeng.xyz/ ; https://www.linkedin.com/in/jasonczmeng/"
+  },
+  {
+   "nombre": "James Friel",
+   "cargo": "VP, Head of GTM (LinkedIn); anunció su ingreso como Head of Ecosystem en jun-2025",
+   "area": "Ecosistema / Go-to-market",
+   "ubicacion": null,
+   "linkedin": "https://www.linkedin.com/in/james-friel-5236bb5b/",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "entrada",
+   "prioridad": 2,
+   "por_que": "Dueño del ecosistema de proyectos que construyen sobre Plume (220+ proyectos de tokenización); ruta natural para onboarding de un marketplace como socio de ecosistema y para Arc/Nest.",
+   "fuente": "https://www.linkedin.com/posts/james-friel-5236bb5b_i-am-excited-to-join-plume-as-head-of-ecosystem-activity-7338609000306884609-DQPJ ; https://www.bloomberg.com/profile/person/24925518 ; https://www.linkedin.com/in/james-friel-5236bb5b/"
+  },
+  {
+   "nombre": "Shukyee Ma",
+   "cargo": "Chief Strategy Officer",
+   "area": "Estrategia / Global RWA Alliance",
+   "ubicacion": "Singapur",
+   "linkedin": "https://sg.linkedin.com/in/shukyee-ma",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "cobertura_latam",
+   "prioridad": 3,
+   "por_que": "Vocera de Plume en el lanzamiento de la Global RWA Alliance (que incluye a Mercado Bitcoin como voz de LatAm); vía correcta para solicitar membresía de Kabal Bridge en la Alianza como primer miembro centroamericano regulado.",
+   "fuente": "https://www.prnewswire.com/news-releases/plume-launches-the-global-rwa-alliance-to-accelerate-adoption-of-tokenized-assets-302577029.html ; https://sg.linkedin.com/in/shukyee-ma"
+  },
+  {
+   "nombre": "Ivy Kang",
+   "cargo": "Head of Capital Markets",
+   "area": "Capital Markets / institucional",
+   "ubicacion": "Nueva York, EE.UU.",
+   "linkedin": "https://www.linkedin.com/in/ivy-kang-67502781/",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "influencer",
+   "prioridad": 3,
+   "por_que": "Ex Galaxy Digital y J.P. Morgan; interlocutora para el tema específico de liquidez institucional, market-making y distribución de vaults (Nest) hacia un marketplace secundario.",
+   "fuente": "https://www.bloomberg.com/profile/person/24925493 ; https://www.linkedin.com/in/ivy-kang-67502781/"
+  }
+ ],
+ "ruta_recomendada": "1) Email/LinkedIn a Jason Meng (BD) con CC a James Friel (ecosistema): propuesta concreta de Kabal Bridge (PSAD-0056, CNAD El Salvador) como venue regulado en Centroamérica para distribución de activos Arc/Nest vía SkyLink y como emisor de RWA (trade finance / real estate) sobre Plume. 2) Si hay tracción, escalar a Teddy Pornprinya (CBO, decisor GTM) y a Ivy Kang para la pieza de liquidez institucional. 3) Ruta paralela 'warm': solicitar a Shukyee Ma la incorporación a la Global RWA Alliance, apalancando el precedente LatAm de Mercado Bitcoin (Alexandre Reda, Director de Investment Banking & Tokenization de Mercado Bitcoin, miembro fundador) y el caso nOPAL/BlackOpal en Brasil. 4) Canal de respaldo: Telegram/Discord oficiales solo para pedir el contacto BD correcto (los admins no hacen DM). Evitar plume.com/partner@plume.com (empresa distinta).",
+ "notas": "Limitaciones: durante la investigación el proxy bloqueó acceso directo a plume.org, docs.plume.org, LinkedIn, PRNewswire/GlobeNewswire y agregadores; los datos provienen de fragmentos de resultados de búsqueda y deben verificarse en LinkedIn antes de enviar (títulos pueden haber cambiado en 2026). No se vio ningún email @plume.org literal; todo email sería patrón no verificado. El cofundador/CTO Eugene Shen falleció (no contactar). Hitos 2026 útiles para el pitch: licencia ADGM, integración KRW1, alianza con Securitize en vaults Nest, ingreso al DTCC Digital Assets Industry Working Group, ~US$4.5B tokenizados, Kimber Transfer Agency registrada ante la SEC. Vacante abierta 'Head of Strategic Partnerships' sugiere que el rol de partnerships está en transición: dirigirse a BD (Meng) y ecosistema (Friel)."
+}

@@ -1,0 +1,133 @@
+{
+ "institucion": "Santander",
+ "programa": "Santander CIB Digital Assets — (a) Head of Digital Assets dentro de Global Transaction Banking (GTB) creado en 2026 (Samuel Martínez, ex-BBVA, nombrado jun-2026); (b) Digital Assets Team en Global Markets (depósitos tokenizados del Grupo, piloto de 'digital cash' transfronterizo con Fnality completado jun-2026, repos intradía tokenizados en Kinexys/J.P. Morgan); (c) Centro de Excelencia Crypto & Blockchain de Grupo (Coty de Monteverde) que soporta Openbank crypto (Alemania/España, 2025-2026) y la exploración de stablecoin; (d) Santander US en la red de depósitos tokenizados de The Clearing House (anunciada 5-jun-2026, lanzamiento 1S-2027) y Santander UK en el piloto GBTD de UK Finance (hasta mediados de 2026); (e) Santander X Global Challenge 'Blockchain and Beyond' (con Oxentia) y Mouro Capital Fund III ($400M, may-2026, 100% Santander, foco AI/blockchain/capital markets, cobertura LatAm). Cobertura CIB LatAm: Santander CIB México (Santiago Cortina) y Head of Corporate Finance Latin America; sin oficina CIB en Centroamérica (solo Banco Santander (Panamá) S.A.).",
+ "formato_email": {
+  "patron": "nombre.apellido@gruposantander.com (dominio corporativo del Grupo / Santander CIB Madrid; el buzón oficial de prensa usa @gruposantander.com). Variantes documentadas en santander.com: nombre_apellido@santander.com y napellido@santander.com. Filiales locales usan dominio propio (p. ej. Santander México, Santander UK @santander.co.uk, Santander US @santander.us). Mouro Capital: formato no verificado.",
+  "fuente": "https://leadiq.com/c/banco-santander/5a1d8b2e2400002400665337/email-format ; https://rocketreach.co/santander-global-to-email-format_b45560c0fc956140 ; https://www.email-format.com/d/gruposantander.com/ ; https://www.santandercib.com/press-room/peel-hunt-and-santander-sign-landmark-underwriting-collaboration-agreement (comunicacion@gruposantander.com)",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Comunicación corporativa Grupo Santander / Santander CIB (prensa)",
+   "valor": "comunicacion@gruposantander.com | +34 91 289 5211",
+   "fuente": "https://www.santandercib.com/press-room/peel-hunt-and-santander-sign-landmark-underwriting-collaboration-agreement ; https://www.santanderus.com/news_press_article/santander-telefonica-and-oxentia-foundation-launch-a-global-challenge-to-transform-customer-experience/"
+  },
+  {
+   "canal": "Investor Relations Grupo (Madrid)",
+   "valor": "investor@gruposantander.com",
+   "fuente": "https://www.santander.com/en/shareholders-and-investors/general-information/investors-contact"
+  },
+  {
+   "canal": "Santander CIB — centralita Madrid y página de contacto",
+   "valor": "+34 91 289 0000 | https://www.santandercib.com/about-us/contact-us",
+   "fuente": "https://leadiq.com/c/santander-corporate--investment-banking/5c8020111f00003c00a3b4c3 ; https://www.santandercib.com/about-us/contact-us"
+  },
+  {
+   "canal": "Santander X — retos para startups/scaleups (Global Challenge, blockchain, Santander X 100)",
+   "valor": "https://www.santanderx.com/en/awards.html | https://app.santanderx.com/calls/ (inscripción de proyectos; no hay email público)",
+   "fuente": "https://www.santander.com/en/landing-pages/santander-x-global-challenge-blockchain-beyond ; https://www.santanderx.com/en/awards.html"
+  },
+  {
+   "canal": "Mouro Capital (VC 100% respaldado por Santander, Fund III $400M 2026: AI, blockchain, capital markets)",
+   "valor": "https://www.mourocapital.com/our-team/ (formulario/perfiles; sin email público verificado)",
+   "fuente": "https://tech.eu/2026/05/19/mouro-capital-secures-400m-first-close-for-latest-fund/ ; https://www.mourocapital.com/our-team/"
+  },
+  {
+   "canal": "Santander UK — media relations (piloto GBTD depósitos tokenizados)",
+   "valor": "mediarelations@santander.co.uk",
+   "fuente": "https://www.santander.co.uk/about-santander/contacts/"
+  },
+  {
+   "canal": "Santander US — media relations (consorcio TCH depósitos tokenizados)",
+   "valor": "mediarelations@santander.us",
+   "fuente": "https://www.santanderbank.com/about/media-center"
+  },
+  {
+   "canal": "Banco Santander (Panamá), S.A. — única presencia en Centroamérica",
+   "valor": "Tel. +507 206-6500 | Av. Samuel Lewis y Calle 58, Obarrio, Torre ADR piso 7, Ciudad de Panamá",
+   "fuente": "https://www.dnb.com/business-directory/company-profiles.banco_santander_(panama)_sa.b2a3242e73f2af7bb0dae98fa173ce8c.html ; https://www.cybo.com/PA-biz/banco-santander-panama-s-a"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Samuel Martínez",
+   "cargo": "Head of Digital Assets, Global Transaction Banking (GTB)",
+   "area": "Santander Corporate & Investment Banking — Global Transaction Banking (Cash Management, Trade Finance, Working Capital, Export Finance)",
+   "ubicacion": "España (Madrid, sede de Santander CIB)",
+   "linkedin": "https://www.linkedin.com/in/samuelmartinez/",
+   "email": "samuel.martinez@gruposantander.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Nombrado en junio de 2026 (posición nueva, publicada como vacante hasta feb-2026) para construir la oferta de activos digitales dentro de GTB, que incluye trade finance y working capital — exactamente el vertical de un marketplace de RWA/trade-finance tokenizado. Ex-BBVA 15 años (senior manager blockchain & digital assets); 9+ años en DLT. Está en fase de mapear proveedores/partners y mercados, máxima probabilidad de responder a un cold email institucional bien argumentado sobre liquidez para RWA tokenizados.",
+   "fuente": "https://www.assetservicingtimes.com/assetservicesnews/peoplemovesarticle.php?article_id=18016 ; https://www.digitalassetsedge.com/digitalassetsedgenews/peoplemovesarticle.php?article_id=228785 ; https://builtin.com/job/head-digital-assets-scib/8546816 ; https://www.mmerge.io/speaker/samuel-martinez"
+  },
+  {
+   "nombre": "Coty de Monteverde",
+   "cargo": "Global Head of Crypto & Blockchain (Crypto & Blockchain Center of Excellence), Grupo Santander; Vice-Chairwoman Alastria",
+   "area": "Grupo Santander — Innovación / Crypto & Blockchain CoE (soporta Openbank crypto, stablecoin, Santander X Global Challenge Blockchain and Beyond)",
+   "ubicacion": "Madrid, España",
+   "linkedin": "https://www.linkedin.com/in/cotymonteverde/",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "Dueña a nivel Grupo de la agenda crypto/blockchain (16+ años en Santander, blockchain desde 2016); portavoz del lanzamiento crypto de Openbank; jurado/impulsora del Santander X Global Challenge de blockchain; ponente recurrente (Digital Assets Forum Londres feb-2026, Point Zero Forum 2025, Paris Blockchain Week, Merge Madrid) — abordable en persona y muy activa en LinkedIn. Apellido compuesto ('de Monteverde'): no se propone patrón de email.",
+   "fuente": "https://eblockchainconvention.com/speaker/coty-de-monteverde/ ; https://www.pointzeroforum.com/speakers-2025/spkr11253-coty-de-monteverde ; https://www.santander.com/en/press-room/press-releases/2025/09/openbank-launches-cryptocurrency-trading-service ; https://www.mmerge.io/speaker/coty-de-monteverde"
+  },
+  {
+   "nombre": "Mencía Bobo",
+   "cargo": "Global Head of Global Transaction Banking (GTB), Santander CIB (desde marzo 2024)",
+   "area": "Santander CIB — GTB: Cash Management, Trade Finance, Working Capital Solutions, Export & Agency Finance; jefa jerárquica del área donde se creó Head of Digital Assets GTB",
+   "ubicacion": "Madrid, España",
+   "linkedin": "https://es.linkedin.com/in/mencia-bobo",
+   "email": "mencia.bobo@gruposantander.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 3,
+   "por_que": "Decisora final de trade finance y supply-chain finance (Santander ganó el premio regional SCF para Latinoamérica de Global Finance; Euromoney 'Transaction Banker of the Year Europe 2025'). Contrató el rol de digital assets en GTB en 2026. Ideal para CC o segunda ola una vez que Samuel Martínez responda; su equipo Trade & Working Capital originó el liderazgo global en trade finance de Santander.",
+   "fuente": "https://www.gtreview.com/news/on-the-move/santander-names-bobo-as-transaction-banking-global-head/ ; https://gfmag.com/award/winner-insights/mencia-bobo-from-financier-to-trusted-trade-advisor/ ; https://www.euromoney.com/article/8z0hidkexu88cgo08kcs0cg4w/corporate-banking/europes-transaction-banker-of-the-year-2025-santanders-mencia-bobo/"
+  },
+  {
+   "nombre": "Santiago Cortina",
+   "cargo": "Head of Santander Corporate & Investment Banking Mexico (ex Head of Global Banking Mexico)",
+   "area": "Santander CIB — cobertura México (hub CIB más cercano a Centroamérica; Santander no tiene oficina CIB en El Salvador/Guatemala/Costa Rica)",
+   "ubicacion": "Ciudad de México / Naucalpan de Juárez, México",
+   "linkedin": "https://mx.linkedin.com/in/santiago-cortina-7320b7a5",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "cobertura_latam",
+   "prioridad": 4,
+   "por_que": "Responsable de la relación con corporativos e instituciones financieras desde México; en Santander CIB desde 2022 (ex Barclays, Deutsche Bank). Útil para una conversación de cobertura regional (corporativos mexicanos con operaciones en Centroamérica, FIG) y para introducir a Kabal en la agenda LatAm de CIB. Dominio de email de Santander México no verificado; entrar vía LinkedIn o vía Madrid.",
+   "fuente": "https://www.santandercib.com/node/1008 ; https://www.santandercib.com/about-us/our-team"
+  },
+  {
+   "nombre": "Manuel Silva Martínez",
+   "cargo": "General Partner, Mouro Capital (VC fintech respaldado 100% por Banco Santander; Fund III $400M, primer cierre mayo 2026)",
+   "area": "Innovación / venture — inversión en AI, blockchain, capital markets y asset management en Europa, Norteamérica y Latinoamérica",
+   "ubicacion": "Londres, Reino Unido (oficinas también en Madrid y San Francisco)",
+   "linkedin": "https://uk.linkedin.com/in/msilvamartinez",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "entrada",
+   "prioridad": 5,
+   "por_que": "Camino 'cálido' hacia Santander: Mouro invierte tickets de $8–12M en infraestructura financiera incl. blockchain (fue inversor temprano de Ripple), cubre LatAm y puede abrir puertas al banco como socio estratégico. Inversor en fintech desde 2010 (ex BBVA Ventures). Responde a pitches de founders con tracción regulada (licencia PSAD CNAD es un diferenciador).",
+   "fuente": "https://tech.eu/2026/05/19/mouro-capital-secures-400m-first-close-for-latest-fund/ ; https://www.mourocapital.com/our-team/ ; https://medium.com/wharton-fintech/manuel-silva-general-partner-at-mouro-capital-fueling-the-fintech-innovators-58a56baf48d7"
+  },
+  {
+   "nombre": "Paul Horlock",
+   "cargo": "Chief Payments Officer, Santander UK",
+   "area": "Santander UK — pagos; portavoz de Santander en el piloto GBTD (depósitos tokenizados en libras) de UK Finance con Quant/EY/Linklaters",
+   "ubicacion": "Reino Unido",
+   "linkedin": null,
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "influencer",
+   "prioridad": 6,
+   "por_que": "Portavoz público del piloto de depósitos tokenizados (caso de uso 'digital asset settlement'); relevante solo si Kabal busca settlement en tokenized deposits/GBP; baja prioridad para liquidez LatAm. Usar como referencia de credibilidad en el email, no como primer destinatario.",
+   "fuente": "https://www.ukfinance.org.uk/news-and-insight/press-release/uk-finance-announces-live-pilot-phase-deliver-tokenised-sterling ; https://www.fstech.co.uk/fst/UK_Banks_Launch_Industry_Pilot_For_Tokenised_Sterling_Deposits.php"
+  }
+ ],
+ "ruta_recomendada": "1) Email frío a Samuel Martínez (Head of Digital Assets GTB, Santander CIB) — asunto centrado en liquidez institucional para RWA tokenizados de trade finance (KTFT / receivables) bajo licencia PSAD de El Salvador, con cita a los hitos públicos de Santander (repo tokenizado en Kinexys, piloto Fnality jun-2026, red TCH). Enviar a samuel.martinez@gruposantander.com (patrón no verificado) y en paralelo InMail en LinkedIn. 2) Si no hay respuesta en 7–10 días, segunda ola a Mencía Bobo (Global Head GTB) mencionando que se contactó a su Head of Digital Assets; no poner en CC en el primer envío para no saltarse jerarquía. 3) Camino cálido A: Coty de Monteverde vía LinkedIn y presencialmente en eventos donde es ponente (Digital Assets Forum Londres, Merge Madrid, European Blockchain Convention) o postulando Kabal Bridge al Santander X Global Challenge cuando abra convocatoria blockchain/fintech (app.santanderx.com) — esto genera un 'motivo interno' para que el CoE Crypto & Blockchain lo derive a CIB. 4) Camino cálido B: Manuel Silva Martínez (Mouro Capital) como inversor/estratégico; una intro de Mouro a Santander CIB pesa más que cualquier cold email. 5) Cobertura regional: Santiago Cortina (CIB México) para hablar de corporativos mexicanos con exposición a Centroamérica y de FIG; usar como CC solo cuando ya exista un hilo con Madrid. 6) Usar comunicacion@gruposantander.com solo para solicitar el contacto correcto del área de Digital Assets (no para pitch).",
+ "notas": "Verificación con limitaciones: durante esta sesión el proxy bloqueó el acceso directo a santander.com, santandercib.com, LinkedIn y la mayoría de medios; los cargos provienen de fragmentos indexados de esas fuentes (junio–agosto 2026), por lo que conviene reconfirmar títulos en LinkedIn antes de enviar. John Whelan (ex Managing Director Digital Assets / Head of Blockchain Lab, Santander CIB, líder del bono tokenizado 2019 y de Fnality) ya NO está en Santander: fichó por WisdomTree como head of digital asset strategy tras diez años en el banco (https://www.ledgerinsights.com/john-whelan-joins-wisdomtree-to-lead-digital-assets-strategy/); no dirigirle el outreach, aunque puede ser un intro cálido externo. Existe además un 'Head of Corporate Finance Latin America' de Santander CIB (nombre de pila Alberto, ex Head of CIB Perú desde 2019, nombrado en 2023; apellido no capturado en los resultados — ver https://www.santandercib.com/about-us/our-team). José María Linares (SEVP, Global Head Santander CIB, https://uk.linkedin.com/in/jose-maria-linares) es demasiado senior para un cold email. El Digital Assets Team de Global Markets (depósitos tokenizados del Grupo y piloto Fnality) no tiene un líder identificado públicamente tras la salida de Whelan; preguntar a Samuel Martínez quién lo lidera. Santander no tiene oficina CIB en Centroamérica: la cobertura se hace desde México, Madrid o Nueva York; Banco Santander (Panamá) S.A. es una entidad local sin perfil CIB público. Todos los emails individuales marcados como 'patron_no_verificado' no fueron vistos literalmente en ninguna página pública; los únicos buzones verificados en páginas públicas son comunicacion@gruposantander.com, investor@gruposantander.com, mediarelations@santander.co.uk y mediarelations@santander.us."
+}

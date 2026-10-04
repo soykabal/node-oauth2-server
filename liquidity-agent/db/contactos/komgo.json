@@ -1,0 +1,102 @@
+{
+ "institucion": "Komgo",
+ "programa": "Plataforma bancaria de digitalización de trade finance (Ginebra; ~95 empleados en 5 continentes; >10,000 usuarios enterprise): Konsole (canal multibanco de LCs/garantías, integrado vía API por MUFG Americas — sucursal de Nueva York — el 21-ene-2026), Trakk, Check, Global Trade Konnect; red bancaria ampliada en 2026 con National Bank of Greece y SEB (may-2026); inversión estratégica de Emirates NBD; adquisición de GTC; alianza estratégica con Bladex (banco latinoamericano de comercio exterior). Base tecnológica blockchain (Quorum) con sistema de transferencia documental Kite. No se encontró una iniciativa pública específica de 'tokenización' en 2025-2026 más allá de su infraestructura DLT. Fuentes: https://www.komgo.io/about ; https://www.prnewswire.com/news-releases/mufg-strengthens-trade-finance-workflows-in-the-americas-by-integrating-komgos-konsole-apis-302665549.html ; https://www.komgo.io/newsroom ; https://www.prnewswire.com/news-releases/bladex-enters-into-a-strategic-alliance-with-komgo-driving-innovation-in-trade-finance-solutions-301673876.html ; https://www.tradefinanceglobal.com/posts/what-is-komgo-commodity-trade-finance-meets-blockchain/",
+ "formato_email": {
+  "patron": "{first}.{last}@komgo.io (ej. john.smith@komgo.io) — patrón principal (~83%); secundarios reportados: {first}{last}@komgo.io, {first}-{last}@komgo.io, {first}{l}@komgo.io. Todo es patrón (no verificado).",
+  "fuente": "https://leadiq.com/c/komgo/5c924a971f00007701f311bb/email-format ; https://rocketreach.co/komgo-email-format_b4555ed7fc961a4d",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Página About / contacto corporativo",
+   "valor": "https://www.komgo.io/about",
+   "fuente": "https://www.komgo.io/about"
+  },
+  {
+   "canal": "Newsroom (prensa)",
+   "valor": "https://www.komgo.io/newsroom",
+   "fuente": "https://www.komgo.io/newsroom"
+  },
+  {
+   "canal": "LinkedIn corporativo",
+   "valor": "https://www.linkedin.com/company/komgo",
+   "fuente": "https://www.linkedin.com/company/komgo"
+  },
+  {
+   "canal": "Entidad EE.UU. (Komgo Services Inc) — ficha en AFP Marketplace",
+   "valor": "https://marketplace.afponline.org/company/917906/komgo-services-inc",
+   "fuente": "https://marketplace.afponline.org/company/917906/komgo-services-inc"
+  },
+  {
+   "canal": "Artículo Komgo sobre oportunidades de trade finance en Latinoamérica (gancho de conversación)",
+   "valor": "https://www.komgo.io/newsroom/komgo-on-trade-finance-opportunities-in-latin-america",
+   "fuente": "https://www.komgo.io/newsroom/komgo-on-trade-finance-opportunities-in-latin-america"
+  },
+  {
+   "canal": "Anuncio oficina Miami / presencia Américas",
+   "valor": "https://www.komgo.io/newsroom/komgo-strengthens-americas-presence-with-new-miami-office",
+   "fuente": "https://www.komgo.io/newsroom/komgo-strengthens-americas-presence-with-new-miami-office"
+  },
+  {
+   "canal": "Buzón de prensa / partnerships (email)",
+   "valor": null,
+   "fuente": "No se vio literalmente ningún email en páginas públicas durante esta investigación"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Tim-Emilien Ngoc",
+   "cargo": "Global Head of Business Development, Marketing and Partnerships",
+   "area": "Business Development / Partnerships",
+   "ubicacion": "Ginebra, Suiza",
+   "linkedin": null,
+   "email": "tim-emilien.ngoc@komgo.io",
+   "email_estado": "patron_no_verificado",
+   "rol": "entrada",
+   "prioridad": 1,
+   "por_que": "Dueño global de partnerships y desarrollo de negocio; es el receptor natural de una propuesta de alianza de marketplace de RWA tokenizados / trade finance desde Centroamérica.",
+   "fuente": "https://rocketreach.co/tim-emilien-ngoc-email_73146514"
+  },
+  {
+   "nombre": "Souleïma Baddi",
+   "cargo": "Chief Executive Officer",
+   "area": "Dirección general",
+   "ubicacion": "Ginebra, Suiza",
+   "linkedin": null,
+   "email": "souleima.baddi@komgo.io",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 2,
+   "por_que": "CEO y portavoz de todas las alianzas bancarias (MUFG, NBG, SEB, Bladex, Emirates NBD); decisora final; usar en CC o tras primera respuesta de BD.",
+   "fuente": "https://www.komgo.io/about ; https://www.fintechfutures.com/venture-capital-funding/emirates-nbd-makes-strategic-investment-in-trade-finance-tech-firm-komgo"
+  },
+  {
+   "nombre": "Michael Mandell",
+   "cargo": "Managing Director, Americas (nombrado abr-2024; ingresó ene-2023 como Sales Executive, Miami; ex Director Energy & Metals Commodities ABN AMRO NY) — ALERTA: una fuente de 2026 lo ubica ya como TFS Trader en Trafigura; verificar si sigue en Komgo antes de escribir",
+   "area": "Cobertura Américas / LatAm (Miami)",
+   "ubicacion": "Miami, FL, EE.UU.",
+   "linkedin": "https://www.linkedin.com/in/michaelmandell (inferido del URL de su post público https://www.linkedin.com/posts/michaelmandell_komgo-strengthens-americas-presence-with-activity-7213883731328016386-Esqv; no verificado)",
+   "email": "michael.mandell@komgo.io",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 3,
+   "por_que": "Fue el responsable de crecimiento en Américas y LatAm con base en Miami; si sigue en Komgo es la entrada regional ideal; si ya salió, su sucesor como MD Americas es el contacto a identificar.",
+   "fuente": "https://www.komgo.io/newsroom/komgo-strengthens-americas-presence-with-new-miami-office ; https://rocketreach.co/michael-mandell-email_21229952"
+  },
+  {
+   "nombre": null,
+   "cargo": "Managing Director / Head of Americas (sucesor de Michael Mandell, si aplica) — posible vacante 'Business Development - Managing Director' publicada",
+   "area": "Cobertura Américas (Miami / Houston / Nueva York)",
+   "ubicacion": "EE.UU.",
+   "linkedin": null,
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "cobertura_latam",
+   "prioridad": 4,
+   "por_que": "Komgo mantiene presencia en Houston, Miami y Nueva York (integración MUFG NY ene-2026); el titular actual de Américas no pudo confirmarse en esta sesión.",
+   "fuente": "https://builtin.com/job/business-development-managing-director/7770189 ; https://www.komgo.io/newsroom/mufg-us-strengthens-digital-trade-finance-workflows-with-konsole-integration"
+  }
+ ],
+ "ruta_recomendada": "1) Email frío a Tim-Emilien Ngoc (Global Head of BD, Marketing & Partnerships, Ginebra) con propuesta concreta: Kabal Bridge como marketplace regulado (CNAD, El Salvador) para distribuir/tokenizar instrumentos de trade finance originados en la red Komgo (Konsole/Trakk) hacia inversionistas institucionales; CC a Souleïma Baddi (CEO). 2) En paralelo, contactar la cobertura Américas (verificar primero si Michael Mandell sigue como MD Americas; si no, identificar al sucesor vía https://www.linkedin.com/company/komgo) citando el artículo de Komgo sobre oportunidades en Latinoamérica. 3) Camino tibio más fuerte: Bladex (Banco Latinoamericano de Comercio Exterior, Panamá) tiene alianza estratégica con Komgo — una intro vía Bladex o vía MUFG Americas (integración Konsole ene-2026) da credibilidad regional inmediata. 4) Alternativa: reunión presencial en eventos de trade finance donde Komgo es ponente habitual.",
+ "notas": "Limitaciones: el presupuesto de búsqueda web se agotó y el proxy bloqueó komgo.io, LinkedIn, PRNewswire, Bladex y bases de contactos, por lo que: (a) no se pudieron confirmar las URLs de LinkedIn de Souleïma Baddi ni de Tim-Emilien Ngoc; (b) no se vio ningún email público literal — todos son patrón no verificado; (c) la situación laboral actual (2026) de Michael Mandell es contradictoria entre fuentes (Komgo vs Trafigura) y debe verificarse; (d) no se identificó al responsable de la oficina de Houston ni una iniciativa pública de tokenización de trade finance de Komgo en 2025-2026 (su base es DLT/Quorum + Kite, pero el posicionamiento actual es SaaS multibanco). Verificar en https://www.komgo.io/about y https://www.linkedin.com/company/komgo antes de enviar."
+}

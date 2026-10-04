@@ -1,0 +1,143 @@
+{
+ "institucion": "Centrifuge",
+ "programa": "Protocolo de tokenización RWA y gestión de activos onchain: Centrifuge V3 / V3.1 (multichain: Ethereum, Base, Arbitrum, Celo, Plume, etc.), fondos tokenizados JTRSY (Janus Henderson Anemoy Treasury Fund, Aa-bf de Moody's) y JAAA (Janus Henderson AAA CLO), HYB (NYLIM high-yield), primer fondo índice S&P 500 tokenizado (con S&P DJI), Centrifuge Whitelabel (plataforma institucional lanzada nov-2025, primer cliente Daylight), integración de Symbiotic Liquid Lane (19-ago-2026) para redenciones instantáneas en USDC sobre ~US$1.6B AUM. Coinbase invirtió en Centrifuge (may-2026) y la nombró socio preferente de tokenización sobre Base. Anemoy (BVI) es el gestor de activos nativo de Centrifuge (cofundado por Martin Quensel y Anil Sood). Liderazgo renovado en feb-2025 con foco explícito en distribución institucional.",
+ "formato_email": {
+  "patron": "First@centrifuge.io (≈86% según LeadIQ); alternativas first.last@centrifuge.io y first-last@centrifuge.io",
+  "fuente": "https://leadiq.com/c/centrifuge/5b33fd633600000501fdaebf/email-format ; https://rocketreach.co/centrifuge-email-format_b452bac4fc8d553e",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Email partnerships / creación de pools (público)",
+   "valor": "connect@centrifuge.io",
+   "fuente": "https://www.crunchbase.com/organization/centrifuge ; https://centrifuge.io/blog/app-update-pool-creation"
+  },
+  {
+   "canal": "Email prensa",
+   "valor": "marketing@centrifuge.io",
+   "fuente": "https://centrifuge.io/contact"
+  },
+  {
+   "canal": "Formulario de contacto",
+   "valor": "https://centrifuge.io/contact",
+   "fuente": "https://centrifuge.io/contact"
+  },
+  {
+   "canal": "Centrifuge Whitelabel (solicitud institucional)",
+   "valor": "https://centrifuge.io/whitelabel",
+   "fuente": "https://centrifuge.io/blog/whitelabel-launch"
+  },
+  {
+   "canal": "Guía de onboarding de emisores (RWA Launchpad)",
+   "valor": "https://developer.centrifuge.io/use/onboarding/ ; https://docs.centrifuge.io/user/issuer/",
+   "fuente": "https://developer.centrifuge.io/use/onboarding/"
+  },
+  {
+   "canal": "Discord oficial (soporte técnico y consultas de partnership)",
+   "valor": "https://discord.com/invite/yEzyUq5gxF (centrifuge.io/discord)",
+   "fuente": "https://docs.centrifuge.io/getting-started/resources/ ; https://gov.centrifuge.io/t/centrifuge-discord-is-now-live/1701"
+  },
+  {
+   "canal": "Foro de gobernanza",
+   "valor": "https://gov.centrifuge.io/",
+   "fuente": "https://gov.centrifuge.io/"
+  },
+  {
+   "canal": "Telegram anuncios (solo lectura; el grupo de chat está deprecado)",
+   "valor": "https://t.me/centrifuge",
+   "fuente": "https://gov.centrifuge.io/t/telegram-discord/1411 ; https://t.me/centrifuge_chat"
+  },
+  {
+   "canal": "LinkedIn empresa",
+   "valor": "https://www.linkedin.com/company/centrifugehq",
+   "fuente": "https://www.linkedin.com/company/centrifugehq"
+  },
+  {
+   "canal": "Domicilio registrado (GmbH)",
+   "valor": "Glogauer Straße 6, 10999 Berlin, Alemania (otras fuentes citan Zug, San Francisco y Gran Caimán; equipo distribuido en 4 continentes)",
+   "fuente": "https://leadiq.com/c/centrifuge/5b33fd633600000501fdaebf ; https://tracxn.com/d/companies/centrifuge/__aZAmmHVaoSZokiRQXMV43jAlx3sAMVN1mJoeBpf13ow"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Anil Sood",
+   "cargo": "Chief Strategy & Growth Officer, Centrifuge; Co-Founder, Anemoy",
+   "area": "Estrategia, crecimiento y distribución institucional",
+   "ubicacion": "Londres, UK",
+   "linkedin": "https://www.linkedin.com/in/anil-sood/",
+   "email": "anil@centrifuge.io — pattern (unverified)",
+   "email_estado": "patron_no_verificado",
+   "rol": "entrada",
+   "prioridad": 1,
+   "por_que": "Nombrado en feb-2025 justamente para pasar de 'infrastructure builder a ecosystem catalyst'; ex Head of EMEA ETF Sales en Cantor Fitzgerald (perfil de ventas institucionales); cofundador de Anemoy (emisor de JTRSY/JAAA). Publica 'Build with Centrifuge' y contenido sobre Liquid Treasury Fund — es quien recibe propuestas de nuevas venues y socios de liquidez.",
+   "fuente": "https://centrifuge.io/blog/centrifuge-new-leadership-2025 ; https://www.linkedin.com/posts/anil-sood_build-with-centrifuge-activity-7381038085595209729-oWRz ; https://x.com/anemoyanil"
+  },
+  {
+   "nombre": "Bhaji Illuminati",
+   "cargo": "Chief Executive Officer (CEO desde feb-2025; interina desde jul-2024; CMO desde feb-2023)",
+   "area": "Dirección general",
+   "ubicacion": "Los Ángeles, CA, EE.UU.",
+   "linkedin": "https://www.linkedin.com/in/bhajiilluminati",
+   "email": "bhaji@centrifuge.io — pattern (unverified)",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 2,
+   "por_que": "Dueña del programa y de la estrategia de distribución institucional 2026 ('50% de los top-50 asset managers tendrán estrategia de tokenización'); perfil de marketing/marketplace — receptiva a partners que abran mercados nuevos (Centroamérica/El Salvador regulado). Zona horaria Pacífico, útil para LatAm.",
+   "fuente": "https://centrifuge.io/blog/centrifuge-new-leadership-2025 ; https://thedefiant.io/news/defi/rwa-tokenization-firm-centrifuge-has-a-new-ceo-bhaji-illuminati ; https://centrifuge.io/blog/2026-real-world-asset-tokenization"
+  },
+  {
+   "nombre": "Jürgen Blumberg",
+   "cargo": "Chief Operating Officer, Centrifuge; Chief Investment Officer, Anemoy",
+   "area": "Operaciones / productos de inversión onchain / liquidez",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "jurgen@centrifuge.io — pattern (unverified)",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "Ex COO EMEA de Goldman Sachs (ETFs), Invesco y BlackRock; lidera liquidez, market-making y la operación de los fondos tokenizados (integración Symbiotic Liquid Lane, redenciones). Es el decisor técnico-operativo para un partner de liquidez institucional/secundario.",
+   "fuente": "https://centrifuge.io/blog/jurgen-blumberg-appointment ; https://cryptonews.com/exclusives/centrifuge-coo-jurgen-blumberg-defi-is-having-its-etf-moment/"
+  },
+  {
+   "nombre": "Martin Quensel",
+   "cargo": "Co-Founder & President, Centrifuge; Co-Founder, Anemoy",
+   "area": "Fundadores / emisor Anemoy",
+   "ubicacion": "Berlín, Alemania (inferido: sede histórica; ex Taulia/SAP)",
+   "linkedin": null,
+   "email": "martin@centrifuge.io — pattern (unverified)",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 3,
+   "por_que": "Cofundador con trayectoria en supply-chain finance (Taulia, SAP F110) — afinidad directa con trade finance/receivables, el core de Kabal (KTFT). Activo en X (@mr_optimax) sobre Anemoy multichain. Buen CC o vía cálida para el ángulo de originación de activos.",
+   "fuente": "https://gotopia.tech/experts/439/martin-quensel ; https://x.com/mr_optimax/status/1773790656550633873 ; https://www.finextra.com/pressarticle/102275/janus-henderson-partners-with-anemoy-and-centrifuge-on-its-first-tokenised-fund"
+  },
+  {
+   "nombre": "Lucas Vogelsang",
+   "cargo": "Co-Founder; miembro del Board (dejó el cargo de CEO en feb-2025)",
+   "area": "Board",
+   "ubicacion": null,
+   "linkedin": "https://www.linkedin.com/in/lucasvo/",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Cofundador y figura pública del protocolo; ya no dirige la operación (su LinkedIn muestra un nuevo proyecto, 'Tare'). Útil solo como intro cálida, no como destinatario del cold email.",
+   "fuente": "https://centrifuge.io/blog/centrifuge-new-leadership-2025 ; https://www.linkedin.com/in/lucasvo/"
+  },
+  {
+   "nombre": "Colin Cunningham",
+   "cargo": "Ex Head of BD / Growth, Centrifuge (may-2021 a ~2025); actualmente en Chainlink Labs",
+   "area": "Ex-Centrifuge — BD",
+   "ubicacion": null,
+   "linkedin": "https://www.linkedin.com/in/cunninghamcolin/",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "influencer",
+   "prioridad": 5,
+   "por_que": "Diseñó el go-to-market original de Centrifuge (BlockTower/Maker, Consensus 2025). Ya NO está en Centrifuge; sirve como puente cálido y como vía hacia Chainlink (CCIP/oráculos) si Kabal necesita ese stack.",
+   "fuente": "https://theorg.com/org/centrifuge-io/org-chart/colin-cunningham ; https://consensus2025.coindesk.com/agenda/speaker/-colin-cunningham"
+  }
+ ],
+ "ruta_recomendada": "1) Email primero a Anil Sood (CSGO) con CC a Jürgen Blumberg (COO/Anemoy CIO): posicionar a Kabal Bridge como (a) venue regulada de distribución y liquidez secundaria en Centroamérica para JTRSY/JAAA/HYB (complemento regional a Symbiotic Liquid Lane) y (b) emisor/originador de pools de trade finance y receivables sobre Centrifuge V3 / Whitelabel; incluir credencial CNAD (PSAD) y datos de KTFT. 2) Enviar en paralelo el mismo brief a connect@centrifuge.io y al formulario de Whitelabel (centrifuge.io/whitelabel) para que quede registrado en el pipeline de emisores. 3) Escalar a Bhaji Illuminati (CEO, Los Ángeles) por LinkedIn a los 5-7 días si no hay respuesta; usar el ángulo 'primer socio regulado en Centroamérica' y el reciente respaldo de Coinbase/Base. 4) Caminos cálidos: Martin Quensel (afinidad trade finance), Colin Cunningham (ex Head of BD) o socios comunes (Coinbase/Base, Janus Henderson, Symbiotic, Tokeny). 5) Para dudas técnicas de integración usar Discord (canal partnership) antes del intercambio comercial.",
+ "notas": "Limitaciones: centrifuge.io, docs.centrifuge.io, gov.centrifuge.io, theorg.com, leadiq.com, linkedin.com y varios medios estaban bloqueados por el proxy y el presupuesto de búsqueda se agotó; los datos provienen de resúmenes de resultados de búsqueda. Centrifuge publicó vacantes de 'Director of Institutional Sales' y 'Director of DeFi Business Development' (remoto US/EU), pero no se identificó públicamente a los titulares actuales de esos puestos a sep-2026 — confirmar en la página de LinkedIn de la empresa antes de enviar. No se encontró ninguna persona o iniciativa LatAm dedicada; la Latam Digital Assets Conf (Buenos Aires, 20-21 ago-2026) no mostró participación confirmada de Centrifuge. Ningún email nominal fue visto en página pública: todos los nominales son 'pattern (unverified)' construidos con el patrón First@centrifuge.io de LeadIQ. Sede: registro en Berlín; fuentes discrepan (Zug / San Francisco / Gran Caimán); la CEO opera desde Los Ángeles y el CSGO desde Londres."
+}

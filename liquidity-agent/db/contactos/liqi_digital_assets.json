@@ -1,0 +1,115 @@
+{
+ "institucion": "Liqi Digital Assets",
+ "programa": "Plataforma brasileña de tokenización de RWA (recebíveis/crédito privado, deuda corporativa, agro/CPR, inmobiliario, precatórios vía marca educativa Descompliqi), con brazo de securitización registrado en CVM (implementando TIDC) y alianza con XDC Network para estructurar US$500M en RWA (hito de US$100M ya alcanzado en 2025-2026). Fundadores: Daniel Coquieri (CEO), Persio Arco e Flexa (CTO), Felippe Percigo (CMO).",
+ "formato_email": {
+  "patron": "desconocido — dominio liqi.com.br; buzones genéricos reportados por agregadores: contato@liqi.com.br y atendimento@liqi.com.br (no vistos literalmente en página de Liqi)",
+  "fuente": "https://rocketreach.co/liqi-digital-assets-email-format_b7f61247c2af9950 ; https://contactout.com/company/Liqi-Digital-Assets-11919 (páginas no accesibles desde este entorno; datos tomados del resumen de búsqueda)",
+  "confianza": "baja"
+ },
+ "canales_publicos": [
+  {
+   "canal": "email genérico (reportado por agregador, no verificado en sitio)",
+   "valor": "contato@liqi.com.br",
+   "fuente": "https://rocketreach.co/liqi-digital-assets-email-format_b7f61247c2af9950"
+  },
+  {
+   "canal": "email atención (reportado por agregador, no verificado en sitio)",
+   "valor": "atendimento@liqi.com.br",
+   "fuente": "https://contactout.com/company/Liqi-Digital-Assets-11919"
+  },
+  {
+   "canal": "sitio web / formulario",
+   "valor": "https://www.liqi.com.br/",
+   "fuente": "https://www.liqi.com.br/"
+  },
+  {
+   "canal": "FAQ corporativo",
+   "valor": "https://liqicorp.com.br/faq",
+   "fuente": "https://liqicorp.com.br/faq"
+  },
+  {
+   "canal": "LinkedIn empresa",
+   "valor": "https://www.linkedin.com/company/liqibr",
+   "fuente": "https://www.linkedin.com/company/liqibr"
+  },
+  {
+   "canal": "Facebook",
+   "valor": "https://www.facebook.com/Liqibr/ (São Paulo, SP)",
+   "fuente": "https://www.facebook.com/Liqibr/"
+  },
+  {
+   "canal": "Blog/educación precatórios",
+   "valor": "https://www.descompliqi.com.br/tokenizacao-de-precatorios/",
+   "fuente": "https://www.descompliqi.com.br/tokenizacao-de-precatorios/"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Daniel Coquieri",
+   "cargo": "Founder & CEO",
+   "area": "Dirección general / estrategia RWA e internacionalización (alianza XDC)",
+   "ubicacion": "São Paulo, Brasil",
+   "linkedin": null,
+   "email": "patrón desconocido (unverified)",
+   "email_estado": "desconocido",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Fundador-CEO y portavoz público de la alianza XDC (\"estamos estructurando medio billón de dólares en RWA en XDC\"); Liqi es una startup fundador-céntrica, el CEO decide alianzas institucionales y de liquidez cross-border.",
+   "fuente": "https://br.cointelegraph.com/news/liqi-ceo-says-the-company-has-done-rural-product-card-tokenization ; https://u.today/xdc-network-teams-up-with-liqi-digital-assets-for-500-million-rwa-initiative ; https://iflsp.org/preparatorios/daniel-coquieri/"
+  },
+  {
+   "nombre": "Persio Arco e Flexa (Persio Flexa)",
+   "cargo": "Co-Founder & CTO",
+   "area": "Tecnología / infraestructura de tokenización e integraciones",
+   "ubicacion": "Brasil (São Paulo, no verificado)",
+   "linkedin": "https://www.linkedin.com/in/persio-flexa/",
+   "email": "patrón desconocido (unverified)",
+   "email_estado": "desconocido",
+   "rol": "decisor",
+   "prioridad": 3,
+   "por_que": "Cofundador; interlocutor natural para interoperabilidad técnica (XDC, listados cross-platform). Nota: el titular de su perfil LinkedIn en resultados de búsqueda muestra 'Destrava Aí' — verificar si sigue operativo en Liqi.",
+   "fuente": "https://www.crunchbase.com/person/persio-arco-e-flexa ; https://www.linkedin.com/in/persio-flexa/"
+  },
+  {
+   "nombre": "Felippe Percigo",
+   "cargo": "Co-Founder & CMO",
+   "area": "Marketing / crecimiento",
+   "ubicacion": "Brasil (no verificado)",
+   "linkedin": "https://www.linkedin.com/in/felippe-percigo/",
+   "email": "patrón desconocido (unverified)",
+   "email_estado": "desconocido",
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Cofundador según Crunchbase y prensa; puerta alternativa al CEO. Nota: su headline en LinkedIn ('MBA Meu Plano Crypto') sugiere posible salida de Liqi — confirmar antes de escribir.",
+   "fuente": "https://www.crunchbase.com/organization/liqi-digital-assets ; https://www.linkedin.com/in/felippe-percigo/"
+  },
+  {
+   "nombre": "André Montenegro",
+   "cargo": "BizDev (según prensa 2021)",
+   "area": "Desarrollo de negocios / alianzas",
+   "ubicacion": "Brasil (no verificado)",
+   "linkedin": null,
+   "email": "patrón desconocido (unverified)",
+   "email_estado": "desconocido",
+   "rol": "entrada",
+   "prioridad": 2,
+   "por_que": "Única persona identificada públicamente con función de business development en Liqi; dato de 2021 (rondas con Coritiba/Cruzeiro) — verificar vigencia en LinkedIn antes de contactar.",
+   "fuente": "https://livecoins.com.br/startup-liqi-levanta-r-3-milhoes-em-rodada-privada-de-investimentos/ ; https://tiinside.com.br/28/04/2021/startup-liqi-levantou-mais-de-r-3-milhoes-vendendo-tokens-a-investidores-estrategicos/"
+  },
+  {
+   "nombre": "Diego Consimo",
+   "cargo": "Head LATAM, XDC Network (socio estratégico de Liqi, no empleado)",
+   "area": "Cobertura Latinoamérica / ecosistema RWA",
+   "ubicacion": "Latinoamérica (no verificado)",
+   "linkedin": null,
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "cobertura_latam",
+   "prioridad": 2,
+   "por_que": "Camino tibio: XDC es el socio que califica a Liqi como 'una de las plataformas más preparadas de Latam para emisión regulada de RWA'; un head LATAM de XDC puede presentar a Kabal Bridge (El Salvador) a Coquieri con contexto cross-border ya alineado.",
+   "fuente": "https://u.today/xdc-network-teams-up-with-liqi-digital-assets-for-500-million-rwa-initiative ; https://x.com/XDCNetwork/status/1911788928161415169"
+  }
+ ],
+ "ruta_recomendada": "1) Pedir intro a Daniel Coquieri vía Diego Consimo (XDC Network, Head LATAM) enmarcando a Kabal Bridge como venue de liquidez/distribución hispanoamericana para los RWA de Liqi emitidos en XDC. 2) En paralelo, email frío a Coquieri (CC: André Montenegro si se confirma que sigue en BizDev) y copia al buzón contato@liqi.com.br; mensaje en portugués, citando la meta de US$500M en XDC y el registro CVM/TIDC. 3) Involucrar a Persio Flexa solo cuando se discuta interoperabilidad técnica.",
+ "notas": "Limitaciones: el proxy de egreso bloqueó liqi.com.br, LinkedIn, Crunchbase, RocketReach, ContactOut y toda la prensa; los datos provienen de los resúmenes de búsqueda web (presupuesto de búsqueda agotado). No se pudo verificar el patrón de email corporativo ni las URLs de LinkedIn de Coquieri/Montenegro. Contexto sectorial 2026: CVM creó Grupo de Trabajo de Tokenización (17-jul-2026) y consulta pública para reformar la Resolución 88 (crowdfunding) impulsada por tokenización de recebíveis; mercado brasileño de tokenización cerró 1S-2026 con R$4,84 bi (+122% a/a). Liqi + XDC superaron US$100M en RWA tokenizados; el brazo de securitización de Liqi está registrado en CVM e implementa TIDC."
+}

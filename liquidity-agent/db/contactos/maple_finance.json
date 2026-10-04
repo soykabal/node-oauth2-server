@@ -1,0 +1,143 @@
+{
+ "institucion": "Maple Finance",
+ "programa": "Crédito institucional on-chain: syrupUSDC / syrupUSDT (yield sourced de préstamos garantizados a instituciones), Maple Institutional (Blue Chip Secured / High Yield Secured lending), equipo de Capital Markets. AUM ~US$4.6B al cierre H1-2026 (+81% YoY); alianzas 2025-2026 con Kraken (on-chain warehouse facility, jun-2026) y Elwood Technologies; programa formal de 'Network Partners'.",
+ "formato_email": {
+  "patron": "[first]@maple.finance (~64.6% según RocketReach); alternos [first].[last]@maple.finance y [first_initial][last]@maple.finance",
+  "fuente": "https://rocketreach.co/maple-email-format_b439b0c8c18a0378 (agregador de terceros; no verificado contra una página oficial de Maple)",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Sitio oficial / formulario institucional",
+   "valor": "https://maple.finance/ (secciones Institutional / Syrup); página About: https://maple.finance/about",
+   "fuente": "https://maple.finance/"
+  },
+  {
+   "canal": "Programa Network Partners (onboarding selectivo de contrapartes)",
+   "valor": "https://maple.finance/insights/maples-network-partners",
+   "fuente": "https://maple.finance/insights/maples-network-partners"
+  },
+  {
+   "canal": "Telegram oficial",
+   "valor": "https://t.me/maplefinance",
+   "fuente": "https://www.bitget.com/price/maple-finance/what-is ; https://bitmart.zendesk.com/hc/en-us/articles/4414757230747-Maple-Finance-MPL"
+  },
+  {
+   "canal": "Discord oficial",
+   "valor": "https://discord.gg/fgWRMHCd7d (verificar vigencia del invite)",
+   "fuente": "https://bitmart.zendesk.com/hc/en-us/articles/4414757230747-Maple-Finance-MPL"
+  },
+  {
+   "canal": "X / Twitter corporativo",
+   "valor": "https://x.com/maplefinance",
+   "fuente": "https://x.com/maplefinance"
+  },
+  {
+   "canal": "X del CEO",
+   "valor": "https://x.com/sidbpowell",
+   "fuente": "https://x.com/sidbpowell"
+  },
+  {
+   "canal": "Programa de Embajadores (canal Telegram privado con el equipo)",
+   "valor": "https://maple.finance/insights/become-a-maple-ambassador",
+   "fuente": "https://maple.finance/insights/become-a-maple-ambassador"
+  },
+  {
+   "canal": "Newsletter / Substack (Sunday Syrup)",
+   "valor": "https://maplefinance.substack.com/",
+   "fuente": "https://maplefinance.substack.com/p/maples-sunday-syrup-issue-16-9c5"
+  },
+  {
+   "canal": "LinkedIn corporativo",
+   "valor": "https://www.linkedin.com/company/maplefinance",
+   "fuente": "https://au.linkedin.com/company/maplefinance"
+  },
+  {
+   "canal": "Email genérico de contacto",
+   "valor": null,
+   "fuente": "ZoomInfo indica un email de contacto general pero aparece ofuscado ([email protected]); no se pudo leer literalmente — https://www.zoominfo.com/c/maple-finance-co/369092149"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Sidney (Sid) Powell",
+   "cargo": "Co-Founder & CEO",
+   "area": "Dirección general / voz institucional (onchain asset management, yield, institutional lending)",
+   "ubicacion": "Estados Unidos (australiano; ex National Australia Bank, DCM)",
+   "linkedin": "https://www.linkedin.com/in/sidneypowell/",
+   "email": "sid@maple.finance o sidney@maple.finance",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 2,
+   "por_que": "Decisor final; muy activo públicamente (X @sidbpowell, entrevistas Nasdaq/INN, foros CfC St. Moritz, Greenwich Economic Forum). Mejor como CC o warm path vía evento/podcast que como primer email frío.",
+   "fuente": "https://www.linkedin.com/in/sidneypowell/ ; https://www.crunchbase.com/person/sidney-powell-945f ; https://investingnews.com/sid-powell-maple-finance/ ; https://maple.finance/insights/maple-memo-july-2026"
+  },
+  {
+   "nombre": "Joe Flanagan",
+   "cargo": "Co-Founder & Executive Chairman",
+   "area": "Estrategia / Network Partners",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "joe@maple.finance",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 3,
+   "por_que": "Firmó públicamente el lanzamiento del programa Network Partners ('look forward to establishing relationships with more leading providers'); referente natural para una alianza de distribución/liquidez regional.",
+   "fuente": "https://maple.finance/insights/maples-network-partners ; https://maple.finance/insights/maple-appoints-three-senior-leaders"
+  },
+  {
+   "nombre": "Daniel (Danny) Kim",
+   "cargo": "Head of Capital Markets (título documentado en 2021-2022; VERIFICAR que siga vigente en 2026)",
+   "area": "Capital Markets — 'establishing new partnerships which bring lending capital, blue chip borrowers and new asset managers to Maple'",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "danny@maple.finance o daniel@maple.finance",
+   "email_estado": "patron_no_verificado",
+   "rol": "entrada",
+   "prioridad": 1,
+   "por_que": "El rol de Head of Capital Markets es, por definición del propio job posting de Maple, el que trae capital de préstamo y nuevos socios a la plataforma; descrito como 'super connector'. Es el punto de entrada correcto para un marketplace que quiere aportar/absorber liquidez institucional. Si ya no ocupa el cargo, dirigirse al titular actual de Capital Markets (Maple sigue contratando Capital Markets Associate/Associate Director).",
+   "fuente": "https://startup.jobs/head-of-capital-markets-maplefinance-3000448 ; https://www.linkedin.com/posts/katya-ternopolska_hiring-for-institutional-sales-development-activity-6830531446424379393-yWpK ; https://web3.career/capital-markets-associate-director-maple-finance/35301"
+  },
+  {
+   "nombre": "Tarek Court",
+   "cargo": "Head of Trading (nombrado 29-abr-2026)",
+   "area": "Trading / gestión de colateral y liquidez",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "tarek@maple.finance",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Recién incorporado a nivel senior; relevante si la propuesta involucra colateral tokenizado (RWA) o ejecución/liquidez en el marketplace.",
+   "fuente": "https://maple.finance/insights/maple-appoints-three-senior-leaders"
+  },
+  {
+   "nombre": "Natalie Williams",
+   "cargo": "Head of Marketing (nombrada 29-abr-2026)",
+   "area": "Marketing / ecosistema",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "natalie@maple.finance",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 5,
+   "por_que": "Puerta alterna para co-marketing / caso de uso 'primer marketplace RWA licenciado en Centroamérica integrando syrupUSDC'; suele redirigir internamente a BD.",
+   "fuente": "https://maple.finance/insights/maple-appoints-three-senior-leaders"
+  },
+  {
+   "nombre": "Conor O'Hanlon",
+   "cargo": "General Counsel (nombrado 29-abr-2026)",
+   "area": "Legal / regulatorio",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "conor@maple.finance",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 6,
+   "por_que": "Cualquier acuerdo con un PSAD regulado por CNAD (El Salvador) pasará por él; útil mencionarlo en CC en fase de term sheet, no en el primer contacto.",
+   "fuente": "https://maple.finance/insights/maple-appoints-three-senior-leaders"
+  }
+ ],
+ "ruta_recomendada": "1) Primer email al titular de Capital Markets (Daniel Kim si sigue en el cargo; si no, al 'Head of Capital Markets' actual — el job posting de Maple describe ese rol como responsable de traer capital y socios). 2) CC a Joe Flanagan (dueño del programa Network Partners) y, en segundo toque, a Sid Powell. 3) Warm path: aplicar formalmente al programa Network Partners (maple.finance/insights/maples-network-partners) y abrir hilo en Telegram oficial pidiendo el contacto de BD; Sid Powell es muy accesible en X (@sidbpowell) y en conferencias (CfC St. Moritz, Greenwich Economic Forum). 4) Ángulo del pitch: Maple no tiene presencia ni socios anunciados en LatAm/Centroamérica (no se encontró ninguno) — posicionar a Kabal Bridge como canal de distribución regulado (PSAD-CNAD) para syrupUSDC y como originador de colateral RWA para Maple Institutional.",
+ "notas": "Limitaciones: el proxy de red bloqueó maple.finance, LinkedIn, RocketReach, Crunchbase, BusinessWire y otros, y el presupuesto de búsquedas se agotó; los datos provienen de snippets de búsqueda con URL fuente. No se localizó a nadie con título explícito de 'Head of BD/Partnerships' ni de cobertura LatAm en 2026; el equipo de Capital Markets es el equivalente funcional. Las ubicaciones de los ejecutivos (salvo Powell, EE.UU.) no pudieron confirmarse. Todos los emails individuales son patrón RocketReach ([first]@maple.finance) sin verificar. Verificar el invite de Discord antes de usarlo. Cifras de contexto: AUM US$4.6B H1-2026, ingresos Q2 +47% YoY (Maple Memo jul-2026); alianzas Kraken (jun-2026) y Elwood Technologies (sep-2025, BusinessWire 20250928050363)."
+}
