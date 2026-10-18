@@ -1,0 +1,120 @@
+{
+ "institucion": "DBS Bank",
+ "programa": "DBS Digital Exchange (DDEx) y DBS Token Services; piloto de oro tokenizado con lanzamiento institucional 2S-2026.",
+ "formato_email": {
+  "patron": "nombreapellido@dbs.com (sin punto, minúsculas)",
+  "fuente": "https://www.dbs.com/flp_china/en/media/press-contacts.page — contacto de prensa DBS China 'Lisa Zeng' publicado como lisazeng@dbs.com (confirmado vía índice del buscador; la página no pudo abrirse directamente desde este entorno y su contenido parece datar de ~2021). Es la ÚNICA dirección personal @dbs.com publicada que se halló: una búsqueda restringida a dbs.com solo arrojó buzones genéricos (customercareindia@dbs.com, dbscareers@dbs.com, dbsfoundation@dbs.com, aucustomercare@dbs.com), que confirman el dominio pero no el formato nombreapellido. Patrón débilmente corroborado (un solo caso, de oficina regional).",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Newsroom oficial DBS (press releases de digital assets / DDEx)",
+   "valor": "https://www.dbs.com/newsroom",
+   "fuente": "https://www.dbs.com/newsroom/DBS_expands_gold_offerings_with_market_first_tokenised_physical_gold_for_customers_in_Singapore"
+  },
+  {
+   "canal": "Página oficial DBS Digital Exchange (DDEx)",
+   "valor": "https://www.dbs.com/newsroom/dbs_digital_exchange",
+   "fuente": "https://www.dbs.com/newsroom/dbs_digital_exchange"
+  },
+  {
+   "canal": "LinkedIn página de empresa",
+   "valor": "https://www.linkedin.com/company/dbs-bank",
+   "fuente": "https://www.linkedin.com/company/dbs-bank"
+  },
+  {
+   "canal": "Contacto de prensa publicado (DBS China; único email personal corporativo público hallado; página posiblemente desactualizada, contenido hasta ~2021)",
+   "valor": "Lisa Zeng — lisazeng@dbs.com",
+   "fuente": "https://www.dbs.com/flp_china/en/media/press-contacts.page"
+  },
+  {
+   "canal": "X / Twitter",
+   "valor": "@dbsbank",
+   "fuente": "https://x.com/dbsbank"
+  },
+  {
+   "canal": "Vacante publicada: SVP Head of Institutional Sales, DDEx (GFM) — indica que existe equipo de ventas institucionales DDEx en Singapur",
+   "valor": null,
+   "fuente": "https://builtinlondon.uk/job/svp-head-institutional-sales-dbs-digital-exchange-global-financial-markets/9670844"
+  },
+  {
+   "canal": "Formulario de partnerships / inbox institucional digital assets",
+   "valor": null,
+   "fuente": "https://www.dbs.com/newsroom/dbs_digital_exchange"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Kelvin Tan",
+   "cargo": "Head of Tokenisation, Global Financial Markets (GFM)",
+   "area": "Global Financial Markets – Tokenisation (gold tokens, notas estructuradas tokenizadas)",
+   "ubicacion": "Singapur",
+   "email": "kelvintan@dbs.com",
+   "email_estado": "patron_no_verificado",
+   "linkedin": "https://sg.linkedin.com/in/kelvinktan",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Dirige la unidad que tokeniza, emite y distribuye los productos propios de DBS (gold tokens H2 2026, notas estructuradas vía plataformas terceras). Es el interlocutor natural para cross-listing y distribución secundaria hacia Centroamérica.",
+   "fuente": "https://sg.linkedin.com/in/kelvinktan",
+   "notas": "Verificación: no se pudo refutar, pero la ÚNICA fuente del cargo 'Head of Tokenisation, GFM' es su propio perfil de LinkedIn (autodeclarado); fuentes públicas anteriores (archivo de ponentes SFF 2023: https://fintechfestival.sg/speakers-archive-2023/1155-kelvin-tan; newsletter SMU) lo listan como Head of Innovation, Treasury & Markets (unidad luego renombrada GFM), lo que es consistente con una evolución del rol, no con una salida. Un post suyo en LinkedIn sobre notas estructuradas tokenizadas (2025) y gold tokens (H2 2026) indica que sigue activo en tokenización en 2026; ningún press release de DBS lo nombra. Email derivado del patrón nombreapellido@dbs.com, corroborado por una sola dirección publicada (lisazeng@dbs.com, DBS China); las demás direcciones @dbs.com halladas en dbs.com son buzones genéricos. NO verificado. Alto riesgo de colisión por nombre muy común en DBS; su handle de LinkedIn 'kelvinktan' sugiere inicial intermedia (variante posible: kelvinktan@dbs.com). Usar InMail de LinkedIn como canal primario."
+  },
+  {
+   "nombre": "Lim Wee Kian",
+   "cargo": "Chief Executive Officer, DBS Digital Exchange (DDEx)",
+   "area": "DBS Digital Exchange – venue institucional de tokens / security tokens",
+   "ubicacion": "Singapur",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "CEO de DDEx desde nov-2023; aprueba listados institucionales (sgBENJI, gold tokens) y acuerdos de venue. Decisor para cross-listing o liquidez compartida con Kabal Digital Marketplace.",
+   "fuente": "https://www.asifma.org/speakers/wee-kian-lim",
+   "notas": "Verificación: confirmado como CEO de DDEx (desde nov-2023) en el perfil de ponente de ASIFMA y en MarketScreener (https://ca.marketscreener.com/insider/WEE-KIAN-LIM-A1S7CF/) con datos de mediados de 2026; también director no ejecutivo de iFAST Corp. No se halló anuncio de cambio de liderazgo. Fuente cambiada al perfil ASIFMA (verificado vivo en esta ronda); el press release DBS sep-2025 (Franklin Templeton/Ripple: https://www.dbs.com/newsroom/DBS_and_Franklin_Templeton_to_launch_trading_and_lending_solutions_powered_by_tokenised_money_market_funds_and_Ripples_RLUSD_stablecoin) se mantiene como respaldo. Ex Regional Head FX, Treasury & Markets. Email no derivado: orden nombre/apellido chino ambiguo bajo el patrón."
+  },
+  {
+   "nombre": "Evy Theunis",
+   "cargo": "Head of Digital Assets, Institutional Banking Group (IBG)",
+   "area": "Institutional Banking Group – Digital Assets (Project Guardian, DBS Token Services, partnerships institucionales)",
+   "ubicacion": "Singapur",
+   "email": "evytheunis@dbs.com",
+   "email_estado": "patron_no_verificado",
+   "linkedin": null,
+   "rol": "entrada",
+   "prioridad": 3,
+   "por_que": "Lidera digital assets para clientes institucionales y figura en el acuerdo con Franklin Templeton/Ripple (sep-2025). Punto de entrada para liquidez ancla, notas de colocación privada y partnerships con plataformas reguladas como Kabal.",
+   "fuente": "https://www.dbs.com/newsroom/DBS_and_Franklin_Templeton_to_launch_trading_and_lending_solutions_powered_by_tokenised_money_market_funds_and_Ripples_RLUSD_stablecoin",
+   "notas": "Verificación: sigue vinculada a digital assets de DBS; cobertura de finews.ch sobre su intervención en Abu Dhabi Finance Week (https://www.finews.ch/news/finanzplatz/70509-dbs-bank-tradfi-defi-gehen-abu-dhabi-finance-week-evy-theunis-finance-place-singapur) la presenta como responsable de activos digitales de DBS. Los perfiles de terceros discrepan en el título exacto ('Head of Digital Assets, IBG' vs. 'MD, Head of Digital Assets, Strategy & Solutions and Business Enablement'); se conserva el título usado en el press release DBS sep-2025 (no pudo abrirse directamente desde este entorno). Email derivado del patrón nombreapellido@dbs.com, corroborado por una sola dirección publicada (lisazeng@dbs.com); NO verificado, aunque el nombre único reduce el riesgo de colisión. Recomendada como CC del primer correo."
+  },
+  {
+   "nombre": "Li Zhen",
+   "cargo": "Head of Foreign Exchange and Digital Assets, Global Financial Markets",
+   "area": "Global Financial Markets – FX & Digital Assets",
+   "ubicacion": "Singapur",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Responsable senior de digital assets en GFM; vocero del programa de notas estructuradas tokenizadas (USD 1 bn en 1S-2025). Jefe probable de la línea de tokenización; influye en distribución vía terceros.",
+   "fuente": "https://www.dbs.com/newsroom/DBS_expands_blockchain_capabilities_by_tokenising_and_distributing_structured_notes",
+   "notas": "Última evidencia: press release DBS ago-2025. Email no derivado: orden nombre/apellido chino ambiguo bajo el patrón."
+  },
+  {
+   "nombre": "Lim Soon Chong",
+   "cargo": "Group Head of Global Transaction Services",
+   "area": "Global Transaction Services – DBS Token Services (depósitos tokenizados, pagos programables)",
+   "ubicacion": "Singapur",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "influencer",
+   "prioridad": 5,
+   "por_que": "Lanzó DBS Token Services (tokenización + smart contracts sobre infraestructura bancaria). Relevante si la propuesta incluye liquidación programática o facilidad de pagos en stablecoin/depósitos tokenizados.",
+   "fuente": "https://fintechnews.sg/102464/blockchain/blockchain-dbs-token-services/",
+   "notas": "Evidencia de rol: lanzamiento Token Services (oct-2024) y Euromoney 2025 (https://www.euromoney.com/article/1uhd2jilymisckg8gccwoccsc/corporate-banking/asias-best-transaction-bank-2025-dbs/). Enfoque en transaction banking, no en RWA; alternativa secundaria. Email no derivado: orden de nombre ambiguo."
+  }
+ ],
+ "ruta_recomendada": "1) Primer correo a Kelvin Tan (Head of Tokenisation, Global Financial Markets) con CC a Evy Theunis (Head of Digital Assets, Institutional Banking Group): proponer distribución secundaria / cross-listing de DBS Physical Gold Tokens y notas estructuradas tokenizadas hacia inversionistas calificados de Centroamérica vía Kabal Digital Marketplace, más liquidez ancla para emisiones primarias. Usar emails derivados del patrón solo con la advertencia de que no están verificados (el patrón se apoya en una sola dirección publicada, de DBS China); para Kelvin Tan, por el riesgo de colisión de nombre, enviar en paralelo InMail de LinkedIn. 2) Si no hay respuesta en 7-10 días, escalar a Lim Wee Kian (CEO, DDEx) citando el listado institucional de gold tokens en DDEx y el modelo de listado de sgBENJI; para una nota de colocación privada o facilidad programática, dirigir a Li Zhen (Head of FX & Digital Assets, GFM), que es el vocero oficial del programa de notas estructuradas tokenizadas. 3) Intro cálida: DigiFT y ADDX (distribuyeron las notas estructuradas tokenizadas de DBS en 2025), Franklin Templeton (sgBENJI listado en DDEx), Ripple (RLUSD), SGX/Marketnode (SGX es accionista de DDEx) y la red de Project Guardian (MAS). 4) Fallback: InMail de LinkedIn a Kelvin Tan y Evy Theunis; en paralelo, el equipo de Institutional Sales de DDEx (vacante SVP publicada) o la relación de prensa DBS (lisazeng@dbs.com) para pedir redirección al equipo de partnerships de digital assets.",
+ "notas": "Investigación automática 2026-10-18 (lote EXPLORE del Liquidity Agent): agente de búsqueda + verificación adversarial de roles y correos; 15 búsquedas. Todo correo con patron_no_verificado debe confirmarse antes de enviar."
+}

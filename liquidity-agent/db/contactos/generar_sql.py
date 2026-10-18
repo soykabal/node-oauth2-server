@@ -9,7 +9,8 @@ MAP={
  'Midas / Fasanara Capital':'Midas / Fasanara Capital','Centrifuge':'Centrifuge','Etherfuse':'Etherfuse','Goldfinch':'Goldfinch',
  'Maple Finance':'Maple Finance','Ondo Finance':'Ondo Finance','Plume Network':'Plume Network','Brickken':'Brickken',
  'Figure Technology Solutions (FIGR)':'Figure Technology Solutions (FIGR)','Komgo':'Komgo','Liqi Digital Assets':'Liqi Digital Assets',
- 'OpenAssets':'OpenAssets','Securitize':'Securitize','Tradable':'Tradable'}
+ 'OpenAssets':'OpenAssets','Securitize':'Securitize','Tradable':'Tradable',
+ 'JPMorgan Chase / Kinexys':'JPMorgan Chase / Kinexys','Citigroup':'Citigroup','Goldman Sachs':'Goldman Sachs','HSBC':'HSBC','Standard Chartered':'Standard Chartered','DBS Bank':'DBS Bank','UBS':'UBS','Deutsche Bank':'Deutsche Bank'}
 EMAIL=re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}')
 ROLES={'dueno_programa','decisor','entrada','influencer','cobertura_latam','canal_generico'}
 def q(s):

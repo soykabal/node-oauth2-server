@@ -1,0 +1,129 @@
+{
+ "institucion": "UBS",
+ "programa": "UBS Tokenize / uMINT; socio del ecosistema DigiFT; distribución de fondos tokenizados.",
+ "formato_email": {
+  "patron": null,
+  "fuente": null,
+  "confianza": "baja"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Comunicado oficial UBS Tokenize / uMINT (transacción con Chainlink DTA, nov 2025)",
+   "valor": "https://www.ubs.com/global/fr/media/display-page-ndp/en-20251104-chainlink.html",
+   "fuente": "https://www.ubs.com/global/fr/media/display-page-ndp/en-20251104-chainlink.html"
+  },
+  {
+   "canal": "Media Relations Suiza (teléfono; email solo vía enlace en la página)",
+   "valor": "+41 44 234 85 00",
+   "fuente": "https://www.ubs.com/global/en/media/contact.html"
+  },
+  {
+   "canal": "Media Relations Américas (teléfono)",
+   "valor": "+1 212 882 5858",
+   "fuente": "https://www.ubs.com/global/en/media/contact.html"
+  },
+  {
+   "canal": "LinkedIn empresa",
+   "valor": "https://www.linkedin.com/company/ubs",
+   "fuente": "https://www.linkedin.com/company/ubs"
+  },
+  {
+   "canal": "X / Twitter",
+   "valor": "@UBS",
+   "fuente": "https://x.com/UBS"
+  },
+  {
+   "canal": "Canal indirecto: DigiFT, distribuidor autorizado de uMINT (mayor distribuidor por volumen)",
+   "valor": "DigiFT",
+   "fuente": "https://www.aap.com.au/aapreleases/cision20241102ae46289"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Laurens Schepens",
+   "cargo": "Product Lead, UBS Tokenize y Regional Digital Asset Lead APAC",
+   "area": "UBS Tokenize / Digital Assets",
+   "ubicacion": "Singapur",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Lidera el producto UBS Tokenize, la plataforma que emite uMINT; es quien evaluaría un cross-listing o distribución secundaria de productos tokenizados de UBS.",
+   "fuente": "https://www.fintechfestival.sg/speakers/spkr8331-laurens-schepens",
+   "linkedin": null,
+   "notas": "Verificación: el perfil vigente del Singapore FinTech Festival y la página de Chainlink SmartCon ('Lead UBS Tokenize', https://smartcon.chain.link/recordings/the-future-of-tokenized-fund-operations) confirman el rol; no se halló evidencia de salida ni cambio de cargo en 2025-2026 (un perfil archivado de 2023 lo listaba como 'CoE Lead Digital Assets, UBS Tokenize'). La página no pudo abrirse desde el entorno (bloqueo DNS) pero sigue indexada. Basado en APAC, no cubre LatAm. Sin email publicado en ninguna fuente."
+  },
+  {
+   "nombre": "Andreas Kubli",
+   "cargo": "Group Head of Digital Assets",
+   "area": "Group Digital Assets (estrategia grupal de activos digitales y tokenización)",
+   "ubicacion": "Zúrich, Suiza",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "Dirige la estrategia grupal de activos digitales y tokenización de UBS desde marzo 2026; puede aprobar una alianza de distribución o liquidez.",
+   "fuente": "https://www.pointzeroforum.com/speakers/spkr15289-andreas-kubli",
+   "linkedin": null,
+   "notas": "Verificación: la biografía de ponente en Point Zero Forum indica que fue nombrado Group Head of Digital Assets el 1 de marzo de 2026, tras dirigir Channels & Platforms / Multichannel Management & Digitalisierung en UBS Switzerland (2013-2026; finews.ch/news/banken/22270). Fuente corregida: la anterior apuntaba al perfil de Jason Willi en The Big Whale, que solo lo menciona. No se localizó comunicado oficial de UBS; el rol es muy reciente. Sin email publicado."
+  },
+  {
+   "nombre": "Simon Basler",
+   "cargo": "Head of Digital Assets Initiative Development",
+   "area": "Digital Assets Center of Excellence (grupo)",
+   "ubicacion": "Zúrich, Suiza",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "dueno_programa",
+   "prioridad": 3,
+   "por_que": "Lidera el desarrollo de iniciativas de activos digitales dentro del Centro de Excelencia grupal; interlocutor natural en Suiza para una propuesta de partnership.",
+   "fuente": "https://www.pointzeroforum.com/speakers/spkr3202-dr-simon-basler",
+   "linkedin": null,
+   "notas": "Verificación: el perfil de ponente en la edición vigente de Point Zero Forum (y la archivada de 2024) confirma 'Head of Digital Assets Initiative Development'; The Big Whale lo lista como 'Lead Digital Assets Development'. Sin evidencia de cambio de rol en 2025-2026. Sin email publicado."
+  },
+  {
+   "nombre": "Jason Willi",
+   "cargo": "Initiative Lead – Digital Assets & Money",
+   "area": "Digital Assets & Money (sede Zúrich)",
+   "ubicacion": "Zúrich, Suiza",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "entrada",
+   "prioridad": 4,
+   "por_que": "Rol operativo reciente (desde sept 2025) en las iniciativas de activos digitales y dinero digital en la sede; punto de entrada alterno si Schepens no responde.",
+   "fuente": "https://www.thebigwhale.io/peoples/jason-willi",
+   "linkedin": null,
+   "notas": "Verificación: la página de The Big Whale está indexada e indica 'Initiative Lead – Digital Assets & Money', Zúrich, desde sept 2025, pero su biografía mezcla texto de otra persona (Josh Hershman), por lo que es poco fiable; no hay fuente oficial de UBS. Se mantiene en prioridad baja hasta confirmar en LinkedIn. Sin email publicado."
+  },
+  {
+   "nombre": "Xiaonan Zou",
+   "cargo": "Head of Digital Assets, UBS Group Treasury",
+   "area": "Group Treasury – Digital Assets (UBS Digital Cash)",
+   "ubicacion": "Londres, Reino Unido",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "influencer",
+   "prioridad": 5,
+   "por_que": "Construyó el equipo de activos digitales de Tesorería (dinero digital y liquidación); relevante para una facilidad programática o liquidación, no para distribución de fondos.",
+   "fuente": "https://www.thebigwhale.io/peoples/xiaonan-zou",
+   "linkedin": null,
+   "notas": "Verificación: The Big Whale confirma 'Head of Digital Assets, UBS Group Treasury' (lidera el equipo en Londres desde dic 2019); sin evidencia de cambio. Directorio de terceros; foco en tesorería/digital cash más que en distribución de productos tokenizados. Sin email publicado."
+  },
+  {
+   "nombre": "Marcello Chilov",
+   "cargo": "Head of Global Wealth Management Latin America",
+   "area": "Global Wealth Management – Latin America",
+   "ubicacion": "Brasil (LatAm)",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "cobertura_latam",
+   "prioridad": 5,
+   "por_que": "Responsable de wealth management en LatAm; útil solo para referencia interna hacia el equipo de activos digitales y para validar apetito regional.",
+   "fuente": "https://braziljournal.com/no-ubs-chilov-reorganiza-wealth-management-gross-vai-liderar-brasil/",
+   "linkedin": null,
+   "notas": "Verificación: vigente. La reorganización de UBS Wealth Management LatAm del 2 de marzo de 2026 (Brazil Journal; también portaltela.com) lo confirma como head de WM para la región, con todos los country heads reportándole: Rafael Gross (Brasil), Daniel Parra (México), Simon Toros (CAS: Centroamérica, Andes y Cono Sur) y Jan Martin Sommer (Argentina). Fuente actualizada de 2023 a 2026. Para Honduras/Centroamérica, Simon Toros (head CAS) es el referente directo bajo Chilov. No es del área de activos digitales. Sin email publicado."
+  }
+ ],
+ "ruta_recomendada": "1) Primer correo a Laurens Schepens (Product Lead UBS Tokenize) con CC a Simon Basler (Head of Digital Assets Initiative Development, Zúrich); proponer cross-listing/distribución secundaria de uMINT u otros productos UBS Tokenize hacia Centroamérica vía Kabal Digital Marketplace. Sin email verificado: contactar por LinkedIn InMail o solicitar el contacto a Media Relations Suiza. 2) Intro cálida en paralelo vía DigiFT (distribuidor autorizado de uMINT) o Chainlink (socio del estándar DTA en la transacción de nov 2025); Copper y Bybit también forman parte del ecosistema uMINT. 3) Si no hay respuesta en ~10 días, escalar a Andreas Kubli (Group Head of Digital Assets desde marzo 2026, decisor) y, para el ángulo regional, pedir referencia interna a Marcello Chilov (Head WM Latin America) o directamente a Simon Toros (head de CAS: Centroamérica, Andes y Cono Sur, reporta a Chilov según la reorganización de marzo 2026). 4) Fallback: Media Relations Suiza +41 44 234 85 00 o la página LinkedIn de UBS para pedir el canal de partnerships de UBS Tokenize.",
+ "notas": "Investigación automática 2026-10-18 (lote EXPLORE del Liquidity Agent): agente de búsqueda + verificación adversarial de roles y correos; 15 búsquedas. Todo correo con patron_no_verificado debe confirmarse antes de enviar."
+}
