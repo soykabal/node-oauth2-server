@@ -10,7 +10,10 @@ MAP={
  'Maple Finance':'Maple Finance','Ondo Finance':'Ondo Finance','Plume Network':'Plume Network','Brickken':'Brickken',
  'Figure Technology Solutions (FIGR)':'Figure Technology Solutions (FIGR)','Komgo':'Komgo','Liqi Digital Assets':'Liqi Digital Assets',
  'OpenAssets':'OpenAssets','Securitize':'Securitize','Tradable':'Tradable',
- 'JPMorgan Chase / Kinexys':'JPMorgan Chase / Kinexys','Citigroup':'Citigroup','Goldman Sachs':'Goldman Sachs','HSBC':'HSBC','Standard Chartered':'Standard Chartered','DBS Bank':'DBS Bank','UBS':'UBS','Deutsche Bank':'Deutsche Bank'}
+ 'JPMorgan Chase / Kinexys':'JPMorgan Chase / Kinexys','Citigroup':'Citigroup','Goldman Sachs':'Goldman Sachs','HSBC':'HSBC','Standard Chartered':'Standard Chartered','DBS Bank':'DBS Bank','UBS':'UBS','Deutsche Bank':'Deutsche Bank',
+ 'Morgan Stanley':'Morgan Stanley','Wells Fargo':'Wells Fargo','Bank of America':'Bank of America','MUFG':'MUFG',
+ 'SBI Holdings / SBI Group':'SBI Holdings / SBI Group','Siam Commercial Bank':'Siam Commercial Bank','First Abu Dhabi Bank':'First Abu Dhabi Bank',
+ 'WisdomTree':'WisdomTree','Janus Henderson':'Janus Henderson','Schroders':'Schroders'}
 EMAIL=re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}')
 ROLES={'dueno_programa','decisor','entrada','influencer','cobertura_latam','canal_generico'}
 def q(s):
