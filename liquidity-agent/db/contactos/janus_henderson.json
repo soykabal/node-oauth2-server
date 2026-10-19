@@ -1,0 +1,107 @@
+{
+ "institucion": "Janus Henderson",
+ "programa": "Patrocina los fondos tokenizados JAAA (CLO AAA) y JTRSY (Treasuries) con Anemoy/Centrifuge, cubiertos por la facilidad Liquid Lane de Symbiotic.",
+ "formato_email": {
+  "patron": "nombre.apellido@janushenderson.com",
+  "fuente": "https://www.businesswire.com/news/home/20210319005006/en/Janus-Henderson-Group-Releases-2020-Annual-Report-and-2021-Notice-of-Annual-General-Meeting (comunicado oficial de Janus Henderson vía Business Wire, mar-2021, publica stephen.sobey@janushenderson.com, Head of Media Relations; la búsqueda exacta del string del email coincide con esta página). La página de 2022 en janushenderson.com citada originalmente no pudo abrirse desde este entorno (dominio bloqueado por el proxy), por lo que se sustituye por la fuente verificable.",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Página oficial del programa (artículo de Nick Cherney sobre blockchain y tokenización, ago-2025)",
+   "valor": "https://www.janushenderson.com/en-us/institutional/article/blockchain-and-tokenization-transforming-asset-management-on-behalf-of-clients/",
+   "fuente": "https://www.janushenderson.com/en-us/institutional/article/blockchain-and-tokenization-transforming-asset-management-on-behalf-of-clients/"
+  },
+  {
+   "canal": "Formulario de contacto institucional (web)",
+   "valor": "https://www.janushenderson.com/en/row/contact-us",
+   "fuente": "https://www.janushenderson.com/en/row/contact-us"
+  },
+  {
+   "canal": "Global Media Centre (contactos de prensa)",
+   "valor": "https://www.janushenderson.com/global-media-centre/",
+   "fuente": "https://www.janushenderson.com/global-media-centre/"
+  },
+  {
+   "canal": "Email de prensa publicado (Stephen Sobey, Head of Media Relations; evidencia de 2021)",
+   "valor": "stephen.sobey@janushenderson.com",
+   "fuente": "https://www.businesswire.com/news/home/20210319005006/en/Janus-Henderson-Group-Releases-2020-Annual-Report-and-2021-Notice-of-Annual-General-Meeting"
+  },
+  {
+   "canal": "Vacante 'Director, Digital Asset Operations' (Londres/Austin, reporta al Deputy COO; apoya alianzas estratégicas de activos digitales)",
+   "valor": "https://jobs.janushenderson.com/job/London-Director%2C-Digital-Asset-Operations-EC2M-3AE/1416498400/",
+   "fuente": "https://jobs.janushenderson.com/job/London-Director%2C-Digital-Asset-Operations-EC2M-3AE/1416498400/"
+  },
+  {
+   "canal": "LinkedIn empresa",
+   "valor": null,
+   "fuente": "https://www.janushenderson.com/social/contact-us"
+  },
+  {
+   "canal": "X/Twitter",
+   "valor": null,
+   "fuente": "https://www.janushenderson.com/social/contact-us"
+  },
+  {
+   "canal": "Página del fondo tokenizado JAAA (datos on-chain, Centrifuge/Anemoy)",
+   "valor": "https://app.rwa.xyz/assets/JAAA",
+   "fuente": "https://app.rwa.xyz/assets/JAAA"
+  },
+  {
+   "canal": "Buzón genérico: Nicole Mullin — Director, Media Relations (UK, EMEA, LatAm & APAC)",
+   "valor": "nicole.mullin@janushenderson.com",
+   "fuente": "https://www.janushenderson.com/en/row/contact-us"
+  },
+  {
+   "canal": "Buzón genérico: Stephen Sobey — Head of Media Relations (según comunicados de 2021-2022; vigencia en 2025-2026 no confirmada)",
+   "valor": "stephen.sobey@janushenderson.com",
+   "fuente": "https://www.businesswire.com/news/home/20210319005006/en/Janus-Henderson-Group-Releases-2020-Annual-Report-and-2021-Notice-of-Annual-General-Meeting"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Nick Cherney",
+   "cargo": "Head of Innovation (también dirige el negocio de ETFs; President & CEO de Janus Detroit Street Trust y Clayton Street Trust; miembro del Strategic Leadership Team) (CFA)",
+   "area": "Innovación / Activos digitales y tokenización",
+   "ubicacion": "Estados Unidos (Denver, por confirmar)",
+   "email": "nick.cherney@janushenderson.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Es el responsable público del programa de tokenización de Janus Henderson (JAAA y JTRSY con Anemoy/Centrifuge) y firma el artículo corporativo de ago-2025 sobre blockchain y tokenización; es quien evalúa alianzas de activos digitales.",
+   "fuente": "https://www.janushenderson.com/corporate/bio/nick-cherney-cfa/",
+   "linkedin": null,
+   "notas": "Verificación: la bio oficial vigente (varias copias regionales, oct-2026) sigue listándolo como Head of Innovation; se sustituye la URL de la bio por la versión corporate confirmada en búsqueda. Email derivado del patrón nombre.apellido@janushenderson.com (instancia real publicada: stephen.sobey@janushenderson.com, comunicado oficial 2021); podría usar 'nicholas' en lugar de 'nick'. Artículo de ago-2025: https://www.janushenderson.com/en-us/institutional/article/blockchain-and-tokenization-transforming-asset-management-on-behalf-of-clients/"
+  },
+  {
+   "nombre": "Ignacio de la Maza",
+   "cargo": "Head of EMEA & LatAm Client Group (institucional e intermediarios); miembro del Executive Committee",
+   "area": "Distribución / Client Group EMEA y LatAm",
+   "ubicacion": "Londres/Madrid (por confirmar)",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "cobertura_latam",
+   "prioridad": 2,
+   "por_que": "Máximo responsable de distribución para Latinoamérica (y EMEA), miembro del Comité Ejecutivo; decide sobre acuerdos de distribución secundaria o cross-listing de productos de Janus Henderson en la región.",
+   "fuente": "https://www.janushenderson.com/corporate/bio/ignacio-de-la-maza/",
+   "linkedin": null,
+   "notas": "Verificación: la bio oficial vigente confirma el cargo actual (Head of EMEA & LatAm Client Group; asumió también el negocio institucional en 2024) y su pertenencia al Executive Committee; se reemplaza la fuente de 2017 por la bio oficial y se actualiza el cargo. No se deriva email porque el apellido compuesto ('de la Maza') hace ambiguo el patrón."
+  },
+  {
+   "nombre": "Leonardo López",
+   "cargo": "Executive Director, Specialist Sales, Iberia & LatAm (ETFs activos y alternativos/mercados privados); reporta a Stefan Garcia, Head of EMEA Specialist Sales",
+   "area": "Ventas especializadas Iberia y Latinoamérica",
+   "ubicacion": "Madrid, España",
+   "email": "leonardo.lopez@janushenderson.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 3,
+   "por_que": "Nombramiento anunciado el 15-oct-2026 (incorporación 19-oct-2026) para liderar ventas especializadas en Iberia y LatAm con foco en ETFs activos y alternativos/mercados privados; canal natural para distribución secundaria de productos de Janus Henderson en Centroamérica.",
+   "fuente": "https://www.janushenderson.com/corporate/press-releases/janus-henderson-strengthens-iberia-and-latam-business-with-senior-appointment/",
+   "linkedin": null,
+   "notas": "Verificación: el apellido 'Fernández' del borrador era incorrecto; el comunicado oficial y la cobertura de Citywire/Finect/RankiaPro identifican a Leonardo López (ex Country Head Iberia & LatAm en ODDO BHF AM desde 2016; antes Source ETF y Threadneedle). El cargo no es 'Head of Iberia & LatAm' sino Executive Director, Specialist Sales. Email derivado del patrón nombre.apellido@ (sin tilde), no verificado. Recién incorporado (19-oct-2026): dar unas semanas antes de contactar. Fuente secundaria: https://citywire.com/es/news/janus-henderson-firma-un-fichaje-de-alto-nivel-para-acelerar-con-sus-etf-activos-y-alternativos-en-iberia-y-latam/a2500179"
+  }
+ ],
+ "ruta_recomendada": "1) Enviar el email a Nick Cherney (Head of Innovation; dueño del programa de tokenización JAAA/JTRSY con Anemoy/Centrifuge), con CC a Ignacio de la Maza (Head of EMEA & LatAm Client Group, miembro del Comité Ejecutivo) para el ángulo de distribución/cross-listing en Centroamérica; citar Liquid Lane (Symbiotic) y la liquidez USDC como gancho. 2) Intro cálida: Centrifuge (emisor/tokenizador de JAAA y JTRSY) o Anemoy; alternativamente Symbiotic (Liquid Lane) o Circle (liquidación en USDC) si Kabal tiene relación. 3) Alternativa LatAm: Leonardo López (Executive Director, Specialist Sales Iberia & LatAm, Madrid; incorporado el 19-oct-2026, enfocado en ETFs activos y alternativos/mercados privados; reporta a Stefan Garcia, Head of EMEA Specialist Sales) para distribución secundaria; y vigilar el nombramiento del nuevo 'Director, Digital Asset Operations' (vacante en Londres/Austin bajo el Deputy COO) como futuro punto de entrada operativo. 4) Fallback: formulario institucional de contacto y Media Relations (Nicole Mullin, Director Media Relations UK/EMEA/LatAm/APAC, listada en la página de contacto vigente; Stephen Sobey, email público pero evidencia de 2021) pidiendo que enruten la propuesta al equipo de Innovación.",
+ "notas": "Investigación automática 2026-10-19 (lote EXPLORE 2 del Liquidity Agent): agente de búsqueda + verificación adversarial de roles y correos; 12 búsquedas. Buzones genéricos movidos a canales_publicos: Nicole Mullin, Stephen Sobey. Todo correo con patron_no_verificado debe confirmarse antes de enviar."
+}

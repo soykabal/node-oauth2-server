@@ -1,0 +1,121 @@
+{
+ "institucion": "Wells Fargo",
+ "programa": "Depósitos tokenizados para clientes corporativos (corredor USD/GBP) anunciados para otoño 2026, integrados al consorcio de depósitos tokenizados de The Clearing House.",
+ "formato_email": {
+  "patron": "nombre.apellido@wellsfargo.com (variante frecuente con inicial intermedia: nombre.i.apellido@wellsfargo.com)",
+  "fuente": "https://www.nasdaq.com/press-release/wells-fargo-reports-third-quarter-2026-financial-results-2026-10-13 (lista beth.richek@wellsfargo.com y john.m.campbell@wellsfargo.com); corroborado en https://newsroom.wf.com/media-resources/ (sunny.rodriguez@wellsfargo.com) y https://newsroom.wf.com/news-releases/news-details/2026/Wells-Fargo-Reaches-Major-Digital-Milestones/default.aspx (julia.t.bernard@wellsfargo.com). Verificación: estas páginas no pudieron abrirse en esta sesión (hosts bloqueados por el proxy); el patrón coincide con los contactos de prensa/IR impresos de forma recurrente en los comunicados trimestrales de resultados de Wells Fargo (Beth Richek / John M. Campbell), por lo que se mantiene como patrón respaldado por direcciones reales publicadas.",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Comunicado oficial: lanzamiento de depósitos tokenizados (newsroom, 4 ago 2026)",
+   "valor": "https://newsroom.wf.com/news-releases/news-details/2026/Wells-Fargo-to-Launch-Tokenized-Deposits-for-Corporate-and-Commercial-Clients/default.aspx",
+   "fuente": "https://newsroom.wf.com/news-releases/news-details/2026/Wells-Fargo-to-Launch-Tokenized-Deposits-for-Corporate-and-Commercial-Clients/default.aspx"
+  },
+  {
+   "canal": "Comunicado en Business Wire (4 ago 2026)",
+   "valor": "https://www.businesswire.com/news/home/20260804905763/en/Wells-Fargo-to-Launch-Tokenized-Deposits-for-Corporate-and-Commercial-Clients",
+   "fuente": "https://www.businesswire.com/news/home/20260804905763/en/Wells-Fargo-to-Launch-Tokenized-Deposits-for-Corporate-and-Commercial-Clients"
+  },
+  {
+   "canal": "Media Relations corporativo (solo prensa; útil para pedir redirección)",
+   "valor": "sunny.rodriguez@wellsfargo.com",
+   "fuente": "https://newsroom.wf.com/media-resources/"
+  },
+  {
+   "canal": "Página CIB / eventos (Sibos 2026; Ather Williams III habló de depósitos tokenizados con el CEO de The Clearing House)",
+   "valor": "https://www.wellsfargo.com/cib/insights/events/sibos/",
+   "fuente": "https://www.wellsfargo.com/cib/insights/events/sibos/"
+  },
+  {
+   "canal": "Mandato público del programa (vacante Head of Digital Asset Services, GP&L, feb 2026)",
+   "valor": "https://careers.techtitans.org/companies/wells-fargo/jobs/67226914-head-of-digital-asset-services-global-payments-liquidity",
+   "fuente": "https://x.com/fintechfrank/status/2023040127795093556"
+  },
+  {
+   "canal": "Vacante Lead Business Execution Consultant - Digital Assets Product & Strategy (CIB Operations, Charlotte, jun 2026): confirma la existencia del equipo de producto/estrategia de activos digitales en CIB",
+   "valor": "https://jobs.anitab.org/companies/wells-fargo/jobs/83678961-lead-business-execution-consultant-digital-assets-product-strategy",
+   "fuente": "https://jobs.anitab.org/companies/wells-fargo/jobs/83678961-lead-business-execution-consultant-digital-assets-product-strategy"
+  },
+  {
+   "canal": "Paper CIB 'Payments at an inflection point' (abr 2026, cita a Ather Williams III)",
+   "valor": "https://www.wellsfargo.com/assets/pdf/commercial/insights/payments-at-inflection-point.pdf",
+   "fuente": "https://www.wellsfargo.com/assets/pdf/commercial/insights/payments-at-inflection-point.pdf"
+  },
+  {
+   "canal": "LinkedIn (página de empresa)",
+   "valor": "https://www.linkedin.com/company/wells-fargo",
+   "fuente": "https://www.linkedin.com/company/wells-fargo"
+  },
+  {
+   "canal": "X/Twitter",
+   "valor": "@WellsFargo",
+   "fuente": "https://x.com/WellsFargo"
+  },
+  {
+   "canal": "Buzón genérico: Beth Richek (Media Relations, Wells Fargo) — Contacto de prensa (Corporate Communications)",
+   "valor": "beth.richek@wellsfargo.com",
+   "fuente": "https://www.nasdaq.com/press-release/wells-fargo-reports-third-quarter-2026-financial-results-2026-10-13"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Ather Williams III",
+   "cargo": "Head of Global Payments & Liquidity and Wholesale Digital",
+   "area": "Corporate & Investment Banking - Global Payments & Liquidity",
+   "ubicacion": "EE. UU.",
+   "email": "ather.williams@wellsfargo.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 1,
+   "por_que": "Responsable del negocio que lanza los depósitos tokenizados (otoño 2026, USD/GBP; expansión 2027) y participa en el consorcio de The Clearing House; aprueba alianzas de producto y distribución en pagos mayoristas. Es el contacto mejor documentado y con vigencia confirmada en 2026.",
+   "fuente": "https://payments-forum.americanbanker.com/profile/ather-williams-iii/",
+   "linkedin": null,
+   "notas": "Verificación: vigencia confirmada en 2026 (perfil en American Banker Payments Forum lo describe como head of Global Payments & Liquidity and Wholesale Digital; en Sibos 2026 presentó los depósitos tokenizados junto a David Watson, CEO de The Clearing House). Promovido a prioridad 1 porque el contacto anterior en esa posición no pudo corroborarse. Fuente secundaria: paper CIB 'Payments at an inflection point' (abr 2026). Email derivado del patrón (no verificado); el sufijo 'III' o una inicial intermedia podrían alterar la dirección. Nota: la página de gobierno corporativo de wellsfargo.com aún lo lista con su cargo anterior (head of Strategy, Digital and Innovation); el cargo vigente es el de GP&L."
+  },
+  {
+   "nombre": "Vitaliy Dorum",
+   "cargo": "Managing Director and CTO, Head of Digital Assets Platform",
+   "area": "Tecnología / Plataforma de Activos Digitales",
+   "ubicacion": "EE. UU.",
+   "email": "vitaliy.dorum@wellsfargo.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 2,
+   "por_que": "Lidera la plataforma técnica de activos digitales (blockchain, criptografía, tokenización) desde dic 2025; antes Head of Blockchain Platform & DLT en Wells Fargo (desde nov 2021) y ex-JPMorgan. Influye en decisiones de integración e interoperabilidad con venues externos.",
+   "fuente": "https://www.thebigwhale.io/peoples/vitaliy-dorum",
+   "linkedin": null,
+   "notas": "Verificación: el directorio de The Big Whale fecha el cargo de MD / Head of Digital Assets Platform en diciembre de 2025 (una versión del perfil añade 'CTO'), por lo que se considera vigente; sin anuncio oficial de Wells Fargo localizado. Promovido a prioridad 2. Email derivado del patrón (no verificado). Confirmar título exacto en LinkedIn antes de contactar."
+  },
+  {
+   "nombre": "Natasha Barrientos",
+   "cargo": "Head of Digital Assets, Global Payments & Liquidity (NO CONFIRMADO)",
+   "area": "Global Payments & Liquidity (CIB) - Digital Assets",
+   "ubicacion": "EE. UU. (Nueva York, probable)",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "dueno_programa",
+   "prioridad": 3,
+   "por_que": "Si la contratación es real, sería quien define la estrategia institucional de activos digitales en pagos, liquidez e infraestructura de mercado y quien evalúa alianzas de distribución para los depósitos tokenizados. Sin embargo, la contratación solo aparece en una fuente que no pudo abrirse y no fue corroborada.",
+   "fuente": "https://www.digitalassetsedge.com/digitalassetsedgenews/peoplemovesarticle.php?article_id=228749",
+   "linkedin": null,
+   "notas": "Verificación: demovida de prioridad 1 a 3 y email anulado. Una búsqueda de su nombre junto a Wells Fargo y activos digitales no devolvió ninguna fuente que la vincule con el banco; su bio pública (Columbia SPS) la describe liderando la línea de producto de activos digitales en S&P Dow Jones Indices y como asesora de Sustainable Bitcoin Protocol, sin mencionar Galaxy ni Wells Fargo (la bio podría estar desactualizada). La fuente única (Digital Assets Edge) no pudo abrirse en esta sesión. No contactar hasta confirmar en LinkedIn que está en Wells Fargo; si se confirma, restituir prioridad 1 y derivar email por patrón nombre.apellido@wellsfargo.com."
+  },
+  {
+   "nombre": "Mark Gracia",
+   "cargo": "Managing Director, cobertura Digital Assets & Blockchain (Technology Investment Banking) (NO CONFIRMADO)",
+   "area": "Corporate & Investment Banking - TMT Investment Banking",
+   "ubicacion": "EE. UU.",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "entrada",
+   "prioridad": 4,
+   "por_que": "Según la fuente citada, contratado de Citi en mayo 2026 para cubrir empresas de activos digitales y blockchain; puerta alterna hacia CIB y referidor natural al equipo de digital assets de GP&L. Es banquero de cobertura, no de alianzas.",
+   "fuente": "https://www.bloomberg.com/news/articles/2026-05-20/wells-fargo-hires-three-tech-investment-bankers-from-rivals",
+   "linkedin": null,
+   "notas": "Verificación: email anulado y cargo marcado como no confirmado. La fuente (Bloomberg, de pago) no pudo abrirse en esta sesión y la búsqueda no devolvió ninguna otra mención pública de su contratación en Wells Fargo. Confirmar en LinkedIn antes de contactar; si se confirma, derivar email por patrón. Si se usa, plantear a Kabal como emisor/venue regulado con pipeline de RWA en Centroamérica."
+  }
+ ],
+ "ruta_recomendada": "1) Primer destinatario: Ather Williams III (Head of Global Payments & Liquidity and Wholesale Digital; vigencia confirmada en 2026, presentó los depósitos tokenizados junto al CEO de The Clearing House en Sibos 2026) con CC a Vitaliy Dorum (MD/CTO, Head of Digital Assets Platform desde dic 2025). Gancho: distribución secundaria/cross-listing de depósitos tokenizados y RWA hacia Centroamérica vía un PSAD regulado (CNAD), alineado al corredor USD/GBP y a la expansión 2027 del consorcio de The Clearing House a más países y monedas. 2) Antes de escribir a Natasha Barrientos, confirmar en LinkedIn que efectivamente está en Wells Fargo como Head of Digital Assets (GP&L): la verificación no encontró corroboración de la contratación y su bio pública apunta a S&P Dow Jones Indices; si se confirma, pasa a ser destinataria principal con CC a Williams. 3) Intro cálida en paralelo: R3/Corda, Chainlink/Circle o The Clearing House si hay relación; Mark Gracia (cobertura digital assets en CIB, contratación no verificada) solo como puerta alterna una vez confirmado. 4) Sin respuesta en 10 días: mensaje por LinkedIn a Williams y Dorum y solicitar redirección a Media Relations (Beth Richek / Sunny Rodriguez), sin pitch comercial. 5) Fallback: eventos CIB de Wells Fargo (Sibos, Money20/20) y referencia pública al mandato del programa publicado en las vacantes de feb y jun 2026 para alinear el mensaje.",
+ "notas": "Investigación automática 2026-10-19 (lote EXPLORE 2 del Liquidity Agent): agente de búsqueda + verificación adversarial de roles y correos; 12 búsquedas. Buzones genéricos movidos a canales_publicos: Beth Richek (Media Relations, Wells Fargo). Todo correo con patron_no_verificado debe confirmarse antes de enviar."
+}

@@ -1,0 +1,115 @@
+{
+ "institucion": "Morgan Stanley",
+ "programa": "ATS/wallet de activos tokenizados previsto para 2S-2026 (pre-lanzamiento); E*TRADE crypto con Zerohash; Head of Digital Asset Strategy desde ene-2026.",
+ "formato_email": {
+  "patron": null,
+  "fuente": "no se halló patrón corroborado por una dirección publicada",
+  "confianza": "n/a"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Sitio oficial / Contact Us",
+   "valor": "https://www.morganstanley.com/contact-us",
+   "fuente": "https://www.morganstanley.com/contact-us"
+  },
+  {
+   "canal": "Buzón Investor Relations (público, no es el canal de partnerships)",
+   "valor": "investorrelations@morganstanley.com",
+   "fuente": "https://www.morganstanley.com/about-us-ir/request_information.html"
+  },
+  {
+   "canal": "Media Relations (contacto listado en comunicado antiguo; verificar vigencia)",
+   "valor": "Media Relations, +1 212 761 5412",
+   "fuente": "https://morganstanley.com/press-releases/morgan-stanley-prime-brokerage-hires-joel-press_4254"
+  },
+  {
+   "canal": "Formulario de contacto institucional MSIM",
+   "valor": "https://www.morganstanley.com/im/en-au/institutional-investor/contact-us.html",
+   "fuente": "https://www.morganstanley.com/im/en-au/institutional-investor/contact-us.html"
+  },
+  {
+   "canal": "LinkedIn (página de empresa)",
+   "valor": "https://www.linkedin.com/company/morgan-stanley",
+   "fuente": "https://www.linkedin.com/company/morgan-stanley"
+  },
+  {
+   "canal": "X / Twitter",
+   "valor": "@MorganStanley",
+   "fuente": "https://x.com/MorganStanley"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Amy Oldenburg",
+   "cargo": "Head of Digital Asset Strategy (Firmwide Strategy & Execution)",
+   "area": "Digital Assets / Estrategia corporativa",
+   "ubicacion": "Nueva York, EE. UU.",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Dueña del programa firmwide de activos digitales (rol nuevo, ene-2026) con mandato de conectar capacidades y trabajar con consorcios de la industria; su trayectoria en mercados emergentes la hace la mejor primera puerta para una venta regulada de RWA en Centroamérica.",
+   "fuente": "https://news.bloomberglaw.com/crypto/morgan-stanley-appoints-oldenburg-head-of-digital-asset-strategy",
+   "notas": "Nombrada por memo de los co-presidentes Andy Saperstein y Dan Simkowitz (Bloomberg, 27-ene-2026). Antes dirigió renta variable de mercados emergentes en MSIM y sus iniciativas de activos digitales; en MS desde 2001. Email y LinkedIn no localizados. Verificación: vigente en el cargo en 2026; aparece con ese título como ponente en Milken Asia Summit 2026 (https://milkeninstitute.org/events/asia-summit-2026/speakers/amy-oldenburg) y Paris Blockchain Week 2026; cobertura adicional en Cointelegraph (https://cointelegraph.com/news/morgan-stanley-appoints-digital-asset-head-amy-oldenburg) y The Block. La fuente Bloomberg Law no pudo abrirse desde este entorno (bloqueo de proxy), pero está indexada; la bio de Blockworks usa redacción antigua (rol en MSIM), no la use como referencia de cargo."
+  },
+  {
+   "nombre": "Jed Finn",
+   "cargo": "Head of Wealth Management",
+   "area": "Wealth Management (E*TRADE crypto, wallet de activos tokenizados)",
+   "ubicacion": "Nueva York, EE. UU.",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "Patrocinador ejecutivo del programa: anunció el trading cripto en E*TRADE con Zerohash como 'fase uno' y la wallet de activos tokenizados (2S-2026) como siguiente paso; aprueba alianzas de distribución del negocio de wealth.",
+   "fuente": "https://www.morganstanley.com/about-us-governance/operating-committee/jed-finn",
+   "notas": "Muy senior (dirige un negocio de ~US$9T); mejor en CC o vía intro que como primer destinatario. Verificación: confirmado como Head of Wealth Management (en el cargo desde ene-2024) en la página oficial del Operating Committee de Morgan Stanley y en comunicado del 27-ene-2026 (https://www.morganstanley.com/press-releases/jed-finn-to-speak-at-the-ubs-financial-services-conference); sin noticia de salida o sucesor en 2026. Se sustituyó la fuente Nasdaq (no confirmada en búsqueda) por la bio oficial. Sin email público."
+  },
+  {
+   "nombre": "Samantha Burrington",
+   "cargo": "Executive Director, COO & Strategy, eFX and Fixed Income Digital Assets",
+   "area": "Fixed Income Division – Digital Assets",
+   "ubicacion": "Nueva York, EE. UU. (por confirmar)",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "entrada",
+   "prioridad": 3,
+   "por_que": "Punto de entrada operativo/estratégico del grupo de activos digitales de renta fija, el equipo natural para evaluar una nota de colocación privada o una facilidad programática respaldada por trade finance tokenizado.",
+   "fuente": "https://www.thebigwhale.io/peoples/samantha-burrington",
+   "notas": "Título y fecha (feb-2026) según directorio The Big Whale; confirmar en LinkedIn antes de escribir. Ubicación no confirmada. Verificación: la única evidencia es el directorio de terceros The Big Whale (también en https://app.thebigwhale.io/people/samantha-burrington); no existe bio oficial ni comunicado de Morgan Stanley que la mencione. Trayectoria previa (ED de programas cross-firm 2023-2026) sugiere perfil de ejecución más que de decisión comercial. Mantener como entrada secundaria, no como primer destinatario."
+  },
+  {
+   "nombre": "Roland Fejfar",
+   "cargo": "Digital Assets, Capital Markets Infrastructure & EMEA Lead, Firmwide Innovation (título no consistente entre fuentes)",
+   "area": "Firmwide Innovation / Digital Assets",
+   "ubicacion": "Londres, Reino Unido",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Lidera infraestructura de mercados de capital para activos digitales; relevante para cross-listing y conectividad entre venues (ATS de MS y marketplace de Kabal), aunque sin cobertura LatAm.",
+   "fuente": "https://www.thebigwhale.io/peoples/roland-fejfar",
+   "notas": "Basado en EMEA; alternativa si la propuesta es técnica/infraestructura, no para distribución regional. Verificación: el título varía según la fuente: The Big Whale lo lista como Digital Assets, Capital Markets Infrastructure & EMEA Lead (Firmwide Innovation) y también como VP de Banca de Inversión (FinTech EMEA/SE Asia); Crunchbase (https://www.crunchbase.com/person/roland-fejfar) lo lista como Head of Technology Business Development and Innovation EMEA/APAC. Ninguna fuente oficial de Morgan Stanley lo confirma. Confirmar cargo actual en LinkedIn antes de contactar; tratar como influencer de baja prioridad."
+  },
+  {
+   "nombre": "Sharon Yeshaya",
+   "cargo": "Chief Financial Officer",
+   "area": "Dirección corporativa",
+   "ubicacion": "Nueva York, EE. UU.",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "influencer",
+   "prioridad": 5,
+   "por_que": "Voz senior que fija la agenda: en abr-2026 describió la tokenización de activos del mundo real como el próximo gran paso del negocio de wealth; útil para anclar el pitch, no como destinataria del cold email.",
+   "fuente": "https://www.coindesk.com/business/2026/04/15/why-morgan-stanley-s-cfo-thinks-tokenization-is-the-next-big-step-for-its-multi-trillion-wealth-business",
+   "notas": "No contactar directamente; citar su mensaje público sobre el 'mundo tokenizado' en el correo a Oldenburg. Verificación: la fuente CoinDesk (15-abr-2026, declaraciones en la llamada de resultados del 1T-2026) está indexada y es consistente con cobertura secundaria (DiarioBitcoin); sigue como CFO en 2026. Las cifras de la wallet tokenizada (2S-2026) provienen de blogs, no de un anuncio oficial."
+  }
+ ],
+ "ruta_recomendada": "1) Primer correo a Amy Oldenburg (Head of Digital Asset Strategy, rol creado en ene-2026 y vigente en 2026 según bios de conferencias; ex-jefa de renta variable de mercados emergentes en MSIM): proponer cross-listing/distribución secundaria de productos tokenizados de MS hacia Centroamérica y liquidez ancla para emisiones primarias del Kabal Digital Marketplace. Sin CC en el primer envío; segundo toque a Samantha Burrington (FID Digital Assets, título solo respaldado por directorio de terceros) si la pieza es una nota de colocación privada o facilidad programática. 2) Intro cálida: Zerohash (socio de E*TRADE crypto), SIX/SDX vía Andrew Peel (ex-Head of Digital Asset Markets de MS, hoy cofundador de TVL Capital y director independiente de SDX), o Securitize/Chainlink si Kabal ya tiene relación. 3) Sin respuesta en 10 días: InMail de LinkedIn a Oldenburg y a Gennadiy Kleyman (MD, Head of Wealth Management Digital Assets & Data Platforms según directorio; perfil por verificar) y, como respaldo, formulario institucional de MSIM o Media Relations para pedir enrutamiento. 4) No usar correos derivados por patrón: no se pudo verificar ninguna dirección pública de empleado @morganstanley.com (las páginas candidatas no fueron accesibles); obtener la dirección vía intro o LinkedIn.",
+ "notas": "Investigación automática 2026-10-19 (lote EXPLORE 2 del Liquidity Agent): agente de búsqueda + verificación adversarial de roles y correos; 12 búsquedas. Todo correo con patron_no_verificado debe confirmarse antes de enviar."
+}
