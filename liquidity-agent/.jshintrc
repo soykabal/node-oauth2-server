@@ -1,0 +1,12 @@
+{
+  "esversion": 11,
+  "node": true,
+  "mocha": true,
+  "curly": true,
+  "eqeqeq": true,
+  "undef": true,
+  "unused": true,
+  "quotmark": "single",
+  "indent": 2,
+  "globals": { "globalThis": false }
+}

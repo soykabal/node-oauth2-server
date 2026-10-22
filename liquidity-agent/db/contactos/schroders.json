@@ -1,0 +1,125 @@
+{
+ "institucion": "Schroders",
+ "programa": "Primer gestor global aprobado para una clase tokenizada de MMF en USD sobre Kinexys de JPMorgan (ago-2026); pilotos de tokenización en Project Guardian (MAS).",
+ "formato_email": {
+  "patron": null,
+  "fuente": "no se halló patrón corroborado por una dirección publicada",
+  "confianza": "n/a"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Media centre oficial (notas de prensa digital assets / Project Guardian)",
+   "valor": "https://www.schroders.com/en/global/individual/media-centre/",
+   "fuente": "https://www.schroders.com/en/global/individual/media-centre/schroders-explores-capabilities-of-tokenised-investment-vehicle-with-monetary-authority-of-singapore/"
+  },
+  {
+   "canal": "Formulario de contacto global (institucional)",
+   "valor": "https://www.schroders.com/en/global/individual/contact-us/",
+   "fuente": "https://www.schroders.com/en/global/individual/contact-us/"
+  },
+  {
+   "canal": "Email prensa / media relations",
+   "valor": "mediarelations@schroders.com",
+   "fuente": "https://cspre.schroders.com/en-ca/ca/professional/footer/contact-us"
+  },
+  {
+   "canal": "Email relación con inversionistas (corporativo)",
+   "valor": "investorrelations@schroders.com",
+   "fuente": "https://cspre.schroders.com/en/global/individual/investors/shareholders-information/investor-relations-contacts/"
+  },
+  {
+   "canal": "Contacto inversores profesionales LatAm (Chile, en español)",
+   "valor": "https://www.schroders.com/es-cl/cl/inversores-profesionales/contacto/",
+   "fuente": "https://www.schroders.com/es-cl/cl/inversores-profesionales/contacto/"
+  },
+  {
+   "canal": "LinkedIn página de empresa",
+   "valor": null,
+   "fuente": "https://www.schroders.com/en/global/individual/contact-us/"
+  },
+  {
+   "canal": "X / Twitter corporativo",
+   "valor": null,
+   "fuente": "https://www.schroders.com/en/global/individual/contact-us/"
+  },
+  {
+   "canal": "Buzón genérico: Media Relations Schroders (buzón genérico) — Prensa / Media relations",
+   "valor": "mediarelations@schroders.com",
+   "fuente": "https://cspre.schroders.com/en-ca/ca/professional/footer/contact-us"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Marita McGinley",
+   "cargo": "Global Head of Digital Asset Strategy y Head of Operations Asia Pacific",
+   "area": "Digital Assets / Platform Services",
+   "ubicacion": "Singapur",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Dirige la estrategia global de activos digitales de Schroders y lidera el Global Digital Assets Centre of Excellence en Singapur; voz pública en tokenización (Project Guardian, Calastone). Es quien evaluaría un partner regulado de RWA.",
+   "fuente": "https://www.finews.asia/people/43853-schroders-asset-management-marita-mcginley-digital-assets-ai-dlt-singapore-apac",
+   "linkedin": null,
+   "notas": "Verificación: confirmada en el rol (oct-2026 búsqueda) por finews.asia, WealthBriefingAsia y ASIFMA; nombrada Head of Operations APAC con efecto 1-sep-2025 manteniendo digital assets; reporta a Dionne Smith y Keith Frimpong. Perfil de speaker: https://www.asifma.org/speakers/marita-mcginley. Sin email público; no se pudo corroborar patrón corporativo."
+  },
+  {
+   "nombre": "Meagen Burnett",
+   "cargo": "Chief Financial Officer, Schroders plc",
+   "area": "Dirección ejecutiva / sponsor de la clase tokenizada del MMF",
+   "ubicacion": "Londres",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "CFO del grupo desde 1-ene-2025 (con responsabilidad sobre operaciones y tecnología) y portavoz ejecutiva del lanzamiento de la clase tokenizada del money market fund en USD sobre J.P. Morgan Kinexys aprobada por el Banco Central de Irlanda; nivel que puede aprobar una alianza de distribución o colateral.",
+   "fuente": "https://www.schroders.com/en/global/individual/people/meagen-burnett/",
+   "linkedin": null,
+   "notas": "Verificación: rol de CFO confirmado por la página oficial de Schroders y nota de prensa (anuncio sep-2024, CFO interina desde 8-nov-2024, titular desde 1-ene-2025). La fuente original (cryptobriefing.com) no pudo abrirse en esta revisión y la fecha exacta de aprobación (6-ago-2026 según investigación previa) no se verificó; cobertura alternativa: https://www.finews.asia/finance/45036-schroders-wins-approval-for-first-tokenised-fund-share-class. Usar solo como CC o segundo toque; el primer contacto debe ir al equipo de digital assets."
+  },
+  {
+   "nombre": "Jon Evans",
+   "cargo": "Miembro senior del equipo de estrategia digital (título exacto no verificado)",
+   "area": "Digital Strategy / Tokenización",
+   "ubicacion": "Londres (no verificado)",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "entrada",
+   "prioridad": 3,
+   "por_que": "Entrevistado por Funds Europe (feb-2026) sobre los planes de tokenización y 'composable finance' de Schroders; punto de entrada operativo del programa en Londres.",
+   "fuente": "https://funds-europe.com/schroders-eyes-the-future-of-tokenisation/",
+   "linkedin": null,
+   "notas": "Verificación: la búsqueda confirma la entrevista de Funds Europe (feb-2026) y lo describe como miembro senior del equipo de estrategia digital de Schroders; la página no pudo abrirse para confirmar cargo exacto ni ubicación. Verificar en LinkedIn antes de escribir."
+  },
+  {
+   "nombre": "Gonzalo Binello",
+   "cargo": "Head of Latin America & US Offshore (último dato público: oct-2024)",
+   "area": "Distribución Américas",
+   "ubicacion": "Miami / Londres (no verificado)",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "cobertura_latam",
+   "prioridad": 4,
+   "por_que": "Responsable de la relación con clientes de Latinoamérica y US Offshore; canal natural para distribución secundaria de productos tokenizados hacia Centroamérica.",
+   "fuente": "https://www.fundssociety.com/es/noticias/nombramientos/schroders-anuncia-ascensos-para-su-estructura-de-ee-uu-y-us-offshore/",
+   "linkedin": null,
+   "notas": "Verificación: no se halló evidencia 2025-2026 que confirme ni desmienta el rol; la última fuente fechada es Funds Society/Rankia de 7-oct-2024 (Giedzinski reporta a él y a Phil Middleton). El posible traslado a Londres (Global Financial Institutions Group) sigue sin confirmar; validar en LinkedIn antes del contacto."
+  },
+  {
+   "nombre": "Nicolás Giedzinski",
+   "cargo": "Director / Head of US Offshore (antes Head of US Family Offices & Offshore)",
+   "area": "Distribución US Offshore / LatAm",
+   "ubicacion": "Miami",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "cobertura_latam",
+   "prioridad": 5,
+   "por_que": "Lidera el negocio US Offshore (canal discrecional y brokerage) que atiende inversionistas latinoamericanos, incluida Centroamérica.",
+   "fuente": "https://www.fundssociety.com/es/noticias/nombramientos/schroders-anuncia-ascensos-para-su-estructura-de-ee-uu-y-us-offshore/",
+   "linkedin": null,
+   "notas": "Verificación: ascenso confirmado por Funds Society/Rankia (7-oct-2024) y Crain Currency; una nota posterior de Funds Society (sin fecha visible, incorporación de Ever Zambrano reportando a él) lo cita como Director de US Offshore, consistente con el cargo. Título vigente 2026 no confirmado de forma independiente."
+  }
+ ],
+ "ruta_recomendada": "1) Enviar el correo a Marita McGinley (Global Head of Digital Asset Strategy y Head of Operations APAC, Singapur; dueña del Global Digital Assets Centre of Excellence) con copia a Jon Evans (equipo de estrategia digital, Londres); abrir citando la clase tokenizada del MMF en USD sobre J.P. Morgan Kinexys y Project Guardian, y pedir derivación al responsable de distribución/partnerships de activos digitales. No hay patrón de email verificado: usar LinkedIn InMail o el formulario de contacto global. 2) Intro cálida en paralelo: J.P. Morgan Kinexys (socio de tokenización) y Calastone (socio del piloto Project Guardian); alternativamente co-participantes de Project Guardian (Marketnode, DigiFT, Chainlink, SIX Digital Exchange). 3) Para la pata Centroamérica/distribución secundaria, segundo toque a Gonzalo Binello (Head of Latin America & US Offshore, último dato público oct-2024; confirmar en LinkedIn) o Nicolás Giedzinski (Director/Head of US Offshore, Miami) pidiendo que conecten con el equipo de digital assets. 4) Meagen Burnett (CFO) solo como CC o segundo toque ejecutivo. 5) Fallback: mediarelations@schroders.com solicitando redirección al equipo de digital assets, o el formulario LatAm en español (Chile).",
+ "notas": "Investigación automática 2026-10-19 (lote EXPLORE 2 del Liquidity Agent): agente de búsqueda + verificación adversarial de roles y correos; 12 búsquedas. Buzones genéricos movidos a canales_publicos: Media Relations Schroders (buzón genérico). Todo correo con patron_no_verificado debe confirmarse antes de enviar."
+}

@@ -1,0 +1,149 @@
+{
+ "institucion": "Itaú Unibanco",
+ "programa": "Itaú Digital Assets (unidad de negocio dentro de Itaú BBA: plataforma de tokenización / 'token as a service', custodia de criptoactivos, distribución; participante del piloto Drex del Banco Central; desde 11-ago-2026 caso de uso conjunto con OpenAssets dentro del piloto de tokenización de ANBIMA para renta fija y cuotas de fondos). Áreas adyacentes: Itaú BBA (banco mayorista/de inversión, mayor CIB de LatAm), Itaú Asset Management (mesa de alternativos ~R$62 bi, crédito estructurado ~R$50 bi) y Cubo Itaú (hub de innovación, >50 corporates).",
+ "formato_email": {
+  "patron": "Itaú Unibanco: nombre.apellido@itau-unibanco.com.br (también nombre.apellido@itau.com.br y nombre_apellido@itau.com.br). Itaú BBA: nombre.apellido@itaubba.com (LeadIQ reporta 97%). Itaú Asset: dominio @itauassetmanagement.com.br (ZoomInfo). Cubo Itaú: nombre@cubo.network (LeadIQ). Ninguna dirección personal fue vista literalmente en una página pública: todas son patrón (no verificado).",
+  "fuente": "https://leadiq.com/c/itau-unibanco/5a1d8b32240000240066622d/email-format ; https://www.neverbounce.com/company/itau-unibanco/28280247 ; https://leadiq.com/c/itau-bba/5a1d95db2300005400848282/email-format ; https://www.zoominfo.com/p/Felipe-Gottlieb/1939630647 ; https://leadiq.com/c/cubo-ita%C3%BA/5a1dac022300005c00a1219f",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Prensa / Comunicación Corporativa Itaú Unibanco",
+   "valor": "imprensa@itau-unibanco.com.br ; tel. +55 11 5019-8880 / 8881",
+   "fuente": "https://www.prnewswire.com/news-releases/itau-unibanco---announcement-to-the-market---investor-relations-officer-302185169.html"
+  },
+  {
+   "canal": "Relaciones con Inversionistas Itaú Unibanco",
+   "valor": "relacoes.investidores@itau-unibanco.com.br ; https://www.itau.com.br/relacoes-com-investidores/en/",
+   "fuente": "https://www.itau.com.br/relacoes-com-investidores/en/ ; https://rocketreach.co/relacoes-com-investidores-itau-unibanco-email-format_b7828a59c2574cc8"
+  },
+  {
+   "canal": "Página oficial Itaú Digital Assets (Itaú BBA)",
+   "valor": "https://www.itau.com.br/itaubba-pt/digital-assets (formulario/atención institucional vía Itaú BBA; no se vio un inbox dedicado)",
+   "fuente": "https://www.itau.com.br/itaubba-pt/digital-assets"
+  },
+  {
+   "canal": "Cubo Itaú – Partners / Corporates",
+   "valor": "https://cubo.itau/en/partners ; https://cubo.itau/en/corporates ; formato de email reportado nombre@cubo.network (patrón, no verificado)",
+   "fuente": "https://cubo.itau/en/partners ; https://leadiq.com/c/cubo-ita%C3%BA/5a1dac022300005c00a1219f"
+  },
+  {
+   "canal": "Itaú BBA International (Londres) / Itaú USA (Miami–NY)",
+   "valor": "https://www.itau.com.br/itaubba-en/international ; https://www.linkedin.com/company/itauusa",
+   "fuente": "https://www.itau.com.br/itaubba-en/international"
+  },
+  {
+   "canal": "LinkedIn corporativo Itaú BBA",
+   "valor": "https://www.linkedin.com/company/itaubba",
+   "fuente": "https://www.linkedin.com/company/itaubba"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "José Augusto de A. Antunes Filho (Guto Antunes)",
+   "cargo": "Head of Digital Assets (Partner / Superintendente de Digital Assets), Itaú Unibanco",
+   "area": "Itaú Digital Assets (tokenización, custodia cripto, distribución, Drex)",
+   "ubicacion": "São Paulo, Brasil",
+   "linkedin": "https://www.linkedin.com/in/jos%C3%A9-augusto-de-a-antunes-filho-guto-antunes-79366a22/",
+   "email": "jose.antunes@itau-unibanco.com.br (patrón; ZoomInfo indica dominio @itau.com.br para él: jose.antunes@itau.com.br)",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Es el líder público de Itaú Digital Assets en 2026 (portavoz en Exame/Future of Money mayo-2026, Blockchain.RIO ago-2026, y nombrado como líder de Digital Assets en el anuncio Itaú–OpenAssets/ANBIMA del 11-ago-2026). Ex-VP Institucional LATAM de Crypto.com y ex-B3/Safra: entiende liquidez institucional y mercados secundarios de tokens; su equipo (60-70 personas) cubre tokenización + custodia + distribución, exactamente el perfil de un socio de liquidez para un marketplace RWA regulado.",
+   "fuente": "https://exame.com/future-of-money/a-visao-do-itau-sobre-stablecoins-regulacao-cripto-e-agentes-de-ia/ ; https://coinpaprika.com/news/itau-tokenization-pilot-openassets/ ; https://newsletter.brazilcrypto.io/p/episode-86-itaus-digital-asset-playbook ; https://www.zoominfo.com/p/Guto-Antunes/5797207635 ; https://www.linkedin.com/posts/jos%C3%A9-augusto-de-a-antunes-filho-guto-antunes-79366a22_venturecapital-startups-criptoativos-activity-6902694066212192256-x0fb"
+  },
+  {
+   "nombre": "Felipe Gottlieb",
+   "cargo": "Head de Investimentos Alternativos / Mercados Privados, Itaú Asset Management",
+   "area": "Itaú Asset Management – Alternativos (crédito estructurado ~R$50 bi, capital solutions ~R$11 bi; equipo ~40)",
+   "ubicacion": "São Paulo, Brasil",
+   "linkedin": "https://br.linkedin.com/in/felipe-gottlieb-243aa935",
+   "email": "felipe.gottlieb@itauassetmanagement.com.br",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "Lidera la vertical de alternativos de Itaú Asset (ex-socio de private equity en BTG Pactual, ~12 años); su plataforma es compradora natural de crédito privado / activos reales, que es el 'lado demanda' de liquidez para un marketplace de RWA tokenizados. Itaú ya lanzó un FIDC tokenizado con Liqi y Oliveira Trust, así que el producto le es familiar.",
+   "fuente": "https://neofeed.com.br/wealth-management/na-itau-asset-mercados-alternativos-tem-pista-livre-e-alcancam-r-62-bilhoes/en/ ; https://www.zoominfo.com/p/Felipe-Gottlieb/1939630647 ; https://ri.oliveiratrust.com.br/en/imprensa/itau-liqi-and-oliveira-trust-create-tokenized-receivables-fund/"
+  },
+  {
+   "nombre": "Pedro Boainain, CFA",
+   "cargo": "Head Portfolio Manager de Fundos de Crédito e Global Institutional Solutions, Itaú Asset Management",
+   "area": "Itaú Asset Management – Crédito Privado y Soluciones Institucionales Globales (>R$300 bi)",
+   "ubicacion": "São Paulo, Brasil",
+   "linkedin": "https://br.linkedin.com/in/pedro-boainain-cfa-b3a9599",
+   "email": "pedro.boainain@itauassetmanagement.com.br",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 3,
+   "por_que": "Gestiona el crédito privado y la relación con institucionales globales; es la persona que evaluaría la calidad crediticia y la liquidez secundaria de instrumentos de crédito tokenizados (trade finance, cuentas por cobrar) originados en Centroamérica. Aparece también como director responsable en la ficha CVM de Itaú Asset.",
+   "fuente": "https://br.linkedin.com/in/pedro-boainain-cfa-b3a9599 ; https://maisretorno.com/gestores/itau-unibanco-asset-management"
+  },
+  {
+   "nombre": "Daniel Erlich",
+   "cargo": "Head de Structured Finance & Trading, Itaú BBA",
+   "area": "Itaú BBA – Soluciones Estructuradas / Financiamiento Estructurado",
+   "ubicacion": "São Paulo, Brasil (no confirmado)",
+   "linkedin": null,
+   "email": "daniel.erlich@itaubba.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 4,
+   "por_que": "Responsable del área que estructura y distribuye crédito estructurado en Itaú BBA; es la contraparte para originar/distribuir emisiones tokenizadas de crédito y para líneas de liquidez o warehouse sobre activos RWA. Nombre obtenido de una fuente secundaria; verificar cargo vigente en LinkedIn antes de escribir.",
+   "fuente": "https://www.investmentbanking.com.br/structured-finance ; https://www.itau.com.br/itaubba-pt/o-que-fazemos/solucoes-estruturadas"
+  },
+  {
+   "nombre": "Percy Moreira",
+   "cargo": "CEO Itaú USA & Head of International Private Bank",
+   "area": "Itaú USA / Itaú International (Miami) – cobertura de clientes de Hispanoamérica",
+   "ubicacion": "Miami, EE. UU.",
+   "linkedin": "https://www.linkedin.com/in/percy-moreira-682a513b/",
+   "email": "percy.moreira@itau.com.br",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 5,
+   "por_que": "Es el ejecutivo de Itaú con base en Miami y mandato internacional (banca privada y plataforma de EE. UU.), la puerta geográfica y de idioma más natural para un operador centroamericano; su franquicia distribuye producto a clientes hispanoamericanos y puede canalizar la conversación hacia Digital Assets y BBA.",
+   "fuente": "https://www.linkedin.com/in/percy-moreira-682a513b/ ; https://www.linkedin.com/company/itauusa"
+  },
+  {
+   "nombre": "Andrea Molina",
+   "cargo": "Latin America DCM (Debt Capital Markets), Itaú BBA",
+   "area": "Itaú BBA – Mercado de Capitales de Deuda LatAm (ex-Brasil)",
+   "ubicacion": null,
+   "linkedin": "https://www.linkedin.com/in/andrea-molina-54517b50/",
+   "email": "andrea.molina@itaubba.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 6,
+   "por_que": "Cubre DCM para Hispanoamérica dentro de Itaú BBA; un marketplace de RWA con emisiones de deuda/crédito tokenizado en Centroamérica encaja en su pipeline de emisores y colocación. Nivel de seniority exacto no confirmado; usar como CC o para pedir referido interno.",
+   "fuente": "https://www.linkedin.com/in/andrea-molina-54517b50/"
+  },
+  {
+   "nombre": "Paulo Costa",
+   "cargo": "CEO, Cubo Itaú",
+   "area": "Cubo Itaú – hub de innovación (corporates, partners, Cubo Fintech)",
+   "ubicacion": "São Paulo, Brasil",
+   "linkedin": "https://br.linkedin.com/in/paulo-vinicius-costa",
+   "email": "paulo@cubo.network",
+   "email_estado": "patron_no_verificado",
+   "rol": "entrada",
+   "prioridad": 7,
+   "por_que": "Cubo es el canal 'blando' oficial de Itaú para startups/fintechs extranjeras: en 2026 el hub amplió su red en América Latina y tiene programas para partners y corporates; entrar como startup/partner de Cubo da legitimidad y acceso a los equipos de negocio de Itaú (incl. Digital Assets) sin depender de un frío.",
+   "fuente": "https://br.linkedin.com/in/paulo-vinicius-costa ; https://www.meioemensagem.com.br/marketing/aos-10-anos-cubo-amplia-rede-na-america-latina ; https://cubo.itau/en/partners"
+  },
+  {
+   "nombre": "Flavio Souza",
+   "cargo": "CEO / Presidente, Itaú BBA",
+   "area": "Itaú BBA – Banca Mayorista (CIB, Commercial Banking, Distribución, Research)",
+   "ubicacion": "São Paulo, Brasil",
+   "linkedin": "https://www.linkedin.com/in/fl%C3%A1viosouza/",
+   "email": "flavio.souza@itaubba.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 8,
+   "por_que": "Máximo decisor de la banca mayorista donde cuelga Itaú Digital Assets. Baja probabilidad de respuesta a un frío; útil solo como escalamiento o para mencionar en el asunto si hay un introductor.",
+   "fuente": "https://www.linkedin.com/in/fl%C3%A1viosouza/ ; https://www.itau.com.br/itaubba-pt/quem-somos"
+  }
+ ],
+ "ruta_recomendada": "1) Email inicial a Guto Antunes (Head of Digital Assets) en portugués, anclado en el anuncio Itaú–OpenAssets/ANBIMA (11-ago-2026) y en el FIDC tokenizado con Liqi/Oliveira Trust: proponer a Kabal Bridge (PSAD licenciado por CNAD, El Salvador) como venue regulado de listado/liquidez secundaria para activos tokenizados de Itaú en Centroamérica y como originador de RWA (trade finance, receivables) para su plataforma de custodia/distribución. CC: Felipe Gottlieb (Itaú Asset – Alternativos) como potencial comprador de crédito privado tokenizado. 2) Segunda ola (7-10 días después, si no hay respuesta): Daniel Erlich (Structured Finance, Itaú BBA) y Pedro Boainain (crédito privado) con un one-pager de estructura de emisión y datos de desempeño. 3) Ruta hispanoamericana en paralelo: Percy Moreira (Itaú USA, Miami) y Andrea Molina (LatAm DCM) en español/inglés, pidiendo referido interno a Digital Assets. 4) Camino cálido: (a) Gabor Gurbacs, Chairman & CEO de OpenAssets, socio tecnológico de Itaú en el piloto ANBIMA: una alianza o integración con OpenAssets convierte el contacto con Itaú en un referido; (b) aplicar a Cubo Itaú como startup/partner (cubo.itau/en/partners; CEO Paulo Costa) para obtener acceso institucional a los equipos de negocio; (c) coincidir en eventos donde Itaú Digital Assets expone: Blockchain.RIO (agosto), Web Summit Rio (junio, Itaú es global partner), LatAm CEO Conference de Itaú BBA (mayo). Evitar los inboxes de prensa/RI para propuestas comerciales; usarlos solo para pedir el contacto correcto.",
+ "notas": "Limitaciones: la cuota de búsqueda web de la sesión se agotó y el proxy bloqueó la lectura directa de itau.com.br, cubo.itau, LinkedIn, SEC y prensa (PRNewswire, CoinDesk, Exame, NeoFeed), por lo que cargos y URLs provienen de snippets de resultados públicos; verificar cada perfil en LinkedIn antes de enviar. (1) Vanessa Fernandes, ex-Global Head/CEO de Itaú Digital Assets (NY), dejó Itaú en sep-2024 para State Street; no usarla como contacto de Itaú. (2) Existe un perfil LinkedIn 'guto-antunes-846766206' titulado 'Diretor – CLPA' que parece ser otra persona; el perfil correcto de Guto Antunes de Itaú es el slug 'josé-augusto-de-a-antunes-filho-guto-antunes-79366a22'. (3) Ningún email individual fue visto literalmente en una página pública; todos son patrón no verificado (ZoomInfo indica dominio @itau.com.br para Antunes y @itauassetmanagement.com.br para Gottlieb). (4) No se encontró un inbox público dedicado de Itaú Digital Assets ni el nombre de un 'head of partnerships' de Cubo; el CEO de Cubo y la página de partners son el punto de entrada verificable. (5) Cargo de Daniel Erlich y la seniority de Andrea Molina provienen de una sola fuente cada uno (confianza baja-media). (6) No se identificó públicamente un 'head de Hispanoamérica' de Itaú BBA para 2026; André Gailey es CEO de Itaú Chile (desde oct-2024, antes CEO regional Argentina/Paraguay/Uruguay) y podría ser ruta alterna de cobertura andina/cono sur, pero no se incluyó por falta de URL de LinkedIn verificada. (7) Contexto útil para el pitch: Itaú declaró que la tokenización de garantías (colateral) es el caso de uso que más crecerá en dos años, y participa en Drex y en la solución de tokenización de Swift (pagos 24/7 con depósitos tokenizados)."
+}

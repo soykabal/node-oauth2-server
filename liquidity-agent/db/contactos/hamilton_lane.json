@@ -1,0 +1,123 @@
+{
+ "institucion": "Hamilton Lane",
+ "programa": "Tokenización de fondos vía Securitize: Senior Credit Opportunities Fund (HLSCOPE/SCOPE) tokenizado en Polygon (2023), multichain vía Wormhole a Ethereum/Optimism (jul-2025) y lanzado en TRON (2-jun-2026, primer activo de Securitize en esa red); además Secondary Fund VI y EOV vía Securitize, alianza Allfunds Blockchain/BBVA AM (tokenización), inversión estratégica de Hamilton Lane en la ronda de US$47M de Securitize. Unidad: Digital Assets (hamiltonlane.com/en-us/solutions/digital-assets).",
+ "formato_email": {
+  "patron": "{inicial nombre}{apellido}@hamiltonlane.com (ej. jsmith@hamiltonlane.com); ~96.7% de direcciones según LeadIQ/RocketReach; patrones secundarios first.last@ y last@",
+  "fuente": "https://leadiq.com/c/hamilton-lane/5a1d9816230000590086b772/email-format ; https://rocketreach.co/hamilton-lane-email-format_b5c64538f42e0cbe ; confirmado por emails públicos kmcgann@hamiltonlane.com y joh@hamiltonlane.com en https://www.hamiltonlane.com/en-us/contact-us y https://shareholders.hamiltonlane.com/contact-shareholder-relations",
+  "confianza": "alta"
+ },
+ "canales_publicos": [
+  {
+   "canal": "email general",
+   "valor": "inquiries@hamiltonlane.com",
+   "fuente": "https://www.hamiltonlane.com/en-us/contact-us"
+  },
+  {
+   "canal": "media / comunicaciones corporativas",
+   "valor": "Kate McGann, Principal Corporate Communications & Public Relations — kmcgann@hamiltonlane.com — +1 212.752.7853",
+   "fuente": "https://www.hamiltonlane.com/en-us/contact-us ; https://shareholders.hamiltonlane.com/contact-shareholder-relations"
+  },
+  {
+   "canal": "shareholder relations (no es canal comercial; útil solo como referencia de formato)",
+   "valor": "John Oh, Managing Director, Head of Shareholder Relations — joh@hamiltonlane.com",
+   "fuente": "https://shareholders.hamiltonlane.com/contact-shareholder-relations"
+  },
+  {
+   "canal": "página Digital Assets",
+   "valor": "https://www.hamiltonlane.com/en-us/solutions/digital-assets",
+   "fuente": "https://www.hamiltonlane.com/en-us/solutions/digital-assets"
+  },
+  {
+   "canal": "LinkedIn corporativo",
+   "valor": "https://www.linkedin.com/company/hamilton-lane",
+   "fuente": "https://www.linkedin.com/company/hamilton-lane"
+  },
+  {
+   "canal": "X / Twitter corporativo",
+   "valor": "https://x.com/hamilton_lane",
+   "fuente": "https://x.com/hamilton_lane/status/1975924529017823280"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Victor Jung",
+   "cargo": "Managing Director, Head of Digital Assets",
+   "area": "Digital Assets (estrategia global de activos digitales; relación Securitize/Polygon/TRON/Allfunds)",
+   "ubicacion": "No confirmada en fuente primaria (un resumen de búsqueda lo sitúa en la oficina de Zug, Suiza; verificar en LinkedIn antes de escribir)",
+   "linkedin": null,
+   "email": "vjung@hamiltonlane.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Ejecutivo citado en los comunicados de SCOPE vía Securitize/Polygon ('we are excited to make available SCOPE, the second offering on the Securitize platform...'), citado en CoinDesk jul-2025 sobre DeFi compliant, y orador junto a Securitize (Jorge Serna) en Merge oct-2025 'Tokenizing Private Markets: Lessons from Hamilton Lane & Securitize'. Responsable de desarrollar y ejecutar la estrategia de activos digitales; reporta a Frederick Shaw.",
+   "fuente": "https://www.prnewswire.com/news-releases/hamilton-lane-names-victor-jung-as-head-of-digital-assets-301572395.html ; https://www.hamiltonlane.com/en-us/news/victor-jung-head-of-digital-assets ; https://securitize.io/learn/press/securitize-expands-access-to-hamilton-lanes-senior-credit-opportunities-fund-via-polygon ; https://www.coindesk.com/tech/2025/07/17/securitize-takes-tokenized-hamilton-lane-credit-fund-multichain-bringing-it-closer-to-defi ; https://x.com/hamilton_lane/status/1975924529017823280 ; https://theorg.com/org/hamilton-lane/org-chart/victor-jung"
+  },
+  {
+   "nombre": "Sebastian Ochagavia",
+   "cargo": "Principal, Client Solutions — Head of Private Wealth Solutions, Latin America",
+   "area": "Private Wealth Solutions / Client Solutions LatAm",
+   "ubicacion": "No confirmada (formación en Chile; ex Davinci Trusted Partner, Allfunds, Compass Group, BlackRock)",
+   "linkedin": null,
+   "email": "sochagavia@hamiltonlane.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 2,
+   "por_que": "Único responsable identificado de cobertura de inversionistas de la región LatAm (HNW/wealth) en Hamilton Lane; se incorporó en 2024 desde un distribuidor third-party de LatAm, por lo que conoce plataformas y canales regionales. Entrada natural para posicionar a Kabal Bridge como canal de distribución/liquidez regulado en Centroamérica.",
+   "fuente": "https://www.hamiltonlane.com/en-us/about/our-team/sebastian-ochagavia ; https://citywire.com/americas/news/900bn-private-markets-firm-hamilton-lane-hires-latam-wealth-head/a2436251 ; https://theorg.com/org/hamilton-lane/teams/private-wealth-solutions"
+  },
+  {
+   "nombre": "Griff (Griffith) Norville",
+   "cargo": "Managing Director, Head of Technology Solutions",
+   "area": "Technology Solutions (Cobalt LP, co-head del Technology Committee, alianzas e inversiones en fintech de mercados privados)",
+   "ubicacion": "Philadelphia, Pennsylvania, EE.UU.",
+   "linkedin": "https://www.linkedin.com/in/griffith-norville-389b53/",
+   "email": "gnorville@hamiltonlane.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 3,
+   "por_que": "Lidera la agenda de transformación digital y las alianzas/inversiones estratégicas en fintech (la firma invirtió en Securitize); co-preside el Technology Committee. Habla públicamente de digitalización de mercados privados (podcast Alt Goes Mainstream).",
+   "fuente": "https://www.hamiltonlane.com/en-us/about/our-team/griffith-norville ; https://www.hamiltonlane.com/en-us/news/securitize-47-million-funding-round ; https://altgoesmainstream.substack.com/p/hamilton-lanes-griff-norville-on"
+  },
+  {
+   "nombre": "Stephen (Steve) Brennan",
+   "cargo": "Managing Director, Co-Head of Evergreen Portfolio Solutions (anteriormente Head of Private Wealth Solutions)",
+   "area": "Evergreen / Private Wealth Solutions (canal wealth global)",
+   "ubicacion": "Estados Unidos (ciudad no confirmada)",
+   "linkedin": "https://www.linkedin.com/in/srbrennan/",
+   "email": "sbrennan@hamiltonlane.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 4,
+   "por_que": "Dirige los productos evergreen (SCOPE es un fondo evergreen de crédito senior) y el esfuerzo de llevar mercados privados al canal wealth; es quien decide qué plataformas/distribuidores acceden a los vehículos evergreen.",
+   "fuente": "https://www.hamiltonlane.com/en-us/about/our-team/stephen-brennan ; https://irei.com/publications/article/profile-steve-brennan-head-of-private-wealth-solutions-at-hamilton-lane/"
+  },
+  {
+   "nombre": "Frederick Shaw",
+   "cargo": "Chief Risk Officer and Global Head of Operations",
+   "area": "Risk & Operations (línea de reporte de Digital Assets)",
+   "ubicacion": "No confirmada (sede Conshohocken, PA)",
+   "linkedin": null,
+   "email": "fshaw@hamiltonlane.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 5,
+   "por_que": "Victor Jung reporta directamente a él según el anuncio de 2022; es el sponsor ejecutivo de la estrategia de activos digitales. No escribir en frío; solo CC o mención tras respuesta de Jung.",
+   "fuente": "https://www.prnewswire.com/news-releases/hamilton-lane-names-victor-jung-as-head-of-digital-assets-301572395.html"
+  },
+  {
+   "nombre": "Kate McGann",
+   "cargo": "Principal, Corporate Communications and Public Relations",
+   "area": "Comunicaciones",
+   "ubicacion": "Nueva York (teléfono 212)",
+   "linkedin": null,
+   "email": "kmcgann@hamiltonlane.com",
+   "email_estado": "publico",
+   "rol": "entrada",
+   "prioridad": 6,
+   "por_que": "Único email individual publicado; sirve para pedir el contacto correcto del equipo de Digital Assets o para enviar una carta institucional formal que sea reenviada internamente.",
+   "fuente": "https://www.hamiltonlane.com/en-us/contact-us ; https://shareholders.hamiltonlane.com/contact-shareholder-relations"
+  }
+ ],
+ "ruta_recomendada": "1) Email directo a Victor Jung (dueño del programa, citado en todos los comunicados SCOPE/Securitize) con asunto referenciando HLSCOPE en TRON/Polygon y la licencia PSAD de Kabal Bridge en El Salvador; CC a Sebastian Ochagavia (cobertura LatAm) para dar contexto regional. 2) Si no hay respuesta en 7-10 días, InMail a Jung y a Ochagavia por LinkedIn. 3) Camino cálido: Securitize (Jorge Serna / Carlos Domingo) es el socio operativo del programa y aparece en escenario junto a Jung; una introducción vía Securitize o vía Allfunds Blockchain (socio de tokenización de HL en LatAm/Europa) es la ruta más creíble. 4) Griff Norville como segundo hilo (tecnología/alianzas) y Steve Brennan solo si el pitch es distribución de evergreen. 5) Paralelo formal: nota institucional a inquiries@hamiltonlane.com / kmcgann@hamiltonlane.com pidiendo enrutamiento al equipo de Digital Assets.",
+ "notas": "Limitación: el proxy de red bloqueó la lectura directa de hamiltonlane.com, prnewswire, theblock, coindesk, LinkedIn y theorg; los datos provienen de extractos de búsqueda de esas fuentes y deben verificarse antes de enviar. No se encontró ningún miembro adicional del equipo de Digital Assets (VP/Principal) con nombre público. Ubicación de Jung y Ochagavia no confirmada en fuente primaria. Todos los emails individuales excepto kmcgann@ y joh@ son patrón (no verificados). Stephanie Davis (ex Co-Head U.S. Private Wealth Solutions) dejó HL a J.P. Morgan en mar-2026: no contactar. El comunicado del lanzamiento en TRON (2-jun-2026) cita a Carlos Domingo (CEO Securitize); no se pudo confirmar si incluye cita de Hamilton Lane."
+}

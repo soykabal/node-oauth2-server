@@ -1,0 +1,141 @@
+{
+ "institucion": "Franklin Templeton",
+ "programa": "Franklin Templeton Digital Assets — Benji Technology Platform (Franklin OnChain U.S. Government Money Fund / BENJI, Intraday Yield, wallets permisionadas 24/7); Franklin Templeton Digital Asset Ventures (venture/ blockchain VC); Franklin Crypto (nueva división 2026 tras adquisición de 250 Digital, spinoff de CoinFund, pagada parcialmente en tokens BENJI); alianzas de distribución/tokenización: DigiFT (Singapur, 20-may-2026), HashKey (25-ago-2026), Binance (sep-2025), BNB Chain (sep-2025), Canton Network, Stellar, Ethereum, Aptos, VeChain; distribución Latinoamérica vía Americas Offshore (Miami/Brasil) e Iberia & LatAm.",
+ "formato_email": {
+  "patron": "firstname.lastname@franklintempleton.com (variantes reportadas: firstlast@ y flast@)",
+  "fuente": "https://leadiq.com/c/franklin-templeton/5a1d95b92300005b008466e4/email-format (first.last 67.1%); https://rocketreach.co/franklin-templeton-email-format_b5c6178ef42e0c4c (First.Last ~80%); https://www.clay.com/dossier/franklin-templeton-investments-email-format",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Página corporativa Franklin Templeton Digital Assets (formulario/contacto institucional)",
+   "valor": "https://www.franklintempleton.com/about-us/franklin-templeton-digital-assets",
+   "fuente": "https://www.franklintempleton.com/about-us/franklin-templeton-digital-assets"
+  },
+  {
+   "canal": "Página Benji / Digital Assets Technology",
+   "valor": "https://www.franklintempleton.com/about-us/our-teams/specialist-investment-managers/digital-assets/digital-assets-technology",
+   "fuente": "https://www.franklintempleton.com/about-us/our-teams/specialist-investment-managers/digital-assets/digital-assets-technology"
+  },
+  {
+   "canal": "Digital Assets Research Hub (equipo de research de tokenización)",
+   "valor": "https://www.franklintempleton.com/about-us/our-teams/specialist-investment-managers/digital-assets/research-hub",
+   "fuente": "https://www.franklintempleton.com/about-us/our-teams/specialist-investment-managers/digital-assets/research-hub"
+  },
+  {
+   "canal": "Media Contacts (prensa corporativa / IR)",
+   "valor": "https://investors.franklintempleton.com/news-center/media-contacts/default.aspx",
+   "fuente": "https://investors.franklintempleton.com/news-center/media-contacts/default.aspx"
+  },
+  {
+   "canal": "X / Twitter oficial Franklin Templeton Digital Assets",
+   "valor": "@FTDA_US — https://x.com/FTDA_US",
+   "fuente": "https://x.com/FTDA_US"
+  },
+  {
+   "canal": "Contacto institucional (FT Institutional — Digital Asset Strategies)",
+   "valor": "https://www.ftinstitutional.com/investment-capabilities/investment-teams/digital-assets",
+   "fuente": "https://www.ftinstitutional.com/investment-capabilities/investment-teams/digital-assets"
+  },
+  {
+   "canal": "Franklin Venture Partners (venture arm, incluye Digital Asset Ventures)",
+   "valor": "https://www.franklintempleton.com/about-us/franklin-venture-partners",
+   "fuente": "https://www.franklintempleton.com/about-us/franklin-venture-partners"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Roger Bayston",
+   "cargo": "Executive Vice President, Head of Digital Assets",
+   "area": "Franklin Templeton Digital Assets (dueño de Benji Technology Platform y de las alianzas BNB Chain / Canton / Stellar / DigiFT)",
+   "ubicacion": "San Mateo / San Francisco Bay Area, CA, EE. UU.",
+   "linkedin": "https://www.linkedin.com/in/rogerbayston/",
+   "email": "roger.bayston@franklintempleton.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 2,
+   "por_que": "Es el vocero y responsable ejecutivo de Benji y de toda la expansión multichain; ha hablado públicamente de trade finance tokenizado (tesis alineada con Kabal). Difícil que responda un correo frío directo, pero debe ir en CC para dar peso institucional.",
+   "fuente": "https://www.franklintempleton.com/profiles/roger-bayston ; https://wiza.co/d/franklin-templeton/5011/roger-bayston ; https://www.linkedin.com/pulse/franklin-templetons-head-digital-assets-says-trade-finance-melinek-ohhnc ; https://www.coindesk.com/markets/2025/09/24/franklin-templeton-expands-tokenization-frontiers-with-benji-platform-integration-onto-bnb-chain"
+  },
+  {
+   "nombre": "Sandy Kaul",
+   "cargo": "Head of Digital Assets and Innovation (a ella reporta la nueva división Franklin Crypto)",
+   "area": "Innovation / Digital Assets — estrategia, investigación y nuevos negocios",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "sandy.kaul@franklintempleton.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 4,
+   "por_que": "Lidera la agenda de innovación y estrategia de activos digitales del grupo; Franklin Crypto (Perkins/Ginns) le reporta. Perfil de 'thought leader' receptivo a tesis de mercado (RWA en mercados emergentes); mejor abordarla con contenido de research que con un pitch comercial.",
+   "fuente": "https://www.bankingdive.com/news/franklin-templeton-crypto-acquisition-250-digital-perkins-ginns-kaul/816386/ ; https://finance.yahoo.com/markets/crypto/articles/franklin-templeton-bets-bigger-crypto-170805265.html"
+  },
+  {
+   "nombre": "Chetan Karkhanis",
+   "cargo": "Senior Vice President, Digital Asset Partnership Development / Digital Assets Client Engagement",
+   "area": "Benji — desarrollo de alianzas y distribución (firmó las alianzas DigiFT mayo-2026 y HashKey ago-2026)",
+   "ubicacion": "Asia-Pacífico (rol descrito como transformación digital del negocio APAC; ciudad no verificada)",
+   "linkedin": "https://www.linkedin.com/in/chetankarkhanis/",
+   "email": "chetan.karkhanis@franklintempleton.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "entrada",
+   "prioridad": 1,
+   "por_que": "Es la persona que operativamente cierra alianzas de distribución de Benji con plataformas licenciadas (DigiFT-MAS, HashKey-SFC): exactamente el perfil de Kabal Bridge como PSAD licenciado por CNAD. Su cita pública: 'los socios que elegimos reflejan nuestro compromiso de largo plazo... no solo objetivos de distribución de corto plazo'. Mayor probabilidad de respuesta a un correo frío institucional bien estructurado.",
+   "fuente": "https://www.crowdfundinsider.com/2026/08/301295-franklin-templeton-partners-with-hashkey-to-expand-tokenized-fund-access-across-asian-markets/ ; https://www.hubbis.com/news/franklin-templeton-and-digift-advance-institutional-tokenization-through-strategic-benji-partnership ; https://www.prnewswire.com/apac/news-releases/hashkey-exchange-and-franklin-templeton-to-bring-onchain-us-government-liquidity-fund-to-asia-302858384.html ; https://www.asiaasset.com/post/25888"
+  },
+  {
+   "nombre": "Kevin Farrelly",
+   "cargo": "Managing Principal, Blockchain Venture Capital / Vice President, Digital Assets",
+   "area": "Franklin Templeton Digital Asset Ventures (equipo de inversión venture: lideró Serie A de Bitlayer, tesis Bitcoin DeFi / infraestructura)",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "kevin.farrelly@franklintempleton.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 3,
+   "por_que": "Equipo de venture que evalúa infraestructura on-chain y nuevos mercados; ponente habitual (Token2049, Digital Assets Week). Entrada natural si Kabal Bridge se presenta como infraestructura de mercado secundario RWA en Centroamérica con posible ángulo de inversión estratégica, no solo distribución.",
+   "fuente": "https://fortune.com/crypto/2024/07/23/franklin-templeton-bitcoin-bitlayer/ ; https://www.coindesk.com/business/2025/05/02/bitcoin-defi-shows-infrastructure-progress-versus-store-of-value-franklin-templeton-s-kevin-farrelly ; https://daweek.org/speaker/kevin-farrelly/ ; https://www.crunchbase.com/person/kevin-farrelly"
+  },
+  {
+   "nombre": "Marcus Vinicius Goncalves",
+   "cargo": "Head of National Sales, Americas Offshore; Head of Sales Brazil (reporta a Andrew Ashton, Head of Americas ex-US Distribution)",
+   "area": "Distribución institucional Americas Offshore / Latinoamérica",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "marcus.goncalves@franklintempleton.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 5,
+   "por_que": "Cubre el canal offshore que atiende a bancos privados, family offices y distribuidores de Centroamérica; útil para el ángulo de demanda regional de BENJI/tesorería tokenizada y para validar apetito de clientes LatAm. No decide sobre Benji, pero puede patrocinar internamente la conversación.",
+   "fuente": "https://citywire.com/americas/news/franklin-templeton-names-new-americas-offshore-sales-head/a2409695 ; https://www.fundssociety.com/en/news/appointments/franklin-templeton-strengthens-its-capabilities-for-the-offshore-market/"
+  },
+  {
+   "nombre": "Javier Villegas",
+   "cargo": "Head of Iberia and Latin America",
+   "area": "Distribución Iberia & Latin America (modelo global de distribución liderado por Adam Spector)",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "javier.villegas@franklintempleton.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 6,
+   "por_que": "Cabeza regional de distribución para Latinoamérica; ruta para posicionar a Kabal Bridge como distribuidor/plataforma regulada en Centroamérica y enlazar con el equipo de Digital Assets desde el lado comercial.",
+   "fuente": "https://www.fundssociety.com/en/news/appointments/franklin-templeton-announces-its-new-global-distribution-model-led-by-adam-spector-2/"
+  },
+  {
+   "nombre": "Christopher Perkins",
+   "cargo": "Head of Franklin Crypto (ex-President de CoinFund / 250 Digital); co-lidera con Seth Ginns (CIO) y Tony Pecore",
+   "area": "Franklin Crypto — estrategias líquidas cripto para asignadores institucionales (reporta a Sandy Kaul)",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": "christopher.perkins@franklintempleton.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 7,
+   "por_que": "Nueva división (cierre 24-jun-2026) enfocada en producto cripto institucional y liquidez; relevante solo si Kabal ofrece liquidez/market-making o un canal regulado LatAm para sus estrategias. Perfil muy visible en la industria, menor prioridad para RWA-marketplace.",
+   "fuente": "https://investors.franklintempleton.com/news-center/press-releases/press-release-details/2026/Franklin-Templeton-Agrees-to-Acquire-Liquid-Strategies-from-CoinFund-Spinoff-Launches-Franklin-Crypto/default.aspx ; https://thedefiant.io/converge/tradfi-and-fintech/franklin-templeton-closes-250-digital-launches-franklin-crypto ; https://www.crowdfundinsider.com/2026/04/271444-franklin-templeton-to-buy-250-digital-launches-crypto-unit-for-institutional-clients/"
+  }
+ ],
+ "ruta_recomendada": "1) Email inicial a Chetan Karkhanis (SVP Digital Asset Partnership Development) con asunto tipo 'Licensed CNAD digital-asset marketplace in Central America — Benji distribution / secondary liquidity partnership', replicando el formato de las alianzas DigiFT y HashKey (plataforma licenciada + inversores acreditados/institucionales + wallets permisionadas). CC: Roger Bayston (EVP, Head of Digital Assets) para peso institucional. 2) En paralelo, nota separada a Kevin Farrelly (Digital Asset Ventures) enfocada en infraestructura de mercado RWA en LatAm y posible coinversión/estratégica. 3) Una semana después, contacto LatAm: Marcus Vinicius Goncalves (Americas Offshore) y Javier Villegas (Iberia & LatAm) para validar demanda regional de BENJI y pedir introducción interna al equipo de Digital Assets. 4) Ruta caliente: pedir intro a través de DigiFT (Singapur; ya distribuyen Benji y buscan escalar el modelo a otras jurisdicciones) y de Stellar Development Foundation (Benji nació en Stellar; SDF tiene equipo LatAm activo), o vía HashKey; conferencias donde el equipo FT Digital Assets habla: Token2049 (Singapur, oct), Digital Assets Week, Consensus, Blockworks Digital Asset Summit — Farrelly y Bayston son ponentes recurrentes. 5) Contenido de apoyo para Sandy Kaul: enviar un breve research note sobre RWA/tesorería tokenizada en Centroamérica (El Salvador CNAD/LEAD) como gancho de innovación, no como pitch.",
+ "notas": "LIMITACIÓN IMPORTANTE: durante esta investigación el proxy bloqueó el acceso directo (403) a franklintempleton.com, investors.franklintempleton.com, LinkedIn, PR Newswire, Hubbis, Citywire, Funds Society, CoinDesk, The Block y otros; los cargos/ubicaciones provienen de fragmentos de resultados de búsqueda (snippets) y no de la página completa, y el presupuesto de búsquedas se agotó. Verificar en LinkedIn antes de enviar: (a) Chetan Karkhanis aparece con dos títulos en 2026 ('SVP, Digital Asset Partnership Development' en mayo/DigiFT y 'SVP, Digital Assets Client Engagement' en agosto/HashKey) — usar el más reciente; (b) ubicación de Karkhanis, Kaul, Farrelly, Goncalves y Villegas no se pudo confirmar en una página pública; (c) el perfil linkedin.com/in/pies/ (Kevin Farrelly, Birdai Labs) que devolvió el buscador NO corresponde al Kevin Farrelly de Franklin Templeton, por eso se dejó en null. NINGÚN email fue visto literalmente en una página pública: todos son 'pattern (unverified)' basados en first.last@franklintempleton.com (confianza media; existen variantes firstlast@/flast@). No se identificó públicamente un 'Head of Benji Technology Platform' con ese título exacto; Roger Bayston es quien firma públicamente todas las expansiones de Benji (BNB Chain, Canton, Stellar), por lo que se le trata como dueño del programa; Sandy Kaul lidera Digital Assets & Innovation a nivel grupo y Franklin Crypto (Perkins/Ginns/Pecore) le reporta. Otros nombres con señales débiles no incluidos por falta de verificación: 'Mike Muir' (aparece en LinkedIn asociado a FT en búsqueda de digital assets, título no confirmado), Andrew Ashton (Head of Americas ex-US Distribution), Adam Spector (Global Distribution), Hugo Petricioli (México, no verificado en 2026). Fechas clave: Binance 10-sep-2025; BNB Chain 24-sep-2025; adquisición 250 Digital anunciada abr-2026 y cerrada 24-jun-2026 (pago parcial en BENJI); DigiFT 20-may-2026; HashKey 25-ago-2026."
+}

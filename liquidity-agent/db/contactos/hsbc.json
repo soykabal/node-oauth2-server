@@ -1,0 +1,134 @@
+{
+ "institucion": "HSBC",
+ "programa": "HSBC Orion y Tokenised Deposit Service; inversor en Marketnode; cobertura US de depósitos tokenizados 2026; piloto UK Finance.",
+ "formato_email": {
+  "patron": null,
+  "fuente": null,
+  "confianza": "baja"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Página oficial unidad Digital Assets & Currencies (hsbc.com)",
+   "valor": "https://www.hsbc.com/who-we-are/hsbc-and-digital/hsbc-and-digital-assets-and-currencies",
+   "fuente": "https://www.hsbc.com/who-we-are/hsbc-and-digital/hsbc-and-digital-assets-and-currencies"
+  },
+  {
+   "canal": "Página HSBC Orion (Global Banking & Markets)",
+   "valor": "https://gbm.hsbc.com/en-gb/feed/innovation/hsbc-sibos/exploring-the-universe-of-digital-assets-and-hsbc-orion",
+   "fuente": "https://gbm.hsbc.com/en-gb/feed/innovation/hsbc-sibos/exploring-the-universe-of-digital-assets-and-hsbc-orion"
+  },
+  {
+   "canal": "Newsroom HSBC US (press release Tokenized Deposit Service, 13-abr-2026)",
+   "valor": "https://www.about.us.hsbc.com/newsroom/press-releases/hsbc-expands-tokenized-deposit-service-to-the-united-states",
+   "fuente": "https://www.about.us.hsbc.com/newsroom/press-releases/hsbc-expands-tokenized-deposit-service-to-the-united-states"
+  },
+  {
+   "canal": "Media release HSBC Orion / DIGIT (12-feb-2026, PDF)",
+   "valor": "https://www.hsbc.com/-/files/hsbc/media/media-release/2026/260212-hsbc-orion-awarded-digit-platform-mandate.pdf",
+   "fuente": "https://www.hsbc.com/-/files/hsbc/media/media-release/2026/260212-hsbc-orion-awarded-digit-platform-mandate.pdf"
+  },
+  {
+   "canal": "Contacto de prensa (release UK DSS 14-jul-2025 solo lista dirección postal, sin email)",
+   "valor": null,
+   "fuente": "https://www.business.hsbc.com/-/media/media/assets/pdf/solutions/hsbc-enters-uk-dss-14-july-2025.pdf"
+  },
+  {
+   "canal": "Vacante 'Director - Digital Assets and Currencies Settlement and Collaboration' (HK) — evidencia de función de alianzas dentro de la unidad",
+   "valor": "https://apply.careers.hsbc.com/job/Central-Director-Digital-Assets-and-Currencies-Settlement-and-Collaboration-Hong/1370170757/",
+   "fuente": "https://apply.careers.hsbc.com/job/Central-Director-Digital-Assets-and-Currencies-Settlement-and-Collaboration-Hong/1370170757/"
+  },
+  {
+   "canal": "LinkedIn / X corporativos (handle no verificado en esta búsqueda)",
+   "valor": null,
+   "fuente": "https://www.hsbc.com/who-we-are/hsbc-and-digital/hsbc-and-digital-assets-and-currencies"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "John O'Neill",
+   "cargo": "Group Head of Digital Assets & Currencies",
+   "area": "Digital Assets & Currencies (HSBC Orion, tokenización, stablecoins, CBDC)",
+   "ubicacion": "Hong Kong o Londres (no confirmado: una fuente indica traslado a Hong Kong tras su nombramiento a fines de 2024; otras lo sitúan en Londres)",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Dirige la unidad de activos digitales y creó/dirige la plataforma HSBC Orion (>US$3.5bn en bonos digitales, DIGIT del Tesoro UK en 2026); la vacante 'Settlement and Collaboration' indica que la función de alianzas vive bajo su unidad.",
+   "fuente": "https://www.financeasia.com/article/qa-john-oneill-group-head-of-digital-assets-and-currencies-at-hsbc/503385",
+   "notas": "Verificación: título 'Group Head of Digital Assets & Currencies' confirmado por Q&A de FinanceAsia y páginas de ponente Point Zero Forum 2025 / GFTN Insights Forum (inicio del rol: mayo-2024 según un perfil, fines de 2024 según otro). El 'Managing Director' 2026 solo aparece en CoinGape (https://coingape.com/block-of-fame/cxo-stories/how-john-oneill-is-steering-hsbcs-biggest-evolution-since-electronic-trading) y en un agregador de baja calidad; se retiró del cargo por no estar corroborado. Base geográfica cambiada a 'no confirmada' porque una fuente indica traslado a Hong Kong. Ninguna fuente pudo abrirse directamente (fallo DNS del entorno); la URL figura indexada en buscadores. No existe dirección de email publicada."
+  },
+  {
+   "nombre": "Lewis Sun",
+   "cargo": "Global Head of Digital Currencies, Corporate and Institutional Banking (CIB)",
+   "area": "Global Payments Solutions — Digital Assets & Currencies / Tokenised Deposit Service",
+   "ubicacion": "Hong Kong (base inferida por trayectoria en China y Hong Kong; no confirmada en fuente)",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "Voz de HSBC en Sibos 2026 (oct-2026) sobre tokenización a escala y liquidación cross-border; responsable estratégico de las iniciativas de activos digitales y monedas dentro de Global Payments Solutions, relevante para la pata de liquidación con depósitos tokenizados de una facilidad programática.",
+   "fuente": "https://www.fintechfutures.com/blockchain-crypto-digital-assets/video-hsbc-at-sibos-2026-tokenisation-and-building-digital-assets-infrastructure-at-scale",
+   "notas": "Verificación: rol vigente confirmado — entrevista FinTech Futures en Sibos 2026 fechada 8-oct-2026 lo presenta como Global Head of Digital Currencies; perfil de ponente Future of Finance (https://www.futureoffinance.biz/speaker/lewis-sun) precisa nombramiento en mayo-2026 como Global Head of Digital Currencies, CIB, con liderazgo de Digital Assets & Currencies dentro de GPS. Perfiles anteriores (The Big Whale, MarketScreener) lo listan como Global Head of Domestic & Emerging Payments / Digital Money: desactualizados. En HSBC desde 2002. La fuente no pudo abrirse directamente (fallo DNS del entorno) pero figura indexada."
+  },
+  {
+   "nombre": "Rajeev Tummala",
+   "cargo": "Head of Digital & Data, Asia & MENA, HSBC Securities Services",
+   "area": "Markets & Securities Services — operación de HSBC Orion, custodia y emisión digital",
+   "ubicacion": "Singapur",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "entrada",
+   "prioridad": 3,
+   "por_que": "Pionero del roadmap de activos digitales de HSBC Securities Services (Digital Vault, Orion en Luxemburgo y Hong Kong, >10 emisiones de bonos digitales a 2025) y atiende clientes e infraestructuras de mercado sobre custodia, emisión y servicio de activos digitales: punto de entrada operativo para cross-listing.",
+   "fuente": "https://www.fintechfestival.sg/speakers/spkr4699-rajeev-tummala",
+   "notas": "Verificación: título confirmado en bio de Singapore FinTech Festival, premio IBF 2025 (https://www.ibf.org.sg/home/about-ibf/ibf-awards/award-detail/rajeev-tummala-(2025f)) y listado de ponentes ASIFMA / ReThink HK 2026 (https://www.asifma.org/speakers/rajeev-tummala/), lo que sugiere rol vigente; no se halló ninguna bio fechada en 2026 que lo confirme explícitamente. En HSBC desde abril-2018. Cobertura Asia & MENA, no LatAm."
+  },
+  {
+   "nombre": "Manish Kohli",
+   "cargo": "Global Head of Payments Solutions",
+   "area": "Global Payments Solutions — patrocinador del Tokenised Deposit Service (expansión EE.UU. y EAU anunciada nov-2025)",
+   "ubicacion": "Londres, Reino Unido (base inferida; no confirmada en fuente)",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "decisor",
+   "prioridad": 4,
+   "por_que": "Portavoz de la expansión de depósitos tokenizados a EE.UU. y EAU (Bloomberg, 18-nov-2025); aprueba el uso de TDS como riel de liquidación 24/7 para clientes corporativos e institucionales.",
+   "fuente": "https://paymentexpert.com/2025/11/19/hsbcs-global-head-cites-treasury-benefits-for-tokenised-deposit-expansion/",
+   "notas": "Verificación: rol confirmado como global head of payments solutions en cobertura de nov-2025 (Bloomberg https://www.bloomberg.com/news/articles/2025-11-18/hsbc-to-offer-tokenized-deposits-to-us-and-uae-clients y Payment Expert); se cambió la fuente a Payment Expert por ser de acceso abierto e indexada; la nota PYMNTS original no apareció en la búsqueda de verificación. La expansión de TDS a EE.UU. estaba planificada para 1S-2026; el press release de 13-abr-2026 citado en canales_publicos no pudo verificarse en esta ronda. Foco en pagos, no en RWA; usar solo como CC o alterno. Lewis Sun (prioridad 2) reporta dentro de su área (GPS)."
+  },
+  {
+   "nombre": "Xian Chan",
+   "cargo": "Global Head of Digital Assets, Investments and Wealth Solutions (título a mar-2024; vigencia 2025-2026 no confirmada)",
+   "area": "Wealth & Personal Banking — distribución de productos tokenizados (HSBC Gold Token sobre Orion)",
+   "ubicacion": "Hong Kong",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "influencer",
+   "prioridad": 5,
+   "por_que": "Lideró la distribución del HSBC Gold Token a inversionistas retail en Hong Kong (mar-2024) y declaró que HSBC tokenizará más activos; relevante para distribución secundaria de productos del banco.",
+   "fuente": "https://www.finews.asia/finance/41144-hsbc-asset-tokenization-gold-hong-kong-apac",
+   "notas": "Verificación: todas las menciones halladas (finews.asia, Hubbis, Imperial College) corresponden al lanzamiento del Gold Token en marzo-abril 2024; no se encontró ninguna cita o bio de 2025-2026 que confirme que sigue en el cargo. Mantener en prioridad 5 y validar en LinkedIn antes de contactar. Foco retail/wealth APAC, sin cobertura LatAm."
+  },
+  {
+   "nombre": "HSBC Digital Assets & Currencies / Orion (canal genérico)",
+   "cargo": "Página institucional y gerente de relación GBM",
+   "area": "Global Banking & Markets — HSBC Orion",
+   "ubicacion": "Global",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "canal_generico",
+   "prioridad": 5,
+   "por_que": "No se halló buzón público de la unidad ni email de prensa; la página de Orion remite a contactar al equipo vía relación bancaria.",
+   "fuente": "https://gbm.hsbc.com/en-gb/feed/innovation/hsbc-sibos/exploring-the-universe-of-digital-assets-and-hsbc-orion",
+   "notas": "No se identificó ninguna persona con cobertura Latinoamérica/México en activos digitales; los fetches a hsbc.com fallaron (DNS) y no se pudo extraer el contacto de prensa del PDF de Orion/DIGIT."
+  }
+ ],
+ "ruta_recomendada": "1) Primer contacto a John O'Neill (Group Head of Digital Assets & Currencies; dueño de HSBC Orion) con CC a Lewis Sun (Global Head of Digital Currencies, CIB — nombrado mayo-2026, responsable del Tokenised Deposit Service dentro de Global Payments Solutions); no existe dirección publicada para ninguno, así que la vía debe ser LinkedIn/InMail o intro de un socio, y pedir derivación al director de 'Settlement and Collaboration' de la unidad (vacante publicada en Hong Kong). Nota: una fuente indica que O'Neill se trasladó a Hong Kong tras su nombramiento, por lo que el huso horario y el equipo local a abordar sería HK, no Londres. 2) Intro cálida: Marketnode (HSBC es inversionista) es la vía más natural; alternativas: Chainlink, SIX Digital Exchange u Ownera, que han trabajado con Orion. 3) Entrada operativa paralela: Rajeev Tummala (HSBC Securities Services, Asia & MENA, Singapur) que atiende clientes/FMIs sobre emisión y custodia en Orion; coincidir en Sibos, Singapore Fintech Festival o ASIFMA ReThink HK 2026. 4) Fallback: gerente de relación de HSBC México / Global Banking & Markets para escalar internamente; no se halló patrón de email corroborado, validar direcciones vía LinkedIn o el socio de intro antes de enviar.",
+ "notas": "Investigación automática 2026-10-18 (lote EXPLORE del Liquidity Agent): agente de búsqueda + verificación adversarial de roles y correos; 12 búsquedas. Todo correo con patron_no_verificado debe confirmarse antes de enviar."
+}

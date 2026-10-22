@@ -1,0 +1,141 @@
+{
+ "institucion": "Africa Finance Corporation",
+ "programa": "Bono digital CHF 350M a 5 años (cupón 1.4925%) emitido el 12-ago-2026 vía SIX / plataforma SDX (registro DLT, liquidación por SIX SIS AG); arrangers Commerzbank AG (Technical Lead) y Deutsche Bank. Primer emisor africano de bono digital listado/negociado/liquidado en bolsa digital regulada y mayor bono digital en CHF. Encaja en el programa de funding de AFC (Eurobond USD 500M jul-2026, préstamo sindicado récord USD 2.000M jun-2026, hybrid bond USD 500M ene-2025) gestionado por la división Financial Services (Treasury & Financial Institutions, Syndications, Financial Advisory, Capital Mobilization & Partnerships).",
+ "formato_email": {
+  "patron": "firstname.lastname@africafc.org (variantes minoritarias: f.last@ y firstl@)",
+  "fuente": "https://leadiq.com/c/africa-finance-corporation/5a1d8a372400002400637f11/email-format (97% first.last) — corroborado por el email público modupe.famakinwa@africafc.org en https://www.africafc.org/our-investors/debt",
+  "confianza": "alta"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Investor Relations (buzón)",
+   "valor": "investorrelations@africafc.org | Tel +234 1 279 9600",
+   "fuente": "https://www.africafc.org/investor-and-country-relations/with-investors"
+  },
+  {
+   "canal": "Funding & Investor Relations (contacto nominal)",
+   "valor": "Modupe Famakinwa — modupe.famakinwa@africafc.org",
+   "fuente": "https://www.africafc.org/our-investors/debt"
+  },
+  {
+   "canal": "Prensa / Communications",
+   "valor": "communications@africafc.org | Tel +234 1 279 9600",
+   "fuente": "https://www.africafc.org/investor-and-country-relations/with-investors"
+  },
+  {
+   "canal": "Sede",
+   "valor": "3a Osborne Road, Ikoyi, Lagos, Nigeria",
+   "fuente": "https://www.highperformr.ai/company/africa-finance-corporation (consistente con africafc.org)"
+  },
+  {
+   "canal": "LinkedIn corporativo",
+   "valor": "https://ng.linkedin.com/company/africa-finance-corporation",
+   "fuente": "https://ng.linkedin.com/company/africa-finance-corporation"
+  },
+  {
+   "canal": "Newsroom (comunicados con contactos de prensa)",
+   "valor": "https://africafinancecorporation.africa-newsroom.com/",
+   "fuente": "https://africafinancecorporation.africa-newsroom.com/"
+  },
+  {
+   "canal": "Comunicado oficial del bono digital",
+   "valor": "https://www.africafc.org/news-and-insights/news/afc-raises-landmark-chf-350-million-digital-bond-becoming-first-african-issuer-and-largest-international-issuer-in-the-swiss-market",
+   "fuente": "https://www.africafc.org/news-and-insights/news/afc-raises-landmark-chf-350-million-digital-bond-becoming-first-african-issuer-and-largest-international-issuer-in-the-swiss-market"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Modupe Famakinwa",
+   "cargo": "Senior Vice President, Head of Corporate Funding & Investor Relations (también descrita como Head of Capital Markets, Funding & Investor Relations)",
+   "area": "Financial Services — Treasury / Corporate Funding & IR",
+   "ubicacion": "Lagos, Nigeria",
+   "linkedin": "https://www.linkedin.com/in/modupefamakinwa/",
+   "email": "modupe.famakinwa@africafc.org",
+   "email_estado": "publico",
+   "rol": "entrada",
+   "prioridad": 1,
+   "por_que": "Es el contacto nominal de funding/IR que AFC publica en su página de inversionistas de deuda; lleva el funding corporativo desde 2014 (~USD 10.000M levantados, libro de pasivos ~USD 7.000M), ex-Associate Director Capital Markets Loan Syndications en Standard Chartered. Es la ejecutora natural de las emisiones (incl. el bono digital SDX) y la persona más propensa a responder un email institucional sobre liquidez secundaria / distribución de instrumentos tokenizados.",
+   "fuente": "https://www.africafc.org/our-investors/debt ; https://theorg.com/org/africa-finance/org-chart/modupe-famakinwa ; https://gbandm.com/contributors/modupe-famakinwa"
+  },
+  {
+   "nombre": "Banji Fehintola, CFA",
+   "cargo": "Executive Board Member and Head of Financial Services (Executive Director, Financial Services desde 1-ago-2024)",
+   "area": "Financial Services — supervisa Treasury & Financial Institutions, Financial Advisory, Syndications y Capital Mobilization & Partnerships",
+   "ubicacion": "Lagos, Nigeria",
+   "linkedin": "https://www.linkedin.com/in/banji-fehintola-cfa-534b787/",
+   "email": "banji.fehintola@africafc.org",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 2,
+   "por_que": "Es el ejecutivo citado en el comunicado del bono digital CHF 350M ('The digital format of this bond is… a signal of our commitment to being at the frontier of innovation in the capital markets'); dueño del programa de tesorería/mercados de capitales y de las áreas de sindicación y partnerships. Decisor final para cualquier alianza de liquidez con un marketplace de RWA tokenizados; conviene copiarlo, no abrir con él.",
+   "fuente": "https://www.africafc.org/news-and-insights/news/afc-raises-landmark-chf-350-million-digital-bond-becoming-first-african-issuer-and-largest-international-issuer-in-the-swiss-market ; https://www.africafc.org/news-and-insights/news/AFC-appoints-Banji-Fehintola-as-Exec-Director-Financial-Services ; https://www.ledgerinsights.com/africa-finance-corporation-issues-chf-350m-digital-bond-via-six-sdx/"
+  },
+  {
+   "nombre": "Mohammed Usman Abdul-Razaq",
+   "cargo": "Senior Vice President & Head, Capital Mobilisation and Partnerships",
+   "area": "Financial Services — Capital Mobilization & Partnerships (CMP): equity capital mobilization, partnerships, alianzas y membresías de países",
+   "ubicacion": "Lagos, Nigeria",
+   "linkedin": "https://www.linkedin.com/in/mohammed-usman-abdul-razaq-57742ab7/",
+   "email": "mohammed.abdul-razaq@africafc.org",
+   "email_estado": "patron_no_verificado",
+   "rol": "entrada",
+   "prioridad": 3,
+   "por_que": "Dirige el departamento creado para todas las alianzas y partnerships institucionales de AFC; ex-Morgan Stanley EM IB, >USD 30.000M en transacciones; vocero de la agenda de movilización de capital doméstico (2026). Ruta formal para una propuesta de 'partnership' con un operador regulado de activos digitales.",
+   "fuente": "https://www.africafc.org/news-and-insights/news/africa-finance-corporation-launches-new-capital-mobilization-and-partnerships-cmp-department ; https://theafricadebate.com/biographies/2025/mohammed-usman-abdul-razaq ; https://thebftonline.com/2026/05/01/afc-charts-path-to-financial-sovereignty-through-domestic-capital-mobilisation/"
+  },
+  {
+   "nombre": "Wola Asase",
+   "cargo": "Deputy Director & Head, Syndications; además Head of AFC Captive y Director en el Board de la cautiva de seguros (lanzada ago-2026)",
+   "area": "Financial Services — Syndications (A/B loans, P-Loans, risk participations, A-B bonds) / co-financiación",
+   "ubicacion": "Lagos, Nigeria",
+   "linkedin": null,
+   "email": "wola.asase@africafc.org",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Responsable de movilizar financiamiento de terceros y distribuir riesgo (12 años en IFC Syndications, Washington/Dakar/Lagos). Interlocutor idóneo para conversar sobre distribución/secundario de participaciones y estructuras de co-financiación tokenizadas.",
+   "fuente": "https://www.africa-hbsclub.com/personel/wola-asase ; https://www.africafc.org/our-approach/syndications ; https://www.africannewspage.net/2026/08/africa-finance-corporation-afc-launches-captive-insurance-company-to-strengthen-risk-management-and-expand-financing-capacity/"
+  },
+  {
+   "nombre": "Samson Vese",
+   "cargo": "Vice President, Treasury & Financial Institutions",
+   "area": "Financial Services — Treasury & Financial Institutions (líneas con bancos/DFIs, trade finance a instituciones financieras)",
+   "ubicacion": "Lagos, Nigeria",
+   "linkedin": "https://ng.linkedin.com/in/samson-vese-5051906",
+   "email": "samson.vese@africafc.org",
+   "email_estado": "patron_no_verificado",
+   "rol": "entrada",
+   "prioridad": 5,
+   "por_que": "Nivel VP dentro del equipo de Tesorería e Instituciones Financieras (relaciones con bancos/DFIs y colaboraciones tipo GEXIM 2025); mayor probabilidad de respuesta operativa que los ejecutivos de nivel board.",
+   "fuente": "https://ng.linkedin.com/in/samson-vese-5051906 ; https://citinewsroom.com/2025/06/gexim-afc-deepen-collaboration-set-to-partner-on-key-projects-in-ghana/"
+  },
+  {
+   "nombre": "James O. Maduekeh",
+   "cargo": "Senior Vice President & Head, Treasury Client Solutions, Africa Region",
+   "area": "Financial Services — Treasury Client Solutions (productos de tesorería para clientes/instituciones)",
+   "ubicacion": "Lagos, Nigeria",
+   "linkedin": null,
+   "email": "james.maduekeh@africafc.org",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 6,
+   "por_que": "Lidera soluciones de tesorería para clientes de AFC en África; ponente habitual en conferencias de fondos de pensiones e inversión alternativa, lo que lo hace receptivo a propuestas de productos/plataformas de inversión.",
+   "fuente": "https://theorg.com/org/africa-finance/org-chart/james-o-maduekeh ; https://pensionfundsafrica.com/speaker/james-maduekeh/"
+  },
+  {
+   "nombre": "Ayotunde Anjorin",
+   "cargo": "Chief Financial Officer",
+   "area": "Finance (CFO)",
+   "ubicacion": "Lagos, Nigeria",
+   "linkedin": "https://ng.linkedin.com/in/ayotunde-anjorin-79ba1033",
+   "email": "ayotunde.anjorin@africafc.org",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 7,
+   "por_que": "CFO; no aparece citado en el bono digital (el funding está bajo Financial Services / Fehintola), por lo que es decisor de segunda línea. Usar solo como CC en fase avanzada o si la propuesta involucra balance/contabilidad.",
+   "fuente": "https://ng.linkedin.com/in/ayotunde-anjorin-79ba1033"
+  }
+ ],
+ "ruta_recomendada": "1) Email inicial a Modupe Famakinwa (modupe.famakinwa@africafc.org — único email nominal público) con CC a investorrelations@africafc.org; asunto anclado en el bono digital SDX de ago-2026 y en liquidez secundaria/distribución de instrumentos tokenizados bajo marco regulado (CNAD/PSAD). 2) En la misma semana, mensaje de LinkedIn/email a Mohammed Abdul-Razaq (CMP) planteándolo como 'partnership' institucional. 3) Solo tras respuesta o a los ~10 días, escalar con CC a Banji Fehintola (dueño del programa) citando su propia frase sobre 'frontier of innovation in the capital markets'. 4) Ruta cálida: (a) los arrangers del bono — Commerzbank AG (Technical Lead) y Deutsche Bank (equipos DLT/Digital Assets & SSA DCM) — que ya tienen relación de emisión con Fehintola/Famakinwa; (b) SIX Digital Exchange (SDX) como infraestructura donde el bono está listado, pidiendo una presentación issuer-to-platform; (c) redes DFI/MDB (IFC — antiguo empleador de Wola Asase; Standard Chartered — antiguo empleador de Famakinwa; miembros/accionistas de AFC como Afreximbank o BADEA) y foros como Africa Loan & Capital Markets Summit 2026 donde Famakinwa participa; (d) AFC Capital Partners (https://www.afccapital.org/contact) como vía alternativa de gestión de activos.",
+ "notas": "Limitaciones: la red de este entorno bloqueó el acceso directo (egress) a africafc.org, LinkedIn, newsroom, ledgerinsights, theorg, zoominfo, leadiq, rocketreach y todos los medios; los cargos, citas y emails provienen de los extractos indexados de esos sitios devueltos por el buscador, no de la lectura íntegra de cada página. Verificar antes de enviar: (i) que modupe.famakinwa@africafc.org siga en https://www.africafc.org/our-investors/debt; (ii) los cargos vigentes en https://www.africafc.org/about-us/our-people. No se encontró un 'Group Treasurer/Head of Treasury' con ese título literal: la función de tesorería y mercados de capitales se reporta a Fehintola (Head of Financial Services) y la ejecución de funding a Famakinwa (Corporate Funding & IR); otros nombres del área: Babajide Bola, CFA (Deputy Director, ALM & Treasury Risk Analytics, https://ng.linkedin.com/in/babajide-bola) — no incluido como contacto de outreach por ser función de riesgo. No se identificó un Chief Strategy/Digital/Innovation Officer público. No se encontró LinkedIn público de Wola Asase ni de James Maduekeh. Todos los emails marcados 'patron_no_verificado' se construyeron con el patrón first.last@africafc.org (LeadIQ 97%) y no fueron vistos literalmente en ninguna página. Otras referencias del programa: Reuters vía TradingView (https://www.tradingview.com/news/reuters.com,2026-08-13:newsml_Zaw4svdVY:0-africa-finance-corp-raises-430-23mln-from-first-digital-bond-issue/), Semafor 19-ago-2026, Ledger Insights."
+}

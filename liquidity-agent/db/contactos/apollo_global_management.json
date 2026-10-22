@@ -1,0 +1,143 @@
+{
+ "institucion": "Apollo Global Management",
+ "programa": "ACRED (Apollo Diversified Credit Securitize Fund, feeder tokenizado del Apollo Diversified Credit Fund, lanzado 30-ene-2025 con Securitize en Aptos/Avalanche/Ethereum/Ink/Polygon/Solana, ampliado a Sei sep-2025 y a HashKey Exchange 'Earn Channel' 31-jul-2026); estrategia de Digital Assets liderada por Christine Moy: acuerdo Coinbase Asset Management (stablecoin credit strategies, oct-2025, productos en 2026), acuerdo de cooperación con Morpho Association (feb-2026, hasta 90M MORPHO en 48 meses, soporte a mercados de préstamo on-chain), estrategia apalancada ACRED con Gauntlet/Morpho (abr-2025); antecedentes: Figure/Provenance (colaboración 2021, fondo on-chain 2022) y PoC con JPMorgan Onyx/Kinexys bajo Project Guardian (MAS, 2023).",
+ "formato_email": {
+  "patron": "{inicial_nombre}{apellido}@apollo.com (ej. jsmith@apollo.com), ~85% de las direcciones según LeadIQ/Clay/RocketReach; variantes minoritarias {nombre}{apellido}@apollo.com y {nombre}-{apellido}@apollo.com",
+  "fuente": "https://leadiq.com/c/apollo-global-management-inc/5a1d8a9224000024006449d6/email-format ; https://www.clay.com/dossier/apollo-global-management-email-format ; https://rocketreach.co/apollo-global-management-inc-email-format_b5c6a4ccf42e0cf5",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Prensa / Corporate Communications",
+   "valor": "communications@apollo.com — Joanna Rose, Global Head of Corporate Communications, +1 212-822-0491 (visto en resumen de búsqueda del press release de resultados 2T-2026; no abierto literalmente por bloqueo de proxy)",
+   "fuente": "https://ir.apollo.com/news-events/press-releases/detail/640/apollo-reports-second-quarter-2026-results"
+  },
+  {
+   "canal": "Investor Relations (accionistas APO)",
+   "valor": "ir@apollo.com — Noah Gunn, Global Head of Investor Relations, +1 212-822-0540 (mismo estatus: visto en resumen de búsqueda)",
+   "fuente": "https://ir.apollo.com/news-events/press-releases/detail/640/apollo-reports-second-quarter-2026-results"
+  },
+  {
+   "canal": "Consultas sobre productos de inversión privada de Apollo (no accionistas)",
+   "valor": "investor@apollo.com (visto en resumen de búsqueda de la página de contactos de IR)",
+   "fuente": "https://ir.apollo.com/contacts"
+  },
+  {
+   "canal": "Teléfono sede Nueva York",
+   "valor": "+1 212-515-3200",
+   "fuente": "https://apollo-global-management.pissedconsumer.com/customer-service.html (teléfono corporativo público de Apollo, 9 West 57th St, NY)"
+  },
+  {
+   "canal": "Formularios web de contacto (institucional / wealth / general)",
+   "valor": "https://www.apollo.com/aboutus/contact-us ; https://www.apollo.com/institutional/aboutus/contact-us ; https://www.apollo.com/wealth/aboutus/contact-us",
+   "fuente": "https://www.apollo.com/aboutus/contact-us"
+  },
+  {
+   "canal": "Página oficial del producto subyacente",
+   "valor": "https://www.apollo.com/wealth/strategies/products/apollo-diversified-credit-fund (distribuidor del fondo: ALPS Distributors, Inc.)",
+   "fuente": "https://www.apollo.com/wealth/strategies/products/apollo-diversified-credit-fund"
+  },
+  {
+   "canal": "ACRED en Securitize (emisor del feeder tokenizado; canal para distribuidores/secundario)",
+   "valor": "https://securitize.io/learn/press/apollo-and-securitize-announce-partnership-and-launch-tokenized-access-to-credit-fund ; datos on-chain: https://app.rwa.xyz/assets/ACRED",
+   "fuente": "https://securitize.io/learn/press/apollo-and-securitize-announce-partnership-and-launch-tokenized-access-to-credit-fund"
+  },
+  {
+   "canal": "X (Twitter) de la dueña del programa",
+   "valor": "https://x.com/cmoyall",
+   "fuente": "https://x.com/cmoyall/status/1885101857422319716"
+  },
+  {
+   "canal": "White paper de tokenización de Apollo (Christine Moy, nov-2025, republicado jun-2026)",
+   "valor": "https://www.apollo.com/content/dam/apolloaem/pdf/daily-spark/2026/jun/27/062726-tokenization-wp.pdf",
+   "fuente": "https://www.apollo.com/content/dam/apolloaem/pdf/daily-spark/2026/jun/27/062726-tokenization-wp.pdf"
+  },
+  {
+   "canal": "Evento donde habla la dueña del programa",
+   "valor": "Consensus Miami 2026 (CoinDesk) — Christine Moy, speaker",
+   "fuente": "https://consensus.coindesk.com/agenda/speaker/-christine-moy"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Christine Moy",
+   "cargo": "Partner, Head of Digital Assets, Data & AI Strategy",
+   "area": "Digital Assets / Data & AI Strategy (reporta al Leadership Team; lidera inversiones y alianzas en digital assets: Securitize/ACRED, Coinbase Asset Management, Morpho, Project Guardian con JPMorgan)",
+   "ubicacion": "Nueva York, EE. UU. (sede de Apollo; ciudad no verificada en su perfil por bloqueo de proxy)",
+   "linkedin": "https://www.linkedin.com/in/christine-moy-b6109164/",
+   "email": "cmoy@apollo.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Es la firmante de todos los anuncios del programa (ACRED, CBAM, Morpho) y ha declarado públicamente que el objetivo de la tokenización es 'greater secondary liquidity' y 'the enablement of secondary liquidity for alternative assets'; un marketplace licenciado (PSAD, El Salvador) con liquidez institucional para RWA tokenizados encaja exactamente en su mandato. Activa en X y conferencias (Consensus Miami 2026), por lo que un email corto y técnico sobre secundario/on-chain tiene mejor probabilidad de respuesta que en cualquier otra área de Apollo.",
+   "fuente": "https://www.apollo.com/aboutus/leadership-and-people/christine-moy ; https://www.prnewswire.com/news-releases/apollo-and-securitize-announce-partnership-and-launch-tokenized-access-to-credit-fund-on-aptos-avalanche-ethereum-ink-polygon-and-solana-networks-302364212.html ; https://www.crowdfundinsider.com/2025/10/255081-coinbase-asset-management-apollo-partner-to-implement-stablecoin-credit-strategies/ ; https://www.ledgerinsights.com/apollos-moy-outlines-tokenizations-killer-use-case/"
+  },
+  {
+   "nombre": "Laura González",
+   "cargo": "Managing Director, Lead IWG (Independent Wealth Group) LatAm / US Offshore",
+   "area": "Global Wealth — distribución US Offshore y Latinoamérica (ingresó mayo-2025 desde Allfunds, donde fue Head of Americas y abrió las oficinas de Miami y São Paulo)",
+   "ubicacion": "Miami Beach, Florida, EE. UU.",
+   "linkedin": "https://www.linkedin.com/in/lauragonzalezgomez/",
+   "email": "lgonzalez@apollo.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 2,
+   "por_que": "Responsable de llevar los productos de Apollo Global Wealth (incluido el Apollo Diversified Credit Fund, subyacente de ACRED) a plataformas, bancas privadas e intermediarios de LatAm/US Offshore; viene del mundo de plataformas de distribución (Allfunds), por lo que entiende de inmediato el valor de un canal/marketplace regulado en Centroamérica y es la puerta natural para distribución regional.",
+   "fuente": "https://www.fundssociety.com/en/news/appointments/laura-gonzalez-se-unira-a-apollo-global-management-en-mayo/ ; https://citywire.com/americas/news/exclusive-apollo-appoints-allfunds-americas-head/a2458887 ; https://www.apollo.com/aboutus/leadership-and-people/laura-gonzalez"
+  },
+  {
+   "nombre": "Erika Davila (Erika Davila Rothman)",
+   "cargo": "Managing Director, Head of Latin America, Client and Product Solutions (CPS)",
+   "area": "Client and Product Solutions — marketing y ventas institucionales en Latinoamérica (bancos centrales, fondos soberanos, fondos de pensiones, supranacionales; ex JPMorgan Private Bank / Institutional AM)",
+   "ubicacion": null,
+   "linkedin": "https://www.linkedin.com/in/erika-davila-rothman-4354563/",
+   "email": "edavila@apollo.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 3,
+   "por_que": "Dueña de la relación institucional de Apollo con LatAm (en Apollo desde 2016); es quien valida cualquier contraparte regional y quien puede conectar con fondos de pensiones/aseguradoras de la región como demanda institucional para un marketplace de RWA tokenizados. Buen CC o segundo hilo si González responde.",
+   "fuente": "https://www.apollo.com/aboutus/leadership-and-people/erika-davila ; https://www.apollo.com/institutional/aboutus/leadership-and-people/erika-davila"
+  },
+  {
+   "nombre": "Justin Sendak",
+   "cargo": "Partner, Apollo Capital Solutions — Head of ACS Capital Formation & Bank Partnerships / Head of Credit Capital Markets",
+   "area": "Apollo Capital Solutions (ACS): estructuración, sindicación y distribución de crédito; alianzas con bancos",
+   "ubicacion": "Nueva York, EE. UU.",
+   "linkedin": null,
+   "email": "jsendak@apollo.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Si Kabal ofrece capital/liquidez institucional o co-distribución de crédito originado (no solo secundario de ACRED), la vía es Capital Solutions; Sendak gestiona relaciones con inversionistas de crédito y alianzas con bancos, el perfil más cercano a 'liquidity partner'. Probabilidad de respuesta en frío menor que Moy/González; usar como CC o segundo paso.",
+   "fuente": "https://www.apollo.com/aboutus/leadership-and-people/justin-sendak ; https://www.apollo.com/strategies/asset-management/capital-solutions"
+  },
+  {
+   "nombre": "Stephanie Drescher",
+   "cargo": "Partner, Chief Client and Product Development Officer; miembro del Leadership Team",
+   "area": "Client and Product Solutions — supervisa Global Wealth, Client Portfolio Management, Product Development, Client Marketing y Client Experience (jefa de González y Davila)",
+   "ubicacion": "Nueva York, EE. UU.",
+   "linkedin": "https://www.linkedin.com/in/stephanie-drescher-apollo/",
+   "email": "sdrescher@apollo.com",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 5,
+   "por_que": "Decisora final de producto y distribución (incl. wealth y product development donde vive el Apollo Diversified Credit Fund). No enviar en frío: usarla solo como referencia de escalamiento o CC cuando ya exista tracción con Moy o González.",
+   "fuente": "https://www.apollo.com/aboutus/leadership-and-people/stephanie-drescher ; https://ir.apollo.com/news-events/press-releases/detail/94/apollo-names-stephanie-drescher-chief-client-and-product"
+  },
+  {
+   "nombre": "Carlos Domingo",
+   "cargo": "Co-founder & CEO, Securitize (socio externo; emisor/administrador del feeder ACRED)",
+   "area": "Securitize — plataforma de tokenización; Securitize Markets (ATS/secundario) dirigido por Joe Nikolson, CEO & CCO; Brett Redfearn (ex SEC) es President",
+   "ubicacion": "Miami, Florida, EE. UU. (sede de Securitize; no verificado en perfil)",
+   "linkedin": null,
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "entrada",
+   "prioridad": 6,
+   "por_que": "ACRED se distribuye regionalmente a través de Securitize (ej. HashKey Earn Channel, jul-2026, con suscripción en USDC y mínimo 50.000 USDC), no mediante acuerdos directos de Apollo; un marketplace licenciado en El Salvador entra más rápido como distribuidor/venue de Securitize (o vía Securitize Markets para secundario) y esa relación es el camino más 'caliente' hacia Moy.",
+   "fuente": "https://www.prnewswire.com/news-releases/apollo-and-securitize-announce-partnership-and-launch-tokenized-access-to-credit-fund-on-aptos-avalanche-ethereum-ink-polygon-and-solana-networks-302364212.html ; https://panews.io/articles/019fb7c8-b466-70bc-85a9-c8c59de44d26 ; https://investors.securitize.io/governance/executive-management/default.aspx"
+  }
+ ],
+ "ruta_recomendada": "1) Primer email a Christine Moy (dueña del programa) — asunto sobre 'liquidez secundaria institucional para ACRED/RWA tokenizados desde un marketplace licenciado (PSAD, CNAD El Salvador)'; citar su propia tesis de 'secondary liquidity' y las expansiones a Sei/HashKey; sin CC en el primer envío (mejor tasa de respuesta en frío). 2) En paralelo, hilo separado a Laura González (IWG LatAm/US Offshore, Miami) planteando a Kabal como canal regulado de distribución en Centroamérica para Apollo Diversified Credit Fund/ACRED; si responde, pedir que incluya a Erika Davila (institucional LatAm). 3) Si hay interés en aportar/recibir capital de crédito (no solo secundario), escalar a Justin Sendak (Apollo Capital Solutions) con Moy en CC. 4) Camino más cálido: entrar primero por Securitize (Carlos Domingo / Joe Nikolson en Securitize Markets) como distribuidor o venue de ACRED — Securitize es el gatekeeper operativo del token y ya replicó ese modelo con HashKey — y pedir la presentación a Moy; alternativas: reunión presencial en Consensus Miami 2026 (Moy speaker) y Miami como base de González, interacción con sus publicaciones en LinkedIn/X (@cmoyall), y contacto con Coinbase Asset Management (Anthony Bassili, President) o Morpho/Gauntlet, ecosistemas con los que Moy ya trabaja. 5) No usar communications@ / ir@ para la propuesta comercial; investor@apollo.com sirve solo como respaldo si no hay respuesta directa.",
+ "notas": "Limitaciones: el proxy bloqueó apollo.com, ir.apollo.com, linkedin.com, sec.gov, securitize.io, prnewswire y medios; títulos, ubicaciones y emails de canales provienen de resúmenes de resultados de búsqueda de esas páginas públicas, no de la lectura literal, por lo que deben verificarse antes de enviar. Todos los emails personales son patrón inferido (inicial+apellido@apollo.com), no vistos en páginas públicas. Ubicación de Erika Davila no confirmada (cobertura LatAm; sede probable Nueva York o Miami). Un perfil de LinkedIn 'Nathan Boyarsky — Apollo Global Management' apareció en búsquedas asociadas a digital assets/Coinbase, pero no se pudo confirmar su cargo ni pertenencia al equipo de Moy; no incluido como contacto. Aclaraciones de programa: la relación Apollo–HashKey es indirecta (HashKey distribuye ACRED vía Securitize; tokens no transferibles fuera de HashKey, salida solo por recompra trimestral con gate del 5%); la prueba con JPMorgan Kinexys fue un PoC de portafolios tokenizados bajo Project Guardian (2023) con Provenance y Avalanche; Figure/Provenance data de 2021-2022. Vigencia de Moy en el cargo confirmada por citas de oct-2025 (CBAM) y feb-2026 (Morpho) y su participación en Consensus Miami 2026. ACRED: ~$112M en Sei (sep-2025), retorno 9.41% primer año; NAV diario en Securitize."
+}

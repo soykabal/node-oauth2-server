@@ -1,0 +1,141 @@
+{
+ "institucion": "Mubadala Capital",
+ "programa": "Mubadala Capital Solutions (Abu Dhabi) — unidad que lidera la tokenización: MoU con KAIO (ADGM) anunciado el 8-ene-2026 y lanzamiento el 23-jul-2026 del fondo tokenizado MCAS-TA (Mubadala Capital Alternative Solutions Fund, ~US$75M on-chain en Base/Solana/Sui, con Coinbase como inversor de balance). Plataformas adyacentes: Crédito (US$25B integrado a Mubadala Capital el 6-jul-2026, abierto a capital de terceros) y Brasil (Special Opportunities Fund III >US$900M, 2026; Base Exchange, bolsa en Rio de Janeiro controlada 73% por Mubadala, que busca consorcio de hasta 10 'liquidity partners').",
+ "formato_email": {
+  "patron": "Mubadala Capital: {inicial}{apellido}@mubadalacapital.ae (verificado con smaneles@mubadalacapital.ae en nota de prensa) y también {nombre}{apellido}@mubadalacapital.ae (agregadores). Mubadala Investment Company: @mubadala.ae (la compañía declara que no usa otro dominio).",
+  "fuente": "https://www.zawya.com/en/press-release/companies-news/mubadala-capital-closes-oversubscribed-inaugural-co-investment-fund-in-excess-of-550mln-tr4braar ; https://www.mubadalacapital.ae/uploads/files/Media_Kit_6bde59a9c3.pdf ; https://prospeo.io/c/mubadala-capital ; https://www.mubadala.com/en/contact-us",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Email de prensa/comunicaciones Mubadala Capital",
+   "valor": "comms@mubadalacapital.ae",
+   "fuente": "https://www.mubadalacapital.ae/uploads/files/Media_Kit_6bde59a9c3.pdf"
+  },
+  {
+   "canal": "Contacto de medios (Stephanie Maneles, Mubadala Capital)",
+   "valor": "smaneles@mubadalacapital.ae",
+   "fuente": "https://www.zawya.com/en/press-release/companies-news/mubadala-capital-closes-oversubscribed-inaugural-co-investment-fund-in-excess-of-550mln-tr4braar"
+  },
+  {
+   "canal": "Formulario de contacto Mubadala Capital",
+   "valor": "https://www.mubadalacapital.ae/contact",
+   "fuente": "https://www.mubadalacapital.ae/contact"
+  },
+  {
+   "canal": "Teléfono sede Mubadala Capital (Al Sila Tower, piso 13, Al Maryah Island, Abu Dhabi)",
+   "valor": "+971 2 236 1000",
+   "fuente": "https://www.zoominfo.com/c/mubadala-capital/1308914705"
+  },
+  {
+   "canal": "Teléfono Mubadala Investment Company",
+   "valor": "+971 2 413 0000",
+   "fuente": "https://www.mubadala.com/en/contact-us"
+  },
+  {
+   "canal": "LinkedIn corporativo Mubadala Capital",
+   "valor": "https://www.linkedin.com/company/mubadala-capital",
+   "fuente": "https://www.linkedin.com/company/mubadala-capital"
+  },
+  {
+   "canal": "Directorio de equipo público (filtrable por estrategia Solutions/Credit/Brazil)",
+   "valor": "https://www.mubadalacapital.ae/full-team/",
+   "fuente": "https://www.mubadalacapital.ae/full-team/?strategy_equal=Solutions"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Maxime (Max) Franzetti",
+   "cargo": "Senior Partner & Co-Head, Mubadala Capital Solutions",
+   "area": "Capital Solutions (fondos evergreen, SMAs, co-inversión) — vocero del programa de tokenización con KAIO / MCAS-TA",
+   "ubicacion": "Abu Dhabi, EAU",
+   "linkedin": "https://www.linkedin.com/in/maxime-franzetti-47822348/",
+   "email": "mfranzetti@mubadalacapital.ae",
+   "email_estado": "patron_no_verificado",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Es quien firma las citas del MoU con KAIO (ene-2026) y del lanzamiento del fondo tokenizado en Base/Solana/Sui con Coinbase (jul-2026). Dueño operativo de la agenda de 'acceso digital a private markets'; una propuesta de liquidez secundaria regulada para tokens de fondos/RWA cae directamente en su mandato.",
+   "fuente": "https://www.newsfilecorp.com/release/279845/Mubadala-Capital-and-KAIO-to-Explore-Digital-Access-to-Private-Market-Investments ; https://www.coindesk.com/business/2026/07/23/abu-dhabi-s-mubadala-capital-joins-tokenization-push-as-coinbase-takes-stake-in-onchain-fund ; https://www.zoominfo.com/p/Maxime-Franzetti/1931746993"
+  },
+  {
+   "nombre": "Fatima Al Noaimi, CFA, CAIA",
+   "cargo": "Senior Partner, Chief Operating Officer & Co-Head, Mubadala Capital Solutions",
+   "area": "Capital Solutions / operaciones (supervisa business development e investor relations de la firma)",
+   "ubicacion": "Abu Dhabi, EAU",
+   "linkedin": "https://www.linkedin.com/in/fatima-al-noaimi-cfa-caia-2a901035/",
+   "email": "falnoaimi@mubadalacapital.ae",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "Co-firmante de la nota KAIO junto a Franzetti y como COO coordina BD e IR; vocera del co-investment fund de US$550M (ene-2026). Es el CC natural: decide sobre partners de distribución/plataforma para los productos de terceros.",
+   "fuente": "https://www.newsfilecorp.com/release/279845/Mubadala-Capital-and-KAIO-to-Explore-Digital-Access-to-Private-Market-Investments ; https://www.semafor.com/article/01/27/2026/mubadala-capital-raises-550m-for-debut-co-investment-fund ; https://people.equilar.com/bio/person/fatima-noaimi-mubadala-capital/58118781"
+  },
+  {
+   "nombre": "Omar Eraiqat",
+   "cargo": "Senior Partner; President & Chief Investment Officer, Credit and Solutions",
+   "area": "Crédito global + plataforma Solutions (evergreen, co-inversión, SMAs, alianzas estratégicas)",
+   "ubicacion": "Abu Dhabi, EAU",
+   "linkedin": "https://www.linkedin.com/in/omar-eraiqat-57488347/",
+   "email": "oeraiqat@mubadalacapital.ae",
+   "email_estado": "patron_no_verificado",
+   "rol": "decisor",
+   "prioridad": 3,
+   "por_que": "Desde el 6-jul-2026 encabeza a la vez Crédito (US$25B, ahora abierto a capital de terceros) y Solutions (donde vive la tokenización). Es el ejecutivo por encima de Franzetti/Al Noaimi y el único que puede vincular private credit + RWA tokenizado + alianzas estratégicas en una sola decisión.",
+   "fuente": "https://www.businesswire.com/news/home/20260706677713/en/Mubadala-Capital-Completes-Integration-of-Mubadala-Investment-Companys-Credit-Business ; https://www.zoominfo.com/p/Omar-Eraiqat/1676178477"
+  },
+  {
+   "nombre": "Fabrizio Bocciardi",
+   "cargo": "Senior Partner & Head of Credit, Mubadala Capital (antes Head of Credit Investments, Mubadala Investment Company)",
+   "area": "Crédito privado / direct lending / special situations (alianzas con Fortress US$1B, Apollo, AlpInvest)",
+   "ubicacion": "Abu Dhabi, EAU",
+   "linkedin": "https://www.linkedin.com/in/fabrizio-bocciardi-133218/",
+   "email": "fbocciardi@mubadalacapital.ae",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Dueño del libro de crédito privado; relevante si la propuesta de Kabal incluye colateral de trade finance/receivables tokenizados o líneas de liquidez respaldadas por RWA. Entrada secundaria: sólo tras abrir la puerta con Solutions.",
+   "fuente": "https://www.businesswire.com/news/home/20260706677713/en/Mubadala-Capital-Completes-Integration-of-Mubadala-Investment-Companys-Credit-Business ; https://alternativecreditinvestor.com/2025/04/24/mubadala-and-fortress-agree-1bn-private-credit-partnership/ ; https://www.zoominfo.com/p/Fabrizio-Bocciardi/1490376582"
+  },
+  {
+   "nombre": "Oscar Fahlgren",
+   "cargo": "Chief Investment Officer & Head of Brazil, Mubadala Capital",
+   "area": "Mubadala Capital Brazil — Special Opportunities (Fund III >US$900M, 2026), Base Exchange (Rio)",
+   "ubicacion": "Rio de Janeiro, Brasil (la oficina de Mubadala Capital en Brasil está en Rio, no en São Paulo)",
+   "linkedin": null,
+   "email": "ofahlgren@mubadalacapital.ae",
+   "email_estado": "patron_no_verificado",
+   "rol": "cobertura_latam",
+   "prioridad": 5,
+   "por_que": "Único senior partner con mandato en América Latina; Mubadala busca hasta 10 'liquidity partners' para Base Exchange (bolsa en Rio, 73% Mubadala). Un operador regulado de activos digitales centroamericano encaja en la narrativa 'liquidez regional + mercados secundarios'.",
+   "fuente": "https://www.zoominfo.com/p/Oscar-Fahlgren/1955486299 ; https://gulfbusiness.com/en/2026/finance/mubadala-capital-closes-900m-brazil-fund/ ; https://www.zawya.com/en/business/m-a/abu-dhabis-mubadala-seeks-up-to-10-partners-for-rio-de-janeiro-stock-exchange-sources-say-rrmglr2u"
+  },
+  {
+   "nombre": "Breno Nakai",
+   "cargo": "Executive Director, Brazil investment team, Mubadala Capital",
+   "area": "Originación y ejecución de inversiones privadas en Brasil; value creation de portfolio",
+   "ubicacion": "Rio de Janeiro, Brasil",
+   "linkedin": null,
+   "email": "bnakai@mubadalacapital.ae",
+   "email_estado": "patron_no_verificado",
+   "rol": "entrada",
+   "prioridad": 6,
+   "por_que": "Nivel ejecutor del equipo Brasil (en la firma desde 2016); más probable que responda un cold email en portugués/español que Fahlgren y puede escalar internamente.",
+   "fuente": "https://www.mubadalacapital.ae/full-team/"
+  },
+  {
+   "nombre": "Ibrahim Ajami",
+   "cargo": "Head of Ventures, Mubadala Capital",
+   "area": "Mubadala Capital Ventures (tech & healthcare; >100 compañías; plataforma lanzada en San Francisco en 2016)",
+   "ubicacion": "Abu Dhabi, EAU (equipo en San Francisco)",
+   "linkedin": "https://www.linkedin.com/in/ibrahim-ajami-17925456/",
+   "email": "iajami@mubadalacapital.ae",
+   "email_estado": "patron_no_verificado",
+   "rol": "influencer",
+   "prioridad": 7,
+   "por_que": "Ruta de venture/fintech si el ángulo es inversión en la plataforma de Kabal (no liquidez). No aparece ligado públicamente a la iniciativa de tokenización; usar sólo como segunda vía.",
+   "fuente": "https://www.mubadalacapital.ae/leadership ; https://www.crunchbase.com/person/ibrahim-ajami"
+  }
+ ],
+ "ruta_recomendada": "1) Email a Max Franzetti (Co-Head, Mubadala Capital Solutions) con asunto referido a MCAS-TA/KAIO y a la creación de mercados secundarios regulados para tokens de fondos y RWA en LatAm/Centroamérica; CC a Fatima Al Noaimi (Co-Head/COO) y, si hay componente de crédito o colateral tokenizado, a Omar Eraiqat. 2) En paralelo, pista LatAm: contactar a Breno Nakai y luego a Oscar Fahlgren (Rio) posicionando a Kabal Bridge como candidato a 'liquidity partner' regional para Base Exchange/tokenización de activos brasileños. 3) Camino tibio: entrar vía KAIO (Shrey Rastogi, co-founder & CEO, plataforma ADGM que emite y administra MCAS-TA; respaldada por Tether y Laser Digital) o vía Coinbase Institutional (Brett Tejpaul; Coinbase abrió hub de tokenización en Abu Dhabi en ago-2026) — ambos ya son contrapartes activas de Solutions y pueden hacer la intro. Alternativa de baja fricción: comms@mubadalacapital.ae / smaneles@mubadalacapital.ae pidiendo el enrutamiento al equipo Solutions (única bandeja pública verificada).",
+ "notas": "Correos personales: ninguno fue visto literalmente en páginas públicas; todos son patrón {inicial}{apellido}@mubadalacapital.ae inferido de smaneles@mubadalacapital.ae (nota de prensa) — verificar antes de enviar. Los perfiles del equipo de crédito (Eraiqat, Bocciardi) figuraban hasta jul-2026 bajo @mubadala.ae; tras la integración pueden seguir usando ese dominio. No se halló un 'head of digital assets' formal: la tokenización la lidera la unidad Solutions (Franzetti/Al Noaimi) con KAIO como emisor/administrador; Mubadala Investment Company canaliza su exposición cripto vía MGX (US$2B en Binance, 2025), no vía Mubadala Capital. LinkedIn de Oscar Fahlgren y Breno Nakai no se localizó en el presupuesto de búsqueda. Base Exchange: fuentes brasileñas (Diário do Rio) reportan que Claudio Pracownik pasó al consejo y Francisco Gurgel asumió la presidencia, con inicio de operaciones ahora previsto para 2027 — no verificado en fuente primaria. Mubadala Capital es emisor de tokens (fund tokenization), no proveedor de liquidez: el pitch debe ofrecer distribución/liquidez secundaria regulada (CNAD) para sus tokens y acceso a originación RWA centroamericana, no pedir 'liquidez' en abstracto. Varios dominios (mubadalacapital.ae, mubadala.com, businesswire, nasdaq, kaio.xyz) estaban bloqueados por el proxy; los datos provienen de snippets de búsqueda y agregadores citados."
+}

@@ -1,0 +1,115 @@
+{
+ "institucion": "Standard Chartered",
+ "programa": "SC Ventures / Libeara / Zodia; pilotos de tokenización en Asia, África y Medio Oriente; iniciativa UK Finance.",
+ "formato_email": {
+  "patron": null,
+  "fuente": "Verificación: la investigación previa citó robbie.sommerville@sc.com (https://www.sc.com/en/news-and-media/media-contacts/corporate-media.html) y julie.gibson@sc.com (https://www.sc.com/en/press-release/standard-chartered-initiates-research-coverage-of-crypto-assets) como instancias publicadas del patrón nombre.apellido@sc.com. En esta revisión no fue posible abrir sc.com (acceso bloqueado desde este entorno) y una búsqueda web del correo exacto \"robbie.sommerville@sc.com\" no devolvió ninguna página que lo publique. Sin una dirección publicada verificable, el patrón queda sin respaldo y se retira; re-verificar abriendo un comunicado de sc.com con contacto de prensa antes de derivar correos. Tampoco hay patrón confirmado para libeara.com ni scventures.io.",
+  "confianza": "baja"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Newsroom / comunicados oficiales Standard Chartered",
+   "valor": "https://www.sc.com/en/media/",
+   "fuente": "https://www.sc.com/en/media/"
+  },
+  {
+   "canal": "Sitio oficial SC Ventures (unidad de innovacion; incuba Libeara, Zodia)",
+   "valor": "https://scventures.io/",
+   "fuente": "https://scventures.io/gsr-leads-libearas-funding-round-to-scale-tokenisation-of-institutional-grade-assets/"
+  },
+  {
+   "canal": "LinkedIn company page Libeara (plataforma de tokenizacion)",
+   "valor": "https://www.linkedin.com/company/libeara",
+   "fuente": "https://www.linkedin.com/company/libeara"
+  },
+  {
+   "canal": "Contacto de prensa grupo (Corporate Communications) - correo no verificado, se retiro robbie.sommerville@sc.com",
+   "valor": null,
+   "fuente": "https://www.sc.com/en/media/"
+  },
+  {
+   "canal": "Comunicado nombramiento Global Head of Securities Services y Global Head of Digital Assets (14-oct-2026)",
+   "valor": "https://www.sc.com/en/press-release/standard-chartered-appoints-ying-ying-tan-as-global-head-of-securities-services/",
+   "fuente": "https://www.sc.com/en/press-release/standard-chartered-appoints-ying-ying-tan-as-global-head-of-securities-services/"
+  },
+  {
+   "canal": "X/Twitter corporativo",
+   "valor": null,
+   "fuente": "https://www.sc.com/en/media/"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Aaron Gwak",
+   "cargo": "Founder & CEO, Libeara (plataforma de tokenizacion incubada por SC Ventures)",
+   "area": "Libeara / SC Ventures - Tokenizacion",
+   "ubicacion": "Singapur",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Dirige la plataforma de tokenizacion del grupo (fondo tokenizado de Treasuries; segun la investigacion previa: >US$1bn on-chain, licencia CMS de MAS mar-2026 y ronda de US$14m liderada por GSR jun-2026). Es quien evaluaria cross-listing o distribucion secundaria de productos tokenizados hacia Centroamerica.",
+   "fuente": "https://scventures.io/gsr-leads-libearas-funding-round-to-scale-tokenisation-of-institutional-grade-assets/",
+   "notas": "Verificación: no refutado, pero no pudo re-confirmarse en esta revision (scventures.io y asia.money2020.com inaccesibles desde este entorno; la busqueda web no devolvio resultados relevantes para el nombre). Confirmar vigencia del cargo y los datos de la ronda/licencia en LinkedIn o en la web de Libeara antes de contactar. Fuente secundaria citada: https://asia.money2020.com/program/speakers/aaron-gwak-s101-104996. No se encontro patron de correo para libeara.com; contactar via LinkedIn o la company page https://www.linkedin.com/company/libeara."
+  },
+  {
+   "nombre": "Ying Ying Tan",
+   "cargo": "Global Head of Securities Services y Global Head of Digital Assets",
+   "area": "Digital Assets / Securities Services (Corporate & Investment Banking)",
+   "ubicacion": "Singapur",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "Nombrada Global Head of Securities Services y Global Head of Digital Assets el 14-oct-2026; su mandato cubre custodia, tokenizacion, trading, financiamiento y 'ecosystem partnerships'. Reporta a Ole Matthiessen (Global Head, Transaction Services & Digital Assets). Es la decisora a nivel banco para una alianza de distribucion.",
+   "fuente": "https://www.sc.com/en/press-release/standard-chartered-appoints-ying-ying-tan-as-global-head-of-securities-services/",
+   "notas": "Verificación: comunicado del 14-oct-2026 confirmado via busqueda web (doble nombramiento, sede Singapur, reporta a Ole Matthiessen; sucede a Margaret Harwood-Jones en Securities Services; Rene Michau pasa a rol asesor senior). Ubicacion confirmada. Patron de correo sc.com sin respaldo verificado y nombre compuesto (Ying Ying): no se deriva correo; contactar via LinkedIn o intro."
+  },
+  {
+   "nombre": "Karby Leggett",
+   "cargo": "Head of Digital Assets, Greater China & North Asia, South Asia y ASEAN (ademas Global Head, Official Institutions Group, Global Research)",
+   "area": "Digital Assets - Asia",
+   "ubicacion": "Singapur",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "influencer",
+   "prioridad": 3,
+   "por_que": "Lidera la agenda regional de activos digitales en Asia (nombrado 6-mar-2026, dentro del Digital Assets Centre of Excellence) y conecta con instituciones oficiales/EM; via alterna si el canal global no responde.",
+   "fuente": "https://www.theasianbanker.com/press-releases/karby-leggett-appointed-standard-chartered-s-head-of-digital-assets-for-gcna-south-asia-and-asean",
+   "notas": "Verificación: nombramiento de mar-2026 confirmado (The Asian Banker, TechNode Global, finews.asia); con sede en Singapur, no Hong Kong - ubicacion corregida. Correo retirado: el patron nombre.apellido@sc.com no pudo respaldarse con una direccion publicada verificable en esta revision. Cobertura Asia, no LatAm. Fuentes adicionales: https://technode.global/2026/03/06/standard-chartered-appoints-karby-leggett-as-head-of-digital-assets-for-gcna-south-asia-and-asean/ y https://www.finews.asia/people/44746-standard-chartered-digital-assets-karby-leggett-greater-china-north-asia-south-asia-asean"
+  },
+  {
+   "nombre": "Danielle Szetho",
+   "cargo": "Head of Digital Assets Portfolio & Governance",
+   "area": "Digital Assets (ejecucion de estrategia transversal)",
+   "ubicacion": "Singapur (por confirmar)",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "dueno_programa",
+   "prioridad": 3,
+   "por_que": "Supervisa la entrega de la estrategia de activos digitales en todo el banco (portafolio de pilotos y gobernanza); buen CC operativo para una propuesta de alianza.",
+   "fuente": "https://www.theasianbanker.com/updates-and-articles/how-standard-chartered-is-institutionalising-digital-assets-across-banking",
+   "notas": "Verificación: cargo corroborado por la pagina de ponentes del Singapore FinTech Festival (https://www.fintechfestival.sg/speakers/spkr577-danielle-szetho) y de Money20/20 Asia (https://asia.money2020.com/program/speakers/danielle-szetho-s101-97684). Correo retirado por patron sc.com no respaldado. Vigencia 2026 del cargo aun por confirmar en LinkedIn antes de enviar."
+  },
+  {
+   "nombre": "Alex Manson",
+   "cargo": "CEO, SC Ventures",
+   "area": "SC Ventures (innovacion e inversiones: Libeara, Zodia Custody, Zodia Markets)",
+   "ubicacion": "Singapur",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "decisor",
+   "prioridad": 4,
+   "por_que": "Aprueba alianzas estrategicas de las ventures de activos digitales; segun la investigacion previa, en 2026 SC Ventures tomo participacion en GSR y prepara fondo de activos digitales. Escalamiento si Libeara muestra interes.",
+   "fuente": "https://www.weforum.org/agenda/authors/alex-manson/",
+   "notas": "Verificación: no refutado; la fuente WEF no fue accesible desde este entorno y no quedo presupuesto de busqueda para re-confirmar. Cargo de CEO de SC Ventures consistente con registros publicos hasta mediados de 2026; confirmar vigencia y los datos de GSR/fondo antes de contactar. Patron de correo de scventures.io no corroborado."
+  }
+ ],
+ "ruta_recomendada": "1) Primer contacto a Aaron Gwak (Founder & CEO, Libeara, plataforma de tokenizacion de SC Ventures): proponer cross-listing/distribucion secundaria de sus fondos tokenizados en Kabal Digital Marketplace y acceso de emisores centroamericanos a su infraestructura. No hay correo verificado: enviar por LinkedIn InMail y, si se obtiene, CC a Danielle Szetho (Head of Digital Assets Portfolio & Governance). Confirmar antes en LinkedIn la vigencia del cargo de Gwak (no pudo re-verificarse en esta revision). 2) En paralelo, a nivel banco: Ying Ying Tan, Global Head of Digital Assets desde 14-oct-2026 (verificado; mandato explicito en custodia, tokenizacion, trading, financiamiento y 'ecosystem partnerships'; sede Singapur; reporta a Ole Matthiessen). No existe patron de correo verificado para sc.com: contactar via LinkedIn o pedir introduccion. Alternativa regional: Karby Leggett (Head of Digital Assets GCNA, South Asia y ASEAN, Singapur) para pilotos Asia/EM. 3) Intro calida: GSR (lider de la ronda de Libeara y participada por SC Ventures), Kyobo Life / Monk's Hill / Openspace (inversores de Libeara), o contactos comunes en Project Guardian (MAS); si Kabal tiene relacion con Chainlink, Circle o DigiFT, pedir presentacion a Libeara/SC Digital Assets. 4) Fallback: mensaje a la LinkedIn company page de Libeara o al newsroom del grupo (https://www.sc.com/en/media/) pidiendo enrutar la propuesta al equipo de Digital Assets; el correo de prensa citado previamente (robbie.sommerville@sc.com) no pudo verificarse y se retiro del set.",
+ "notas": "Investigación automática 2026-10-18 (lote EXPLORE del Liquidity Agent): agente de búsqueda + verificación adversarial de roles y correos; 12 búsquedas. Todo correo con patron_no_verificado debe confirmarse antes de enviar."
+}

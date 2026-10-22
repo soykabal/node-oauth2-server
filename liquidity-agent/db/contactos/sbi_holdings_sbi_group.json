@@ -1,0 +1,115 @@
+{
+ "institucion": "SBI Holdings / SBI Group",
+ "programa": "'SBI Onchain' con DigiFT para acceso institucional a RWA; SBI Digital Asset Holdings y SBI Digital Markets (Singapur).",
+ "formato_email": {
+  "patron": null,
+  "fuente": "no se halló patrón corroborado por una dirección publicada",
+  "confianza": "n/a"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Sitio oficial SBI Holdings (English)",
+   "valor": "https://www.sbigroup.co.jp/english/",
+   "fuente": "https://www.sbigroup.co.jp/english/news/pdf/2026/0828_c_en.pdf"
+  },
+  {
+   "canal": "Sitio oficial SBI Digital Markets (Singapur)",
+   "valor": "https://sbidm.com",
+   "fuente": "https://sbidm.com/blog/5-minutes-with-winston-quek-ceo-sbi-digital-markets/"
+  },
+  {
+   "canal": "LinkedIn SBI Digital Asset Holdings",
+   "valor": "https://www.linkedin.com/company/sbidah/",
+   "fuente": "https://www.linkedin.com/company/sbidah/"
+  },
+  {
+   "canal": "LinkedIn SBI Digital Markets",
+   "valor": "https://sg.linkedin.com/company/sbi-digital-markets",
+   "fuente": "https://sg.linkedin.com/company/sbi-digital-markets"
+  },
+  {
+   "canal": "Perfil ecosistema SBI DAH (Canton Network)",
+   "valor": "https://www.canton.network/ecosystem/sbi-digital-asset-holdings",
+   "fuente": "https://www.canton.network/ecosystem/sbi-digital-asset-holdings"
+  },
+  {
+   "canal": "Prensa / comunicados SBI Holdings (PDF newsroom)",
+   "valor": null,
+   "fuente": "https://www.sbigroup.co.jp/english/news/pdf/2026/0713_a_en.pdf"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Juan Manuel Gómez",
+   "cargo": "General Manager, Overseas Digital Asset Investments",
+   "area": "SBI Holdings – inversiones y alianzas en activos digitales (ex-Executive Officer / Head of Corporate Planning, SBI Digital Asset Holdings)",
+   "ubicacion": "Tokio, Japón",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": "https://jp.linkedin.com/in/juanmgomez",
+   "rol": "entrada",
+   "prioridad": 1,
+   "por_que": "Conecta empresas de activos digitales con el ecosistema SBI; perfil de BD internacional y planeación corporativa en SBI DAH, hispanohablante, ideal para una propuesta de liquidez ancla o cross-listing desde Centroamérica.",
+   "fuente": "https://jp.linkedin.com/in/juanmgomez",
+   "notas": "Verificación: búsqueda 2026 confirma solo el perfil de LinkedIn (autodeclarado, encabezado 'Juan Manuel G.'), que lista el cargo de GM Overseas Digital Asset Investments en SBI Holdings, Tokio, desde hace ~1 año 3 meses (inicio ~mediados de 2025); roles previos en SBI DAH como Executive Officer y Head of Corporate Planning. Ninguna fuente oficial de SBI confirma el título. Sin email público; usar InMail."
+  },
+  {
+   "nombre": "Winston Quek",
+   "cargo": "CEO",
+   "area": "SBI Digital Markets (plataforma B2B de tokenización y distribución, Singapur); lidera el centro de excelencia de mercados de capital de SBI Digital Asset Holdings",
+   "ubicacion": "Singapur",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "dueno_programa",
+   "prioridad": 2,
+   "por_que": "Opera la plataforma de emisión y distribución de valores tokenizados (UBS tokenized MMF, Project Guardian, 21X); contraparte natural para cross-listing o distribución secundaria. Promovido a prioridad 2 al confirmarse que Vázquez Cao dejó SBI DAH.",
+   "fuente": "https://sbidm.com/blog/5-minutes-with-winston-quek-ceo-sbi-digital-markets/",
+   "notas": "Verificación: perfil de speaker SFF (https://fintechfestival.sg/speakers/spkr4710-winston-quek) y artículo de The Block sobre el nombramiento del ex-funcionario del Banco de Corea lo citan como CEO de SBI Digital Markets; no se halló ninguna fuente fechada en 2026 ni evidencia de cambio de cargo. CEO desde el lanzamiento de SBIDM en 2021. No se pudo abrir la página de SFF (error de DNS del entorno), por lo que la vigencia 2026 sigue sin confirmación directa."
+  },
+  {
+   "nombre": "Trinh Doan",
+   "cargo": "Manager, Partnerships & New Business Development",
+   "area": "SBI Holdings (ex-SBI Digital Asset Holdings)",
+   "ubicacion": "Tokio, Japón",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": "https://jp.linkedin.com/in/trinh-doan12",
+   "rol": "entrada",
+   "prioridad": 3,
+   "por_que": "Pasó a SBI Holdings en oct-2025 para alianzas y nuevos negocios; alternativa de entrada si Gómez no responde.",
+   "fuente": "https://jp.linkedin.com/in/trinh-doan12",
+   "notas": "Verificación: solo se reordenó la prioridad (4 a 3) tras la democión de Vázquez Cao; no se verificó de nuevo el perfil por límite de búsquedas. Evidencia reciente (oct-2025) según perfil de LinkedIn; nivel gerencial, no decisor."
+  },
+  {
+   "nombre": "Jason Beale",
+   "cargo": "Head of Product and Technology Business Development",
+   "area": "SBI Digital Asset Holdings",
+   "ubicacion": "Japón / Singapur (no confirmado)",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Lideraba BD de producto y tecnología en SBI DAH; voz técnica para evaluar integración de un marketplace regulado externo.",
+   "fuente": "https://fintechfestival.sg/speakers-archive-2023/978-jason-beale",
+   "notas": "Verificación: solo se reordenó la prioridad (5 a 4); no se verificó la vigencia del cargo por límite de búsquedas. Evidencia más reciente es de 2023 (speaker SFF); el cargo puede estar desactualizado. Usar solo si se confirma en LinkedIn."
+  },
+  {
+   "nombre": "Fernando Luis Vázquez Cao",
+   "cargo": "President, Capital Markets, Chainlink Labs (ex-CEO SBI Digital Asset Holdings, 2020-2025)",
+   "area": "Chainlink Labs – mercados de capital; miembro del board de Sygnum; ex-director de la unidad de activos digitales de SBI",
+   "ubicacion": "Tokio, Japón (ubicación actual no confirmada tras su paso a Chainlink)",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "influencer",
+   "prioridad": 5,
+   "por_que": "Ya no es decisor en SBI, pero como ex-CEO de SBI DAH (2020-2025), fundador de SBI VC Trade y miembro del board de Sygnum conserva relaciones directas con Kitao, Gómez y Quek; útil como intro cálida y como puerta a Chainlink (socio de SBI Digital Markets en Project Guardian). Hispanohablante.",
+   "fuente": "https://webx-asia.com/speaker/255",
+   "notas": "Verificación: REFUTADO como CEO vigente de SBI DAH. El perfil de speaker de WebX 2026 (webx-asia.com/speaker/255) y el perfil de CFC St. Moritz (cfc-stmoritz.com/profiles/fernando-vazquez-cao) lo listan como President, Capital Markets de Chainlink Labs e indican que 'antes de unirse a Chainlink Labs fue CEO de SBI Digital Asset Holdings'. La página de Sygnum y el perfil SFF aún lo describen como CEO de SBI DAH pero son anteriores. No se halló anuncio oficial fechado del cambio ni el nombre de su sucesor en SBI DAH. Demovido de prioridad 2 a 5 y rol cambiado a influencer; la fuente anterior (finews.asia) describía el cargo ya desactualizado y no pudo abrirse (error de DNS del entorno), por lo que se reemplazó por la página de speaker 2026."
+  }
+ ],
+ "ruta_recomendada": "1) Primer email a Juan Manuel Gómez (GM Overseas Digital Asset Investments, SBI Holdings; ex-Executive Officer y Head of Corporate Planning de SBI DAH, hispanohablante). No hay email público verificado: enviar por InMail de LinkedIn o pedir el correo en el primer contacto. No copiar a Fernando Luis Vázquez Cao como CEO de SBI DAH: ya no ocupa ese cargo (ahora President, Capital Markets en Chainlink Labs). 2) Para cross-listing/distribución secundaria de productos tokenizados: Winston Quek (CEO SBI Digital Markets, Singapur), plataforma B2B de tokenización (UBS tokenized MMF, Project Guardian, 21X); contactar por LinkedIn de SBIDM o sbidm.com. 3) Intro cálida vía DigiFT (Henry Zhang, Founder/Group CEO; socio de SBI en SBI Onchain y JX), vía Chainlink Labs (Vázquez Cao, ex-CEO SBI DAH 2020-2025 y miembro del board de Sygnum, puede abrir la puerta a su sucesor y a Gómez) o vía UBS/21X (socios de SBI Digital Markets en Project Guardian). 4) Fallback: Trinh Doan (partnerships y nuevos negocios, SBI Holdings, desde oct-2025) o el formulario/newsroom de sbigroup.co.jp/english. Pendiente: identificar al CEO actual de SBI DAH (no hallado en fuentes públicas de 2025-2026).",
+ "notas": "Investigación automática 2026-10-19 (lote EXPLORE 2 del Liquidity Agent): agente de búsqueda + verificación adversarial de roles y correos; 12 búsquedas. Todo correo con patron_no_verificado debe confirmarse antes de enviar."
+}

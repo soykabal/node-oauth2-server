@@ -1,0 +1,139 @@
+{
+ "institucion": "Deutsche Bank",
+ "programa": "Project DAMA / DAMA 2 y custodia de activos digitales con Taurus; infraestructura de tokenización europea con SG-FORGE y Bundesbank.",
+ "formato_email": {
+  "patron": "nombre.apellido@db.com (hipótesis no verificada)",
+  "fuente": "NO VERIFICADO en esta pasada: el PDF citado originalmente (investor-relations.db.com/.../2018_12_14_Release_EBA_Transparency_Exercise.pdf, supuesto contacto christian.streckert@db.com) y https://www.db.com/media/contact no pudieron abrirse desde el entorno de verificación (DNS / proxy 403), y ninguna de las 5 búsquedas devolvió una dirección nombre.apellido@db.com publicada. Tratar el patrón como hipótesis hasta ver una dirección real en el pie de un comunicado de prensa de Deutsche Bank.",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Nota oficial DAMA 2 (Securities Services / tokenización)",
+   "valor": "https://www.db.com/news/detail/20250618-dama-2-litepaper-institutional-blueprint-for-asset-tokenisation-and-servicing-on-ethereum-layer-2",
+   "fuente": "https://www.db.com/news/detail/20250618-dama-2-litepaper-institutional-blueprint-for-asset-tokenisation-and-servicing-on-ethereum-layer-2"
+  },
+  {
+   "canal": "Nota oficial Project Guardian (MAS) – tokenización, Securities Services",
+   "valor": "https://db.com/news/detail/20240514-deutsche-bank-joins-project-guardian-to-explore-asset-tokenization-applications",
+   "fuente": "https://db.com/news/detail/20240514-deutsche-bank-joins-project-guardian-to-explore-asset-tokenization-applications"
+  },
+  {
+   "canal": "Sitio Corporate Bank (unidad de activos digitales)",
+   "valor": "https://corporatebank.db.com",
+   "fuente": "https://corporatebank.db.com/more/latest-news/deutsche-bank-s-digital-asset-experts-publish-paper-on-a-token-based-operating-model"
+  },
+  {
+   "canal": "flow.db.com (contenido Securities Services / digital assets)",
+   "valor": "https://flow.db.com/Topics/trust-and-securities-services/ready-for-take-off-scaling-digital-assets",
+   "fuente": "https://flow.db.com/Topics/trust-and-securities-services/ready-for-take-off-scaling-digital-assets"
+  },
+  {
+   "canal": "Prensa / Media Relations (24/7)",
+   "valor": "db.media@db.com | +49 69 910-37777",
+   "fuente": "https://www.db.com/media/contact (no verificado en esta pasada: la página no pudo abrirse desde el entorno de verificación; confirmar manualmente antes de usar)"
+  },
+  {
+   "canal": "Prensa Reino Unido e Irlanda",
+   "valor": "media.uki@db.com | +44 20 754 54907",
+   "fuente": "https://www.db.com/media/contact (no verificado en esta pasada: la página no pudo abrirse desde el entorno de verificación; confirmar manualmente antes de usar)"
+  },
+  {
+   "canal": "LinkedIn (página de empresa)",
+   "valor": null,
+   "fuente": "No localizado dentro del límite de búsquedas; verificar manualmente en LinkedIn"
+  },
+  {
+   "canal": "X/Twitter",
+   "valor": null,
+   "fuente": "No localizado dentro del límite de búsquedas; verificar manualmente"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Boon-Hiong Chan",
+   "cargo": "Applied Industry Innovation Lead y Head of Securities Market & Technology Advocacy APAC, Securities Services – líder de Project DAMA 2 y lead de Deutsche Bank en Project Guardian (MAS)",
+   "area": "Securities Services – Industry Applied Innovation / DAMA 2",
+   "ubicacion": "Singapur (Deutsche Bank AG Singapore, según bio IBF 2024)",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Es la cara pública y líder de DAMA 2, la plataforma de tokenización y servicing de DB (litepaper jun-2025 con Memento Blockchain y Axelar/Interop Labs), y fue designado lead de DB en Project Guardian (MAS) en mayo-2024. Es quien evaluaría cross-listing o distribución secundaria de activos tokenizados.",
+   "fuente": "https://www.db.com/news/detail/20250618-dama-2-litepaper-institutional-blueprint-for-asset-tokenisation-and-servicing-on-ethereum-layer-2",
+   "notas": "Verificación: sigue en Deutsche Bank en 2025 (listado de ponente ASIFMA 2025; Fellow IBF 2024 como 'Applied Industry Innovation Lead and Head of Securities Market & Technology Advocacy APAC, Deutsche Bank AG Singapore'; nombrado lead de DB en Project Guardian en el comunicado DB del 14-may-2024). El título varía entre fuentes (ASIFMA 2025 lo lista como 'Head of Fund Services Product Management and Head of Securities and Technology Advocacy APAC'); el comunicado DAMA 2 de jun-2025 no pudo abrirse desde este entorno para confirmar la redacción exacta. Email eliminado: el patrón nombre.apellido@db.com no pudo respaldarse con una dirección publicada (fuente del patrón inaccesible) y el guion del nombre hace incierta la forma. Contactar vía LinkedIn/InMail o intro de socios DAMA 2."
+  },
+  {
+   "nombre": "Sabih Behzad",
+   "cargo": "Managing Director, Head of Digital Assets & Currencies Transformation",
+   "area": "Corporate & Investment Bank – Digital Assets & Currencies",
+   "ubicacion": "Londres / Frankfurt (CIB; ciudad no confirmada en fuentes)",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "decisor",
+   "prioridad": 2,
+   "por_que": "Dirige estrategia y ejecución de activos digitales (tokenización, custodia, stablecoins) en el CIB desde feb-2022; miembro del board de Taurus AG; vocero del plan de custodia 2026 con Taurus y Bitpanda. Puede aprobar una alianza de liquidez o facilidad programática.",
+   "fuente": "https://parisblockchainweek.com/speaker-2026/sabih-behzad",
+   "notas": "Verificación: vigente en el cargo en 2026 — ponente en Paris Blockchain Week 2026; podcast CryptoReg Insights (abr-2026) y artículo de Deutsche Bank (may-2026) lo presentan como Head of Digital Assets & Currencies Transformation; Bloomberg (jul-2025) lo vincula al plan de custodia 2026 con Taurus y Bitpanda; declaró en jun-2025 que DB evalúa emitir o sumarse a stablecoins. Email eliminado por no existir dirección publicada ni patrón verificado."
+  },
+  {
+   "nombre": "Anand Rengarajan",
+   "cargo": "Global Head of Sales, Securities Services y Head of Securities Services Asia Pacific (en 2024 el ámbito incluía Middle East; en mar-2026 DB nombró a Rocio Echague Head of TSS Middle East & Africa)",
+   "area": "Securities Services – Sales",
+   "ubicacion": "Singapur",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "entrada",
+   "prioridad": 3,
+   "por_que": "Responsable global de ventas de Securities Services y vocero del ingreso de DB a Project Guardian (MAS) sobre tokenización; punto de entrada comercial para distribución de productos tokenizados.",
+   "fuente": "https://db.com/news/detail/20240514-deutsche-bank-joins-project-guardian-to-explore-asset-tokenization-applications",
+   "notas": "Verificación: la evidencia más reciente es de 2024 (comunicado DB 14-may-2024 sobre Project Guardian; perfil de conferencia 2024 como 'Global Head of Sales & Head of Asia Pacific, Middle East and Africa, Securities Services'). No se halló confirmación 2025-2026 del cargo; el nombramiento de Rocio Echague (The Asset, 31-mar-2026) sugiere que el ámbito regional cambió. Fuente cambiada a la nota oficial de DB (financialit.net/node/59945 la replica). Email eliminado (patrón no verificado). Confirmar en LinkedIn antes de escalar."
+  },
+  {
+   "nombre": "Stefan Teis",
+   "cargo": "Head of DLT and Digital Asset Services (según flow.db.com, jul-2024; vigencia sin confirmar)",
+   "area": "Securities Services – DLT & Digital Asset Services",
+   "ubicacion": "Frankfurt (no confirmado en fuente)",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Lidera (o lideraba en 2024) los servicios DLT y de activos digitales dentro de Securities Services; coautor de contenido DB sobre escalar activos digitales junto a Mike Clarke (Global Head of Product Management, Securities Services).",
+   "fuente": "https://flow.db.com/Topics/trust-and-securities-services/ready-for-take-off-scaling-digital-assets",
+   "notas": "Verificación: ninguna búsqueda devolvió evidencia 2025-2026 de Stefan Teis en Deutsche Bank; la única fuente sigue siendo el artículo de flow.db.com (jul-2024), que no pudo abrirse desde este entorno. Vigencia sin confirmar: tratar como influencer secundario y validar en LinkedIn. Email eliminado (patrón no verificado). Alternativa en la misma unidad: Mike Clarke, también sin verificar en 2025-2026."
+  },
+  {
+   "nombre": "Dennis Bon",
+   "cargo": "Head of Trust & Securities Services (TSS) Americas; responsable global de Product Management de Custodia y Fund Services",
+   "area": "Securities Services – Americas",
+   "ubicacion": "Américas (ciudad no confirmada; probablemente Nueva York)",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "cobertura_latam",
+   "prioridad": 5,
+   "por_que": "Lidera el negocio de Securities Services para las Américas (incluye cobertura de mercados latinoamericanos) y el product management global de custodia y fund services; es la vía regional natural para distribución/custodia de productos tokenizados DAMA 2 hacia un emisor centroamericano.",
+   "fuente": "https://posttrade360.com/news/custody/bon-to-lead-tss-americas-and-custody-and-fund-service-product-management-at-deutsche-bank/",
+   "notas": "Verificación: sustituye a Kika Ricciardi, cuya única fuente (gtreview.com, sin fecha) usaba la nomenclatura 'Global Transaction Banking' (anterior a 2019) y no pudo confirmarse; se retiró por desactualizada. La nota de PostTrade 360° sobre Bon tampoco muestra fecha en los resultados de búsqueda: confirmar vigencia en LinkedIn antes de contactar. Sin email publicado."
+  },
+  {
+   "nombre": "Deutsche Bank Media Relations (buzón genérico)",
+   "cargo": "Buzón de prensa / Media Relations 24/7",
+   "area": "Comunicaciones corporativas",
+   "ubicacion": "Frankfurt, Alemania",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "canal_generico",
+   "prioridad": 5,
+   "por_que": "Canal institucional de fallback para solicitar el contacto correcto de la unidad de activos digitales si los contactos directos no responden.",
+   "fuente": "https://www.db.com/media/contact",
+   "notas": "Verificación: la página db.com/media/contact no pudo abrirse desde el entorno de verificación (DNS / proxy 403) y ninguna búsqueda mostró el buzón db.media@db.com publicado, por lo que el email se retira hasta confirmarlo manualmente. Teléfono reportado por la investigación original: +49 69 910-37777; Reino Unido e Irlanda: media.uki@db.com (ambos sin verificar en esta pasada). No es un canal de partnerships; úsese solo como fallback."
+  }
+ ],
+ "ruta_recomendada": "1) No hay emails verificados: abordar a Boon-Hiong Chan (líder de DAMA 2 y lead de DB en Project Guardian, Singapur) por LinkedIn InMail o mediante intro de los socios de DAMA 2 (Memento Blockchain, Interop Labs/Axelar) o en eventos donde es ponente habitual (ASIFMA, Singapore FinTech Festival). Ángulo: distribución secundaria / cross-listing de productos tokenizados DAMA 2 y liquidez ancla para emisiones RWA en Centroamérica bajo PSAD-0056. 2) En paralelo, a Sabih Behzad (confirmado en el cargo en 2026; ponente en Paris Blockchain Week 2026) vía Taurus (socio de custodia de DB; Behzad en su board), Bitpanda Technology, o intro de Securitize/Chainlink/Circle si Kabal ya tiene relación con su cobertura de Deutsche Bank. 3) Sin respuesta en 10 días: escalar a Anand Rengarajan (Global Head of Sales, Securities Services; evidencia de 2024, confirmar vigencia en LinkedIn) y, como influencer secundario, a Stefan Teis (sin evidencia 2025-2026; validar antes). 4) Para cobertura regional, validar en LinkedIn a Dennis Bon (Head of TSS Americas) antes de escribir; Kika Ricciardi fue retirada por evidencia anterior a 2019. 5) Fallback: formulario/teléfono de Media Relations en db.com/media/contact (+49 69 910-37777 según la investigación original, no verificado en esta pasada) para pedir el contacto de la unidad de activos digitales. Antes de enviar cualquier email directo, confirmar el patrón nombre.apellido@db.com con una dirección real publicada en un comunicado de DB.",
+ "notas": "Investigación automática 2026-10-18 (lote EXPLORE del Liquidity Agent): agente de búsqueda + verificación adversarial de roles y correos; 12 búsquedas. Todo correo con patron_no_verificado debe confirmarse antes de enviar."
+}

@@ -1,0 +1,95 @@
+{
+ "institucion": "OpenAssets",
+ "programa": "Infraestructura de tokenización institucional (antes Pointsville) que trabaja con Itaú Unibanco en un caso de uso estructurado dentro del piloto de tokenización de ANBIMA (renta fija/debêntures y fondos de inversión: emisión, negociación y liquidación en DLT; PoCs, asesoría de arquitectura/estándares y evaluación de marcos operativos y de compliance). Anunciado ~11-ago-2026. Ronda de US$10M (2025) liderada por Valor Capital Group con Tether y miembros de la familia fundadora de Itaú. Alianzas: Chainlink, AWS Partner Network, OpenZeppelin.",
+ "formato_email": {
+  "patron": "desconocido — dominio corporativo openassets.to (unverified)",
+  "fuente": "https://www.openassets.to/ (sitio no accesible desde este entorno; sin patrón público hallado)",
+  "confianza": "baja"
+ },
+ "canales_publicos": [
+  {
+   "canal": "sitio web / formulario de contacto",
+   "valor": "https://www.openassets.to/",
+   "fuente": "https://www.openassets.to/"
+  },
+  {
+   "canal": "comunicados de prensa (contacto de medios en cada release)",
+   "valor": "https://www.prnewswire.com/news-releases/openassets-and-itau-form-joint-initiative-to-advance-tokenization-across-brazilian-capital-markets-302847468.html",
+   "fuente": "https://www.prnewswire.com/news-releases/openassets-and-itau-form-joint-initiative-to-advance-tokenization-across-brazilian-capital-markets-302847468.html"
+  },
+  {
+   "canal": "evento presencial (Head of Business Development de OpenAssets en agenda)",
+   "valor": "Digital Assets Week USA 2026 — https://daweek.org/usa-agenda-26/",
+   "fuente": "https://daweek.org/usa-agenda-26/"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Gabor Gurbacs",
+   "cargo": "Chairman & CEO",
+   "area": "Dirección general / estrategia de tokenización institucional",
+   "ubicacion": "Estados Unidos (Nueva York, no verificado)",
+   "linkedin": null,
+   "email": "patrón desconocido (unverified)",
+   "email_estado": "desconocido",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "CEO y portavoz de la alianza con Itaú; ex-líder de estrategia de activos digitales en VanEck, muy activo públicamente (X/LinkedIn) y receptivo a temas de mercados tokenizados en LatAm.",
+   "fuente": "https://www.coindesk.com/business/2026/08/11/brazil-s-largest-lender-itau-is-stepping-deeper-into-the-tokenization ; https://thepaypers.com/crypto-web3-and-cbdc/news/itau-unibanco-partners-with-openassets-on-anbima-tokenisation-pilot"
+  },
+  {
+   "nombre": "Surendra Kalidindi",
+   "cargo": "COO & CTO",
+   "area": "Operaciones / infraestructura de mercados de capitales digitales",
+   "ubicacion": "Estados Unidos (no verificado)",
+   "linkedin": null,
+   "email": "patrón desconocido (unverified)",
+   "email_estado": "desconocido",
+   "rol": "decisor",
+   "prioridad": 3,
+   "por_que": "Número dos operativo (ex-Global Head of Digital Assets Technology en VanEck; ex-VP Trading Systems en Neuberger Berman); decide integraciones de venues y liquidez.",
+   "fuente": "https://www.prnewswire.com/news-releases/openassets-joins-aws-partner-network-to-deliver-institutional-tokenization-platforms-at-enterprise-scale-302762115.html ; https://www.openassets.to/"
+  },
+  {
+   "nombre": null,
+   "cargo": "Head of Business Development, OpenAssets (nombre no capturado)",
+   "area": "Desarrollo de negocios / alianzas",
+   "ubicacion": null,
+   "linkedin": null,
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "entrada",
+   "prioridad": 2,
+   "por_que": "Aparece como ponente en la agenda de Digital Assets Week USA 2026; es el rol formal de partnerships de la empresa — identificar el nombre en la agenda antes del outreach.",
+   "fuente": "https://daweek.org/usa-agenda-26/"
+  },
+  {
+   "nombre": "Guto Antunes",
+   "cargo": "Líder de Ativos Digitais, Itaú Unibanco (socio, no empleado de OpenAssets)",
+   "area": "Activos digitales / piloto ANBIMA",
+   "ubicacion": "São Paulo, Brasil (no verificado)",
+   "linkedin": null,
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "influencer",
+   "prioridad": 4,
+   "por_que": "Contraparte de Itaú en el caso de uso con OpenAssets; útil como referencia/validación institucional y para entender el marco ANBIMA aplicable a distribución transfronteriza.",
+   "fuente": "https://bitnoticias.com.br/web3/itau-anbima-tokenizacao-renda-fixa-openassets/"
+  },
+  {
+   "nombre": null,
+   "cargo": "Equipo de inversión LatAm, Valor Capital Group (inversor líder de OpenAssets)",
+   "area": "Venture capital LatAm",
+   "ubicacion": "São Paulo / Nueva York",
+   "linkedin": null,
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "cobertura_latam",
+   "prioridad": 2,
+   "por_que": "Camino tibio: Valor Capital lideró la ronda de US$10M y tiene tesis LatAm; una intro de un partner de Valor a Gurbacs es la vía de mayor credibilidad para un operador centroamericano licenciado.",
+   "fuente": "https://www.coindesk.com/business/2026/08/11/brazil-s-largest-lender-itau-is-stepping-deeper-into-the-tokenization"
+  }
+ ],
+ "ruta_recomendada": "1) Buscar intro a Gabor Gurbacs vía Valor Capital Group (inversor líder) o vía red XDC/Tether (Tether también invirtió). 2) Si no hay intro, email frío directo a Gurbacs (inglés, breve, citando el piloto ANBIMA-Itaú y ofreciendo a Kabal Bridge como venue regulado CNAD para distribución/liquidez de instrumentos tokenizados hacia Centroamérica y el mercado hispano), con CC al Head of Business Development (nombre a confirmar en daweek.org) y, para temas técnicos, a Surendra Kalidindi. 3) Usar el formulario de openassets.to como canal de respaldo.",
+ "notas": "Limitaciones: openassets.to, PRNewswire, CoinDesk, LinkedIn y toda la prensa quedaron bloqueados por el proxy de egreso y el presupuesto de búsqueda web se agotó; no se pudo confirmar el nombre del Head of BD, patrón de email, ubicación exacta ni URLs de LinkedIn. No se hallaron cofundadores adicionales distintos de Gurbacs (Chairman & CEO) y Kalidindi (COO & CTO); la empresa operaba antes como Pointsville. No se identificó ningún ejecutivo con cobertura explícita de Hispanoamérica; la exposición LatAm pasa por Brasil (Itaú/ANBIMA) y por Valor Capital."
+}

@@ -1,0 +1,120 @@
+{
+ "institucion": "Siam Commercial Bank",
+ "programa": "Banco socio del piloto de compensación USD 24/7 de Citi Token Services; SCBX opera SCB 10X y Token X.",
+ "formato_email": {
+  "patron": "first.last@scb.co.th — NO verificado: solo lo sugieren agregadores (ContactOut); no se encontró ninguna dirección real publicada con ese dominio que lo respalde. No aplica a Token X / SCB 10X / SCBX, que usan otros dominios. Ningún contacto tiene email derivado de este patrón.",
+  "fuente": "https://contactout.io/company/scb-ndash-siam-commercial-bank-1477 (agregador; no cumple el estándar de evidencia — por eso no se derivó ni se asignó ningún email)",
+  "confianza": "media"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Sitio oficial SCBX – sala de noticias (anuncios de liderazgo y de la unidad de activos digitales)",
+   "valor": "https://www.scbx.com",
+   "fuente": "https://www.scbx.com/en/news/dr-arak-sutivong-ceo-datax/"
+  },
+  {
+   "canal": "Formulario corporativo SCB ('Send Us a Message') + Business Call Center",
+   "valor": "Formulario web; tel. +66 2 722 2222 (24h)",
+   "fuente": "https://www.scb.co.th/en/corporate-banking/why-scb"
+  },
+  {
+   "canal": "Contacto general SCB (call center / sede Ratchadapisek)",
+   "valor": "+66 2 777 7777",
+   "fuente": "https://www.scb.co.th/en/personal-banking/contact-scb.html"
+  },
+  {
+   "canal": "Noticias oficiales SCB sobre Token X (Tokenization Summit 2024)",
+   "valor": "https://www.scb.co.th/en/about-us/news",
+   "fuente": "https://www.scb.co.th/en/about-us/news/apr-2024/tokenization-summit-2024"
+  },
+  {
+   "canal": "Evento anual de SCB 10X (REDeFiNE TOMORROW 2026, 4-5 jun 2026; agenda con Kaweewut Temphuwapat) – vía de contacto con el equipo de SCB 10X",
+   "valor": "https://redefinetomorrow2026.scb10x.com/agenda",
+   "fuente": "https://redefinetomorrow2026.scb10x.com/agenda"
+  },
+  {
+   "canal": "Comunicado de prensa Citi–SCB (Citi Token Services, 8 jul 2026; contacto de medios al pie)",
+   "valor": null,
+   "fuente": "https://www.businesswire.com/news/home/20260708949103/en/the-siam-commercial-bank-collaborates-with-citi-to-pioneer-247-usd-clearing-for-near-real-time-cross-border-payments-with-citi-token-services/"
+  },
+  {
+   "canal": "Directorio AmCham Thailand (ficha de miembro SCB)",
+   "valor": null,
+   "fuente": "https://connect.amchamthailand.com/list/member/the-siam-commercial-bank-public-company-limited-1093"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Kaweewut Temphuwapat",
+   "cargo": "Chief Innovation Officer, SCB X Public Company Limited (SCBX); Chief Executive Officer, SCB 10X Co., Ltd. (desde el 16 de mayo de 2025)",
+   "area": "SCBX – innovación / activos digitales / SCB 10X (matriz de Token X)",
+   "ubicacion": "Bangkok, Tailandia",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "decisor",
+   "prioridad": 1,
+   "por_que": "Es el ejecutivo del grupo confirmado en 2026 que dirige la agenda de activos digitales: presentó en SEA Blockchain Week (21-may-2026) la hoja de ruta de SCBX (infraestructura → tokenización vía Token X y distribución vía InnovestX → productos on-chain: bonos, fondos y depósitos tokenizados, lending con colateral digital). Como CEO de SCB 10X es la cabeza corporativa directa de Token X, por lo que decide prioridades y alianzas de tokenización.",
+   "fuente": "https://globalventuring.com/corporate/people/temphuwapat-hired-to-lead-thai-bank-scbs-ventures-unit/",
+   "notas": "Verificación: confirmado en rol en 2025-2026 (nombramiento como CEO de SCB 10X efectivo 16-may-2025, sucediendo a Mukaya Panich, manteniendo el cargo de CIO de SCBX; keynote en SEA Blockchain Week 21-may-2026 y agenda de REDeFiNE TOMORROW 4-5 jun 2026). Se promueve a prioridad 1 porque Jittinun (Token X) no pudo confirmarse para 2025-2026. La fuente original (scbx.com/en/news/future-inclusive-finance/) no apareció en búsquedas ni pudo abrirse desde este entorno (DNS/proxy), por lo que se sustituyó por una fuente indexada; cobertura 2026 adicional: https://www.mitihoon.com/2026/05/25/644514/ , https://www.mitihoon.com/2026/05/14/641127/ y https://redefinetomorrow2026.scb10x.com/agenda . Probable dominio scbx.com o scb10x.com; sin dirección publicada."
+  },
+  {
+   "nombre": "Wanrob Boontham",
+   "cargo": "Chief Investment Officer, Token X Co., Ltd. (portal ICO regulado por la SEC tailandesa, filial de SCB 10X / SCBX)",
+   "area": "Token X – tokenización / inversión y estructuración de emisiones",
+   "ubicacion": "Bangkok, Tailandia",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "entrada",
+   "prioridad": 2,
+   "por_que": "Único ejecutivo de Token X con apariciones públicas verificadas en 2026: vocero de la emisión Blu Green Token (primer token verde de Tailandia, ago-2026, con negociación secundaria en Bitkub) y ponente en la agenda de SEA Blockchain Week (may-2026). Es la contraparte operativa para evaluar cross-listing de productos tokenizados (RealX, bonos) y nuevas emisiones primarias.",
+   "fuente": "https://www.thestorythailand.com/en/?p=163295",
+   "notas": "Verificación: contacto añadido en esta pasada como alternativa mejor documentada dentro de Token X. Citado como 'Chief Investment Officer of Token X Co., Ltd.' en el comunicado de Blu Green Token (ago-2026); cobertura paralela: https://www.mitihoon.com/2026/08/28/671740/ y https://www.scbx.com/en/?p=30690 ; también listado como CIO de Token X en la agenda de SEA Blockchain Week 2026 ( https://www.mitihoon.com/2026/05/14/641127/ ). Token X usa dominio propio; sin patrón de email verificado."
+  },
+  {
+   "nombre": "Jittinun Chatsiharach",
+   "cargo": "Chief Executive Officer, Token X Co., Ltd. (según última evidencia fechada: abril 2024; vigencia 2025-2026 NO confirmada)",
+   "area": "Token X – tokenización / portal ICO",
+   "ubicacion": "Bangkok, Tailandia",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "dueno_programa",
+   "prioridad": 3,
+   "por_que": "Si sigue en el cargo, dirige la plataforma de tokenización del grupo (Token X, >THB 3.000 M levantados, RealX Token inmobiliario) y sería la contraparte natural para cross-listing y emisión primaria. Se mantiene en la lista como dueña del programa condicionada a verificación.",
+   "fuente": "https://www.scb.co.th/en/about-us/news/apr-2024/tokenization-summit-2024",
+   "notas": "Verificación: no se encontró ninguna evidencia 2025-2026 de que continúe como CEO de Token X. Últimas menciones: comunicado SCB del Tokenization Summit (abr-2024), perfil de ponente en Singapore FinTech Festival (sin año verificable, la página no pudo abrirse) y ficha en TheOrg (no fechada). La cobertura 2026 de Token X solo nombra a Wanrob Boontham (CIO). No refutada pero no confirmada, por lo que se demota de prioridad 1 a 3: confirmar en LinkedIn antes de escribirle. Token X usa dominio propio; sin patrón de email verificado."
+  },
+  {
+   "nombre": "Arak Sutivong",
+   "cargo": "Deputy Chief Executive Officer, SCB X Public Company Limited (SCBX) y Chief Executive Officer, SCB DataX Co., Ltd. (desde el 16 de septiembre de 2025); CEO designado de SCBX efectivo 1 de enero de 2027 (sujeto a aprobación regulatoria)",
+   "area": "SCBX – dirección general (sucesor designado del CEO Arthid Nanthawithaya)",
+   "ubicacion": "Bangkok, Tailandia",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "decisor",
+   "prioridad": 4,
+   "por_que": "Presidió el Tokenization Summit 2024 de Token X y hoy es el número dos de SCBX y su próximo CEO (ene-2027); patrocinador senior de la agenda de tokenización. Útil como escalamiento o CC si Kaweewut/Token X no responden, y como puerta a InnovestX.",
+   "fuente": "https://www.scbx.com/en/news/dr-arak-sutivong-ceo-datax/",
+   "notas": "Verificación: el cargo del objeto original estaba desactualizado/incompleto. Anuncio oficial de SCBX: nombrado Deputy CEO de SCBX y CEO de SCB DataX en la reestructuración efectiva 16-sep-2025, como preparación para asumir la CEO de SCBX el 1-ene-2027 al concluir el mandato de Arthid Nanthawithaya (31-dic-2026). Cobertura: https://fintechnews.sg/113165/thailand/scbx-ceo-arak-sutivong/ . Se sustituyó la fuente (abr-2024) por el anuncio oficial y se elevó a 'decisor'. Una ficha de MergerLinks lo lista como CEO de SCB 10X: obsoleta, ignorar. Probable dominio scbx.com; sin dirección publicada."
+  },
+  {
+   "nombre": "SCB Corporate Banking – formulario 'Send Us a Message' / Business Call Center",
+   "cargo": "Canal institucional genérico",
+   "area": "Siam Commercial Bank – banca corporativa",
+   "ubicacion": "Bangkok, Tailandia",
+   "email": null,
+   "email_estado": "desconocido",
+   "linkedin": null,
+   "rol": "canal_generico",
+   "prioridad": 5,
+   "por_que": "Canal oficial de respaldo para solicitar redirección a Token X / SCB 10X / unidad de activos digitales si no hay respuesta directa.",
+   "fuente": "https://www.scb.co.th/en/corporate-banking/why-scb",
+   "notas": "Tel. +66 2 722 2222 (24h). No se encontró email público de prensa/IR; el comunicado Citi–SCB (jul-2026) trae contacto de medios al pie. Verificación: los dominios scb.co.th y scbx.com siguen sin poder abrirse desde este entorno (DNS/proxy 403), por lo que la URL se mantiene por aparecer indexada en buscadores, no por acceso directo."
+  }
+ ],
+ "ruta_recomendada": "1) Enviar el email principal a Kaweewut Temphuwapat (CIO de SCBX y CEO de SCB 10X; confirmado en rol en mayo-junio 2026; Token X es filial de SCB 10X y él presentó la hoja de ruta de tokenización/finanzas on-chain de SCBX en SEA Blockchain Week, 21-may-2026), con CC a Wanrob Boontham (Chief Investment Officer de Token X, confirmado en ago-2026 como vocero de la emisión Blu Green Token). 2) Jittinun Chatsiharach (CEO de Token X según última evidencia de abr-2024) solo se incluye en CC si se confirma su vigencia en LinkedIn; no se encontró evidencia 2025-2026 de que siga en el cargo. 3) Intro cálida: Citi (SCB es el primer banco en vivo con Citi Token Services, jul-2026), Fireblocks (inversión estratégica de SCBX para custodia) o Ripple (socio histórico de SCB en remesas); ninguno de Securitize/DigiFT/Marketnode/Ownera/Chainlink/Circle apareció vinculado a SCBX (afirmaciones del investigador original, no re-verificadas en esta pasada). 4) Escalamiento sin respuesta en ~10 días: Dr. Arak Sutivong (Deputy CEO de SCBX y CEO de SCB DataX; CEO designado de SCBX efectivo 1-ene-2027) o el formulario corporativo SCB (why-scb) / sala de prensa de SCBX pidiendo redirección a Token X / SCB 10X; mencionar 'cross-listing de RealX / bonos tokenizados hacia Centroamérica'. 5) Vía alterna de distribución: InnovestX (brazo de distribución de SCBX, activos digitales) abordado a través de Kaweewut o Arak. 6) Si se busca contacto presencial: REDeFiNE TOMORROW (evento anual de SCB 10X, junio) y SEA Blockchain Week (mayo) son los foros donde SCBX/SCB 10X/Token X exponen su agenda de tokenización.",
+ "notas": "Investigación automática 2026-10-19 (lote EXPLORE 2 del Liquidity Agent): agente de búsqueda + verificación adversarial de roles y correos; 12 búsquedas. Todo correo con patron_no_verificado debe confirmarse antes de enviar."
+}

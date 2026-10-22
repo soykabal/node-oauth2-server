@@ -1,0 +1,102 @@
+{
+ "institucion": "Goldman Sachs",
+ "programa": "GS DAP (Digital Asset Platform); fondo inmobiliario tokenizado con LRC Group; socios Ownera, Apex Group, Archax.",
+ "formato_email": {
+  "patron": null,
+  "fuente": null,
+  "confianza": "baja"
+ },
+ "canales_publicos": [
+  {
+   "canal": "Sitio oficial unidad Digital Assets (GS DAP)",
+   "valor": "https://www.goldmansachs.com/what-we-do/ficc-and-equities/digital-assets",
+   "fuente": "https://www.goldmansachs.com/what-we-do/ficc-and-equities/digital-assets"
+  },
+  {
+   "canal": "LinkedIn empresa",
+   "valor": "https://www.linkedin.com/company/goldman-sachs",
+   "fuente": "https://www.linkedin.com/company/goldman-sachs"
+  },
+  {
+   "canal": "Prensa / Media Relations Américas",
+   "valor": "gs-uspress@gs.com",
+   "fuente": "https://warrants.gs.com/pressroom"
+  },
+  {
+   "canal": "Prensa / Media Relations Reino Unido",
+   "valor": "gs-ukpress@gs.com",
+   "fuente": "https://warrants.gs.com/pressroom"
+  },
+  {
+   "canal": "Investor Relations (buzón institucional)",
+   "valor": "gs-investor-relations@gs.com",
+   "fuente": "https://www.goldmansachs.com/investor-relations/contacts"
+  },
+  {
+   "canal": "X / Twitter",
+   "valor": "@GoldmanSachs",
+   "fuente": "https://x.com/GoldmanSachs"
+  },
+  {
+   "canal": "Formulario de partnerships Digital Assets",
+   "valor": null,
+   "fuente": "https://www.goldmansachs.com/what-we-do/ficc-and-equities/digital-assets"
+  },
+  {
+   "canal": "Socio estratégico GS DAP (Tradeweb, newsroom)",
+   "valor": "https://www.tradeweb.com/newsroom/media-center/in-the-news/goldman-sachs-digital-assets-to-spin-out-technology-platform-gs-dap/",
+   "fuente": "https://www.tradeweb.com/newsroom/media-center/in-the-news/goldman-sachs-digital-assets-to-spin-out-technology-platform-gs-dap/"
+  },
+  {
+   "canal": "Goldman Sachs Media Relations (Américas) — Buzón institucional de prensa",
+   "valor": "gs-uspress@gs.com",
+   "fuente": "https://warrants.gs.com/pressroom"
+  }
+ ],
+ "contactos": [
+  {
+   "nombre": "Mathew McDermott",
+   "cargo": "Global Head of Digital Assets (Managing Director)",
+   "area": "Digital Assets / GS DAP (Global Banking & Markets)",
+   "ubicacion": "Londres, Reino Unido",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "dueno_programa",
+   "prioridad": 1,
+   "por_que": "Dirige la estrategia transversal de activos digitales de Goldman (tokenización, productos cripto, inversiones) y la plataforma GS DAP; es quien decide alianzas de distribución y liquidez. Confirmado en el cargo al 15-oct-2025 en el Digital Asset Summit de Londres (Markets Media), donde declaró que Goldman busca desinvertir GS DAP a mediados de 2026. No se halló evidencia de salida o cambio de cargo en búsquedas 2026.",
+   "fuente": "https://www.marketsmedia.com/goldman-sachs-focuses-on-spinning-out-tokenization-platform/",
+   "linkedin": null,
+   "notas": "Verificación: se sustituye la fuente token2049 (no accesible desde este entorno) por el artículo de Markets Media de oct-2025, que lo cita como head of digital assets de Goldman; la afirmación original de que fue citado en jun-2026 en el lanzamiento de un fondo inmobiliario tokenizado con LRC Group NO pudo verificarse y se elimina del sustento. También decisor (puede aprobar). Patrón corporativo nombre.apellido@gs.com NO corroborado con una dirección individual publicada; no se deriva correo. Bio adicional (sin fecha): https://blockworks.co/speaker/mathew-mcdermott. GS DAP: spin-out anunciado nov-2024 como plataforma 'industry-owned' con Tradeweb como primer socio; meta de cierre mediados de 2026 según McDermott (oct-2025), aprobaciones regulatorias aún pendientes según un explicador de abr-2026; cierre no confirmado."
+  },
+  {
+   "nombre": "Chris Bruner",
+   "cargo": "Chief Product Officer",
+   "area": "Tradeweb Markets (primer socio estratégico de GS DAP)",
+   "ubicacion": "Nueva York, EE. UU.",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "influencer",
+   "prioridad": 3,
+   "por_que": "Tradeweb es el primer socio estratégico del spin-out de GS DAP y aporta trading y liquidez en renta fija a la plataforma (reconfirmado por Markets Media, oct-2025); Bruner es la voz pública de esa alianza y puede abrir una intro cálida hacia el equipo GS DAP sobre liquidez y distribución secundaria.",
+   "fuente": "https://www.tradeweb.com/who-we-are/leadership/chris-bruner/",
+   "linkedin": null,
+   "notas": "Verificación: cargo vigente en 2026 — figura como Chief Product Officer de Tradeweb Markets y miembro del Executive Committee en la página de speakers de Milken Global Conference 2026 (https://milkeninstitute.org/events/global-conference-2026/speakers/chris-bruner) y en un panel de Kaiko del 31-mar-2026; se sube de prioridad 4 a 3 por ser el único contacto nombrado con cargo confirmado en 2026. No es empleado de Goldman. Nota de la alianza (nov-2024): https://www.tradeweb.com/newsroom/media-center/in-the-news/goldman-sachs-digital-assets-to-spin-out-technology-platform-gs-dap/"
+  },
+  {
+   "nombre": "Equipo Digital Assets, GBM Public (Londres) — sin nombre individual identificado",
+   "cargo": "Equipo de activos digitales (cripto y tokenización); vacante Vice President publicada",
+   "area": "Digital Assets (GBM Public) / GS DAP",
+   "ubicacion": "Londres, Reino Unido (reporta a un Head of Crypto basado en Hong Kong)",
+   "email": null,
+   "email_estado": "desconocido",
+   "rol": "entrada",
+   "prioridad": 4,
+   "por_que": "Es el equipo operativo de activos digitales bajo McDermott, dentro de GBM Public pero con mandato firmwide y transversal; el punto de entrada BD/partnerships para GS DAP debería estar aquí. No se logró identificar un nombre con fuente verificable dentro del límite de búsquedas.",
+   "fuente": "https://higher.gs.com/roles/155815",
+   "linkedin": null,
+   "notas": "Verificación: la oferta 160309 ('GBM Public, Digital Assets: Tokenisation') no apareció en una búsqueda restringida a higher.gs.com y no pudo abrirse desde este entorno, por lo que se sustituye por la oferta indexada 155815 'GBM Public, Crypto Digital Assets, Vice President, London', que describe al equipo Digital Assets en expansión en Londres con reporte directo al Head of Crypto en Hong Kong. Se baja de prioridad 3 a 4 por ser un contacto sin nombre. Las ofertas de empleo pueden cerrarse; usar el nombre del equipo para localizar en LinkedIn al MD/VP responsable antes de enviar."
+  }
+ ],
+ "ruta_recomendada": "1) Primer correo a Mathew McDermott (Global Head of Digital Assets, Londres), dueño del programa GS DAP y confirmado en el cargo al 15-oct-2025 (Digital Asset Summit Londres); no hay correo verificado, así que enviar por LinkedIn InMail o pedir introducción. En paralelo, ubicar en LinkedIn al MD/VP del equipo Digital Assets de GBM Public en Londres (mandato firmwide; la vacante VP publicada reporta a un Head of Crypto basado en Hong Kong) para CC como punto de entrada BD; la oferta 'Digital Assets: Tokenisation' citada originalmente no pudo verificarse. 2) Intro cálida vía Tradeweb: Chris Bruner (Chief Product Officer, cargo confirmado en 2026) es la voz pública de la alianza GS DAP–Tradeweb, primer socio estratégico del spin-out, que McDermott dijo (oct-2025) que buscaba cerrar a mediados de 2026; el cierre no está confirmado. 3) Alternativa: Digital Asset (Daml/Canton), proveedor tecnológico de GS DAP confirmado, para una presentación al equipo de plataforma. Los socios del supuesto fondo tokenizado con LRC Group (Ownera, Apex Group, Archax) NO pudieron verificarse en esta ronda; tratarlos solo como pista por confirmar. 4) Fallback: gs-uspress@gs.com (Media Relations Américas, publicado en la página pressroom de gs.com) o la página LinkedIn de Goldman Sachs pidiendo redirección al equipo Digital Assets; no se identificó responsable de digital assets con cobertura LatAm, por lo que el equipo de Goldman Sachs Latin America (banca de inversión) sería solo canal regional secundario.",
+ "notas": "Investigación automática 2026-10-18 (lote EXPLORE del Liquidity Agent): agente de búsqueda + verificación adversarial de roles y correos; 12 búsquedas. Todo correo con patron_no_verificado debe confirmarse antes de enviar."
+}
